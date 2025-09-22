@@ -1,5 +1,5 @@
 
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
+import {  Instagram, Linkedin, Mail } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
 
 export default function Hero() {

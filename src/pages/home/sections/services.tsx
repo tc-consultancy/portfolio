@@ -142,17 +142,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      {/*
-        To have content scroll after this section, add it below the <Services /> component.
-        For example, in your main page file:
-
-        <Services />
-        <div className="flex h-screen items-center justify-center bg-black text-4xl font-bold text-white">Section 1</div>
-        <div className="flex h-screen items-center justify-center bg-neutral-950 text-4xl font-bold text-white">Section 2</div>
-        <div className="flex h-screen items-center justify-center bg-black text-4xl font-bold text-white">Section 3</div>
-        <div className="flex h-screen items-center justify-center bg-neutral-950 text-4xl font-bold text-white">Section 4</div>
-        <div className="flex h-screen items-center justify-center bg-black text-4xl font-bold text-white">Section 5</div>
-      */}
+      
     </section>
   )
 }
