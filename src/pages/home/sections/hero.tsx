@@ -1,5 +1,6 @@
 
 import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 export default function Hero() {
   return (
@@ -30,12 +31,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex items-center justify-center gap-4">
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-xl bg-gray-900 dark:bg-white/90 px-6 py-3 text-sm font-semibold text-white dark:text-black shadow-md transition hover:bg-gray-800 dark:hover:bg-white"
-            >
-              Start your Journey
-            </a>
+            <ContactDialog>
+              <button className="inline-flex items-center justify-center rounded-xl bg-gray-900 dark:bg-white/90 px-6 py-3 text-sm font-semibold text-white dark:text-black shadow-md transition hover:bg-gray-800 dark:hover:bg-white">
+                Start your Journey
+              </button>
+            </ContactDialog>
           </div>
 
           <div className="mx-auto mt-10 h-1 w-16 rounded bg-gray-400 dark:bg-white/70" />

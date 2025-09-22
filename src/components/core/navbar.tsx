@@ -60,7 +60,7 @@ export function Navbar() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Sevices</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className=" flex gap-2 md:w-[400px] lg:w-[600px]">
               <li className="row-span-3 flex-1">
@@ -70,12 +70,12 @@ export function Navbar() {
                     href="/"
                   >
                     <div className="mt-4 mb-2 text-lg font-medium">
-                      Software Development
+                      Hire <br /> Recruiter
                     </div>
                     <p className="text-muted-foreground text-sm leading-tight">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <Button variant={"outline"} className="rounded-full mt-2 "><ArrowUpRight/></Button>
+                    <Link to="/services/hire-recruiter"  className="rounded-full border py-2.5 flex items-center justify-center border-purple-400! mt-2 "><ArrowUpRight/></Link>
                   </a>
                 </NavigationMenuLink>
               </li>

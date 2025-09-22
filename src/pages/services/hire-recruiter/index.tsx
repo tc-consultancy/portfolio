@@ -1,6 +1,6 @@
 
 export default function HireRecruiter() {
   return (
-    <div>Hire Recruiter</div>
+    <div className="flex items-center justify-center h-screen">Hire Recruiter</div>
   )
 }
