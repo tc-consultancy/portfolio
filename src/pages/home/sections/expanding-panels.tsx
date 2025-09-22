@@ -1,0 +1,149 @@
+import React, { useRef } from 'react'
+import { motion } from 'framer-motion'
+import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom'
+
+type Panel = {
+  id: number
+  bg: string
+  content: React.ReactNode
+}
+
+const panels: Panel[] = [
+  {
+    id: 0,
+    bg: 'bg-black',
+    content: (
+      <div className="mx-auto max-w-xl px-6 py-8 text-white/80 md:px-10">
+        <h2 className="font-['Cormorant_Garamond'] text-5xl font-semibold leading-none text-white/90 md:text-6xl">
+          Why <span className="text-white">Choose</span>
+          <br /> Us?
+        </h2>
+        <p className="mt-6 text-sm leading-relaxed text-white/70 md:text-base">
+          We specialize in delivering custom software and app development solutions tailored to your business needs. From intuitive mobile and web apps to scalable enterprise software, we combine cutting‑edge technology with UI/UX design to create innovative, user‑focused experiences.
+        </p>
+        <div className="mt-8 flex gap-4">
+          <Button className="bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white">Book a Demo</Button>
+          <Link to="/contact">
+            <Button variant="secondary">Contact Us</Button>
+          </Link>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 1,
+    bg: 'bg-blue-700',
+    content: (
+      <div className="mx-auto flex max-w-xl flex-col px-6 py-8 text-white md:px-10">
+        <h2 className="font-['Cormorant_Garamond'] text-6xl font-extrabold leading-tight md:text-7xl">
+          Your
+          <br /> Success
+          <br /> Is Our
+          <br /> Mission..
+        </h2>
+        <p className="mt-6 max-w-md text-white/90">
+          Your Dreams, Our Technology. Let's build an empire out of your company.
+        </p>
+        <div className="mt-8">
+          <Button className="bg-white text-black hover:bg-white/90">Talk To Us</Button>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    bg: 'bg-black',
+    content: (
+      <div className="mx-auto max-w-xl px-6 py-8 text-white md:px-10">
+        <h2 className="font-['Cormorant_Garamond'] text-5xl font-extrabold leading-tight md:text-7xl">
+          Are You
+          <br /> Ready?
+          <br /> Let's <span className="text-violet-500">Work</span>
+          <br /> Together...
+        </h2>
+        <div className="mt-10">
+          <Link to="/contact">
+            <Button className="bg-violet-600 text-white hover:bg-violet-600/90">Contact Us</Button>
+          </Link>
+        </div>
+      </div>
+    ),
+  },
+]
+
+export default function ExpandingPanelsSection() {
+  const [active, setActive] = React.useState<number | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    // Corresponds to Tailwind's `md` breakpoint (768px)
+    if (window.innerWidth < 768 || !containerRef.current) {
+      return
+    }
+
+    const { left, width } = containerRef.current.getBoundingClientRect()
+    const x = e.clientX - left
+
+    const panelIndex = Math.floor((x / width) * panels.length)
+    // Ensure index is within bounds [0, panels.length - 1]
+    const newActive = Math.max(0, Math.min(panelIndex, panels.length - 1))
+
+    if (newActive !== active) {
+      setActive(newActive)
+    }
+  }
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth < 768) return
+    setActive(null)
+  }
+
+  // Layout: On desktop, three columns expand/shrink on hover; on mobile stack vertically.
+  // We keep widths fluid using framer-motion springs for smoothness.
+  const getTargetBasis = (index: number): string => {
+    if (active === null) return '33.3333%'
+    // Hovered panel takes 75% width; others split the remaining 25%
+    return index === active ? '75%' : '12.5%'
+  }
+  const getTargetOpacity = (index: number): number => {
+    if (active === null) return 1
+    return index === active ? 1 : 0.35
+  }
+  const getTargetScale = (index: number): number => {
+    if (active === null) return 1
+    return index === active ? 1 : 0.85
+  }
+
+  return (
+    <section className="relative bg-black">
+      <div className="mx-auto h-[120vh] md:h-screen">
+        <div
+          ref={containerRef}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          className="sticky top-0 flex h-screen flex-col md:flex-row"
+        >
+          {panels.map((panel, index) => (
+            <motion.div
+              key={panel.id}
+              className={`${panel.bg} relative flex h-1/3 items-center justify-center overflow-hidden md:h-full`}
+              animate={{ flexBasis: getTargetBasis(index), opacity: getTargetOpacity(index) }}
+              transition={{ type: 'spring', stiffness: 120, damping: 20 }}
+              style={{ flexBasis: '33.3333%' }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/10 pointer-events-none md:from-black/10" />
+              <motion.div
+                className="relative z-10 w-full"
+                animate={{ scale: getTargetScale(index) }}
+                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+              >
+                {panel.content}
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

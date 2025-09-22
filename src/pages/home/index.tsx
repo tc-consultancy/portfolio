@@ -4,6 +4,7 @@ import Hero from './sections/hero'
 import Industries from './sections/industries'
 import Services from './sections/services'
 import RevealCoverSection from './sections/reveal-cover-section'
+import ExpandingPanelsSection from './sections/expanding-panels'
 
 export default function Home() {
   return (
@@ -15,13 +16,12 @@ export default function Home() {
         <Industries />
         <Services />
       <RevealCoverSection/>
-        {/* <div className="flex bg-white h-screen items-center justify-center  text-4xl font-bold text-white">
-          Section 1
+      <ExpandingPanelsSection/>
+       
+        <div className="flex h-screen mt-20 z-50 items-center justify-center bg-neutral-950 text-4xl font-bold text-white">
+          
         </div>
-        <div className="flex h-screen items-center justify-center bg-neutral-950 text-4xl font-bold text-white">Section 2</div>
-        <div className="flex h-screen items-center justify-center bg-black text-4xl font-bold text-white">Section 3</div>
-        <div className="flex h-screen items-center justify-center bg-neutral-950 text-4xl font-bold text-white">Section 4</div>
-        <div className="flex h-screen items-center justify-center bg-black text-4xl font-bold text-white">Section 5</div> */}
+        
       </main>
     </LenisProvider>
   )
