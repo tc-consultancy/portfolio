@@ -108,11 +108,11 @@ export default function ExpandingPanelsSection() {
   }
   const getTargetOpacity = (index: number): number => {
     if (active === null) return 1
-    return index === active ? 1 : 0.35
+    return index === active ? 1 : 0.2
   }
   const getTargetScale = (index: number): number => {
     if (active === null) return 1
-    return index === active ? 1 : 0.85
+    return index === active ? 1.05 : 0.4
   }
 
   return (
@@ -128,14 +128,14 @@ export default function ExpandingPanelsSection() {
             <motion.div
               key={panel.id}
               className={`${panel.bg} relative flex h-1/3 items-center justify-center overflow-hidden md:h-full`}
-              animate={{ flexBasis: getTargetBasis(index), opacity: getTargetOpacity(index) }}
+              animate={{ flexBasis: getTargetBasis(index) }}
               transition={{ type: 'spring', stiffness: 120, damping: 20 }}
               style={{ flexBasis: '33.3333%' }}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/10 pointer-events-none md:from-black/10" />
               <motion.div
-                className="relative z-10 w-full"
-                animate={{ scale: getTargetScale(index) }}
+                className="relative z-10 w-[36rem]"
+                animate={{ scale: getTargetScale(index), opacity: getTargetOpacity(index) }}
                 transition={{ type: 'spring', stiffness: 200, damping: 20 }}
               >
                 {panel.content}
