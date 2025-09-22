@@ -9,34 +9,34 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
-    title: 'Software Development',
+    title: 'Software',
     description:
-      'Full‑cycle web, mobile and platform engineering focused on reliability and scale.',
+      'Software development involves creating, testing, and maintaining applications through coding, collaboration, and problem-solving. It drives innovation, enhances user experiences, and helps businesses adapt quickly by leveraging modern, scalable, and secure technologies.',
     icon: '💻',
   },
   {
-    title: 'Data Analytics',
+    title: 'Hire Recruiter',
     description:
-      'From pipelines to dashboards—turn raw data into decisions and measurable ROI.',
-    icon: '📊',
+      'Build high‑performing teams faster with embedded recruiters who understand your domain, culture, and timelines. From sourcing to closing, we streamline hiring with data‑driven pipelines, robust screening, and transparent reporting tailored to your growth stage.',
+    icon: '🧑‍💼',
   },
   {
-    title: 'Cloud Solutions',
+    title: 'AI Integration',
     description:
-      'Modernize infra with IaC, container platforms, cost governance and SRE practices.',
-    icon: '☁️',
-  },
-  {
-    title: 'Cybersecurity',
-    description:
-      'Threat modeling, zero‑trust architectures, continuous monitoring and incident response.',
-    icon: '🛡️',
-  },
-  {
-    title: 'AI & Automation',
-    description:
-      'RAG systems, copilots and workflow automation to accelerate business operations.',
+      'Embed intelligent capabilities into your products and workflows—chatbots, copilots, and RAG systems—backed by secure data pipelines, governance, and monitoring so teams move faster while maintaining trust, compliance, and measurable business outcomes.',
     icon: '🤖',
+  },
+  {
+    title: 'IT Staffing Solutions',
+    description:
+      'Scale engineering capacity on demand with vetted talent across frontend, backend, cloud, QA, and DevOps. Flexible engagement models, clear SLAs, and collaborative delivery ensure velocity, accountability, and seamless integration with your teams.',
+    icon: '🧑‍💻',
+  },
+  {
+    title: 'Out Sourcing Services',
+    description:
+      'Extend your capabilities with managed delivery for apps, data, and cloud. We handle execution—roadmaps, sprints, QA, and SRE—so you focus on strategy while we ship secure, scalable solutions aligned to your standards, budgets, and timelines.',
+    icon: '🌐',
   },
 ]
 
