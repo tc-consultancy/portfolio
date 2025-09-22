@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Check, ChevronsUpDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -27,6 +27,7 @@ import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
+import { useLenis } from './LenisProvider'
 
 // Country data with codes
 const countries = [
@@ -88,6 +89,8 @@ interface ContactDialogProps {
 }
 
 export function ContactDialog({ children }: ContactDialogProps) {
+  const [isOpen, setIsOpen] = useState(false)
+  const lenis = useLenis()
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -99,6 +102,14 @@ export function ContactDialog({ children }: ContactDialogProps) {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isCountryOpen, setIsCountryOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      lenis?.stop()
+    } else {
+      lenis?.start()
+    }
+  }, [isOpen, lenis])
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
@@ -132,16 +143,16 @@ export function ContactDialog({ children }: ContactDialogProps) {
   }
 
   return (
-    <Dialog>
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
-        <DialogHeader className=' gap-1'>
+        <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-white">
             Start Your Journey
           </DialogTitle>
-          <DialogDescription className="text-gray-600 text-xs dark:text-gray-300">
+          <DialogDescription className="text-gray-600 dark:text-gray-300">
             Get in touch with our team to discuss your enterprise technology, staffing, and outsourcing needs.
           </DialogDescription>
         </DialogHeader>
