@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Check, ChevronsUpDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -28,6 +28,8 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { useLenis } from './LenisProvider'
+import { Toaster } from '@/components/ui/sonner'
+import { toast } from 'sonner'
 
 // Country data with codes
 const countries = [
@@ -98,10 +100,13 @@ export function ContactDialog({ children }: ContactDialogProps) {
     phone: '',
     countryCode: '+1',
     country: 'United States',
+    service: '',
     comment: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isCountryOpen, setIsCountryOpen] = useState(false)
+  const [isServiceOpen, setIsServiceOpen] = useState(false)
+  const [errors, setErrors] = useState<Record<string, string>>({})
 
   useEffect(() => {
     if (isOpen) {
@@ -112,7 +117,13 @@ export function ContactDialog({ children }: ContactDialogProps) {
   }, [isOpen, lenis])
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }))
+    const normalizedValue = field === 'phone'
+      ? value.replace(/[^\d+\-\s()]/g, '')
+      : value
+    setFormData(prev => ({ ...prev, [field]: normalizedValue }))
+    if (errors[field]) {
+      setErrors(prev => ({ ...prev, [field]: '' }))
+    }
   }
 
   const handleCountrySelect = (country: typeof countries[0]) => {
@@ -120,14 +131,70 @@ export function ContactDialog({ children }: ContactDialogProps) {
     setIsCountryOpen(false)
   }
 
+  const services = useMemo(
+    () => [
+      'Software Development',
+      '? (Hire requter)',
+      'IT Consulting & Services.',
+      'Tech Support',
+      'AI Integration',
+      'Cybersecurity',
+      'BPO/Contact Center Services',
+      'IT Staffing Solutions',
+      'Accounting and Payrolls',
+      'Digital Marketing Services',
+      'Out Sourcing Services',
+    ],
+    []
+  )
+
+  const validate = () => {
+    const nextErrors: Record<string, string> = {}
+    const firstName = formData.firstName.trim()
+    const lastName = formData.lastName.trim()
+    const email = formData.email.trim()
+    const phoneDigits = formData.phone.replace(/\D/g, '')
+    const comment = formData.comment.trim()
+    const service = formData.service.trim()
+
+    if (!firstName) nextErrors.firstName = 'First name is required'
+    if (!lastName) nextErrors.lastName = 'Last name is required'
+    if (!email) {
+      nextErrors.email = 'Email is required'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i.test(email)) {
+      nextErrors.email = 'Enter a valid email address'
+    }
+    if (!phoneDigits) {
+      nextErrors.phone = 'Phone number is required'
+    } else if (phoneDigits.length < 7 || phoneDigits.length > 15) {
+      nextErrors.phone = 'Phone number should be 7-15 digits'
+    }
+    if (!service) {
+      nextErrors.service = 'Please select a service'
+    }
+    if (comment.length < 200) {
+      nextErrors.comment = 'Comment must be at least 200 characters'
+    }
+
+    setErrors(nextErrors)
+    return nextErrors
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    const validationErrors = validate()
+    if (Object.keys(validationErrors).length > 0) {
+      const firstErrorMessage = Object.values(validationErrors)[0]
+      toast.error(firstErrorMessage)
+      return
+    }
     setIsSubmitting(true)
     
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000))
     
     console.log('Form submitted:', formData)
+    toast.success('Your message has been sent!')
     setIsSubmitting(false)
     
     // Reset form
@@ -138,8 +205,10 @@ export function ContactDialog({ children }: ContactDialogProps) {
       phone: '',
       countryCode: '+1',
       country: 'United States',
+      service: '',
       comment: '',
     })
+    setErrors({})
   }
 
   return (
@@ -160,8 +229,8 @@ export function ContactDialog({ children }: ContactDialogProps) {
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="firstName">
-                First Name
+              <Label htmlFor="firstName" className={cn(errors.firstName ? 'text-red-600' : '')}>
+                First Name <span className="text-red-600">*</span>
               </Label>
               <Input
                 id="firstName"
@@ -169,13 +238,18 @@ export function ContactDialog({ children }: ContactDialogProps) {
                 value={formData.firstName}
                 onChange={(e) => handleInputChange('firstName', e.target.value)}
                 placeholder="John"
-                required
-                className="bg-white/5 border-neutral-300 dark:border-neutral-700"
+                className={cn(
+                  'bg-white/5 dark:border-neutral-700',
+                  errors.firstName ? 'border-red-500' : 'border-neutral-300'
+                )}
               />
+              {errors.firstName ? (
+                <p className="text-xs text-red-600">{errors.firstName}</p>
+              ) : null}
             </div>
             <div className="space-y-2">
-              <Label htmlFor="lastName">
-                Last Name
+              <Label htmlFor="lastName" className={cn(errors.lastName ? 'text-red-600' : '')}>
+                Last Name <span className="text-red-600">*</span>
               </Label>
               <Input
                 id="lastName"
@@ -183,15 +257,20 @@ export function ContactDialog({ children }: ContactDialogProps) {
                 value={formData.lastName}
                 onChange={(e) => handleInputChange('lastName', e.target.value)}
                 placeholder="Doe"
-                required
-                className="bg-white/5 border-neutral-300 dark:border-neutral-700"
+                className={cn(
+                  'bg-white/5 dark:border-neutral-700',
+                  errors.lastName ? 'border-red-500' : 'border-neutral-300'
+                )}
               />
+              {errors.lastName ? (
+                <p className="text-xs text-red-600">{errors.lastName}</p>
+              ) : null}
             </div>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="email">
-              Email
+            <Label htmlFor="email" className={cn(errors.email ? 'text-red-600' : '')}>
+              Email <span className="text-red-600">*</span>
             </Label>
             <Input
               id="email"
@@ -199,14 +278,19 @@ export function ContactDialog({ children }: ContactDialogProps) {
               value={formData.email}
               onChange={(e) => handleInputChange('email', e.target.value)}
               placeholder="john.doe@company.com"
-              required
-              className="bg-white/5 border-neutral-300 dark:border-neutral-700"
+              className={cn(
+                'bg-white/5 dark:border-neutral-700',
+                errors.email ? 'border-red-500' : 'border-neutral-300'
+              )}
             />
+            {errors.email ? (
+              <p className="text-xs text-red-600">{errors.email}</p>
+            ) : null}
           </div>
 
           <div className="space-y-2">
-            <Label>
-              Phone Number
+            <Label className={cn(errors.phone ? 'text-red-600' : '')}>
+              Phone Number <span className="text-red-600">*</span>
             </Label>
             <div className="flex gap-2">
               <Popover open={isCountryOpen} onOpenChange={setIsCountryOpen}>
@@ -216,7 +300,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
                     variant="outline"
                     role="combobox"
                     aria-expanded={isCountryOpen}
-                    className="w-40 justify-between bg-white/5 border-neutral-300 dark:border-neutral-700"
+                    className="w-28 justify-between bg-white/5 border-neutral-300 dark:border-neutral-700"
                   >
                     <span className="flex items-center gap-2">
                       <span>{countries.find(c => c.name === formData.country)?.flag}</span>
@@ -253,15 +337,74 @@ export function ContactDialog({ children }: ContactDialogProps) {
                 value={formData.phone}
                 onChange={(e) => handleInputChange('phone', e.target.value)}
                 placeholder="123-456-7890"
-                required
-                className="flex-1 bg-white/5 border-neutral-300 dark:border-neutral-700"
+                className={cn(
+                  'flex-1 bg-white/5 dark:border-neutral-700',
+                  errors.phone ? 'border-red-500' : 'border-neutral-300'
+                )}
               />
             </div>
+            {errors.phone ? (
+              <p className="text-xs text-red-600">{errors.phone}</p>
+            ) : null}
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="comment">
-            Comments ( Elaborate on what you are looking for. )
+            <Label className={cn(errors.service ? 'text-red-600' : '')}>
+              Select your service <span className="text-red-600">*</span>
+            </Label>
+            <div>
+              <Popover open={isServiceOpen} onOpenChange={setIsServiceOpen}>
+                <PopoverTrigger asChild>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    role="combobox"
+                    aria-expanded={isServiceOpen}
+                    className={cn(
+                      'w-full justify-between bg-white/5 dark:border-neutral-700',
+                      errors.service ? 'border-red-500' : 'border-neutral-300'
+                    )}
+                  >
+                    <span className="truncate text-left">
+                      {formData.service || 'Select a service'}
+                    </span>
+                    <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-80 p-0 bg-neutral-100/95 dark:bg-black/80 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
+                  <Command>
+                    <CommandInput placeholder="Search service..." />
+                    <CommandList>
+                      <CommandEmpty>No service found.</CommandEmpty>
+                      <CommandGroup>
+                        {services.map((serviceName) => (
+                          <CommandItem
+                            key={serviceName}
+                            value={serviceName}
+                            onSelect={() => {
+                              setFormData(prev => ({ ...prev, service: serviceName }))
+                              setIsServiceOpen(false)
+                              if (errors.service) setErrors(prev => ({ ...prev, service: '' }))
+                            }}
+                          >
+                            <Check className={cn('mr-2 h-4 w-4', formData.service === serviceName ? 'opacity-100' : 'opacity-0')} />
+                            <span>{serviceName}</span>
+                          </CommandItem>
+                        ))}
+                      </CommandGroup>
+                    </CommandList>
+                  </Command>
+                </PopoverContent>
+              </Popover>
+            </div>
+            {errors.service ? (
+              <p className="text-xs text-red-600">{errors.service}</p>
+            ) : null}
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="comment" className={cn(errors.comment ? 'text-red-600' : '')}>
+            Comments ( Elaborate on what you are looking for. ) <span className="text-red-600">*</span>
             </Label>
             <Textarea
               id="comment"
@@ -269,9 +412,16 @@ export function ContactDialog({ children }: ContactDialogProps) {
               onChange={(e) => handleInputChange('comment', e.target.value)}
               placeholder="Describe your technology needs, team requirements, or outsourcing goals..."
               rows={4}
-              className="bg-white/5 border-neutral-300 dark:border-neutral-700 resize-none"
+              className={cn(
+                'bg-white/5 dark:border-neutral-700 resize-none',
+                errors.comment ? 'border-red-500' : 'border-neutral-300'
+              )}
             />
-            <p className='text-xs text-gray-500 -mt-1 text-end'>Min 200 characters</p>
+            {errors.comment ? (
+              <p className='text-xs text-red-600 -mt-1 text-end'>{errors.comment}</p>
+            ) : (
+              <p className='text-xs text-gray-500 -mt-1 text-end'>Min 200 characters</p>
+            )}
           </div>
 
           <Button
@@ -293,6 +443,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
             )}
           </Button>
         </form>
+        <Toaster richColors position="top-right" />
       </DialogContent>
     </Dialog>
   )
