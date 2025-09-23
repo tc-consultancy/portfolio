@@ -1,5 +1,5 @@
 
-import { Linkedin, Twitter, Instagram, Mail, Facebook } from "lucide-react";
+import { Linkedin,  Instagram, Mail, Facebook } from "lucide-react";
 
 export default function LastButNotLeast() {
     return (
