@@ -28,7 +28,6 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { useLenis } from './LenisProvider'
-import { Toaster } from '@/components/ui/sonner'
 import { toast } from 'sonner'
 
 // Country data with codes
@@ -216,7 +215,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-lg bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
+      <DialogContent className="sm:max-w-lg min-w-lg bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-white">
             Start Your Journey
@@ -226,7 +225,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           </DialogDescription>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-5 max-w-md mx-auto">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName" className={cn(errors.firstName ? 'text-red-600' : '')}>
@@ -237,7 +236,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
                 type="text"
                 value={formData.firstName}
                 onChange={(e) => handleInputChange('firstName', e.target.value)}
-                placeholder="John"
+                placeholder="First Name"
                 className={cn(
                   'bg-white/5 dark:border-neutral-700',
                   errors.firstName ? 'border-red-500' : 'border-neutral-300'
@@ -256,7 +255,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
                 type="text"
                 value={formData.lastName}
                 onChange={(e) => handleInputChange('lastName', e.target.value)}
-                placeholder="Doe"
+                placeholder="Last Name"
                 className={cn(
                   'bg-white/5 dark:border-neutral-700',
                   errors.lastName ? 'border-red-500' : 'border-neutral-300'
@@ -277,7 +276,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
               type="email"
               value={formData.email}
               onChange={(e) => handleInputChange('email', e.target.value)}
-              placeholder="john.doe@company.com"
+              placeholder="example@company.com"
               className={cn(
                 'bg-white/5 dark:border-neutral-700',
                 errors.email ? 'border-red-500' : 'border-neutral-300'
@@ -309,8 +308,15 @@ export function ContactDialog({ children }: ContactDialogProps) {
                     <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-80 p-0 bg-neutral-100/95 dark:bg-black/80 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
-                  <Command>
+                <PopoverContent
+                  className="w-80 p-0 bg-neutral-100/95 dark:bg-black/80 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl"
+                  data-lenis-prevent
+                  data-lenis-prevent-wheel
+                >
+                  <Command
+                    className="max-h-72 overflow-y-auto"
+                    onWheel={(e) => e.stopPropagation()}
+                  >
                     <CommandInput placeholder="Search country..." />
                     <CommandList>
                       <CommandEmpty>No country found.</CommandEmpty>
@@ -371,8 +377,15 @@ export function ContactDialog({ children }: ContactDialogProps) {
                     <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-80 p-0 bg-neutral-100/95 dark:bg-black/80 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
-                  <Command>
+                <PopoverContent
+                  className="w-80 p-0 bg-neutral-100/95 dark:bg-black/80 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl"
+                  data-lenis-prevent
+                  data-lenis-prevent-wheel
+                >
+                  <Command
+                    className="max-h-72 overflow-y-auto"
+                    onWheel={(e) => e.stopPropagation()}
+                  >
                     <CommandInput placeholder="Search service..." />
                     <CommandList>
                       <CommandEmpty>No service found.</CommandEmpty>
@@ -413,7 +426,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
               placeholder="Describe your technology needs, team requirements, or outsourcing goals..."
               rows={4}
               className={cn(
-                'bg-white/5 dark:border-neutral-700 resize-none',
+                'bg-white/5 dark:border-neutral-700 max-h-24 resize-none ',
                 errors.comment ? 'border-red-500' : 'border-neutral-300'
               )}
             />
@@ -443,7 +456,6 @@ export function ContactDialog({ children }: ContactDialogProps) {
             )}
           </Button>
         </form>
-        <Toaster richColors position="top-right" />
       </DialogContent>
     </Dialog>
   )
