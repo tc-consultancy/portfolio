@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
 import HireRecruiter from './pages/services/hire-recruiter'
 import { Navbar } from './components/core/navbar'
-import { ThemeSelector } from './components/ui/ThemeSelector'
 
 function App() {
   return (

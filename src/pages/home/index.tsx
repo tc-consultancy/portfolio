@@ -1,4 +1,3 @@
-import { ThemeSelector } from '@/components/ui/ThemeSelector'
 import { LenisProvider } from '../../components/LenisProvider'
 import Hero from './sections/hero'
 import Industries from './sections/industries'
