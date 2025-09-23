@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+ 
 import {
   Building2,
   ShoppingCart,
@@ -11,6 +11,7 @@ import {
   Car,
   Cpu,
 } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const industries = [
   { title: 'Enterprise', icon: Building2, color: 'text-violet-400', description: 'Unlocking scalable growth with next-gen ERP solutions and workflow automation.' },
@@ -48,28 +49,19 @@ export default function Industries() {
         </div>
 
         <motion.ul
+          className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.15 }}
           variants={{
-            hidden: { opacity: 0 },
-            show: { opacity: 1, transition: { staggerChildren: 0.06 } },
+            hidden: { opacity: 0, y: 100 },
+            show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeInOut' } },
           }}
-          className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
           {industries.map((item) => (
-            <motion.li
+            <li
               key={item.title}
-              variants={{
-                hidden: { opacity: 0, y: 14, filter: 'blur(4px)' },
-                show: {
-                  opacity: 1,
-                  y: 0,
-                  filter: 'blur(0px)',
-                  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-                },
-              }}
-              className="group rounded-2xl border border-gray-300 dark:border-white/10 bg-gray-100/80 dark:bg-white/5 p-6 backdrop-blur transition hover:border-gray-400 dark:hover:border-white/20 hover:bg-gray-200/80 dark:hover:bg-white/10"
+              className="group rounded-2xl border border-gray-300 dark:border-white/10 bg-gray-100/80 dark:bg-white/5 p-6 hover:border-gray-400 dark:hover:border-white/20 hover:bg-gray-200/80 dark:hover:bg-white/10"
             >
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white dark:bg-white/5 ring-1 ring-gray-200 dark:ring-white/10">
@@ -91,7 +83,7 @@ export default function Industries() {
                   Explore
                 </button>
               </div>
-            </motion.li>
+            </li>
           ))}
         </motion.ul>
       </div>
