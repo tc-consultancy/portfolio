@@ -52,10 +52,9 @@ export default function Services() {
     offset: ['start start', 'end end'],
   })
 
-  // Pixel-precise scroll: 400px card + 32px gap per step
+  // Pixel-precise scroll: 400px card + 32px gap per step (desktop)
   const CARD_PX = 400
-  // Corresponds to `gap-8` in Tailwind (2rem = 32px)
-  const GAP_PX = 32 
+  const GAP_PX = 32
   const STEP_PX = CARD_PX + GAP_PX
   // Animate the horizontal scroll, completing at 80% of the scroll duration
   const translateX = useTransform(scrollYProgress, [0, 0.8], [0, -STEP_PX * steps])
@@ -124,7 +123,7 @@ export default function Services() {
               style={{ opacity: titleOpacity }}
               className="pointer-events-none absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 md:block"
             >
-              <h2 className="text-6xl font-extrabold text-black ml-16 leading-tight">
+              <h2 className="text-5xl xl:text-6xl font-extrabold text-black ml-16 leading-tight">
                 <span className="block">What we</span>
                 <span className="block">offer</span>
               </h2>

@@ -81,31 +81,31 @@ function SectionPanel({
   const isContentLeft = item.layout === 'content-left'
 
   const contentY = useTransform(scrollYProgress, [0, 1], ['10%', '-10%'])
-  const imageY = useTransform(scrollYProgress, [0, 1], ['-10%', '10%'])
+  const imageY = useTransform(scrollYProgress, [0, 1], ['-5%', '10%'])
 
   const content = (
     <motion.div
       style={{ y: contentY }}
-      className={`flex flex-col justify-center p-8 mb-12 text-white md:p-16 ${
+      className={`flex flex-col justify-center p-8 mb-8 text-white md:p-12 lg:p-14 xl:p-16 ${
         isContentLeft ? 'items-start text-left' : 'items-end text-right'
       }`}
     >
       <div className="max-w-lg">
-        <h1 className="font-['Cormorant_Garamond'] text-6xl font-medium leading-none md:text-7xl">
+        <h1 className="font-['Cormorant_Garamond'] text-4xl font-medium leading-none md:text-4xl lg:text-6xl xl:text-7xl">
           {item.title}
         </h1>
 
-        <p className="font-['Cormorant_Garamond'] mt-4 text-lg font-medium">
+        <p className="font-['Cormorant_Garamond'] leading-tight mt-4 md:mt-2 lg:mt-4 text-sm md:text-sm  lg:text-lg font-medium">
           {item.description}
         </p>
       </div>
-      <Button className='mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500'>Book a Demo</Button>
+      <Button className='mt-6 md:mt-2 lg:mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500'>Book a Demo</Button>
     </motion.div>
   )
 
   const image = (
     <motion.div
-      className="h-full bg-cover bg-center"
+      className="h-40 md:h-full bg-cover bg-center"
       style={{
         backgroundImage: `url(${item.image})`,
         y: imageY,
@@ -114,7 +114,7 @@ function SectionPanel({
   )
 
   return (
-    <div className="grid h-screen w-full grid-cols-1 bg-zinc-900 md:grid-cols-2">
+    <div className="grid h-[85vh] md:h-[72vh] lg:h-[80vh] xl:h-screen w-full grid-cols-1 bg-zinc-900 md:grid-cols-2">
       {isContentLeft ? (
         <>
           {content}
@@ -142,7 +142,7 @@ export default function RevealCoverSection() {
         const sectionScrollYProgress = useTransform(scrollYProgress, [start, end], [0, 1])
 
         return (
-          <div key={item.id} className="sticky top-0 h-screen">
+          <div key={item.id} className="sticky top-0 h-[85vh] md:h-[72vh] lg:h-[80vh] xl:h-screen">
             <SectionPanel item={item} scrollYProgress={sectionScrollYProgress} />
           </div>
         )
