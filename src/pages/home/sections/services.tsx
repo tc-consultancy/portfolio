@@ -81,68 +81,92 @@ export default function Services() {
   const cards = useMemo(() => SERVICES, [])
 
   return (
-    <section
-      ref={containerRef}
-      className="relative bg-white text-white"
-      style={{ height: `${100 + steps * 50}vh` }} // Pinned for 50vh per card step
-    >
-      {/* Sticky viewport that stays while we scroll through the whole sequence */}
-      <div className="sticky top-0 h-screen overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute inset-0 " />
-          <motion.div style={{ opacity: backdropFade }} className="absolute inset-0 bg-black/80" />
+    <>
+      {/* Mobile: stacked simple cards with lightweight animations */}
+      <section className="block md:hidden bg-white">
+        <div className="mx-auto max-w-screen-md px-4 py-12">
+          <h2 className="mb-8 text-3xl font-extrabold text-zinc-900">What we offer</h2>
+          <ul className="flex flex-col gap-4">
+            {cards.map((card) => (
+              <motion.li
+                key={card.title}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+                className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 shadow-sm"
+              >
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="text-3xl">{card.icon}</div>
+                  <h3 className="text-xl font-semibold text-zinc-900">{card.title}</h3>
+                </div>
+                <p className="text-sm leading-relaxed text-zinc-600">{card.description}</p>
+              </motion.li>
+            ))}
+          </ul>
         </div>
+      </section>
 
-        <div className="relative mx-auto h-screen  px-4">
-          {/* Title overlay (doesn't consume layout width) */}
-          <motion.div
-            style={{ opacity: titleOpacity }}
-            className="pointer-events-none absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 md:block"
-          >
-            <h2 className="text-6xl font-extrabold text-black ml-16 leading-tight">
-              <span className="block">What we</span>
-              <span className="block">offer</span>
-            </h2>
-          </motion.div>
+      {/* Desktop: original horizontal sequence and scale finale */}
+      <section
+        ref={containerRef}
+        className="relative hidden md:block bg-white text-white"
+        style={{ height: `${100 + steps * 50}vh` }}
+      >
+        <div className="sticky top-0 h-screen overflow-hidden">
+          <div className="pointer-events-none absolute inset-0 -z-10">
+            <div className="absolute inset-0 " />
+            <motion.div style={{ opacity: backdropFade }} className="absolute inset-0 bg-black/80" />
+          </div>
 
-          {/* Horizontal track: fixed 400px cards, 32px gaps, left padding ~30% */}
-          <div
-            className="absolute inset-0 flex z-10 items-center overflow-hidden"
-            style={{ paddingLeft: `calc(50% - ${CARD_PX / 2}px)` }}
-          >
-            <motion.ul
-              className="flex gap-8 will-change-transform"
-              style={{ x: x, width: `${cards.length * STEP_PX}px` }}
+          <div className="relative mx-auto h-screen  px-4">
+            <motion.div
+              style={{ opacity: titleOpacity }}
+              className="pointer-events-none absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 md:block"
             >
-              {cards.map((card, index) => {
-                const isLast = index === cards.length - 1
-                return (
-                  <motion.li
-                    key={card.title}
-                    className="h-[400px] w-[400px] shrink-0 rounded-2xl border border-white/10 bg-zinc-900 p-8 shadow-xl"
-                    style={
-                      isLast
-                        ? { scale: scaleLast, borderRadius: radiusLast as any, backgroundColor: lastCardBg }
-                        : { opacity: otherCardsOpacity }
-                    }
-                  >
-                    <motion.div style={isLast ? { opacity: lastCardContentOpacity } : undefined}>
-                      <div className="mb-5 flex justify-center">
-                        <div className="text-6xl">{card.icon}</div>
-                      </div>
-                      <div className="mt-auto">
-                        <h3 className="mb-4 text-4xl font-medium leading-tight">{card.title}</h3>
-                        <p className="text-sm text-white/70">{card.description}</p>
-                      </div>
-                    </motion.div>
-                  </motion.li>
-                )
-              })}
-            </motion.ul>
+              <h2 className="text-6xl font-extrabold text-black ml-16 leading-tight">
+                <span className="block">What we</span>
+                <span className="block">offer</span>
+              </h2>
+            </motion.div>
+
+            <div
+              className="absolute inset-0 flex z-10 items-center overflow-hidden"
+              style={{ paddingLeft: `calc(50% - ${CARD_PX / 2}px)` }}
+            >
+              <motion.ul
+                className="flex gap-8 will-change-transform"
+                style={{ x: x, width: `${cards.length * STEP_PX}px` }}
+              >
+                {cards.map((card, index) => {
+                  const isLast = index === cards.length - 1
+                  return (
+                    <motion.li
+                      key={card.title}
+                      className="h-[400px] w-[400px] shrink-0 rounded-2xl border border-white/10 bg-zinc-900 p-8 shadow-xl"
+                      style={
+                        isLast
+                          ? { scale: scaleLast, borderRadius: radiusLast as any, backgroundColor: lastCardBg }
+                          : { opacity: otherCardsOpacity }
+                      }
+                    >
+                      <motion.div style={isLast ? { opacity: lastCardContentOpacity } : undefined}>
+                        <div className="mb-5 flex justify-center">
+                          <div className="text-6xl">{card.icon}</div>
+                        </div>
+                        <div className="mt-auto">
+                          <h3 className="mb-4 text-4xl font-medium leading-tight">{card.title}</h3>
+                          <p className="text-sm text-white/70">{card.description}</p>
+                        </div>
+                      </motion.div>
+                    </motion.li>
+                  )
+                })}
+              </motion.ul>
+            </div>
           </div>
         </div>
-      </div>
-      
-    </section>
+      </section>
+    </>
   )
 }

@@ -1,5 +1,5 @@
 
-import { Linkedin, Twitter, Instagram, Mail } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Mail, Facebook } from "lucide-react";
 
 export default function LastButNotLeast() {
     return (
@@ -16,13 +16,13 @@ export default function LastButNotLeast() {
     
           {/* Social Icons */}
           <div className="flex space-x-6 mt-6">
-            <a href="#" className="hover:text-blue-400 transition">
+            <a href="https://www.linkedin.com/company/tc_consulting_services/" className="hover:text-blue-400 transition">
               <Linkedin size={28} />
             </a>
-            <a href="#" className="hover:text-sky-400 transition">
-              <Twitter size={28} />
+            <a href="https://www.facebook.com/profile.php?id=61579232776007" className="hover:text-sky-400 transition">
+              <Facebook size={28} />
             </a>
-            <a href="#" className="hover:text-pink-500 transition">
+            <a href="https://www.instagram.com/tc_it_consulting/" className="hover:text-pink-500 transition">
               <Instagram size={28} />
             </a>
             <a href="mailto:someone@example.com" className="hover:text-green-400 transition">
