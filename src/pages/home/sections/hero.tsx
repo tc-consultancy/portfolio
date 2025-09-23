@@ -7,7 +7,7 @@ import { slideRight, slideUp } from '@/variants/slides'
 
 export default function Hero() {
   return (
-    <section className="relative h-dvh md:h-full  md:max-h-screen  isolate overflow-hidden bg-white dark:bg-black text-gray-900 dark:text-white">
+    <section className="relative h-svh md:h-full  md:max-h-screen  isolate overflow-hidden bg-white dark:bg-black text-gray-900 dark:text-white">
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(80%_80%_at_50%_40%,rgba(124,58,237,0.1),rgba(255,255,255,0.8))] dark:bg-[radial-gradient(80%_80%_at_50%_40%,rgba(124,58,237,0.25),rgba(0,0,0,0.8))]" />
         <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/90 to-transparent dark:from-black/90 dark:to-transparent" />
