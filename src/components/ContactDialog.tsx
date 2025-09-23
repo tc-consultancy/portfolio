@@ -226,7 +226,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-s      <DialogContent className="sm:max-w-lg md:min-w-lg bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
+      <DialogContent className="sm:max-w-lg md:min-w-lg bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
         <DialogHeader>
           <DialogTitle className="md:text-2xl font-bold text-gray-900 dark:text-white">
             Start Your Journey
