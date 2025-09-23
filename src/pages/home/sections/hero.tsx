@@ -3,7 +3,7 @@ import {  Instagram, Linkedin, Mail } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { scaleFromZero } from '@/variants/scale'
-import { slideDown, slideRight, slideUp } from '@/variants/slides'
+import { slideRight, slideUp } from '@/variants/slides'
 
 export default function Hero() {
   return (
