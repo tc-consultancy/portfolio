@@ -75,10 +75,20 @@ const panels: Panel[] = [
 export default function ExpandingPanelsSection() {
   const [active, setActive] = React.useState<number | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const [isMobile, setIsMobile] = React.useState(false)
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    // Corresponds to Tailwind's `md` breakpoint (768px)
-    if (window.innerWidth < 768 || !containerRef.current) {
+    if (isMobile || !containerRef.current) {
       return
     }
 
@@ -86,7 +96,6 @@ export default function ExpandingPanelsSection() {
     const x = e.clientX - left
 
     const panelIndex = Math.floor((x / width) * panels.length)
-    // Ensure index is within bounds [0, panels.length - 1]
     const newActive = Math.max(0, Math.min(panelIndex, panels.length - 1))
 
     if (newActive !== active) {
@@ -95,44 +104,68 @@ export default function ExpandingPanelsSection() {
   }
 
   const handleMouseLeave = () => {
-    if (window.innerWidth < 768) return
+    if (isMobile) return
     setActive(null)
   }
 
-  // Layout: On desktop, three columns expand/shrink on hover; on mobile stack vertically.
-  // We keep widths fluid using framer-motion springs for smoothness.
   const getTargetBasis = (index: number): string => {
+    if (isMobile) return '33.3333%'
     if (active === null) return '33.3333%'
-    // Hovered panel takes 75% width; others split the remaining 25%
     return index === active ? '75%' : '12.5%'
   }
+
   const getTargetOpacity = (index: number): number => {
+    if (isMobile) return 1
     if (active === null) return 1
     return index === active ? 1 : 0.2
   }
+
   const getTargetScale = (index: number): number => {
+    if (isMobile) return 1
     if (active === null) return 1
     return index === active ? 1.05 : 0.4
   }
 
+  // Mobile: Simple stacked sections without animations
+  if (isMobile) {
+    return (
+      <section className="relative bg-black">
+        <div className="flex flex-col">
+          {panels.map((panel) => (
+            <div
+              key={panel.id}
+              className={`${panel.bg} relative flex min-h-screen items-center justify-center overflow-hidden`}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/10 pointer-events-none" />
+              <div className="relative z-10 w-full max-w-xl px-4">
+                {panel.content}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  // Desktop: Animated expanding panels
   return (
     <section className="relative bg-black">
-      <div className="mx-auto h-[120vh] md:h-screen">
+      <div className="mx-auto h-screen">
         <div
           ref={containerRef}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
-          className="sticky top-0 flex h-screen flex-col md:flex-row"
+          className="sticky top-0 flex h-screen"
         >
           {panels.map((panel, index) => (
             <motion.div
               key={panel.id}
-              className={`${panel.bg} relative flex h-1/3 items-center justify-center overflow-hidden md:h-full`}
+              className={`${panel.bg} relative flex h-full items-center justify-center overflow-hidden`}
               animate={{ flexBasis: getTargetBasis(index) }}
               transition={{ type: 'spring', stiffness: 120, damping: 20 }}
               style={{ flexBasis: '33.3333%' }}
             >
-              <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/10 pointer-events-none md:from-black/10" />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/5 pointer-events-none" />
               <motion.div
                 className="relative z-10 w-[36rem]"
                 animate={{ scale: getTargetScale(index), opacity: getTargetOpacity(index) }}

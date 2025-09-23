@@ -1,0 +1,35 @@
+
+import { Linkedin, Twitter, Instagram, Mail } from "lucide-react";
+
+export default function LastButNotLeast() {
+    return (
+        <div className="w-full h-screen flex flex-col items-center justify-center bg-black text-white">
+          {/* Main Heading */}
+          <h1 className="text-5xl md:text-6xl font-bold text-center leading-tight">
+            Last But Not <br /> The Least...
+          </h1>
+    
+          {/* Subtext */}
+          <p className="mt-4 text-gray-400 text-lg">
+            Your Growth, is our Success
+          </p>
+    
+          {/* Social Icons */}
+          <div className="flex space-x-6 mt-6">
+            <a href="#" className="hover:text-blue-400 transition">
+              <Linkedin size={28} />
+            </a>
+            <a href="#" className="hover:text-sky-400 transition">
+              <Twitter size={28} />
+            </a>
+            <a href="#" className="hover:text-pink-500 transition">
+              <Instagram size={28} />
+            </a>
+            <a href="mailto:someone@example.com" className="hover:text-green-400 transition">
+              <Mail size={28} />
+            </a>
+          </div>
+        </div>
+      );
+}
+

@@ -4,23 +4,19 @@ import Industries from './sections/industries'
 import Services from './sections/services'
 import RevealCoverSection from './sections/reveal-cover-section'
 import ExpandingPanelsSection from './sections/expanding-panels'
+import LastButNotLeast from './sections/lastbut-not-least'
 
 export default function Home() {
   return (
     // LenisProvider will handle smooth scrolling for the entire page.
     <LenisProvider>
       <main>
-        {/* <ThemeSelector/> */}
         <Hero />
         <Industries />
         <Services />
-      <RevealCoverSection/>
-      <ExpandingPanelsSection/>
-       
-        <div className="flex h-screen mt-20 z-50 items-center justify-center bg-neutral-950 text-4xl font-bold text-white">
-          
-        </div>
-        
+        <RevealCoverSection />
+        <ExpandingPanelsSection />
+        <LastButNotLeast />
       </main>
     </LenisProvider>
   )
