@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import React from 'react'
+import { home } from '@/assets'
 
 const sectionsData = [
   {
@@ -13,7 +14,7 @@ const sectionsData = [
     subtitle: 'Book a Demo',
     description:
       "We follow a structured and innovative problem-solving approach to deliver effective IT solutions. Our methodology ensures that we identify challenges, analyze root causes, and implement scalable solutions tailored to your business needs. By leveraging advanced data analytics, user feedback, and collaboration across teams, we ensure our solutions are well-informed and continuously evolve. Our focus on proactive issue resolution helps clients stay ahead of potential obstacles, maximizing the impact of each solution. We strive to foster long-term partnerships by consistently delivering value and exceeding expectations.",
-    image: 'https://zoric.studio/codepen/swiper-1.jpg',
+    image: home.ps,
     layout: 'content-left',
   },
   {
@@ -26,7 +27,7 @@ const sectionsData = [
     subtitle: 'Book a Demo',
     description:
       "We use a microservices and modular approach, allowing components to scale independently, ensuring flexibility and maintainability. Our architecture enables the seamless integration of new features, rapid deployment, and high availability, which is critical in today's fast-paced digital world. With a focus on modularity, we design each service to be independent yet capable of working in harmony with others. This approach ensures that our systems are agile, adaptable, and capable of evolving to meet changing business requirements while maintaining stability and performance at scale.",
-    image: 'https://zoric.studio/codepen/swiper-3.jpg',
+    image: home.oa,
     layout: 'content-right',
   },
   {
@@ -39,7 +40,7 @@ const sectionsData = [
     subtitle: 'Book a Demo',
     description:
       "We start by understanding your challenges, goals, and technical requirements to craft a solution that aligns with your business objectives. Our team conducts in-depth research, evaluates industry best practices, and designs a strategic roadmap for implementation. We emphasize a collaborative approach, keeping you engaged throughout every stage of development. Our iterative process ensures that we remain aligned with your vision, delivering high-quality results on time. With continuous feedback and adjustments, we ensure that the final product meets your exact specifications, ultimately driving measurable success.",
-    image: 'https://zoric.studio/codepen/swiper-5.jpg',
+    image: home.wp,
     layout: 'content-left',
   },
   {
@@ -52,7 +53,7 @@ const sectionsData = [
     subtitle: 'Book a Demo',
     description:
       "Our management philosophy is built on efficiency, transparency, and innovation. We ensure seamless collaboration, strategic decision-making, and a results-driven approach to empower our teams and deliver outstanding solutions. Our management structure fosters open communication across all levels, ensuring that decisions are well-informed and timely. By focusing on results, we create an environment where teams can thrive, driving innovation and growth. We continuously assess project performance to ensure milestones are met and that the final product meets the highest standards of quality, value, and impact.",
-    image: 'https://zoric.studio/codepen/swiper-2.jpg',
+    image: home.mp,
     layout: 'content-right',
   },
   {
@@ -65,7 +66,7 @@ const sectionsData = [
     subtitle: 'Book a Demo',
     description:
       "We leverage cutting-edge tools and technologies to ensure efficiency, scalability, and innovation in our solutions. Our toolset is carefully selected to optimize development, collaboration, and performance. We utilize modern frameworks like Next.js, React, Node.js, and TypeScript to build high-performance, scalable applications. In addition to our technical stack, we employ tools for continuous integration, version control, and automated testing to enhance productivity and maintain the integrity of the codebase. By staying at the forefront of technological advancements, we ensure that our solutions are robust, future-proof, and capable of addressing complex business challenges.",
-    image: 'https://zoric.studio/codepen/swiper-3.jpg',
+    image: home.tool,
     layout: 'content-left',
   },
 ]

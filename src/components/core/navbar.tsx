@@ -17,7 +17,7 @@ import { ThemeSelector } from "../ui/ThemeSelector"
 
 
 const services = [
-    "Hire Recruiter", 
+    "Software Development", 
     "IT Consulting & Services",
     "Tech Support",
     "AI Integration",

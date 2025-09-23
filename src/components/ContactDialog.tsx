@@ -261,7 +261,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
 
           <div className="space-y-2">
             <Label htmlFor="comment">
-              Tell us about your project
+            Comments ( Elaborate on what you are looking for. )
             </Label>
             <Textarea
               id="comment"
@@ -271,6 +271,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
               rows={4}
               className="bg-white/5 border-neutral-300 dark:border-neutral-700 resize-none"
             />
+            <p className='text-xs text-gray-500 -mt-1 text-end'>Min 200 characters</p>
           </div>
 
           <Button
