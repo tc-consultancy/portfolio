@@ -38,7 +38,7 @@ export default function Industries() {
         <div className="max-w-3xl">
           <h2 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
             
-            <p className='overflow-hidden'>
+            <p className='md:overflow-hidden'>
             <motion.span
               initial="hidden"
               whileInView="show"
@@ -48,7 +48,7 @@ export default function Industries() {
               Industries We 
             </motion.span>
             </p>
-            <p className='overflow-hidden'>
+            <p className='md:overflow-hidden'>
             <motion.span
               initial="hidden"
               whileInView="show"
