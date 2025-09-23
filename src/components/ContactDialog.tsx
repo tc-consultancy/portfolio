@@ -29,6 +29,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { useLenis } from './LenisProvider'
 import { toast } from 'sonner'
+import { sendContactEmail } from '@/lib/email'
 
 // Country data with codes
 const countries = [
@@ -133,7 +134,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
   const services = useMemo(
     () => [
       'Software Development',
-      '? (Hire requter)',
+      'Hire Recruiters',
       'IT Consulting & Services.',
       'Tech Support',
       'AI Integration',
@@ -188,26 +189,36 @@ export function ContactDialog({ children }: ContactDialogProps) {
       return
     }
     setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    console.log('Form submitted:', formData)
-    toast.success('Your message has been sent!')
-    setIsSubmitting(false)
-    
-    // Reset form
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      countryCode: '+1',
-      country: 'United States',
-      service: '',
-      comment: '',
-    })
-    setErrors({})
+    try {
+      await sendContactEmail({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
+        countryCode: formData.countryCode,
+        country: formData.country,
+        service: formData.service,
+        comment: formData.comment,
+      })
+      toast.success('Your message has been sent!')
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        countryCode: '+1',
+        country: 'United States',
+        service: '',
+        comment: '',
+      })
+      setErrors({})
+    } catch (error: any) {
+      const message = error?.message || 'Failed to send message. Please try again later.'
+      toast.error(message)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
