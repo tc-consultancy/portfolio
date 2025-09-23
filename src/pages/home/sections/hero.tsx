@@ -1,6 +1,9 @@
 
 import {  Instagram, Linkedin, Mail } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
+import { motion } from 'framer-motion'
+import { scaleFromZero } from '@/variants/scale'
+import { slideDown, slideRight, slideUp } from '@/variants/slides'
 
 export default function Hero() {
   return (
@@ -18,27 +21,38 @@ export default function Hero() {
             <span className="h-1 w-1 rounded-full bg-fuchsia-400" />
           </span>
 
-          <h1 className="mt-6 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
+          <motion.h1 
+          initial="hidden" animate="show"
+          variants={scaleFromZero()}
+          className="mt-6 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
             <span className="text-gray-900 dark:text-white">Elevating Enterprises with </span>
             <span className="mt-2 ml-4 bg-gradient-to-br leading-[1.2] from-fuchsia-600 via-violet-600 to-fuchsia-700 dark:from-fuchsia-400 dark:via-violet-400 dark:to-fuchsia-500 bg-clip-text text-transparent">
               Cutting-Edge Technology, Staffing, and Outsourcing Excellence
             </span>
 
-          </h1>
+          </motion.h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base text-gray-600 dark:text-white/70 sm:text-lg">
+          <motion.p
+           initial="hidden" animate="show"
+           variants={slideUp()}
+          className="mx-auto mt-6 max-w-2xl text-base text-gray-600 dark:text-white/70 sm:text-lg">
             Trusted by leading enterprises worldwide to deliver scalable software solutions, strategic talent acquisition, and secure outsourcing services that drive operational excellence and accelerate digital transformation.
-          </p>
+          </motion.p>
 
-          <div className="mt-10 flex items-center justify-center gap-4">
+          <motion.div 
+          initial="hidden" animate="show"
+          variants={slideUp()}
+          className="mt-10 flex items-center justify-center gap-4">
             <ContactDialog>
               <button className="inline-flex items-center justify-center rounded-xl bg-gray-900 dark:bg-white/90 px-6 py-3 text-sm font-semibold text-white dark:text-black shadow-md transition hover:bg-gray-800 dark:hover:bg-white">
                 Start your Journey
               </button>
             </ContactDialog>
-          </div>
+          </motion.div>
 
-          <div className="mx-auto mt-10 h-1 w-16 rounded bg-gray-400 dark:bg-white/70" />
+          <motion.div
+          initial="hidden" animate="show"
+          variants={slideRight()} className="mx-auto mt-10 h-1 w-16 rounded bg-gray-400 dark:bg-white/70" />
 
           <div className="mt-6 flex items-center justify-center gap-4 text-gray-600 dark:text-white/70">
             <a href="#linkedin" aria-label="LinkedIn" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">

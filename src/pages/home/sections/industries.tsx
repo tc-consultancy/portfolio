@@ -12,6 +12,7 @@ import {
   Cpu,
 } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { slideDown, slideUp } from '@/variants/slides'
 
 const industries = [
   { title: 'Enterprise', icon: Building2, color: 'text-violet-400', description: 'Unlocking scalable growth with next-gen ERP solutions and workflow automation.' },
@@ -36,9 +37,28 @@ export default function Industries() {
       <div className="mx-auto w-full max-w-7xl px-4">
         <div className="max-w-3xl">
           <h2 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
-            <span className="bg-gradient-to-br from-violet-600 via-fuchsia-600 to-violet-700 dark:from-violet-400 dark:via-fuchsia-400 dark:to-violet-500 bg-clip-text text-transparent">
-            Industries We Empower.
-            </span>
+            
+            <p className='overflow-hidden'>
+            <motion.span
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={slideUp(50, 0.5, 'easeInOut')}
+              className="inline-block  bg-gradient-to-br from-violet-600 via-fuchsia-600 to-violet-700 dark:from-violet-400 dark:via-fuchsia-400 dark:to-violet-500 bg-clip-text text-transparent">
+              Industries We 
+            </motion.span>
+            </p>
+            <p className='overflow-hidden'>
+            <motion.span
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={slideDown(60, 0.5, 'easeInOut')}
+              className="inline-block bg-gradient-to-br from-violet-600 via-fuchsia-600 to-violet-700 dark:from-violet-400 dark:via-fuchsia-400 dark:to-violet-500 bg-clip-text text-transparent">
+              Empower.
+            </motion.span>
+            </p>
+
           </h2>
           <p className="mt-8 text-2xl font-semibold text-gray-800 dark:text-white/90">
           Built for your domain. Tuned for real‑world outcomes.
