@@ -58,7 +58,7 @@ export default function Hero() {
             <a href="#linkedin" aria-label="LinkedIn" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="#github" aria-label="GitHub" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.instagram.com/tc_it_consulting/" aria-label="GitHub" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
               <Instagram className="h-5 w-5" />
             </a>
             <a href="#email" aria-label="Email" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">

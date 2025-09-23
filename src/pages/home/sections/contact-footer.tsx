@@ -62,13 +62,13 @@ export default function ContactFooterSection() {
 
           {/* Social Icons */}
           <div className="flex justify-center gap-3">
-            <a href="#" className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
+            <a href="https://www.linkedin.com/company/tc_consulting_services/" className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
               <IconBrandLinkedin className="w-8 h-8" />
             </a>
-            <a href="#" className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
+            <a href="https://www.facebook.com/profile.php?id=61579232776007" className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
               <IconBrandFacebook className="w-8 h-8" />
             </a>
-            <a href="#" className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
+            <a href="https://www.instagram.com/tc_it_consulting/" className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
               <IconBrandInstagram className="w-8 h-8" />
             </a>
             <a href="#" className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
@@ -116,7 +116,7 @@ export default function ContactFooterSection() {
           <Link to="/shipping">FAQs</Link>
         </div>
         <p className="text-xs text-center text-gray-500">
-          Copyright © 2025 EdgeNRoots. <br  className='md:hidden'/> All Rights Reserved By tcconsultancy.com
+          Copyright © 2025 Tc consultancy. <br  className='md:hidden'/> All Rights Reserved By tcconsultancy.com
         </p>
       </div>
     </section>
