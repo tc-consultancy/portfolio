@@ -9,12 +9,10 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services/hire-recruiter" element={<HireRecruiter />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services/hire-recruiter" element={<HireRecruiter />} />
+      </Routes>
       <ContactFooterSection />
     </BrowserRouter>
   )
