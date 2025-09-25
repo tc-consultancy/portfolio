@@ -17,33 +17,108 @@ import { ThemeSelector } from "../ui/ThemeSelector"
 
 
 const services = [
-    "Software Development", 
-    "IT Consulting & Services",
-    "Tech Support",
-    "AI Integration",
-    "Cybersecurity",
-    "BPO Services",
-    "IT Staffing Solutions",
-    "Accounting and Payrolls",
-    "Digital Marketing Services",
-    "Out Sourcing Services"
+    {
+      title: "Software Development", 
+      href: "/services/software-development"
+    },
+    {
+      title: "IT Consulting & Services",
+      href: "/services/it-consulting"
+    },
+    {
+      title: "Tech Support",
+      href: "/services/tech-support"
+    },
+    {
+      title: "AI Integration",
+      href: "/services/ai-integration"
+    },
+    {
+      title: "Cybersecurity",
+      href: "/services/cybersecurity"
+    },
+    {
+      title: "BPO Services",
+      href: "/services/bpo-services"
+    },
+    {
+      title: "IT Staffing Solutions",
+      href: "/services/it-staffing"
+    },
+    {
+      title: "Accounting and Payrolls",
+      href: "/services/accounting-payroll"
+    },
+    {
+      title: "Digital Marketing Services",
+      href: "/services/digital-marketing"
+    },
+    {
+      title: "Out Sourcing Services",
+      href: "/services/outsourcing"
+    }
   ]
   const industries = [
-    "Banking & Financial",
-    "Education",
-    "Information Services", 
-    "Manufacturing",
-    "Technology",
-    "Communications",
-    "Energy & Utilities",
-    "Insurance",
-    "Media & Entertainment",
-    "Transportation & Logistics",
-    "Consumer Goods",
-    "Healthcare",
-    "Life Sciences",
-    "Retail",
-    "Travel & Hospitality"
+    {
+      title: "Banking & Financial",
+      href: "/industries/banking-financial"
+    },
+    {
+      title: "Education",
+      href: "/industries/education"
+    },
+    {
+      title: "Information Services",
+      href: "/industries/information-services"
+    },
+    {
+      title: "Manufacturing",
+      href: "/industries/manufacturing"
+    },
+    {
+      title: "Technology",
+      href: "/industries/technology"
+    },
+    {
+      title: "Communications",
+      href: "/industries/communications"
+    },
+    {
+      title: "Energy & Utilities",
+      href: "/industries/energy-utilities"
+    },
+    {
+      title: "Insurance",
+      href: "/industries/insurance"
+    },
+    {
+      title: "Media & Entertainment",
+      href: "/industries/media-entertainment"
+    },
+    {
+      title: "Transportation & Logistics",
+      href: "/industries/transportation-logistics"
+    },
+    {
+      title: "Consumer Goods",
+      href: "/industries/consumer-goods"
+    },
+    {
+      title: "Healthcare",
+      href: "/industries/healthcare"
+    },
+    {
+      title: "Life Sciences",
+      href: "/industries/life-sciences"
+    },
+    {
+      title: "Retail",
+      href: "/industries/retail"
+    },
+    {
+      title: "Travel & Hospitality",
+      href: "/industries/travel-hospitality"
+    }
   ]
 
 export function Navbar() {
@@ -84,7 +159,7 @@ export function Navbar() {
 {
     services.map((service, index) => (
       <NavigationMenuLink key={index} asChild>
-        <Link to="/" className="font-semibold text-neutral-500">{service}</Link>
+        <Link to={service.href} className="font-semibold text-neutral-500">{service.title}</Link>
       </NavigationMenuLink>
     ))
 }
@@ -101,7 +176,7 @@ export function Navbar() {
             {
     industries.map((industry, index) => (
       <NavigationMenuLink key={index} asChild>
-        <Link to="/" className="font-semibold text-neutral-500">{industry}</Link>
+        <Link to={industry.href} className="font-semibold text-neutral-500">{industry.title}</Link>
       </NavigationMenuLink>
     ))
 }
@@ -111,13 +186,13 @@ export function Navbar() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link to="/">Careers</Link>
+            <Link to="/careers">Careers</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
           <NavigationMenuLink  asChild className={navigationMenuTriggerStyle()}>
-            <Link to="/">About Us</Link>
+            <Link to="/about">About Us</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         
