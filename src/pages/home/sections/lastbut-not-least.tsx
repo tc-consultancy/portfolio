@@ -5,8 +5,8 @@ export default function LastButNotLeast() {
     return (
         <div className="w-full h-screen flex flex-col items-center justify-center bg-black text-white">
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-6xl font-bold text-center leading-tight">
-            Last But Not <br /> The Least...
+          <h1 className="text-5xl md:text-6xl tracking-tight leading-14 font-bold text-center ">
+            Last But <span className=" text-7xl">Not</span> <br /> The Least...
           </h1>
     
           {/* Subtext */}
