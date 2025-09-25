@@ -47,11 +47,10 @@ const services = [
   ]
 
 export function Navbar() {
-    
   return (
     <div className="fixed top-0 right-0 left-0  flex items-center justify-between px-16 py-6 z-[9999]">
     <h3 className="text-purple-400 font-semibold text-3xl">LGO</h3>
-        <NavigationMenu viewport={false}>
+        <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
@@ -62,7 +61,7 @@ export function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className=" flex gap-2 md:w-[400px] lg:w-[600px]">
+            <ul className="flex gap-2 md:w-[400px] lg:w-[600px]">
               <li className="row-span-3 flex-1">
                 <NavigationMenuLink asChild>
                   <Link
@@ -81,7 +80,7 @@ export function Navbar() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <div className="w-60 grid grid-cols-2 gap-2 flex-[2] ">
+               <div className="w-60 grid grid-cols-2 gap-2 flex-[2] ">
 {
     services.map((service, index) => (
       <NavigationMenuLink key={index} asChild>
