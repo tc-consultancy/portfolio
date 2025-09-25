@@ -64,10 +64,10 @@ export function Navbar() {
           <NavigationMenuContent>
             <ul className=" flex gap-2 md:w-[400px] lg:w-[600px]">
               <li className="row-span-3 flex-1">
-                <NavigationMenuLink  asChild>
-                  <a
-                    className="from-muted/50  to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
-                    href="/"
+                <NavigationMenuLink asChild>
+                  <Link
+                    to="/services/hire-recruiter"
+                    className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                   >
                     <div className="mt-4 mb-2 text-lg font-medium">
                       Hire <br /> Recruiter
@@ -75,14 +75,16 @@ export function Navbar() {
                     <p className="text-muted-foreground text-sm leading-tight">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <Link to="/services/hire-recruiter"  className="rounded-full border py-2.5 flex items-center justify-center border-purple-400! mt-2 "><ArrowUpRight/></Link>
-                  </a>
+                    <div className="rounded-full border py-2.5 flex items-center justify-center border-purple-400! mt-2">
+                      <ArrowUpRight/>
+                    </div>
+                  </Link>
                 </NavigationMenuLink>
               </li>
               <div className="w-60 grid grid-cols-2 gap-2 flex-[2] ">
 {
-    services.map((service) => (
-      <NavigationMenuLink  asChild>
+    services.map((service, index) => (
+      <NavigationMenuLink key={index} asChild>
         <Link to="/" className="font-semibold text-neutral-500">{service}</Link>
       </NavigationMenuLink>
     ))
@@ -98,9 +100,9 @@ export function Navbar() {
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-3 lg:w-[600px]">
             {
-    industries.map((service) => (
-      <NavigationMenuLink  asChild>
-        <Link to="/" className="font-semibold text-neutral-500">{service}</Link>
+    industries.map((industry, index) => (
+      <NavigationMenuLink key={index} asChild>
+        <Link to="/" className="font-semibold text-neutral-500">{industry}</Link>
       </NavigationMenuLink>
     ))
 }
