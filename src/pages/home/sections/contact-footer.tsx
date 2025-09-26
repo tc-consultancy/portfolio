@@ -9,7 +9,7 @@ export default function ContactFooterSection() {
       <div className="text-center py-4 border-b border-gray-200">
         <nav className=" font-semibold flex justify-center gap-8 text-sm text-gray-700">
           <Link to="/" className="hover:text-purple-600">Home</Link>
-          <Link to="/blogs" className="hover:text-purple-600">Blogs</Link>
+          <Link to="/careers" className="hover:text-purple-600">Careers</Link>
           <Link to="/about" className="hover:text-purple-600">About</Link>
           <Link to="/contacts" className="hover:text-purple-600">Contacts</Link>
         </nav>
@@ -108,12 +108,12 @@ export default function ContactFooterSection() {
       </div>
 
       {/* Bottom Links */}
-      <div className="bg-white py-6 border-t border-gray-200 text-end">
+      <div className="bg-white px-3 md:0 py-6 border-t border-gray-200 text-end">
         <div className="flex flex-wrap justify-center gap-6 text-xs mb-4 text-gray-600">
           <Link to="/privacy">Privacy And Policy</Link>
           <Link to="/terms">Terms And Conditions</Link>
           <Link to="/cancellation">Cancellation And Refund</Link>
-          <Link to="/shipping">FAQs</Link>
+          <Link to="/faqs">FAQs</Link>
         </div>
         <p className="text-xs text-center text-gray-500">
           Copyright © 2025 Tc consultancy. <br  className='md:hidden'/> All Rights Reserved By tcconsultancy.com

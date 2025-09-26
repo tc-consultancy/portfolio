@@ -1,5 +1,5 @@
 
-import {  Instagram, Linkedin, Mail } from 'lucide-react'
+import {  Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { scaleFromZero } from '@/variants/scale'
@@ -55,14 +55,14 @@ export default function Hero() {
           variants={slideRight()} className="mx-auto mt-10 h-1 w-16 rounded bg-gray-400 dark:bg-white/70" />
 
           <div className="mt-6 flex items-center justify-center gap-4 text-gray-600 dark:text-white/70">
-            <a href="#linkedin" aria-label="LinkedIn" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.linkedin.com/company/tc_consulting_services/" aria-label="LinkedIn" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
               <Linkedin className="h-5 w-5" />
             </a>
             <a href="https://www.instagram.com/tc_it_consulting/" aria-label="GitHub" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="#email" aria-label="Email" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
-              <Mail className="h-5 w-5" />
+            <a href="https://www.facebook.com/profile.php?id=61579232776007" aria-label="Email" className="rounded-full border border-gray-300 dark:border-white/10 p-2 transition hover:border-gray-400 dark:hover:border-white/30 hover:text-gray-900 dark:hover:text-white">
+              <Facebook className="h-5 w-5" />
             </a>
           </div>
         </div>

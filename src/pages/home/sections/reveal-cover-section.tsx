@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import React from 'react'
 import { home } from '@/assets'
+import { useNavigate } from 'react-router-dom'
 
 const sectionsData = [
   {
@@ -78,6 +79,7 @@ function SectionPanel({
   item: (typeof sectionsData)[0]
   scrollYProgress: any
 }) {
+  const navigate = useNavigate()
   const isContentLeft = item.layout === 'content-left'
 
   const contentY = useTransform(scrollYProgress, [0, 1], ['10%', '-10%'])
@@ -99,7 +101,7 @@ function SectionPanel({
           {item.description}
         </p>
       </div>
-      <Button className='mt-6 md:mt-2 lg:mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500'>Book a Demo</Button>
+      <Button onClick={() => navigate('/contact')} className='mt-6 md:mt-2 lg:mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500'>Book a Demo</Button>
     </motion.div>
   )
 

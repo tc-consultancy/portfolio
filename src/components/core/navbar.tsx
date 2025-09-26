@@ -199,7 +199,7 @@ export function Navbar() {
       </NavigationMenuList>
     </NavigationMenu>
     <div className="flex gap-2">
-    <Button className="bg-gradient-to-b from-purple-400 to-purple-500 px-8 text-white py-5">Get Started</Button>
+    <Link to={'/contact'} className="bg-gradient-to-b from-purple-400 hover:from-transparent hover:to-transparent transition-all duration-300 to-purple-500 px-8 text-white py-2 rounded-lg hover:outline outline-neutral-400 ">Get Started</Link>
     <ThemeSelector/>
     </div>
     

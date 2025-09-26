@@ -325,8 +325,17 @@ export function ContactDialog({ children }: ContactDialogProps) {
                   data-lenis-prevent-wheel
                 >
                   <Command
-                    className="max-h-72 overflow-y-auto"
-                    onWheel={(e) => e.stopPropagation()}
+                    className="max-h-72 overflow-y-auto overscroll-contain touch-pan-y"
+                    onWheel={(e) => {
+                      // Only prevent wheel events on desktop, allow touch scrolling on mobile
+                      if (e.type === 'wheel') {
+                        e.stopPropagation()
+                      }
+                    }}
+                    onTouchMove={(e) => {
+                      // Allow touch scrolling on mobile
+                      e.stopPropagation()
+                    }}
                   >
                     <CommandInput placeholder="Search country..." />
                     <CommandList>
@@ -394,8 +403,17 @@ export function ContactDialog({ children }: ContactDialogProps) {
                   data-lenis-prevent-wheel
                 >
                   <Command
-                    className="max-h-72 overflow-y-auto"
-                    onWheel={(e) => e.stopPropagation()}
+                    className="max-h-72 overflow-y-auto overscroll-contain touch-pan-y"
+                    onWheel={(e) => {
+                      // Only prevent wheel events on desktop, allow touch scrolling on mobile
+                      if (e.type === 'wheel') {
+                        e.stopPropagation()
+                      }
+                    }}
+                    onTouchMove={(e) => {
+                      // Allow touch scrolling on mobile
+                      e.stopPropagation()
+                    }}
                   >
                     <CommandInput placeholder="Search service..." />
                     <CommandList>
@@ -428,7 +446,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
 
           <div className="space-y-2">
             <Label htmlFor="comment" className={cn(errors.comment ? 'text-red-600' : '')}>
-            Comments ( Elaborate on what you are looking for. ) <span className="text-red-600">*</span>
+              Comments ( Elaborate on what you are looking for. ) <span className="text-red-600">*</span>
             </Label>
             <Textarea
               id="comment"
