@@ -3,6 +3,7 @@ import TheProcess from './sections/the-process'
 import WhyUs from './sections/why-us'
 import AboutUs from './sections/about-us'
 import PricingPlans from './sections/pricing-plans'
+import WorldMapSection from './sections/world-map'
 
 export default function HireRecruiter() {
   return (
@@ -15,6 +16,7 @@ export default function HireRecruiter() {
       <div className='p-8'>
         <WhyUs />
       </div>
+      <WorldMapSection/>
       <PricingPlans />
     </main>
   )
