@@ -1,7 +1,7 @@
 export default function AboutUs() {
   const benefits = [
     "We handpick jobs based on your goals and background",
-    "20-25 real-time applications sent every day", 
+    "20-25 real-time applications sent every day",
     "You receive progress updates and interview alerts"
   ];
 
@@ -21,13 +21,13 @@ export default function AboutUs() {
             {/* Main circular image */}
             <div className="relative w-80 h-80 mx-auto lg:mx-0">
               <div className="w-full h-full rounded-full overflow-hidden border-8 border-black/50 dark:border-gray-200 shadow-2xl">
-                <img 
+                <img
                   src="/api/placeholder/320/320"
                   alt="Team meeting"
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               {/* Play button overlay */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-16 h-16 bg-white dark:bg-gray-200 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition-transform">
@@ -40,11 +40,11 @@ export default function AboutUs() {
                 <div className="w-24 h-24 rounded-full border-2 border-black/50 dark:border-gray-200 flex items-center justify-center">
                   <svg className="w-24 h-24 absolute animate-spin-slow" viewBox="0 0 100 100">
                     <defs>
-                      <path id="circle" d="M 50,50 m -20,0 a 20,20 0 1,1 40,0 a 20,20 0 1,1 -40,0"/>
+                      <path id="circle" d="M 50,50 m -20,0 a 20,20 0 1,1 40,0 a 20,20 0 1,1 -40,0" />
                     </defs>
                     <text className="text-xs fill-white dark:fill-gray-200 font-medium">
                       <textPath href="#circle" startOffset="0%">
-                        WATCH OUR VIDEO • WATCH OUR VIDEO • 
+                        WATCH OUR VIDEO • WATCH OUR VIDEO •
                       </textPath>
                     </text>
                   </svg>
@@ -54,7 +54,7 @@ export default function AboutUs() {
 
             {/* Secondary circular image */}
             <div className="absolute -bottom-8 -right-8 w-48 h-48 rounded-full overflow-hidden border-6 border-black/50 dark:border-gray-200 shadow-xl">
-              <img 
+              <img
                 src="/api/placeholder/192/192"
                 alt="Professional consultation"
                 className="w-full h-full object-cover"
@@ -78,7 +78,7 @@ export default function AboutUs() {
 
             {/* Description */}
             <p className="text-lg text-neutral-600 dark:text-gray-200 mb-8 leading-relaxed">
-              This job application service takes the burden off job seekers by applying to relevant openings on their behalf — consistently 
+              This job application service takes the burden off job seekers by applying to relevant openings on their behalf — consistently
               and strategically, so they can focus on preparing for interviews, not hunting for jobs.
             </p>
 
