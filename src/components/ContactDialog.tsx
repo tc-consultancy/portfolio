@@ -226,7 +226,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-lg md:min-w-lg bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
+      <DialogContent className="sm:max-w-lg  bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
         <DialogHeader>
           <DialogTitle className="md:text-2xl font-bold text-gray-900 dark:text-white">
             Start Your Journey
@@ -236,7 +236,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           </DialogDescription>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5 max-w-md mx-auto">
+        <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5 max-w-lg ">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName" className={cn(errors.firstName ? 'text-red-600' : '')}>
