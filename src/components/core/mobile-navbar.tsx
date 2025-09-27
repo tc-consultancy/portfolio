@@ -192,126 +192,128 @@ export function MobileNavbar() {
           </button>
         </div>
 
-        <div className="overflow-y-auto h-full pb-20">
-          <nav className="p-4 space-y-2">
-            {/* AI Agents */}
-            <Link
-              to="/services/agent"
-              onClick={closeMenu}
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              AI Agents
-            </Link>
-
-            {/* Hire Recruiter */}
-            <Link
-              to="/services/hire-recruiter"
-              onClick={closeMenu}
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              Hire Recruiter
-            </Link>
-
-            {/* Services Dropdown */}
-            <div className="space-y-2">
-              <button
-                onClick={() => setExpandedServices(!expandedServices)}
-                className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+        <div className="flex flex-col h-full">
+          <div className="flex-1 overflow-y-auto">
+            <nav className="p-4 space-y-2">
+              {/* AI Agents */}
+              <Link
+                to="/services/agent"
+                onClick={closeMenu}
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
               >
-                <span>Services</span>
-                {expandedServices ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-              </button>
+                AI Agents
+              </Link>
 
-              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedServices ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}>
-                <div className="space-y-1 overflow-y-auto max-h-96">
-                  {services.map((service, index) => (
-                    <div key={index} className="space-y-1">
-                      <button
-                        onClick={() => toggleServiceCategory(index)}
-                        className="flex items-center justify-between w-full px-4 py-2 text-purple-600 font-medium hover:bg-purple-50 rounded-lg transition-colors text-sm"
-                      >
-                        <span>{service.title}</span>
-                        {expandedServiceCategories[index] ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                      </button>
+              {/* Hire Recruiter */}
+              <Link
+                to="/services/hire-recruiter"
+                onClick={closeMenu}
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                Hire Recruiter
+              </Link>
 
-                      <div className={`overflow-hidden transition-all duration-200 ease-in-out ${expandedServiceCategories[index] ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-                        }`}>
-                        <div className="space-y-1">
-                          {service.subServices.map((subService, subIndex) => (
-                            <Link
-                              key={subIndex}
-                              to={subService.href}
-                              onClick={closeMenu}
-                              className="block px-8 py-1 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors text-xs"
-                            >
-                              {subService.title}
-                            </Link>
-                          ))}
+              {/* Services Dropdown */}
+              <div className="space-y-2">
+                <button
+                  onClick={() => setExpandedServices(!expandedServices)}
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <span>Services</span>
+                  {expandedServices ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                </button>
+
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedServices ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}>
+                  <div className="space-y-1">
+                    {services.map((service, index) => (
+                      <div key={index} className="space-y-1">
+                        <button
+                          onClick={() => toggleServiceCategory(index)}
+                          className="flex items-center justify-between w-full px-4 py-2 text-purple-600 font-medium hover:bg-purple-50 rounded-lg transition-colors text-sm"
+                        >
+                          <span>{service.title}</span>
+                          {expandedServiceCategories[index] ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                        </button>
+
+                        <div className={`overflow-hidden transition-all duration-200 ease-in-out ${expandedServiceCategories[index] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                          }`}>
+                          <div className="space-y-1">
+                            {service.subServices.map((subService, subIndex) => (
+                              <Link
+                                key={subIndex}
+                                to={subService.href}
+                                onClick={closeMenu}
+                                className="block px-8 py-1 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors text-xs"
+                              >
+                                {subService.title}
+                              </Link>
+                            ))}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Industries Dropdown */}
-            <div className="space-y-2">
-              <button
-                onClick={() => setExpandedIndustries(!expandedIndustries)}
-                className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-              >
-                <span>Industries</span>
-                {expandedIndustries ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-              </button>
+              {/* Industries Dropdown */}
+              <div className="space-y-2">
+                <button
+                  onClick={() => setExpandedIndustries(!expandedIndustries)}
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <span>Industries</span>
+                  {expandedIndustries ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                </button>
 
-              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedIndustries ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-                }`}>
-                <div className="space-y-1 overflow-y-auto max-h-64">
-                  {industries.map((industry, index) => (
-                    <Link
-                      key={index}
-                      to={industry.href}
-                      onClick={closeMenu}
-                      className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors text-sm"
-                    >
-                      {industry.title}
-                    </Link>
-                  ))}
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedIndustries ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}>
+                  <div className="space-y-1">
+                    {industries.map((industry, index) => (
+                      <Link
+                        key={index}
+                        to={industry.href}
+                        onClick={closeMenu}
+                        className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors text-sm"
+                      >
+                        {industry.title}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Careers */}
-            <Link
-              to="/careers"
-              onClick={closeMenu}
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              Careers
-            </Link>
-
-            {/* About Us */}
-            <Link
-              to="/about"
-              onClick={closeMenu}
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              About Us
-            </Link>
-
-            {/* Get Started Button */}
-            <div className="pt-4">
+              {/* Careers */}
               <Link
-                to="/contact"
+                to="/careers"
                 onClick={closeMenu}
-                className="block w-full bg-gradient-to-b from-purple-400 to-purple-500 text-white text-center py-3 rounded-lg hover:from-purple-500 hover:to-purple-600 transition-all duration-300"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
               >
-                Get Started
+                Careers
               </Link>
-            </div>
-          </nav>
+
+              {/* About Us */}
+              <Link
+                to="/about"
+                onClick={closeMenu}
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                About Us
+              </Link>
+
+              {/* Get Started Button */}
+              <div className="pt-4 pb-6">
+                <Link
+                  to="/contact"
+                  onClick={closeMenu}
+                  className="block w-full bg-gradient-to-b from-purple-400 to-purple-500 text-white text-center py-3 rounded-lg hover:from-purple-500 hover:to-purple-600 transition-all duration-300"
+                >
+                  Get Started
+                </Link>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
