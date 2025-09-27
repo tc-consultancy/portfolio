@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Link } from "react-router-dom"
 import { ThemeSelector } from "../ui/ThemeSelector"
+import { MobileNavbar } from "./mobile-navbar"
 
 
 const services = [
@@ -185,7 +186,9 @@ const industries = [
 
 export function Navbar() {
   return (
-    <div className="fixed top-0 right-0 left-0  flex items-center justify-between px-16 py-6 z-[9999]">
+    <>
+      <MobileNavbar />
+      <div className="hidden md:flex fixed top-0 right-0 left-0 items-center justify-between px-16 py-6 z-[9999]">
       <h3 className="text-purple-400 font-semibold text-3xl">LGO</h3>
       <NavigationMenu>
         <NavigationMenuList>
@@ -274,8 +277,7 @@ export function Navbar() {
         <Link to={'/contact'} className="bg-gradient-to-b from-purple-400 hover:from-transparent hover:to-transparent transition-all duration-300 to-purple-500 px-8 text-white py-2 rounded-lg hover:outline outline-neutral-400 ">Get Started</Link>
         <ThemeSelector />
       </div>
-
-
-    </div>
+      </div>
+    </>
   )
 }
