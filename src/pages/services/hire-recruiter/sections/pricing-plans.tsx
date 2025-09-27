@@ -67,7 +67,7 @@ export default function PricingPlans() {
 
               {/* Plan Header */}
               <div className="mb-6">
-                <h3 className="text-xl font-semibold text-green-600 dark:text-green-400 mb-2">
+                <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400 mb-2">
                   {plan.name}
                 </h3>
                 <div className="mb-3">
@@ -88,7 +88,7 @@ export default function PricingPlans() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
-                      <div className="w-5 h-5 bg-green-500 dark:bg-green-400 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <div className="w-5 h-5 bg-purple-500 dark:bg-purple-400 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                         <svg className="w-3 h-3 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>

@@ -19,12 +19,12 @@ export default function TheProcess() {
     ];
 
     return (
-        <section className="bg-green-200 dark:bg-green-800 py-16 px-4 sm:px-6 lg:px-8 rounded-4xl">
+        <section className="bg-purple-200 dark:bg-purple-800 py-16 px-4 sm:px-6 lg:px-8 rounded-4xl">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-block border-2 border-green-600 dark:border-green-400 rounded-full px-6 py-2 mb-6">
-                        <span className="text-green-700 dark:text-green-300 font-medium text-sm uppercase tracking-wide">
+                    <div className="inline-block border-2 border-purple-600 dark:border-purple-400 rounded-full px-6 py-2 mb-6">
+                        <span className="text-purple-700 dark:text-purple-300 font-medium text-sm uppercase tracking-wide">
                             PROCESS
                         </span>
                     </div>
@@ -43,9 +43,9 @@ export default function TheProcess() {
                         <div key={index} className="flex flex-col items-center text-center">
                             {/* Step Circle */}
                             <div className="relative mb-6">
-                                <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-70 lg:h-70 rounded-full border-[12px] border-green-500 dark:border-green-400 bg-white dark:bg-gray-800 flex flex-col items-center justify-center p-6">
+                                <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-70 lg:h-70 rounded-full border-[12px] border-purple-500 dark:border-purple-400 bg-white dark:bg-gray-800 flex flex-col items-center justify-center p-6">
                                     {/* Step Number */}
-                                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-green-500 dark:bg-green-400 rounded-full flex items-center justify-center">
+                                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-500 dark:bg-purple-400 rounded-full flex items-center justify-center">
                                         <span className="text-white dark:text-gray-900 font-bold text-lg leading-5">{step.number}<br /> <span className="font-normal">Step</span> </span>
 
                                     </div>
