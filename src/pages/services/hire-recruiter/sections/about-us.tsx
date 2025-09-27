@@ -3,7 +3,7 @@ import { staffing } from "@/assets";
 export default function AboutUs() {
   const benefits = [
     "We handpick jobs based on your goals and background",
-    "20-25 real-time applications sent every day",
+    "30-40 real-time applications sent every day",
     "You receive progress updates and interview alerts"
   ];
 
@@ -100,7 +100,7 @@ export default function AboutUs() {
 
             {/* CTA Button */}
             <button className="bg-purple-400 hover:bg-purple-300 dark:bg-purple-300 dark:hover:bg-purple-200 text-purple-900 dark:text-gray-900 font-semibold px-8 py-3 rounded-full transition-colors duration-200 flex items-center">
-              Know more
+              Get Started Now
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

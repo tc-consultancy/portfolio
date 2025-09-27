@@ -45,7 +45,7 @@ export default function TheProcess() {
                             <div className="relative mb-6">
                                 <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-70 lg:h-70 rounded-full border-[12px] border-purple-500 dark:border-purple-400 bg-white dark:bg-black flex flex-col items-center justify-center p-6">
                                     {/* Step Number */}
-                                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-500 dark:bg-purple-400 rounded-full flex items-center justify-center">
+                                    <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-500 dark:bg-purple-200 rounded-full flex items-center justify-center">
                                         <span className="text-white dark:text-gray-900 font-bold text-lg leading-5">{step.number}<br /> <span className="font-normal">Step</span> </span>
 
                                     </div>

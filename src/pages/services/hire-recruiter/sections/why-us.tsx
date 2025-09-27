@@ -4,7 +4,7 @@ export default function WhyUs() {
   const features = [
     {
       title: "Consistency That Delivers",
-      description: "We apply to 20-25 fresh job openings every single day-handpicked from trusted career portals and matched to your profile.",
+      description: "We apply to 30-40 fresh job openings every single day-handpicked from trusted career portals and matched to your profile.",
       image: staffing.card1, // Replace with actual image path
       badge: "Real Jobs Applied Daily"
     },
@@ -27,7 +27,7 @@ export default function WhyUs() {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Why Choose <span className="text-neutral-400">Tc Consultancy</span>
+            Why Choose <span className="text-neutral-400">TC IT Services</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             We apply strategically, daily, and only for relevant roles — so you get interviews, not just inbox noise.

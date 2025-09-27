@@ -26,8 +26,8 @@ export default function HireRecruiterHero() {
           <h1
             className="mt-6 text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl lg:text-6xl"
           >
-            <span className=" text-gray-900 dark:text-white inline-block md:block">Find Your Next</span>
-            <span className=" text-gray-900 dark:text-white inline-block md:block ml-2 md:ml-0">Career Here</span>
+            <span className=" text-gray-900 dark:text-white inline-block md:block">Land Your Next Career</span>
+            <span className=" text-gray-900 dark:text-white inline-block md:block ml-2 md:ml-0">Stress-Free</span>
             <span className="mt-2 block bg-gradient-to-br leading-[1.1] from-indigo-600 via-violet-600 to-fuchsia-700 dark:from-indigo-400 dark:via-violet-400 dark:to-fuchsia-500 bg-clip-text text-transparent">
               We Apply Daily
             </span>
@@ -36,7 +36,7 @@ export default function HireRecruiterHero() {
           <p
             className="mx-auto mt-6 max-w-2xl text-sm md:text-base text-gray-600 dark:text-white/70 sm:text-lg"
           >
-            No time to apply? We do it for you. We send 20–25 tailored job applications every day — so you can focus on interviews, not job boards.
+            No time to apply? We do it for you. We send 30–40 tailored job applications every day — so you can focus on interviews, not job boards.
           </p>
 
           <div
