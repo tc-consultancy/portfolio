@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
 import { ThemeSelector } from "../ui/ThemeSelector"
@@ -145,6 +145,20 @@ export function MobileNavbar() {
     setExpandedServiceCategories({})
   }
 
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
   const toggleServiceCategory = (index: number) => {
     setExpandedServiceCategories(prev => ({
       ...prev,
@@ -193,7 +207,7 @@ export function MobileNavbar() {
         </div>
 
         <div className="flex flex-col h-full">
-          <div className="flex-1 overflow-y-auto">
+          <div className="flex-1 overflow-y-auto" data-lenis-prevent>
             <nav className="p-4 space-y-2">
               {/* AI Agents */}
               <Link
@@ -230,13 +244,13 @@ export function MobileNavbar() {
                       <div key={index} className="space-y-1">
                         <button
                           onClick={() => toggleServiceCategory(index)}
-                          className="flex items-center justify-between w-full px-4 py-2 text-purple-600 font-medium hover:bg-purple-50 rounded-lg transition-colors text-sm"
+                          className="flex items-center justify-between w-full px-4 py-3 text-purple-600 font-semibold hover:bg-purple-50 rounded-lg transition-colors text-base"
                         >
                           <span>{service.title}</span>
-                          {expandedServiceCategories[index] ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                          {expandedServiceCategories[index] ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                         </button>
 
-                        <div className={`overflow-hidden transition-all duration-200 ease-in-out ${expandedServiceCategories[index] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                        <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedServiceCategories[index] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                           }`}>
                           <div className="space-y-1">
                             {service.subServices.map((subService, subIndex) => (
@@ -244,7 +258,7 @@ export function MobileNavbar() {
                                 key={subIndex}
                                 to={subService.href}
                                 onClick={closeMenu}
-                                className="block px-8 py-1 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors text-xs"
+                                className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors text-sm"
                               >
                                 {subService.title}
                               </Link>
