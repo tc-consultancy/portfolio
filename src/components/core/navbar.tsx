@@ -188,7 +188,7 @@ export function Navbar() {
   return (
     <>
       <MobileNavbar />
-      <div className="hidden md:flex fixed top-0 right-0 left-0 items-center justify-between px-16 py-6 z-[9999]">
+      <div className="hidden md:flex dark:bg-white/2 backdrop-blur-sm fixed top-0 right-0 left-0 items-center justify-between px-16 py-4 z-[9999]">
       <h3 className="text-purple-400 font-semibold text-3xl">LGO</h3>
       <NavigationMenu>
         <NavigationMenuList>

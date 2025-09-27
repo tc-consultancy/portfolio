@@ -36,7 +36,7 @@ export default function HireRecruiterHero() {
           <p
             className="mx-auto mt-6 max-w-2xl text-sm md:text-base text-gray-600 dark:text-white/70 sm:text-lg"
           >
-            No time to apply? We do it for you. We send 30–40 tailored job applications every day — so you can focus on interviews, not job boards.
+            No time to apply? We do it for you. We send 30–40 tailored job applications every day — so you can focus on interviews, networking, cold emailing and learning, not just job boards.
           </p>
 
           <div

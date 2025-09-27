@@ -10,14 +10,12 @@ export default function Home() {
   return (
     // LenisProvider will handle smooth scrolling for the entire page.
     <LenisProvider>
-      <main>
         <Hero />
         <Industries />
         <Services />
         <RevealCoverSection />
         <ExpandingPanelsSection />
         <LastButNotLeast />
-      </main>
     </LenisProvider>
   )
 }
