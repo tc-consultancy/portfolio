@@ -1,15 +1,17 @@
+import { staffing } from "@/assets";
+
 export default function WhyUs() {
   const features = [
     {
       title: "Consistency That Delivers",
       description: "We apply to 20-25 fresh job openings every single day-handpicked from trusted career portals and matched to your profile.",
-      image: "/api/placeholder/400/300", // Replace with actual image path
+      image: staffing.card1, // Replace with actual image path
       badge: "Real Jobs Applied Daily"
     },
     {
       title: "Tailored, Not Spammy",
       description: "Every resume is tailored, every application is tracked, and every opportunity is selected with care — nothing random, nothing wasted.",
-      image: "/api/placeholder/400/300", // Replace with actual image path
+      image: staffing.card2, // Replace with actual image path
       badge: "Real Jobs Applied Daily"
     }
   ];
@@ -50,15 +52,15 @@ export default function WhyUs() {
               </p>
 
               {/* Image with badge */}
-              <div className="relative rounded-xl overflow-hidden">
+              <div className="relative rounded-xl ">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover rounded-xl"
                 />
                 {/* Badge overlay */}
-                <div className="absolute top-4 left-4">
-                  <span className="bg-purple-500 dark:bg-purple-400 text-white dark:text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
+                <div className="absolute -top-3 left-4">
+                  <span className="bg-purple-500 dark:bg-purple-500 text-white dark:text-white px-3 py-1 rounded-full text-[13px] font-medium">
                     {feature.badge}
                   </span>
                 </div>

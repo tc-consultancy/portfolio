@@ -1,6 +1,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { staffing } from '@/assets';
 
 // Testimonial data
 const testimonials = [
@@ -9,7 +10,7 @@ const testimonials = [
         name: "Sophia Lloyd",
         title: "CEO, XIO",
         content: "Excellent work guys. Redesign of the application really help me grow my business and revenue. I would like to work again with you in future sometime.",
-        image: new URL('../../../assets/carousel/1.jpg', import.meta.url).href,
+        image: staffing.staffing_about,
     },
     {
         id: 2,
@@ -23,28 +24,28 @@ const testimonials = [
         name: "Sarah Johnson",
         title: "Marketing Director, BrandCo",
         content: "Professional, creative, and reliable. They transformed our digital presence and helped us achieve record-breaking growth this quarter.",
-        image: new URL('../../../assets/carousel/3.jpg', import.meta.url).href,
+        image: staffing.staffing_about,
     },
     {
         id: 4,
         name: "David Rodriguez",
         title: "Founder, StartupXYZ",
         content: "The best investment we made for our company. Their expertise and dedication made all the difference in our success story.",
-        image: new URL('../../../assets/carousel/4.jpg', import.meta.url).href,
+        image: staffing.staffing_about,
     },
     {
         id: 5,
         name: "Emily Watson",
         title: "VP Operations, GlobalTech",
         content: "Exceptional quality and innovative solutions. They understood our vision and brought it to life better than we imagined.",
-        image: new URL('../../../assets/carousel/5.jpg', import.meta.url).href,
+        image: staffing.staffing_about,
     },
     {
         id: 6,
         name: "James Wilson",
         title: "Head of Design, CreativeStudio",
         content: "Working with this team was a game-changer. Their creative approach and technical excellence delivered outstanding results.",
-        image: new URL('../../../assets/carousel/6.jpg', import.meta.url).href,
+        image: staffing.staffing_about,
     },
 ];
 

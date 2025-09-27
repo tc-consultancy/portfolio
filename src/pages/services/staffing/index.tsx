@@ -1,9 +1,9 @@
-import HireRecruiterHero from './sections/hero'
+import StaffingOptions from "./sections/staffing-options";
 
 export default function Staffing() {
   return (
     <main className="w-full">
-      <HireRecruiterHero />
+      <StaffingOptions />
     </main>
   )
 }
