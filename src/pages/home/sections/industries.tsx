@@ -1,4 +1,4 @@
- 
+
 import {
   Building2,
   ShoppingCart,
@@ -37,31 +37,31 @@ export default function Industries() {
       <div className="mx-auto w-full max-w-7xl px-4">
         <div className="max-w-3xl">
           <h2 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
-            
+
             <p className='md:overflow-hidden'>
-            <motion.span
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.1 }}
-              variants={slideUp(50, 0.5, 'easeInOut')}
-              className="inline-block  bg-gradient-to-br from-violet-600 via-fuchsia-600 to-violet-700 dark:from-violet-400 dark:via-fuchsia-400 dark:to-violet-500 bg-clip-text text-transparent">
-              Industries We 
-            </motion.span>
+              <motion.span
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.1 }}
+                variants={slideUp(50, 0.5, 'easeInOut')}
+                className="inline-block  bg-gradient-to-br from-violet-600 via-fuchsia-600 to-violet-700 dark:from-violet-400 dark:via-fuchsia-400 dark:to-violet-500 bg-clip-text text-transparent">
+                Industries We
+              </motion.span>
             </p>
             <p className='md:overflow-hidden'>
-            <motion.span
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.1 }}
-              variants={slideDown(60, 0.5, 'easeInOut')}
-              className="inline-block bg-gradient-to-br from-violet-600 via-fuchsia-600 to-violet-700 dark:from-violet-400 dark:via-fuchsia-400 dark:to-violet-500 bg-clip-text text-transparent">
-              Empower.
-            </motion.span>
+              <motion.span
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.1 }}
+                variants={slideDown(60, 0.5, 'easeInOut')}
+                className="inline-block bg-gradient-to-br from-violet-600 via-fuchsia-600 to-violet-700 dark:from-violet-400 dark:via-fuchsia-400 dark:to-violet-500 bg-clip-text text-transparent">
+                Empower.
+              </motion.span>
             </p>
 
           </h2>
           <p className="mt-8 text-2xl font-semibold text-gray-800 dark:text-white/90">
-          Built for your domain. Tuned for real‑world outcomes.
+            Built for your domain. Tuned for real‑world outcomes.
           </p>
           <p className="mt-4 max-w-2xl text-gray-600 dark:text-white/70">
             We provide expert consultancy and tailored solutions for each industry's unique operating model. Our mission is to help you innovate faster, enhance security, and scale with confidence.

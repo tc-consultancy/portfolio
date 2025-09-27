@@ -169,7 +169,7 @@ export function MobileNavbar() {
   return (
     <div className="md:hidden">
       {/* Mobile Header */}
-      <div className="fixed top-0 right-0 left-0 flex items-center justify-between px-4 py-4 bg-white/80 backdrop-blur-md z-[9999] border-b">
+      <div className="fixed top-0 right-0 left-0 flex items-center justify-between px-4 py-2 bg-white/80 dark:bg-black/60 backdrop-blur-md z-[9999]">
         <h3 className="text-purple-400 font-semibold text-2xl">LGO</h3>
         <div className="flex items-center gap-2">
           <ThemeSelector />

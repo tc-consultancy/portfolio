@@ -4,6 +4,7 @@ import Home from './pages/home'
 import HireRecruiter from './pages/services/hire-recruiter'
 import Staffing from './pages/services/staffing' 
 import { IndustriesPage } from './pages/industries'
+import CareersPage from './pages/careers'
 import { Navbar } from './components/core/navbar'
 import ContactFooterSection from './pages/home/sections/contact-footer'
 import About from './components/common/about'
@@ -17,7 +18,7 @@ function App() {
         <Route path="/services/hire-recruiter" element={<HireRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />
         <Route path="/industries" element={<IndustriesPage />} />
-        <Route path="/careers" element={<Staffing />} />
+        <Route path="/careers" element={<CareersPage />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <ContactFooterSection />

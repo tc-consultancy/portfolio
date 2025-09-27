@@ -228,7 +228,7 @@ export function Navbar() {
                             <NavigationMenuLink asChild>
                               <Link
                                 to={subService.href}
-                                className="text-neutral-600 text-xs hover:text-neutral-800 transition-colors block"
+                                className="text-neutral-800 dark:hover:underline dark:text-neutral-100 text-xs transition-colors block"
                               >
                                 {subService.title}
                               </Link>
