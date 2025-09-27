@@ -25,7 +25,7 @@ export default function WhyUs() {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Why Choose Apply Wizz?
+            Why Choose <span className="text-neutral-400">Tc Consultancy</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             We apply strategically, daily, and only for relevant roles — so you get interviews, not just inbox noise.

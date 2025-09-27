@@ -5,6 +5,7 @@ import HireRecruiter from './pages/services/hire-recruiter'
 import Staffing from './pages/services/staffing' 
 import { Navbar } from './components/core/navbar'
 import ContactFooterSection from './pages/home/sections/contact-footer'
+import About from './components/common/about'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path="/services/hire-recruiter" element={<HireRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />
         <Route path="/careers" element={<Staffing />} />
-        <Route path="/about" element={<Staffing />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <ContactFooterSection />
     </BrowserRouter>

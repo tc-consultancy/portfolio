@@ -17,10 +17,7 @@ import { ThemeSelector } from "../ui/ThemeSelector"
 
 
 const services = [
-    {
-      title: "Software Development", 
-      href: "/services/software-development"
-    },
+
     {
       title: "IT Consulting & Services",
       href: "/services/it-consulting"
@@ -129,7 +126,12 @@ export function Navbar() {
       <NavigationMenuList>
       <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link to="/">Home</Link>
+            <Link to="/services/agent">AI Agents</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+              <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link to="/services/hire-recruiter">Hire Recruiter</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
@@ -140,11 +142,11 @@ export function Navbar() {
               <li className="row-span-3 flex-1">
                 <NavigationMenuLink asChild>
                   <Link
-                    to="/services/hire-recruiter"
+                    to="/services/software-development"
                     className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                   >
                     <div className="mt-4 mb-2 text-lg font-medium">
-                      Hire <br /> Recruiter
+                      Software <br /> Development
                     </div>
                     <p className="text-muted-foreground text-sm leading-tight">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -4,6 +4,7 @@ import WhyUs from './sections/why-us'
 import AboutUs from './sections/about-us'
 import PricingPlans from './sections/pricing-plans'
 import WorldMapSection from './sections/world-map'
+import Testimonials from './sections/testimonials'
 
 export default function HireRecruiter() {
   return (
@@ -17,6 +18,7 @@ export default function HireRecruiter() {
         <WhyUs />
       </div>
       <WorldMapSection/>
+      <Testimonials/>
       <PricingPlans />
     </main>
   )
