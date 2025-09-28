@@ -112,15 +112,15 @@ export function IndustriesPage() {
     <div className="min-h-screen pt-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-6xl font-bold mb-6">
             Industries We Serve
           </h1>
-          <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="md:text-lg text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
             We provide specialized solutions across diverse industries, understanding unique challenges and delivering tailored services that drive growth and innovation.
           </p>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-16 mb-16">
           {industries.map((industry, index) => (
             <IndustrySection
               key={industry.id}
