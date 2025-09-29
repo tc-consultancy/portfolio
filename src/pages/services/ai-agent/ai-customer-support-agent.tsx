@@ -1,6 +1,7 @@
 import { robo1 } from "@/assets";
 import { FAQSection } from "@/components/sections/faq-section";
 import { Button } from "@/components/ui/button";
+import { industries } from "@/constants/industries";
 
 const features = [
     {
@@ -30,26 +31,13 @@ const features = [
     }
 ];
 
-const industries = [
-    { icon: "🏠", name: "Real Estate" },
-    { icon: "📊", name: "Accounting" },
-    { icon: "💰", name: "Fintech" },
-    { icon: "❤️", name: "Healthcare" },
-    { icon: "🛒", name: "Retail" },
-    { icon: "🛡️", name: "Insurance" },
-    { icon: "🚗", name: "Automotive" },
-    { icon: "🏛️", name: "Government" },
-    { icon: "🎓", name: "Edutech" },
-    { icon: "🏭", name: "Manufacturing" },
-    { icon: "💼", name: "SM Business" },
-    { icon: "🛍️", name: "E-Commerce" }
-];
+
 
 export default function AiCustomerSupportAgent() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative h-screen w-full pt-40 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
+            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
@@ -80,10 +68,8 @@ export default function AiCustomerSupportAgent() {
                 </div>
             </section>
 
-
-
             {/* Features Section */}
-            <section className="py-20 px-4 bg-white dark:bg-gray-900">
+            <section className="py-20  px-4 ">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
                     <div className=" mb-16">
@@ -161,7 +147,7 @@ export default function AiCustomerSupportAgent() {
             </section>
 
             {/* What Sets Us Apart Section */}
-            <section className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+            <section className="py-20 px-4 ">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-16">
@@ -267,7 +253,7 @@ export default function AiCustomerSupportAgent() {
             </section>
 
             {/* Industries We Serve Section */}
-            <section className="py-20 px-4 bg-white dark:bg-gray-900">
+            <section className="py-20 px-4 ">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-10">
@@ -280,7 +266,7 @@ export default function AiCustomerSupportAgent() {
                     </div>
 
                     {/* Industries Grid */}
-                    <div className="bg-white shadow-lg dark:bg-gray-800 rounded-3xl p-12 max-w-5xl mx-auto">
+                    <div className="bg-white shadow-lg dark:bg-black rounded-3xl p-12 max-w-5xl mx-auto">
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                             {industries.map((industry, index) => (
                                 <div key={index} className="text-center">
