@@ -12,6 +12,7 @@ import AiAgents from './pages/ai-agent'
 import AiCustomerSupportAgent from './pages/services/ai-agent/ai-customer-support-agent'
 import OcrAgent from './pages/services/ai-agent/ocr-agent'
 import ManagedDetection from './pages/services/cyber-security/managed-detection'
+import ThreatVulnerability from './pages/services/cyber-security/threat-vulnerability'
 
 function App() {
   return (
@@ -23,15 +24,15 @@ function App() {
         <Route path="/services/it-staffing" element={<Staffing />} />
         <Route path="/industries" element={<IndustriesPage />} />
         {/* {'agents'}  */}
-        <Route path="/agents" element={<AiAgents />} />
-        <Route path="/agent/cx-agent" element={<AiCustomerSupportAgent />} />
-        <Route path="/agent/ocr-agent" element={<OcrAgent />} />
-        <Route path="/agent/sec-ops-agent" element={<OcrAgent />} />
-        <Route path="/agent/it-ops-agent" element={<OcrAgent />} />
-        <Route path="/agent/marketing-agent" element={<OcrAgent />} />
+        <Route path="/services/agents" element={<AiAgents />} />
+        <Route path="/services/cx-agent" element={<AiCustomerSupportAgent />} />
+        <Route path="/services/ocr-agent" element={<OcrAgent />} />
+        <Route path="/services/sec-ops-agent" element={<OcrAgent />} />
+        <Route path="/services/it-ops-agent" element={<OcrAgent />} />
+        <Route path="/services/marketing-agent" element={<OcrAgent />} />
         {/* {'cyber security'} */}
         <Route path="/services/managed-detection" element={<ManagedDetection />} />
-        <Route path="/services/threat-management" element={<CareersPage />} />
+        <Route path="/services/threat-management" element={<ThreatVulnerability />} />
         <Route path="/services/governance-risk" element={<CareersPage />} />
         <Route path="/services/data-privacy" element={<CareersPage />} />
 

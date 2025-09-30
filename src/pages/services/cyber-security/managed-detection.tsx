@@ -1,4 +1,5 @@
 import { robo1 } from "@/assets";
+import { FAQSection } from "@/components/sections/faq-section";
 import { Button } from "@/components/ui/button";
 
 export default function ManagedDetection() {
@@ -217,7 +218,7 @@ export default function ManagedDetection() {
                                     Threat Anticipation
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-                                    Our Threat intelligence platform automates the collection, analysis, and correlation of global 
+                                    Our Threat intelligence platform automates the collection, analysis, and correlation of global
                                     threat data including the latest attacker.
                                 </p>
                             </div>
@@ -243,7 +244,7 @@ export default function ManagedDetection() {
                                     Analyze Data
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-                                    From your entire IT stack and security data and detect suspicious, anomalous activities for 
+                                    From your entire IT stack and security data and detect suspicious, anomalous activities for
                                     endpoint threat analytics.
                                 </p>
                             </div>
@@ -275,7 +276,7 @@ export default function ManagedDetection() {
                                     Collect Continuous Data
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-                                    Determine threats that might impact business and ensure the protection within hours of new, 
+                                    Determine threats that might impact business and ensure the protection within hours of new,
                                     successful attacks.
                                 </p>
                             </div>
@@ -300,7 +301,7 @@ export default function ManagedDetection() {
                                     Incident Remediation
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-                                    The Security teams and incident responders utilize our advanced SOAR tools and solution to 
+                                    The Security teams and incident responders utilize our advanced SOAR tools and solution to
                                     identify threats, break the kill chain, and drastically minimize the meantime to respond.
                                 </p>
                             </div>
@@ -323,6 +324,8 @@ export default function ManagedDetection() {
                     </div>
                 </div>
             </section>
+
+            <FAQSection/>
 
         </>
     )

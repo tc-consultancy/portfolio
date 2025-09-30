@@ -2,7 +2,6 @@ import { robo1 } from '@/assets'
 import { FAQSection } from '@/components/sections/faq-section';
 import { Button } from '@/components/ui/button'
 import { industries } from '@/constants/industries';
-import React from 'react'
 
 const features = [
     {

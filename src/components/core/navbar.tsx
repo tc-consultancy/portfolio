@@ -17,7 +17,6 @@ import { MobileNavbar } from "./mobile-navbar"
 const services = [
   {
     title: "IT & Cloud Services",
-    href: "/services/it-cloud",
     subServices: [
       { title: "Managed Services", href: "/services/managed-services" },
       { title: "Professional Consulting", href: "/services/professional-consulting" },
@@ -29,7 +28,6 @@ const services = [
   },
   {
     title: "System & Software",
-    href: "/services/system-software",
     subServices: [
       { title: "DevOps", href: "/services/devops" },
       { title: "Quality Engineering", href: "/services/quality-engineering" },
@@ -37,9 +35,18 @@ const services = [
       { title: "Data Engineering", href: "/services/data-engineering" }
     ]
   },
+    {
+    title: "Staffing Solutions",
+    subServices: [
+      { title: 'It Staffing Solutions', href: "/services/it-staffing" },
+      { title: "Contract Staffing", href: "/services/contract-staffing" },
+      { title: "Permanent Placement", href: "/services/permanent-placement" },
+      { title: "Project-Based Staffing", href: "/services/project-staffing" },
+      { title: "Remote Team Augmentation", href: "/services/remote-augmentation" }
+    ]
+  },
   {
     title: "Cybersecurity",
-    href: "/services/cybersecurity",
     subServices: [
       { title: "Managed Detection & Response", href: "/services/managed-detection" },
       { title: "Threat and Vulnerability Management", href: "/services/threat-management" },
@@ -49,9 +56,44 @@ const services = [
       { title: "Security Implementation Services", href: "/services/security-implementation" }
     ]
   },
+   {
+    title: "Software Development",
+    subServices: [
+      {
+        title: "Application Development",
+        href: "/services/application-development",
+      },
+      { title: "Mobile & Web Application", href: "/services/mobile-web-application" },
+      { title: "E-Commerce", href: "/services/e-commerce" },
+      { title: "Enterprise Application", href: "/services/enterprise-application" },
+      { title: "Custom Application", href: "/services/custom-application" },
+      { title: "SAAS Implementation", href: "/services/saas-implementation" },
+      { title: "Cloud Applications", href: "/services/cloud-applications" },
+    ]
+  },
+
   {
+    title: "AI & ML Services",
+    subServices: [
+      { title: "Natural Language Processing", href: "/services/nlp" },
+      { title: "Computer Vision", href: "/services/computer-vision" },
+      { title: "Machine Learning Models", href: "/services/ml-models" },
+      { title: "Deployment & Integration", href: "/services/ai-deployment" }
+    ]
+  },
+  {
+    title: "AI Agents",
+    subServices: [
+      { title: "Agents", href: "/services/agents" },
+      { title: "CX Agents", href: "/services/cx-agent" },
+      { title: "IT Ops Agents ", href: "/services/it-ops-agent" },
+      { title: "Sec Ops Agents", href: "/services/sec-ops-agent" },
+      { title: "OCR Agents", href: "/services/ocr-agent" },
+      { title: "Marketing Agents", href: "/services/marketing-agent" }
+    ]
+  },
+   {
     title: "Document Management Systems",
-    href: "/services/document-management",
     subServices: [
       { title: "Document Management Software", href: "/services/document-software" },
       { title: "Document Scanning Services", href: "/services/document-scanning" },
@@ -61,61 +103,39 @@ const services = [
     ]
   },
   {
-    title: "AI & ML Services",
-    href: "/services/ai-ml",
+    title: "Data And Analytics Services",
     subServices: [
+      {
+        title: "Data Services",
+        href: "/services/data-services"
+      },
       { title: "Data Analysis", href: "/services/data-analysis" },
-      { title: "Natural Language Processing", href: "/services/nlp" },
-      { title: "Computer Vision", href: "/services/computer-vision" },
-      { title: "Machine Learning Models", href: "/services/ml-models" },
-      { title: "Deployment & Integration", href: "/services/ai-deployment" }
-    ]
-  },
-  {
-    title: "Application Development",
-    href: "/services/application-development",
-    subServices: [
-      { title: "Mobile & Web Application", href: "/services/mobile-web-application" },
-      { title: "E-Commerce", href: "/services/e-commerce" },
-      { title: "Enterprise Application", href: "/services/enterprise-application" },
-      { title: "Custom Application", href: "/services/custom-application" },
-      { title: "SAAS Implementation", href: "/services/saas-implementation" },
-      { title: "Cloud Applications", href: "/services/cloud-applications" },
-    ]
-  },
-  {
-    title: "Data Services",
-    href: "/services/data-services",
-    subServices: [
       { title: "Data Engineering", href: "/services/data-engineering-services" },
       { title: "Data Analytics", href: "/services/data-analytics" },
       { title: "Data Visualization", href: "/services/data-visualization" }
     ]
   },
   {
-    title: "BPO Services",
-    href: "/services/bpo-services",
+    title: "BPO",
     subServices: [
+      {
+        title: "BPO Services",
+        href: "/services/bpo-services",
+      },
       { title: "Customer Support", href: "/services/customer-support" },
       { title: "Back Office Operations", href: "/services/back-office" },
       { title: "Data Entry Services", href: "/services/data-entry" },
       { title: "Virtual Assistant Services", href: "/services/virtual-assistant" }
     ]
   },
+
   {
-    title: "IT Staffing Solutions",
-    href: "/services/it-staffing",
+    title: "Accounts",
     subServices: [
-      { title: "Contract Staffing", href: "/services/contract-staffing" },
-      { title: "Permanent Placement", href: "/services/permanent-placement" },
-      { title: "Project-Based Staffing", href: "/services/project-staffing" },
-      { title: "Remote Team Augmentation", href: "/services/remote-augmentation" }
-    ]
-  },
-  {
-    title: "Accounting and Payrolls",
-    href: "/services/accounting-payroll",
-    subServices: [
+      {
+        title: "Accounting and Payrolls",
+        href: "/services/accounting-payroll"
+      },
       { title: "Bookkeeping Services", href: "/services/bookkeeping" },
       { title: "Payroll Processing", href: "/services/payroll-processing" },
       { title: "Tax Preparation", href: "/services/tax-preparation" },
@@ -123,9 +143,12 @@ const services = [
     ]
   },
   {
-    title: "Digital Marketing Services",
-    href: "/services/digital-marketing",
+    title: "Digital Marketing",
     subServices: [
+      {
+        title: "Digital Marketing Services",
+        href: "/services/digital-marketing",
+      },
       { title: "SEO Services", href: "/services/seo" },
       { title: "Social Media Marketing", href: "/services/social-media" },
       { title: "Content Marketing", href: "/services/content-marketing" },
@@ -206,7 +229,7 @@ export function Navbar() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link to="/agents">AI Agents</Link>
+                <Link to="/outsourcing">Outsourcing</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -226,14 +249,11 @@ export function Navbar() {
                   <div className="grid grid-cols-4 gap-6 p-6">
                     {services.map((service, index) => (
                       <div key={index} className="space-y-3">
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to={service.href}
-                            className="text-purple-400 font-semibold text-sm hover:text-purple-500 transition-colors"
-                          >
-                            {service.title}
-                          </Link>
-                        </NavigationMenuLink>
+                        <p
+                          className="text-purple-400 p-2 font-semibold text-sm"
+                        >
+                          {service.title}
+                        </p>
                         <ul className="space-y-2">
                           {service.subServices.map((subService, subIndex) => (
                             <li key={subIndex}>
