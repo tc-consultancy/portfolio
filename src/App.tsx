@@ -13,6 +13,7 @@ import AiCustomerSupportAgent from './pages/services/ai-agent/ai-customer-suppor
 import OcrAgent from './pages/services/ai-agent/ocr-agent'
 import ManagedDetection from './pages/services/cyber-security/managed-detection'
 import ThreatVulnerability from './pages/services/cyber-security/threat-vulnerability'
+import GovernanceRisk from './pages/services/cyber-security/governance-risk'
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         {/* {'cyber security'} */}
         <Route path="/services/managed-detection" element={<ManagedDetection />} />
         <Route path="/services/threat-management" element={<ThreatVulnerability />} />
-        <Route path="/services/governance-risk" element={<CareersPage />} />
+        <Route path="/services/governance-risk" element={<GovernanceRisk />} />
         <Route path="/services/data-privacy" element={<CareersPage />} />
 
         {/* {'others'} */}
