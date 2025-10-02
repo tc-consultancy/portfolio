@@ -1,6 +1,5 @@
 import { robo1 } from '@/assets'
 import { Button } from '@/components/ui/button'
-import React from 'react'
 import { ShieldAlert, FileText, Briefcase, BookCheck, ClipboardList, BarChart3 } from "lucide-react";
 import { FAQSection } from '@/components/sections/faq-section';
 

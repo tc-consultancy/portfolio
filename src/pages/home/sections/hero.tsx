@@ -1,5 +1,5 @@
 
-import {  Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
+import {  Facebook, Instagram, Linkedin } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { scaleFromZero } from '@/variants/scale'

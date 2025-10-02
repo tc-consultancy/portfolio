@@ -9,7 +9,6 @@ import {
   Settings, 
   Target, 
   GitBranch, 
-  Shield,
   Plus
 } from 'lucide-react'
 
@@ -109,7 +108,7 @@ export default function CareerOptions() {
 
         {/* Career Options Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {careerOptions.map((career, index) => {
+          {careerOptions.map((career) => {
             const IconComponent = career.icon
             return (
               <div 
