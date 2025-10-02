@@ -14,6 +14,8 @@ import OcrAgent from './pages/services/ai-agent/ocr-agent'
 import ManagedDetection from './pages/services/cyber-security/managed-detection'
 import ThreatVulnerability from './pages/services/cyber-security/threat-vulnerability'
 import GovernanceRisk from './pages/services/cyber-security/governance-risk'
+import DataPrivacyAndProtecttion from './pages/services/cyber-security/data-privacy-and-protecttion'
+import IotOtSolutions from './pages/services/cyber-security/iot-ot-solutions'
 
 function App() {
   return (
@@ -35,7 +37,8 @@ function App() {
         <Route path="/services/managed-detection" element={<ManagedDetection />} />
         <Route path="/services/threat-management" element={<ThreatVulnerability />} />
         <Route path="/services/governance-risk" element={<GovernanceRisk />} />
-        <Route path="/services/data-privacy" element={<CareersPage />} />
+        <Route path="/services/data-privacy" element={<DataPrivacyAndProtecttion />} />
+        <Route path="/services/iot-security" element={<IotOtSolutions />} />
 
         {/* {'others'} */}
         <Route path="/careers" element={<CareersPage />} />

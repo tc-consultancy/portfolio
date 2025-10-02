@@ -16,9 +16,20 @@ const SectionContainer = ({ data }:{data:any}) => {
             <h2 className="text-2xl font-bold text-purple-400 dark:text-purple-300 mb-4">
               {item.title}
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              {item.description}
-            </p>
+            {Array.isArray(item.description) ? (
+              <ul className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed space-y-2">
+                {item.description.map((bullet: string, bulletIndex: number) => (
+                  <li key={bulletIndex} className="flex items-start">
+                    <span className="text-purple-400 mr-2 mt-1">•</span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                {item.description}
+              </p>
+            )}
           </div>
 
           {/* Image Section */}

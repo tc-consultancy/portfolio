@@ -65,11 +65,11 @@ export default function GovernanceRisk() {
             </section>
 
             <SectionContainer data={sectionData} />
-            <section className="w-full py-12 px-6">
-                <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-gray-100 mb-10">
+            <section className="w-full py-12 px-6 max-w-6xl mx-auto">
+                <h2 className="text-3xl font-bold  text-gray-900 dark:text-gray-100 mb-10">
                     Our GRC Solution Capabilities include
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
                     {data.map((item, idx) => {
                         return (
                             <div
