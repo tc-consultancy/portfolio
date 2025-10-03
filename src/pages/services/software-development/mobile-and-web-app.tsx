@@ -38,6 +38,31 @@ export default function MobileAndWebApp() {
                 </div>
             </section>
 
+              {/* Partner Section */}
+                        <section className="py-20 max-w-7xl mx-auto">
+                            <div className="">
+                                <div className="flex flex-col md:flex-row gap-12 items-center">
+                                    {/* Left Image */}
+                                    <div className="flex min-w-sm max-w-sm justify-center">
+                                        <img
+                                            src={robo1}
+                                            alt="IoT/OT Security Illustration"
+                                            className="max-w-sm w-full object-contain"
+                                        />
+                                    </div>
+            
+                                    {/* Right Content */}
+                                    <div>
+                                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                                            What do we do?
+                                        </h2>
+                                        <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
+                                            We build Android ,iOS and Web apps for every industry. Our end to end capability right from design to development of products gives us an edge to develop cutting edge digital products that are future ready and simplifies business complexities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
             {/* How do we do it Section */}
             <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-6">
                 <div className="max-w-7xl mx-auto">
