@@ -17,6 +17,7 @@ import GovernanceRisk from './pages/services/cyber-security/governance-risk'
 import DataPrivacyAndProtecttion from './pages/services/cyber-security/data-privacy-and-protecttion'
 import IotOtSolutions from './pages/services/cyber-security/iot-ot-solutions'
 import ImplimentationService from './pages/services/cyber-security/implimentation-service'
+import MobileAndWebApp from './pages/services/software-development/mobile-and-web-app'
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/services/data-privacy" element={<DataPrivacyAndProtecttion />} />
         <Route path="/services/iot-security" element={<IotOtSolutions />} />
         <Route path="/services/security-implementation" element={<ImplimentationService />} />
+        <Route path="/services/application-development" element={<MobileAndWebApp />} />
 
         {/* {'others'} */}
         <Route path="/careers" element={<CareersPage />} />
