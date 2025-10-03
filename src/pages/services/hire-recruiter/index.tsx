@@ -10,11 +10,11 @@ export default function HireRecruiter() {
   return (
     <main className="w-full">
       <HireRecruiterHero />
-      <div className='p-8'>
+      <div className='p-4 md:p-8'>
         <TheProcess />
       </div>
       <AboutUs />
-      <div className='p-8'>
+      <div className='p-4 md:p-8'>
         <WhyUs />
       </div>
       <WorldMapSection/>

@@ -9,8 +9,8 @@ export default function StaffingOptions() {
       icon: Building2,
       emoji: "👉",
       title: "Are you an enterprise seeking the right employees?",
-      description: "Hire our recruitment specialists to source, screen, and connect you with qualified candidates — so you can focus on growing your business.",
-      cta: "Hire Recruiters for My Company",
+      description: "We provide expert, end-to-end staffing services, connecting your business with screened, qualified talent to fill your most critical roles quickly and efficiently.",
+      cta: "Hire Now",
       category: "🏢 Enterprise Solutions",
       gradient: "from-purple-500 to-indigo-600"
     },
@@ -18,8 +18,8 @@ export default function StaffingOptions() {
       icon: GraduationCap,
       emoji: "👉", 
       title: "Are you a recent graduate looking for your first opportunity?",
-      description: "Work with our recruiters who apply on your behalf, match you with the right companies, and help you launch your career with confidence.",
-      cta: "Hire a Recruiter for Me",
+      description: "Skip the entry-level grind. Get connected to exclusive, high-potential tech roles and specialized projects. We fast-track your resume past HR and directly to the hiring managers.",
+      cta: "Find My First Tech Job",
       category: "🎓 Recent Graduates",
       gradient: "from-purple-600 to-pink-600"
     },
@@ -28,7 +28,7 @@ export default function StaffingOptions() {
       emoji: "👉",
       title: "Are you a professional seeking a career change?", 
       description: "Let our recruitment experts represent you, apply to tailored opportunities, and secure interviews that align with your experience and ambitions.",
-      cta: "Hire a Recruiter for My Next Move",
+      cta: "Find My Next Job",
       category: "💼 Working Professionals",
       gradient: "from-indigo-600 to-purple-700"
     }

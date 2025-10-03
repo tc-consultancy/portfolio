@@ -90,7 +90,7 @@ export default function Testimonials() {
     const currentTestimonial = testimonials[currentIndex];
 
     return (
-        <section className="py-16 h-[620px]">
+        <section className="py-16 px-4 h-[620px]">
             <div className="max-w-6xl mx-auto px-4">
                 {/* Profile Images Carousel */}
                 <div
@@ -178,20 +178,20 @@ export default function Testimonials() {
                 <div className="text-center max-w-4xl mx-auto">
                     <div className="relative">
                         {/* Opening Quote */}
-                        <div className="absolute -top-4 -left-4 text-6xl md:text-8xl text-black dark:text-white font-serif leading-none">
+                        <div className="absolute -top-4 -left-4 text-4xl md:text-8xl text-black dark:text-white font-serif leading-none">
                             "
                         </div>
 
                         {/* Testimonial Text */}
                         <blockquote
                             key={currentTestimonial.id}
-                            className="text-lg text-black dark:text-white  md:text-xl lg:text-2xl  font-medium leading-relaxed mb-8 px-8 content-fade-in"
+                            className="text-base text-black dark:text-white  md:text-xl lg:text-2xl  font-medium leading-relaxed mb-8 px-2 md:px-8 content-fade-in"
                         >
                             {currentTestimonial.content}
                         </blockquote>
 
                         {/* Closing Quote */}
-                        <div className="absolute -bottom-8 -right-4 text-6xl md:text-8xl text-black dark:text-white  font-serif leading-none">
+                        <div className="absolute -bottom-8 -right-4 text-4xl md:text-8xl text-black dark:text-white  font-serif leading-none">
                             "
                         </div>
                     </div>
@@ -201,17 +201,17 @@ export default function Testimonials() {
                         key={`author-${currentTestimonial.id}`}
                         className="mt-8 content-fade-in"
                     >
-                        <h3 className="text-xl md:text-2xl font-bold text-black dark:text-white  mb-2">
+                        <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white  md:mb-2">
                             {currentTestimonial.name}
                         </h3>
-                        <p className="text-black dark:text-white  font-medium">
+                        <p className="text-black text-xs md:text-base dark:text-white  font-medium">
                             {currentTestimonial.title}
                         </p>
                     </div>
                 </div>
 
                 {/* Navigation Controls */}
-                <div className="flex items-center justify-center mt-8 gap-6">
+                <div className="flex items-center justify-center md:mt-8 mt-2 md:gap-6 gap-2">
                     <button
                         onClick={goToPrevious}
                         className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 text-gray-600 hover:text-blue-600"

@@ -75,7 +75,7 @@ export default function IotOtSolutions() {
             {/* Partner Section */}
             <section className="py-20 max-w-6xl mx-auto">
                 <div className="">
-                    <div className="flex gap-12 items-center">
+                    <div className="flex flex-col md:flex-row gap-12 items-center">
                         {/* Left Image */}
                         <div className="flex min-w-sm max-w-sm justify-center">
                             <img

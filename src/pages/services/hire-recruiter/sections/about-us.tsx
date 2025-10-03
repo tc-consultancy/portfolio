@@ -2,9 +2,9 @@ import { staffing } from "@/assets";
 
 export default function AboutUs() {
   const benefits = [
-    "We handpick jobs based on your goals and background",
-    "30-40 real-time applications sent every day",
-    "You receive progress updates and interview alerts"
+    "Use your recruiter according to your requirements.",
+    "30-50 applications with master resume every day.",
+    "90% application match rate."
   ];
 
   return (

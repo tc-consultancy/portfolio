@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function WorldMapSection() {
   return (
     <section className="max-w-5xl mx-auto">
-      <div className=" py-40  w-full">
+      <div className=" pb-12 mt-20 md:pb-40  md:pt-40 w-full">
         <div className="max-w-7xl mx-auto text-center">
           <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
             Our Global {" "}
