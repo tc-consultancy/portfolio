@@ -22,16 +22,18 @@ import technology from './industries/technology.jpg'
 
 const home = { mp, oa, ps, tool, wp }
 const staffing = { card1, card2, staffing_about }
-const agents = {robo1}
+const agents = { robo1 }
 
+import heromp4 from './outsourcing/hero.mp4'
 
-
-export {home,staffing,agents,robo1,
-banking,
-com,
-edu,
-infotech,
-manufacturing,
-technology,
+export {
+    home, staffing, agents, robo1,
+    banking,
+    com,
+    edu,
+    infotech,
+    manufacturing,
+    technology,
+    heromp4
 
 }

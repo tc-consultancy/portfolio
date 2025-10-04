@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Check, ChevronsUpDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import VideoModal from '@/components/video-modal'
+import { heromp4 } from '@/assets'
 import {
     Command,
     CommandEmpty,
@@ -64,6 +66,7 @@ export default function Outsourcing() {
     const [isCompanySizeOpen, setIsCompanySizeOpen] = useState(false)
     const [isHeadquartersOpen, setIsHeadquartersOpen] = useState(false)
     const [errors, setErrors] = useState<Record<string, string>>({})
+    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
 
     const handleInputChange = (field: string, value: string) => {
         setFormData(prev => ({ ...prev, [field]: value }))
@@ -142,6 +145,11 @@ export default function Outsourcing() {
 
     return (
         <>
+            <VideoModal 
+                isOpen={isVideoModalOpen} 
+                onClose={() => setIsVideoModalOpen(false)} 
+                videoSrc={heromp4} 
+            />
             <section className="relative min-h-screen w-full pt-28 md:pt-20 bg-white dark:bg-neutral-950 px-6 py-12 md:py-20 flex items-center">
                 <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center md:mt-16">
                     {/* Left Content */}
@@ -167,7 +175,10 @@ export default function Outsourcing() {
                         </div>
 
                         <div className="flex flex-wrap gap-4 mt-8">
-                            <Button className="bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-100 px-6 py-6 rounded-lg font-semibold shadow-lg">
+                            <Button 
+                                onClick={() => setIsVideoModalOpen(true)}
+                                className="bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-100 px-6 py-6 rounded-lg font-semibold shadow-lg"
+                            >
                                 ▶  See it in action
                             </Button>
                             <Button
