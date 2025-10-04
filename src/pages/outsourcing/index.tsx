@@ -22,7 +22,7 @@ import { toast } from 'sonner'
 import { sendContactEmail } from '@/lib/email'
 import Comparision from './sections/comparision'
 import Feature from './sections/feature'
-import { PlatformSection } from './sections/platform-section'
+import Platform from './sections/platform'
 
 const companySize = [
     '1-10 employees',
@@ -376,9 +376,9 @@ export default function Outsourcing() {
                     </div>
                 </div>
             </section>
+            <Platform />
             <Comparision />
             <Feature />
-            <PlatformSection />
         </>
     )
 }
