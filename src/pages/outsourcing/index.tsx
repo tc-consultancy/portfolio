@@ -27,6 +27,7 @@ import Solutions from './sections/solutions'
 import Testimonials from './sections/testimonials'
 import Support from './sections/support'
 import GetStarted from './sections/get-started'
+import CtaDemo from './sections/cta-demo'
 import { FAQSection } from '@/components/sections/faq-section'
 
 const companySize = [
@@ -388,7 +389,7 @@ export default function Outsourcing() {
             <Feature />
             <Support />
             <GetStarted />
-            <FAQSection/>
+            <CtaDemo />
         </>
     )
 }
