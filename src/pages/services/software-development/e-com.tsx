@@ -1,36 +1,36 @@
 import { robo1 } from '@/assets'
 import { FAQSection } from '@/components/sections/faq-section'
 import { Button } from '@/components/ui/button'
-import { Zap, Server, Cloud, Palette } from 'lucide-react'
+import { Palette, ShoppingCart, Plug, Store } from 'lucide-react'
 
-const features = [
-    {
-        icon: Zap,
-        bgColor: 'bg-orange-500 dark:bg-orange-600',
-        title: 'Agile for rapid delivery',
-        description: 'We have embedded DesOps and DevOps delivery model in our engineering culture. Higher degree of automation in development process reduces the stage gate barrier reduces implementation time thus enabling a faster time to market.'
-    },
-    {
-        icon: Server,
-        bgColor: 'bg-teal-500 dark:bg-teal-600',
-        title: 'Micro-services Architecture',
-        description: 'Adopt faster innovation to lead the changing market dynamics through our microservice architecture services. We provide the tools developers need to build higher quality software products.'
-    },
-    {
-        icon: Cloud,
-        bgColor: 'bg-blue-500 dark:bg-blue-600',
-        title: 'Cloud Integration',
-        description: 'Give a boost to your cloud first approach through our extensive capability of application development and cloud integration.'
-    },
-    {
-        icon: Palette,
-        bgColor: 'bg-purple-500 dark:bg-purple-600',
-        title: 'UX UI Design',
-        description: 'Engage the best pool of design talents from across the globe to kickstart the development of your futuristic product. We are a design driven company, who have made an impact on billion lives through design.'
-    }
-]
+export default function ECOM() {
+    const features = [
+        {
+            icon: Palette,
+            bgColor: 'bg-purple-500 dark:bg-purple-600',
+            title: 'Design First Approach',
+            description: 'If you build a beautiful product, your customers will speak for you. With market flooded with E-commerce platforms, digital experience has become a key differentiator. Our unmatched design capability helps you build eye-pleasing online shopping platforms that engage users, nudge them for an action and convert them into a sale.'
+        },
+        {
+            icon: ShoppingCart,
+            bgColor: 'bg-orange-500 dark:bg-orange-600',
+            title: 'E-commerce Website and Application Development',
+            description: 'While better UX enables seamless navigation through the product, slick coding and quick deployment give you the advantage of quick time to market. We provide high security and data privacy, increased speed and efficiency, payment gateway integration and powerful inventory management system.'
+        },
+        {
+            icon: Store,
+            bgColor: 'bg-teal-500 dark:bg-teal-600',
+            title: 'B2C & B2B Marketplaces',
+            description: 'We have expertise in developing sophisticated B2B & B2C online marketplaces. Enriched with essential features like a shopping list, reporting, shipping & logistics management, order management, payment management, etc, we craft robust B2B & B2C storefronts for clients.'
+        },
+        {
+            icon: Plug,
+            bgColor: 'bg-blue-500 dark:bg-blue-600',
+            title: 'API Integration',
+            description: 'Our developers can integrate third-party APIs like PayPal, FedEx, QuickBooks, Google Analytics API, etc that provide ease of performing various operations on your eCommerce website. We ensure to integrate third-party APIs with utter proficiency.'
+        }
+    ]
 
-export default function MobileAndWebApp() {
     return (
         <>
             {/* Hero Section */}
@@ -39,14 +39,13 @@ export default function MobileAndWebApp() {
                     {/* Left Content */}
                     <div>
                         <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            MOBILE & WEB APP DEVELOPMENT
+                            E COM
                         </p>
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Top Mobile and<br />Web App Development Services
+                            E-commerce <br />Development Services
                         </h1>
                         <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
-                            Our application development services empower you to create apps that deliver exceptional user experiences across all platforms.
-                        </p>
+                            We offer a full-suite of E-commerce development services, including strategy, research, design, integrations, migrations and development of nextgen online stores.     </p>
 
                         <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
                             Let's Talk →
@@ -87,14 +86,12 @@ export default function MobileAndWebApp() {
                                 IT'S ALL ABOUT
                             </p>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                                Bringing a change<br />to user's life
+                                Bringing consumer <br />& tech together
                             </h2>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-                                With the evolution of users and their needs, the new breed of applications must be smart and intelligent, and a step ahead of the user's requirements. However, awesome digital products don't suddenly appear out of nowhere. It involves a well scripted strategy to deliver meaningful values to users and a robust framework to translate the thoughts into a usable product.
-                            </p>
+                                Online shopping is a trend that is not going to slow up in near future. This domain offers a great opportunity for disruption in terms of proving digital experience to users. With CAGR of almost 70%, this is the time for you to get done with the traditional E-commerce platforms and adopt the next wave of modernisation.  </p>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                                As an application development company, we build products that solve problems, charm users, and get your business.
-                            </p>
+                                The core objective of every E-commerce business should be to attract maximum customers, and ensure conversion to a sale. This requires a well though strategy, intuitive app design, a robust coding and an integrated support. </p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +116,8 @@ export default function MobileAndWebApp() {
                                 What do we do?
                             </h2>
                             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-                                We build Android ,iOS and Web apps for every industry. Our end to end capability right from design to development of products gives us an edge to develop cutting edge digital products that are future ready and simplifies business complexities.</p>
+                                TC Consultancy offers a full-suite of E-commerce development services, including strategy, research, design, integrations, migrations and development of next-gen online stores. We also provide ongoing 24x7 support and maintenance, to help keep your site open for business and able to generate revenue at all times.
+                            </p>
                         </div>
                     </div>
                 </div>

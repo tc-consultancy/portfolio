@@ -18,6 +18,12 @@ import DataPrivacyAndProtecttion from './pages/services/cyber-security/data-priv
 import IotOtSolutions from './pages/services/cyber-security/iot-ot-solutions'
 import ImplimentationService from './pages/services/cyber-security/implimentation-service'
 import MobileAndWebApp from './pages/services/software-development/mobile-and-web-app'
+import ECOM from './pages/services/software-development/e-com'
+import EnterpriceAppDev from './pages/services/software-development/enterprice-app-dev'
+import CustomAppDev from './pages/services/software-development/custom-application'
+import CloudImplimentations from './pages/services/software-development/cloud-implementations'
+import SaasImplimentations from './pages/services/software-development/saas-implementations'
+import Outsourcing from './pages/services/outsourcing'
 
 function App() {
   return (
@@ -25,6 +31,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/outsourcing" element={<Outsourcing />} />
         <Route path="/services/hire-recruiter" element={<HireRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />
         <Route path="/industries" element={<IndustriesPage />} />
@@ -42,7 +49,14 @@ function App() {
         <Route path="/services/data-privacy" element={<DataPrivacyAndProtecttion />} />
         <Route path="/services/iot-security" element={<IotOtSolutions />} />
         <Route path="/services/security-implementation" element={<ImplimentationService />} />
-        <Route path="/services/application-development" element={<MobileAndWebApp />} />
+
+        {/* {'software development'} */}
+        <Route path="/services/mobile-web-application" element={<MobileAndWebApp />} />
+        <Route path="/services/e-commerce" element={<ECOM />} />
+        <Route path="/services/enterprise-application" element={<EnterpriceAppDev />} />
+        <Route path="/services/custom-application" element={<CustomAppDev />} />
+        <Route path="/services/saas-implementation" element={<SaasImplimentations />} />
+        <Route path="/services/cloud-applications" element={<CloudImplimentations />} />
 
         {/* {'others'} */}
         <Route path="/careers" element={<CareersPage />} />

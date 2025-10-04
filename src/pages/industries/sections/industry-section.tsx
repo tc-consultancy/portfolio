@@ -1,10 +1,10 @@
-import { banking } from "@/assets"
 
 interface Industry {
   id: string
   title: string
   subtitle: string
   description: string
+  img:string
 }
 
 interface IndustrySectionProps {
@@ -20,7 +20,7 @@ export function IndustrySection({ industry, index }: IndustrySectionProps) {
       <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12 lg:gap-16`}>
         {/* Image Wrapper */}
           <div className="aspect-[9/11] h-96 overflow-hidden  rounded-full bg-white/2 flex items-center justify-center">
-            <img src={banking} className="object-cover h-full"/>
+            <img src={industry?.img} className="object-cover h-full"/>
         </div>
 
         {/* Content */}

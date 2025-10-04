@@ -1,36 +1,36 @@
-import { robo1 } from '@/assets'
-import { FAQSection } from '@/components/sections/faq-section'
-import { Button } from '@/components/ui/button'
-import { Zap, Server, Cloud, Palette } from 'lucide-react'
+import { robo1 } from "@/assets"
+import { FAQSection } from "@/components/sections/faq-section"
+import { Button } from "@/components/ui/button"
+import { Settings, Smartphone, RefreshCw, Database } from "lucide-react"
 
-const features = [
-    {
-        icon: Zap,
-        bgColor: 'bg-orange-500 dark:bg-orange-600',
-        title: 'Agile for rapid delivery',
-        description: 'We have embedded DesOps and DevOps delivery model in our engineering culture. Higher degree of automation in development process reduces the stage gate barrier reduces implementation time thus enabling a faster time to market.'
-    },
-    {
-        icon: Server,
-        bgColor: 'bg-teal-500 dark:bg-teal-600',
-        title: 'Micro-services Architecture',
-        description: 'Adopt faster innovation to lead the changing market dynamics through our microservice architecture services. We provide the tools developers need to build higher quality software products.'
-    },
-    {
-        icon: Cloud,
-        bgColor: 'bg-blue-500 dark:bg-blue-600',
-        title: 'Cloud Integration',
-        description: 'Give a boost to your cloud first approach through our extensive capability of application development and cloud integration.'
-    },
-    {
-        icon: Palette,
-        bgColor: 'bg-purple-500 dark:bg-purple-600',
-        title: 'UX UI Design',
-        description: 'Engage the best pool of design talents from across the globe to kickstart the development of your futuristic product. We are a design driven company, who have made an impact on billion lives through design.'
-    }
-]
+export default function EnterpriceAppDev() {
+    const features = [
+        {
+            icon: Settings,
+            bgColor: 'bg-purple-500 dark:bg-purple-600',
+            title: 'Custom Enterprise Software Development',
+            description: 'We deliver tailor-made enterprise solutions designed to fit seamlessly into your business ecosystem. Our comprehensive approach covers everything from initial design and development to deployment and ongoing support, ensuring your software perfectly complements your operations.'
+        },
+        {
+            icon: Smartphone,
+            bgColor: 'bg-orange-500 dark:bg-orange-600',
+            title: 'Enterprise Mobile Solutions',
+            description: 'Transform your enterprise operations with mobile applications that deliver efficiency and agility across all devices. Our solutions are built to be compatible, accessible, and scalable on smartphones, personal laptops, and tablets, empowering your workforce wherever they are.'
+        },
+        {
+            icon: RefreshCw,
+            bgColor: 'bg-teal-500 dark:bg-teal-600',
+            title: 'Legacy Application Modernisation',
+            description: 'Outdated software systems drain resources with high maintenance costs and limited value delivery. Partner with us to modernize your legacy applications, bringing renewed efficiency, agility, and innovation to your enterprise infrastructure.'
+        },
+        {
+            icon: Database,
+            bgColor: 'bg-blue-500 dark:bg-blue-600',
+            title: 'Software Integration & Data Management',
+            description: 'Optimize your total cost of ownership by seamlessly integrating new solutions into your existing application landscape. Our expertise in enterprise application integration and data management ensures smooth connectivity and efficient data flow across your systems.'
+        }
+    ]
 
-export default function MobileAndWebApp() {
     return (
         <>
             {/* Hero Section */}
@@ -39,13 +39,13 @@ export default function MobileAndWebApp() {
                     {/* Left Content */}
                     <div>
                         <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            MOBILE & WEB APP DEVELOPMENT
+                            E COM
                         </p>
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Top Mobile and<br />Web App Development Services
+                            Enterprise App  <br />Development Services
                         </h1>
                         <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
-                            Our application development services empower you to create apps that deliver exceptional user experiences across all platforms.
+                            Leverage our 15 years of expertise in enterprise software development, API Integration, modernising legacy systems and automating processes
                         </p>
 
                         <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
@@ -87,14 +87,10 @@ export default function MobileAndWebApp() {
                                 IT'S ALL ABOUT
                             </p>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                                Bringing a change<br />to user's life
+                                It's all about reducing  <br />the clutter and simplifying the process
                             </h2>
-                            <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-                                With the evolution of users and their needs, the new breed of applications must be smart and intelligent, and a step ahead of the user's requirements. However, awesome digital products don't suddenly appear out of nowhere. It involves a well scripted strategy to deliver meaningful values to users and a robust framework to translate the thoughts into a usable product.
-                            </p>
-                            <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                                As an application development company, we build products that solve problems, charm users, and get your business.
-                            </p>
+                            <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">Modern enterprise solutions are developed to consolidate multiple silos of a company’s business through a seamless interchange of information. These solutions enable enterprises to gain visibility over the entire business, that helps the management make informed decisions.</p>
+
                         </div>
                     </div>
                 </div>
@@ -119,7 +115,8 @@ export default function MobileAndWebApp() {
                                 What do we do?
                             </h2>
                             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-                                We build Android ,iOS and Web apps for every industry. Our end to end capability right from design to development of products gives us an edge to develop cutting edge digital products that are future ready and simplifies business complexities.</p>
+                                We implement SaaS solutions as part of your cloud strategy and integrate them into your business using pre-built accelerators. You gain access to software from leading vendors, such as: Google, Microsoft, Netsuite, Oracle, Salesforce, SAP, and Workday
+                            </p>
                         </div>
                     </div>
                 </div>

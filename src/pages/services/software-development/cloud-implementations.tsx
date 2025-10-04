@@ -30,18 +30,18 @@ const features = [
     }
 ]
 
-export default function MobileAndWebApp() {
+export default function CloudImplimentations() {
     return (
         <>
             {/* Hero Section */}
             <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-white dark:bg-gray-950 md:py-20 px-6 flex items-center">
-                <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
                         <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
                             MOBILE & WEB APP DEVELOPMENT
                         </p>
-                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
                             Top Mobile and<br />Web App Development Services
                         </h1>
                         <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
@@ -68,7 +68,7 @@ export default function MobileAndWebApp() {
 
             {/* Bringing a change Section */}
             <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Left Illustration */}
                         <div className="flex justify-center md:justify-start order-2 md:order-1">
@@ -101,7 +101,7 @@ export default function MobileAndWebApp() {
             </section>
 
             {/* Partner Section */}
-            <section className="py-20 max-w-6xl mx-auto">
+            <section className="py-20 max-w-7xl mx-auto">
                 <div className="">
                     <div className="flex flex-col md:flex-row gap-12 items-center">
                         {/* Left Image */}
@@ -127,7 +127,7 @@ export default function MobileAndWebApp() {
 
             {/* How do we do it Section */}
             <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-6">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
                         DESIGN TO TRANSFORM LIVES
                     </p>

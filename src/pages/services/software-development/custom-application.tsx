@@ -1,36 +1,36 @@
 import { robo1 } from '@/assets'
 import { FAQSection } from '@/components/sections/faq-section'
 import { Button } from '@/components/ui/button'
-import { Zap, Server, Cloud, Palette } from 'lucide-react'
+import { Layers, Cpu, Briefcase, ShieldCheck } from 'lucide-react'
 
-const features = [
-    {
-        icon: Zap,
-        bgColor: 'bg-orange-500 dark:bg-orange-600',
-        title: 'Agile for rapid delivery',
-        description: 'We have embedded DesOps and DevOps delivery model in our engineering culture. Higher degree of automation in development process reduces the stage gate barrier reduces implementation time thus enabling a faster time to market.'
-    },
-    {
-        icon: Server,
-        bgColor: 'bg-teal-500 dark:bg-teal-600',
-        title: 'Micro-services Architecture',
-        description: 'Adopt faster innovation to lead the changing market dynamics through our microservice architecture services. We provide the tools developers need to build higher quality software products.'
-    },
-    {
-        icon: Cloud,
-        bgColor: 'bg-blue-500 dark:bg-blue-600',
-        title: 'Cloud Integration',
-        description: 'Give a boost to your cloud first approach through our extensive capability of application development and cloud integration.'
-    },
-    {
-        icon: Palette,
-        bgColor: 'bg-purple-500 dark:bg-purple-600',
-        title: 'UX UI Design',
-        description: 'Engage the best pool of design talents from across the globe to kickstart the development of your futuristic product. We are a design driven company, who have made an impact on billion lives through design.'
-    }
-]
+export default function CustomAppDev() {
+    const features = [
+        {
+            icon: Layers,
+            bgColor: 'bg-purple-500 dark:bg-purple-600',
+            title: 'End to End Development Services',
+            description: 'We deliver comprehensive application development services across multiple engagement models to support every phase of your IT systems lifecycle. From initial conceptualization through development, deployment, administration, maintenance, to continuous enhancement, we provide complete end-to-end solutions tailored to your needs.'
+        },
+        {
+            icon: Cpu,
+            bgColor: 'bg-orange-500 dark:bg-orange-600',
+            title: 'Technical Superiority',
+            description: 'Our expertise spans a diverse technology landscape, from cutting-edge cloud platforms like AWS and Azure to traditional legacy systems including IBM and HP mainframes. This versatility ensures we can work seamlessly with your existing infrastructure while driving innovation and modernization.'
+        },
+        {
+            icon: Briefcase,
+            bgColor: 'bg-teal-500 dark:bg-teal-600',
+            title: 'Extensive Industry Knowledge',
+            description: 'We deliver domain expertise and proven experience across all major industry verticals including Healthcare, Financial Services, Public Services, Consumer Services, Life Sciences, and Manufacturing. Our deep industry knowledge enables us to understand your unique challenges and deliver solutions that drive real business value.'
+        },
+        {
+            icon: ShieldCheck,
+            bgColor: 'bg-blue-500 dark:bg-blue-600',
+            title: 'Quality Assured Practices',
+            description: 'Our mature and robust quality assurance system is ISO9000 certified and assessed at CMMI Level 5. We support a variety of application lifecycle models and work to enhance and extend the quality practices of our customers, ensuring excellence in every deliverable.'
+        }
+    ]
 
-export default function MobileAndWebApp() {
     return (
         <>
             {/* Hero Section */}
@@ -39,13 +39,13 @@ export default function MobileAndWebApp() {
                     {/* Left Content */}
                     <div>
                         <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            MOBILE & WEB APP DEVELOPMENT
+                            E COM
                         </p>
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Top Mobile and<br />Web App Development Services
+                            Custom Application  <br />Development Services
                         </h1>
                         <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
-                            Our application development services empower you to create apps that deliver exceptional user experiences across all platforms.
+                            Optimize cost and align your IT with your business outcomes through custom software.
                         </p>
 
                         <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
@@ -87,14 +87,12 @@ export default function MobileAndWebApp() {
                                 IT'S ALL ABOUT
                             </p>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                                Bringing a change<br />to user's life
+                                Adding value to your business
                             </h2>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-                                With the evolution of users and their needs, the new breed of applications must be smart and intelligent, and a step ahead of the user's requirements. However, awesome digital products don't suddenly appear out of nowhere. It involves a well scripted strategy to deliver meaningful values to users and a robust framework to translate the thoughts into a usable product.
-                            </p>
+                                Enterprises are adopting the agile methodologies to cut cost on non-performing assets and activities. To thrive in the highly competitive market, and to outperform the competition, enterprises must get done with the traditional pre-configured solutions.  </p>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                                As an application development company, we build products that solve problems, charm users, and get your business.
-                            </p>
+                                Better UI design substantially uplifts the perception about the brand and has the potential to convert visitors into customers immediately. </p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +117,8 @@ export default function MobileAndWebApp() {
                                 What do we do?
                             </h2>
                             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-                                We build Android ,iOS and Web apps for every industry. Our end to end capability right from design to development of products gives us an edge to develop cutting edge digital products that are future ready and simplifies business complexities.</p>
+                                TC Consultancy offers a comprehensive range of custom application development services that enable enterprises to amplify the power of their IT infrastructure to support new capabilities and enhance the customer and partner experience.
+                            </p>
                         </div>
                     </div>
                 </div>

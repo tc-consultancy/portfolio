@@ -1,36 +1,36 @@
 import { robo1 } from '@/assets'
 import { FAQSection } from '@/components/sections/faq-section'
 import { Button } from '@/components/ui/button'
-import { Zap, Server, Cloud, Palette } from 'lucide-react'
+import { Package, Users, UserCheck, Cloud } from 'lucide-react'
 
 const features = [
     {
-        icon: Zap,
+        icon: Package,
         bgColor: 'bg-orange-500 dark:bg-orange-600',
-        title: 'Agile for rapid delivery',
-        description: 'We have embedded DesOps and DevOps delivery model in our engineering culture. Higher degree of automation in development process reduces the stage gate barrier reduces implementation time thus enabling a faster time to market.'
+        title: 'Enterprise Resource Planning',
+        description: 'We deliver comprehensive operating model, business process, and technology design and implementation services to support the adoption of cloud-based ERP solutions. Our expertise spans SAP, Oracle Cloud, NetSuite, and Workday financial and supply chain systems, ensuring seamless integration with your business operations.'
     },
     {
-        icon: Server,
+        icon: Users,
         bgColor: 'bg-teal-500 dark:bg-teal-600',
-        title: 'Micro-services Architecture',
-        description: 'Adopt faster innovation to lead the changing market dynamics through our microservice architecture services. We provide the tools developers need to build higher quality software products.'
+        title: 'Customer Relationship Management',
+        description: 'Transform your customer engagement with our operating model and technology design and implementation services. We specialize in deploying off-premise CRM solutions that enhance customer interactions, streamline sales processes, and drive business growth through data-driven insights.'
+    },
+    {
+        icon: UserCheck,
+        bgColor: 'bg-blue-500 dark:bg-blue-600',
+        title: 'Human Resources Transformation',
+        description: 'Revolutionize your human capital management with our business model and technology design and implementation services. We support the adoption of leading cloud HR technologies including Workday, SAP, and Oracle Cloud, enabling efficient workforce management and employee experience enhancement.'
     },
     {
         icon: Cloud,
-        bgColor: 'bg-blue-500 dark:bg-blue-600',
-        title: 'Cloud Integration',
-        description: 'Give a boost to your cloud first approach through our extensive capability of application development and cloud integration.'
-    },
-    {
-        icon: Palette,
         bgColor: 'bg-purple-500 dark:bg-purple-600',
-        title: 'UX UI Design',
-        description: 'Engage the best pool of design talents from across the globe to kickstart the development of your futuristic product. We are a design driven company, who have made an impact on billion lives through design.'
+        title: 'Other SaaS Domains',
+        description: 'Our expertise extends across a wide spectrum of enterprise cloud applications. We provide business process and technology design and implementation services for e-commerce platforms, content management systems, billing solutions, and more, tailored to meet your specific functional requirements.'
     }
 ]
 
-export default function MobileAndWebApp() {
+export default function SaasImplimentations() {
     return (
         <>
             {/* Hero Section */}
@@ -39,14 +39,13 @@ export default function MobileAndWebApp() {
                     {/* Left Content */}
                     <div>
                         <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            MOBILE & WEB APP DEVELOPMENT
+                            SAAS DEVELOPMENT
                         </p>
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Top Mobile and<br />Web App Development Services
+                            SAAS Application <br />Development Services
                         </h1>
                         <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
-                            Our application development services empower you to create apps that deliver exceptional user experiences across all platforms.
-                        </p>
+                            Make your product more robust, configurable, and scalable with our SaaS development and implementation capabilities.</p>
 
                         <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
                             Let's Talk →
@@ -87,14 +86,17 @@ export default function MobileAndWebApp() {
                                 IT'S ALL ABOUT
                             </p>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                                Bringing a change<br />to user's life
+                                It's all about sophisticated  products and robust infrastructure
                             </h2>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-                                With the evolution of users and their needs, the new breed of applications must be smart and intelligent, and a step ahead of the user's requirements. However, awesome digital products don't suddenly appear out of nowhere. It involves a well scripted strategy to deliver meaningful values to users and a robust framework to translate the thoughts into a usable product.
-                            </p>
+                                SaaS solutions offer pay-as-you-go model for software, with anytime, anywhere access from any device. SaaS solutions are an ideal replacement for high-value, low-complexity applications hosted on premise. </p>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                                As an application development company, we build products that solve problems, charm users, and get your business.
-                            </p>
+                                A SaaS solution requires no investment in infrastructure. IT resources can be redeployed to core business functions, while maintenance and updates are factored-in. You benefit from:</p>
+                            <ul>
+                                <li>• Secure, scalable, reliable and always available IT</li>
+                                <li>• Cost-effective IT services</li>
+                                <li>• Rapid time-to-value and increased user adoption</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -119,7 +121,8 @@ export default function MobileAndWebApp() {
                                 What do we do?
                             </h2>
                             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-                                We build Android ,iOS and Web apps for every industry. Our end to end capability right from design to development of products gives us an edge to develop cutting edge digital products that are future ready and simplifies business complexities.</p>
+                                We implement SaaS solutions as part of your cloud strategy and integrate them into your business using pre-built accelerators. You gain access to software from leading vendors, such as: Google, Microsoft, Netsuite, Oracle, Salesforce, SAP, and Workday.
+                            </p>
                         </div>
                     </div>
                 </div>
