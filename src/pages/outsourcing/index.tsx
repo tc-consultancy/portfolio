@@ -133,10 +133,17 @@ export default function Outsourcing() {
         }
     }
 
+    const scrollToPricing = () => {
+        const pricingSection = document.getElementById('pricing-section')
+        if (pricingSection) {
+            pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+    }
+
     return (
         <>
             <section className="relative min-h-screen w-full pt-28 md:pt-20 bg-white dark:bg-neutral-950 px-6 py-12 md:py-20 flex items-center">
-                <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center md:mt-16">
                     {/* Left Content */}
                     <div className="text-neutral-900 dark:text-white">
 
@@ -163,7 +170,11 @@ export default function Outsourcing() {
                             <Button className="bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-100 px-6 py-6 rounded-lg font-semibold shadow-lg">
                                 ▶  See it in action
                             </Button>
-                            <Button variant="outline" className="border-2 border-neutral-300 dark:border-neutral-700 text-neutral-900 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-900 px-6 py-6 rounded-lg font-semibold">
+                            <Button
+                                variant="outline"
+                                onClick={scrollToPricing}
+                                className="border-2 border-neutral-300 dark:border-neutral-700 text-neutral-900 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-900 px-6 py-6 rounded-lg font-semibold"
+                            >
                                 View pricing
                             </Button>
                         </div>

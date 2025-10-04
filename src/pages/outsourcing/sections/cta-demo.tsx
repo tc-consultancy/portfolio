@@ -3,7 +3,7 @@ import { Play } from 'lucide-react'
 
 export default function CtaDemo() {
     return (
-        <section className="w-full bg-neutral-50 dark:bg-neutral-900 py-16 md:py-24 px-6">
+        <section id="pricing-section" className="w-full bg-neutral-50 dark:bg-neutral-900 py-16 md:py-24 px-6">
             <div className="max-w-7xl mx-auto">
                 <div className="bg-gradient-to-br from-purple-300 via-purple-200 to-purple-300 dark:from-purple-900/40 dark:via-purple-800/30 dark:to-purple-900/40 rounded-3xl overflow-hidden">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center p-8 md:p-12 lg:p-16">
