@@ -23,6 +23,11 @@ import { sendContactEmail } from '@/lib/email'
 import Comparision from './sections/comparision'
 import Feature from './sections/feature'
 import Platform from './sections/platform'
+import Solutions from './sections/solutions'
+import Testimonials from './sections/testimonials'
+import Support from './sections/support'
+import GetStarted from './sections/get-started'
+import { FAQSection } from '@/components/sections/faq-section'
 
 const companySize = [
     '1-10 employees',
@@ -377,8 +382,13 @@ export default function Outsourcing() {
                 </div>
             </section>
             <Platform />
+            <Solutions />
+            <Testimonials />
             <Comparision />
             <Feature />
+            <Support />
+            <GetStarted />
+            <FAQSection/>
         </>
     )
 }

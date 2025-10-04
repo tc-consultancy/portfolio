@@ -5,7 +5,7 @@ export default function Feature() {
         <>
 
             {/* Features Section */}
-            <section className="relative w-full bg-neutral-50 dark:bg-neutral-900 px-6 py-16 md:py-24 pb-0">
+            <section className="relative w-full  dark:bg-neutral-900 px-6 py-16 md:py-24 pb-0">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white text-center mb-12 md:mb-16">
                         Do more in less time with fewer tools and platforms

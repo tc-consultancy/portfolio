@@ -19,7 +19,7 @@ export default function Platform() {
             </div>
 
             {/* Content */}
-            <div className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-6">
+            <div className="relative pt-32 md:pt-60 pb-16 md:pb-60 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                         {/* Left - Image + Heading + Button */}
@@ -88,7 +88,79 @@ export default function Platform() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Separator Line */}
+                    <div className="mt-16 mb-12 border-t border-neutral-800"></div>
+
+                    {/* Save on costs section */}
+                    <div className="space-y-12">
+                        <h2 className="text-2xl md:text-3xl font-bold text-white">
+                            Save on costs and admin time
+                        </h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                            {/* 150 hrs */}
+                            <div className="flex flex-col items-center text-center space-y-4">
+                                <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center">
+                                    <img
+                                        src="https://placehold.co/80x80/8b5cf6/white?text=⏱️"
+                                        alt="Clock icon"
+                                        className="w-16 h-16 rounded-full"
+                                    />
+                                </div>
+                                <div>
+                                    <div className="text-5xl md:text-6xl font-bold text-purple-400">150</div>
+                                    <div className="text-3xl md:text-4xl font-bold text-purple-400">hrs</div>
+                                    <p className="text-sm text-neutral-300 mt-2">saved on hiring compliance</p>
+                                </div>
+                            </div>
+
+                            {/* 52% */}
+                            <div className="flex flex-col items-center text-center space-y-4">
+                                <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center">
+                                    <img
+                                        src="https://placehold.co/80x80/8b5cf6/white?text=💰"
+                                        alt="Coins icon"
+                                        className="w-16 h-16 rounded-full"
+                                    />
+                                </div>
+                                <div>
+                                    <div className="text-5xl md:text-6xl font-bold text-purple-400">52%</div>
+                                    <p className="text-sm text-neutral-300 mt-2">saving in fees</p>
+                                </div>
+                            </div>
+
+                            {/* $500K */}
+                            <div className="flex flex-col items-center text-center space-y-4">
+                                <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center">
+                                    <img
+                                        src="https://placehold.co/80x80/8b5cf6/white?text=💵"
+                                        alt="Money icon"
+                                        className="w-16 h-16 rounded-full"
+                                    />
+                                </div>
+                                <div>
+                                    <div className="text-5xl md:text-6xl font-bold text-purple-400">$500K</div>
+                                    <p className="text-sm text-neutral-300 mt-2">saved yearly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            {/* Bottom Curve */}
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+                <svg
+                    className="relative block w-full h-[80px] md:h-[120px]"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M0,0 C150,80 300,100 600,60 C900,20 1050,40 1200,50 L1200,120 L0,120 Z"
+                        className="fill-white dark:fill-neutral-950"
+                    />
+                </svg>
             </div>
         </section>
     )
