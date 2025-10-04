@@ -24,6 +24,8 @@ import CustomAppDev from './pages/services/software-development/custom-applicati
 import CloudImplimentations from './pages/services/software-development/cloud-implementations'
 import SaasImplimentations from './pages/services/software-development/saas-implementations'
 import Outsourcing from './pages/outsourcing'
+import ManagedServices from './pages/services/it-cloud-services/managed-services'
+import MicroSoftManagedServices from './pages/services/it-cloud-services/microsoft-managed-services'
 
 function App() {
   return (
@@ -42,6 +44,11 @@ function App() {
         <Route path="/services/sec-ops-agent" element={<OcrAgent />} />
         <Route path="/services/it-ops-agent" element={<OcrAgent />} />
         <Route path="/services/marketing-agent" element={<OcrAgent />} />
+
+        <Route path='/services/managed-services' element={<ManagedServices />} />
+        <Route path='/services/managed-services' element={<MicroSoftManagedServices />} />
+
+
         {/* {'cyber security'} */}
         <Route path="/services/managed-detection" element={<ManagedDetection />} />
         <Route path="/services/threat-management" element={<ThreatVulnerability />} />
