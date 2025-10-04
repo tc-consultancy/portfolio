@@ -70,19 +70,18 @@ export default function ManagedServices() {
 
             {/* IT Service Management Section */}
             <section className="w-full bg-purple-50 dark:bg-gray-900 py-16 md:py-24 px-6">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide mb-4">
-                            BE AWAY FROM IT CHALLENGES WITH
-                        </p>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
-                            Terralogic's IT service management
-                        </h2>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* First Row - Card with Image */}
-                        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        {/* Left Column - Heading + First Card */}
+                        <div className="flex flex-col justify-end">
+                            <div className="mb-6">
+                                <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide mb-4">
+                                    BE AWAY FROM IT CHALLENGES WITH
+                                </p>
+                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
+                                    Terralogic's IT service management
+                                </h2>
+                            </div>
                             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
                                 <div className={`w-16 h-16 ${services[0].color} rounded-full flex items-center justify-center text-3xl mb-6`}>
                                     {services[0].icon}
@@ -97,16 +96,18 @@ export default function ManagedServices() {
                                     Read more
                                 </button>
                             </div>
-                            <div className="rounded-2xl overflow-hidden shadow-lg">
-                                <img
-                                    src="https://placehold.co/600x400/e5e7eb/374151?text=Team+Meeting"
-                                    alt="IT Service Team"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
                         </div>
 
-                        {/* Second Row - Two Cards */}
+                        {/* Right Column - First Image */}
+                        <div className="rounded-2xl overflow-hidden shadow-lg h-full">
+                            <img
+                                src="https://placehold.co/600x400/e5e7eb/374151?text=Team+Meeting"
+                                alt="IT Service Team"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+
+                        {/* Left Column - Second Card */}
                         <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
                             <div className={`w-16 h-16 ${services[1].color} rounded-full flex items-center justify-center text-3xl mb-6`}>
                                 {services[1].icon}
@@ -122,6 +123,7 @@ export default function ManagedServices() {
                             </button>
                         </div>
 
+                        {/* Right Column - Third Card */}
                         <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
                             <div className={`w-16 h-16 ${services[2].color} rounded-full flex items-center justify-center text-3xl mb-6`}>
                                 {services[2].icon}
@@ -137,29 +139,29 @@ export default function ManagedServices() {
                             </button>
                         </div>
 
-                        {/* Third Row - Image with Card */}
-                        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                            <div className="rounded-2xl overflow-hidden shadow-lg">
-                                <img
-                                    src="https://placehold.co/600x400/e5e7eb/374151?text=Business+Meeting"
-                                    alt="Business Consultation"
-                                    className="w-full h-full object-cover"
-                                />
+                        {/* Left Column - Second Image */}
+                        <div className="rounded-2xl overflow-hidden shadow-lg h-full">
+                            <img
+                                src="https://placehold.co/600x400/e5e7eb/374151?text=Business+Meeting"
+                                alt="Business Consultation"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+
+                        {/* Right Column - Fourth Card */}
+                        <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+                            <div className={`w-16 h-16 ${services[3].color} rounded-full flex items-center justify-center text-3xl mb-6`}>
+                                {services[3].icon}
                             </div>
-                            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
-                                <div className={`w-16 h-16 ${services[3].color} rounded-full flex items-center justify-center text-3xl mb-6`}>
-                                    {services[3].icon}
-                                </div>
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                                    {services[3].title}
-                                </h3>
-                                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                                    {services[3].description}
-                                </p>
-                                <button className="text-pink-600 dark:text-pink-400 font-semibold hover:underline">
-                                    Read more
-                                </button>
-                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                                {services[3].title}
+                            </h3>
+                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                                {services[3].description}
+                            </p>
+                            <button className="text-pink-600 dark:text-pink-400 font-semibold hover:underline">
+                                Read more
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -167,7 +169,7 @@ export default function ManagedServices() {
 
             {/* State of the Art IT Infrastructure Section */}
             <section className="w-full bg-white dark:bg-gray-950 py-16 md:py-24 px-6">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left - Image */}
                         <div className="rounded-2xl overflow-hidden shadow-2xl">
@@ -196,7 +198,7 @@ export default function ManagedServices() {
 
             {/* Managed Network Solutions Section */}
             <section className="w-full bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 dark:from-purple-800 dark:via-purple-700 dark:to-pink-700 py-16 md:py-24 px-6">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left - Illustration */}
                         <div className="flex justify-center lg:justify-start">
