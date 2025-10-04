@@ -23,7 +23,7 @@ import EnterpriceAppDev from './pages/services/software-development/enterprice-a
 import CustomAppDev from './pages/services/software-development/custom-application'
 import CloudImplimentations from './pages/services/software-development/cloud-implementations'
 import SaasImplimentations from './pages/services/software-development/saas-implementations'
-import Outsourcing from './pages/services/outsourcing'
+import Outsourcing from './pages/outsourcing'
 
 function App() {
   return (
