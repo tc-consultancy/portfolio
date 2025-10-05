@@ -115,7 +115,7 @@ export default function ROICalculator() {
 
           {/* Right: Slider and Details */}
           <motion.div
-            className="space-y-8"
+            className="space-y-4"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -123,7 +123,7 @@ export default function ROICalculator() {
           >
             {/* Salary Input */}
             <div>
-              <label className="block text-lg font-semibold text-white mb-4">
+              <label className="block text-lg font-semibold text-white mb-2">
                 Local Salary for This Role
               </label>
               <div className="relative">
