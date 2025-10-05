@@ -18,7 +18,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative min-h-screen w-full pt-28 md:pt-32 pb-16 bg-white dark:bg-neutral-950 overflow-hidden">
+    <section className="relative min-h-screen  w-full pt-28 md:pt-54 pb-16 bg-white dark:bg-neutral-950 overflow-hidden">
       {/* Large Blob Shape Background */}
       <motion.div
         className="absolute top-0 right-0 w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-10"
@@ -82,8 +82,8 @@ export default function HeroSection() {
       />
 
       {/* Content Container */}
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 ">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end jus">
           {/* Left Content - 60% */}
           <motion.div
             className="lg:col-span-7 space-y-8"
@@ -91,13 +91,13 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-neutral-900 dark:text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
               Build Your Dream{' '}
               <span className="text-purple-400">Tech Team</span>, Without the
               Headache
             </h1>
 
-            <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
+            <p className="text-xl md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
               We handle the sourcing, vetting, compliance, and onboarding so you
               can focus on what you do best—building great products.
             </p>

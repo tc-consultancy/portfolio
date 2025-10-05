@@ -13,12 +13,13 @@ import ROICalculator from './outsourcingonecomponents/roi-calculator'
 import EngagementModels from './outsourcingonecomponents/engagement-models'
 import FAQSection from './outsourcingonecomponents/faq-section'
 import FinalCTA from './outsourcingonecomponents/final-cta'
+import Support from './sections/support'
 
 export default function Outsourcingone() {
   useEffect(() => {
     // Enable smooth scrolling
     document.documentElement.style.scrollBehavior = 'smooth'
-    
+
     return () => {
       document.documentElement.style.scrollBehavior = 'auto'
     }
@@ -38,6 +39,8 @@ export default function Outsourcingone() {
       <TalentMatcher />
       <ROICalculator />
       <EngagementModels />
+      <Support />
+     
       <FAQSection />
       <FinalCTA />
     </div>

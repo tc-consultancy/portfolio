@@ -45,7 +45,7 @@ export default function CompanyDifference() {
       <div className="relative w-full max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.h2
-          className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white text-center mb-12"
+          className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white text-center mb-8 md:mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -54,8 +54,8 @@ export default function CompanyDifference() {
           Why Companies Choose Us as Their Outsourcing Partner
         </motion.h2>
 
-        {/* Square Container with Pentagon */}
-        <div className="relative w-full flex items-center justify-center">
+        {/* Desktop: Pentagon Layout | Mobile: Simple Stack */}
+        <div className="hidden md:flex relative w-full items-center justify-center">
           <div className="relative h-[80vh] aspect-square max-w-4xl mx-auto">
             {/* Pentagon Border Lines */}
             <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100">
@@ -108,8 +108,8 @@ export default function CompanyDifference() {
                   key={index}
                   className="absolute w-44 md:w-52"
                   style={{
-                    left: `${pos.x -17}%`,
-                    top: `${pos.y -5}%`,
+                    left: `${pos.x - 17}%`,
+                    top: `${pos.y - 5}%`,
                     transform: 'translate(-50%, 0)',
                   }}
                   initial={{ opacity: 0, scale: 0 }}
@@ -183,6 +183,39 @@ export default function CompanyDifference() {
               )
             })}
           </div>
+        </div>
+
+        {/* Mobile: Simple Vertical Stack */}
+        <div className="md:hidden flex flex-col gap-6">
+          {differentiators.map((diff, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="flex flex-col items-center"
+            >
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-xl flex items-center justify-center mb-3">
+                <diff.icon className="w-8 h-8 text-white" />
+              </div>
+              <div className="bg-white dark:bg-neutral-900 rounded-2xl p-4 shadow-lg w-full max-w-sm">
+                <h3 className="text-base font-bold text-neutral-900 dark:text-white mb-2 text-center">
+                  {diff.title}
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3 text-center leading-relaxed">
+                  {diff.description}
+                </p>
+                <div className="flex justify-center">
+                  <div className="inline-block px-3 py-1.5 bg-purple-400 rounded-full">
+                    <span className="text-xs font-bold text-white">
+                      {diff.metric}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

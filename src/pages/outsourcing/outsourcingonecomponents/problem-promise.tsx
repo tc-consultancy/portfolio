@@ -22,9 +22,9 @@ const painPoints = [
 
 export default function ProblemPromise() {
   return (
-    <section className="relative w-full bg-white dark:bg-neutral-950 py-20 md:py-32 overflow-hidden">
+    <section className="relative w-full bg-white dark:bg-neutral-950 py-20  overflow-hidden">
       {/* Large Circular Blob Shape on Left */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-5">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2  w-[500px] h-[500px] opacity-5">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
           <path
             fill="#a855f7"
@@ -52,7 +52,7 @@ export default function ProblemPromise() {
             {painPoints.map((point, index) => (
               <motion.div
                 key={index}
-                className="flex items-start gap-6"
+                className="flex z-50 relative items-start gap-6"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -83,7 +83,7 @@ export default function ProblemPromise() {
             ))}
 
             {/* Connecting Dotted Line */}
-            <div className="absolute left-[52px] top-[200px] h-[calc(100%-250px)] w-0.5 border-l-2 border-dashed border-neutral-300 dark:border-neutral-700 hidden lg:block" />
+            <div className="absolute left-[60px] top-[200px] h-[calc(100%-250px)] w-0.5 border-l-2 border-dashed border-neutral-300 dark:border-neutral-700 hidden lg:block" />
           </div>
 
           {/* Right: Promise Statement */}
@@ -117,7 +117,7 @@ export default function ProblemPromise() {
                 .
               </p>
 
-              <div className="flex flex-wrap gap-6 pt-8">
+              <div className="flex flex-wrap gap-4 pt-6">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-purple-400/10 flex items-center justify-center">
                     <svg

@@ -33,10 +33,10 @@ export default function ComparisonTable() {
         </motion.h2>
 
         {/* Comparison Containers */}
-        <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0">
+        <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
           {/* US Container */}
           <motion.div
-            className="relative z-20 w-full lg:w-[55%] bg-white dark:bg-neutral-900 rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-purple-400"
+            className="relative z-20 w-full lg:w-[48%] bg-white dark:bg-neutral-900 rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-purple-400"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -89,7 +89,7 @@ export default function ComparisonTable() {
 
           {/* OTHERS Container */}
           <motion.div
-            className="relative z-10 w-full lg:w-[55%] lg:-ml-20 bg-neutral-100 dark:bg-neutral-800 rounded-3xl p-8 md:p-10 shadow-lg"
+            className="relative z-10 w-full lg:w-[48%] bg-neutral-100 dark:bg-neutral-800 rounded-3xl p-8 md:p-10 shadow-lg"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
