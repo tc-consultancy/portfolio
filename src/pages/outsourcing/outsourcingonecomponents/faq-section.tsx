@@ -11,7 +11,7 @@ const faqs = [
   {
     question: 'What are your costs?',
     answer:
-      'Our pricing is transparent and all-inclusive. You save an average of 40% compared to local hiring costs, with no hidden fees. Pricing varies based on role, experience level, and engagement model. Contact us for a custom quote.',
+      "Zero upfront payment. No hidden charges. You only pay after 30 days of employment offer. Our transparent, all-inclusive pricing saves you an average of 40% compared to local hiring costs. Pay only when you're satisfied with your hire.",
   },
   {
     question: 'How do you handle contracts and compliance?',

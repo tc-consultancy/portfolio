@@ -2,18 +2,20 @@ import { motion } from 'framer-motion'
 import { Check, X } from 'lucide-react'
 
 const features = [
+  'Zero Upfront Payment',
+  'Pay After 30 Days',
   'Dedicated Account Manager',
   'Risk-Free Trial Period (2 weeks)',
   '48-Hour Candidate Matching',
   'Cultural Fit Assessment',
-  'Transparent Pricing',
+  'No Hidden Fees',
   'Ongoing Integration Support',
   'Top 5% Talent Only',
 ]
 
 export default function ComparisonTable() {
   return (
-    <section className="relative w-full py-20 md:py-32 overflow-hidden">
+    <section className="relative w-full py-20  overflow-hidden">
       {/* Split Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 left-0 w-1/2 bg-white dark:bg-neutral-950" />
@@ -119,7 +121,7 @@ export default function ComparisonTable() {
                   transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
                 >
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-neutral-300 dark:bg-neutral-700 flex items-center justify-center">
-                    {index < 2 ? (
+                    {index < 3 ? (
                       <div className="w-3 h-3 rounded-full bg-neutral-400 dark:bg-neutral-600" />
                     ) : (
                       <X className="w-5 h-5 text-neutral-400 dark:text-neutral-600" strokeWidth={2} />

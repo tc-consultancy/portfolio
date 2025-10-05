@@ -17,9 +17,10 @@ import Support from './sections/support'
 import SecurityTrust from './outsourcingonecomponents/security-trust'
 import { heromp4 } from '@/assets'
 import VideoModal from '@/components/video-modal'
+import PricingSection from './outsourcingonecomponents/pricing-section'
 
 export default function Outsourcingone() {
-    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
 
   useEffect(() => {
     // Enable smooth scrolling
@@ -32,25 +33,26 @@ export default function Outsourcingone() {
 
   return (
     <div className="w-full overflow-x-hidden">
-      <VideoModal 
-                      isOpen={isVideoModalOpen} 
-                      onClose={() => setIsVideoModalOpen(false)} 
-                      videoSrc={heromp4} 
-                  />
-      <HeroSection onClick={() => setIsVideoModalOpen(true)}/>
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        videoSrc={heromp4}
+      />
+      <HeroSection onClick={() => setIsVideoModalOpen(true)} />
       <TrustBar />
       <ProblemPromise />
+      <CompanyDifference />
       <HowItWorks />
       <VettingProcess />
       <RolesGrid />
-      <CompanyDifference />
-      <ComparisonTable />
-      <CaseStudies />
       <TalentMatcher />
-      <ROICalculator />
+      <CaseStudies />
+      <ComparisonTable />
       <EngagementModels />
+      <PricingSection/>
+      <ROICalculator />
+      <SecurityTrust />
       <Support />
-     <SecurityTrust/>
       <FAQSection />
       <FinalCTA />
     </div>
