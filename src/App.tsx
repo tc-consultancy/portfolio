@@ -28,6 +28,7 @@ import ManagedServices from './pages/services/it-cloud-services/managed-services
 import MicroSoftManagedServices from './pages/services/it-cloud-services/microsoft-managed-services'
 import ProfessionalConsulting from './pages/services/it-cloud-services/professional-consulting'
 import InfraOutsourcingServices from './pages/services/it-cloud-services/infra-outsourcing'
+import Outsourcingone from './pages/outsourcing/outsourcingone'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/outsourcing" element={<Outsourcingone />} />
         <Route path="/outsourcing" element={<Outsourcing />} />
         <Route path="/services/hire-recruiter" element={<HireRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />

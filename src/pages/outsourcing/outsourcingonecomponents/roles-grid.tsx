@@ -1,0 +1,201 @@
+import { motion } from 'framer-motion'
+import {
+  Code,
+  Palette,
+  Database,
+  Cloud,
+  TestTube,
+  Smartphone,
+  Shield,
+  Headphones,
+} from 'lucide-react'
+
+const roles = [
+  {
+    icon: Code,
+    title: 'Full-Stack Developers',
+    size: 'large',
+    hasBlob: true,
+  },
+  {
+    icon: Palette,
+    title: 'UX/UI Designers',
+    size: 'small',
+    hasBlob: false,
+  },
+  {
+    icon: Database,
+    title: 'Data Scientists',
+    size: 'large',
+    hasBlob: true,
+  },
+  {
+    icon: Cloud,
+    title: 'DevOps Engineers',
+    size: 'small',
+    hasBlob: false,
+  },
+  {
+    icon: TestTube,
+    title: 'QA & Test Automation',
+    size: 'medium',
+    hasBlob: true,
+  },
+  {
+    icon: Smartphone,
+    title: 'Mobile Developers',
+    size: 'medium',
+    hasBlob: false,
+  },
+  {
+    icon: Shield,
+    title: 'Security Specialists',
+    size: 'small',
+    hasBlob: true,
+  },
+  {
+    icon: Headphones,
+    title: 'IT Support',
+    size: 'medium',
+    hasBlob: false,
+  },
+]
+
+export default function RolesGrid() {
+  return (
+    <section
+      id="roles-section"
+      className="relative w-full bg-white dark:bg-neutral-950 py-20 md:py-32 overflow-hidden"
+    >
+      <div className="relative max-w-7xl mx-auto px-6">
+        {/* Headline */}
+        <motion.h2
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Specialized Talent Across the Tech Spectrum
+        </motion.h2>
+
+        {/* Bento Box Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 auto-rows-[180px]">
+          {roles.map((role, index) => {
+            const sizeClasses = {
+              small: 'md:col-span-1 lg:col-span-2 md:row-span-1',
+              medium: 'md:col-span-2 lg:col-span-2 md:row-span-1',
+              large: 'md:col-span-2 lg:col-span-3 md:row-span-2',
+            }
+
+            const iconSizes = {
+              small: 'w-10 h-10',
+              medium: 'w-12 h-12',
+              large: 'w-16 h-16',
+            }
+
+            return (
+              <motion.div
+                key={index}
+                className={`relative group cursor-pointer ${
+                  sizeClasses[role.size as keyof typeof sizeClasses]
+                }`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                whileHover={{ y: -4 }}
+              >
+                <div
+                  className={`relative h-full rounded-3xl overflow-hidden transition-all duration-300 ${
+                    role.hasBlob
+                      ? 'bg-gradient-to-br from-purple-50 to-white dark:from-purple-950/20 dark:to-neutral-900'
+                      : 'bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800'
+                  } group-hover:shadow-2xl`}
+                >
+                  {/* Blob Background */}
+                  {role.hasBlob && (
+                    <div className="absolute inset-0 opacity-5">
+                      <svg
+                        viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-full h-full"
+                      >
+                        <path
+                          fill="#a855f7"
+                          d="M47.1,-57.1C59.9,-49.3,68.4,-33.6,71.8,-16.6C75.2,0.4,73.5,18.7,65.4,33.3C57.3,47.9,42.8,58.8,26.3,64.5C9.8,70.2,-8.7,70.7,-25.5,65.8C-42.3,60.9,-57.4,50.6,-65.8,36.2C-74.2,21.8,-75.9,3.3,-72.8,-13.9C-69.7,-31.1,-61.8,-47,-48.9,-54.9C-36,-62.8,-18,-62.7,-0.5,-62.1C17,-61.5,34.3,-64.9,47.1,-57.1Z"
+                          transform="translate(100 100)"
+                        />
+                      </svg>
+                    </div>
+                  )}
+
+                  {/* Content */}
+                  <div className="relative h-full p-6 flex flex-col justify-between">
+                    {/* Icon */}
+                    <motion.div
+                      className="flex-shrink-0"
+                      whileHover={{ rotate: 10 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-purple-400/10 flex items-center justify-center group-hover:bg-purple-400/20 transition-colors duration-300">
+                        <role.icon
+                          className={`${
+                            iconSizes[role.size as keyof typeof iconSizes]
+                          } text-purple-400 group-hover:text-purple-500 transition-colors duration-300`}
+                        />
+                      </div>
+                    </motion.div>
+
+                    {/* Title */}
+                    <div>
+                      <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-neutral-900 dark:text-white mb-2 group-hover:text-purple-400 dark:group-hover:text-purple-400 transition-colors duration-300">
+                        {role.title}
+                      </h3>
+                      
+                      {/* View Profiles Link - appears on hover */}
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-sm font-semibold text-purple-400 flex items-center gap-2">
+                          View Profiles
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            )
+          })}
+        </div>
+
+        {/* Bottom CTA */}
+        <motion.div
+          className="text-center mt-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
+            Can't find the role you're looking for?
+          </p>
+          <button className="px-8 py-4 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            Tell Us What You Need
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

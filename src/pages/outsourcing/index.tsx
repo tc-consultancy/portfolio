@@ -408,10 +408,11 @@ export default function Outsourcing() {
             <Feature />
             <Platform />
             <Solutions />
-            <Support />
             <GetStarted />
+            <Support />
             <Testimonials />
-            <CtaDemo />
+            <CtaDemo isVideoModalOpen={isVideoModalOpen} setIsVideoModalOpen={setIsVideoModalOpen}  />
+            <FAQSection />
         </>
     )
 }
