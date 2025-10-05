@@ -92,13 +92,13 @@ export default function CompanyDifference() {
 
             {/* Differentiators - Positioned on Pentagon Points */}
             {differentiators.map((diff, index) => {
-              // Pentagon points: top, top-right, bottom-right, bottom-left, top-left
+              // Pentagon points with cards positioned top-center at each corner
               const positions = [
-                { x: 50, y: 10 },  // top
-                { x: 90, y: 40 },  // top-right
-                { x: 75, y: 85 },  // bottom-right
-                { x: 25, y: 85 },  // bottom-left
-                { x: 10, y: 40 },  // top-left
+                { x: 50, y: 10 },  // top corner
+                { x: 90, y: 40 },  // top-right corner
+                { x: 75, y: 85 },  // bottom-right corner
+                { x: 25, y: 85 },  // bottom-left corner
+                { x: 10, y: 40 },  // top-left corner
               ]
 
               const pos = positions[index]
@@ -108,9 +108,9 @@ export default function CompanyDifference() {
                   key={index}
                   className="absolute w-44 md:w-52"
                   style={{
-                    left: `${pos.x}%`,
-                    top: `${pos.y}%`,
-                    transform: 'translate(-50%, -50%)',
+                    left: `${pos.x -17}%`,
+                    top: `${pos.y -5}%`,
+                    transform: 'translate(-50%, 0)',
                   }}
                   initial={{ opacity: 0, scale: 0 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -146,7 +146,7 @@ export default function CompanyDifference() {
 
                   {/* Differentiator Card */}
                   <motion.div
-                    className="relative group cursor-pointer"
+                    className="relative group cursor-pointer flex flex-col items-center"
                     whileHover={{ scale: 1.05 }}
                     animate={{
                       y: [0, -10, 0],
@@ -159,21 +159,21 @@ export default function CompanyDifference() {
                       },
                     }}
                   >
-                    {/* Circle with Icon */}
-                    <div className="relative mx-auto w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-xl flex items-center justify-center mb-3 group-hover:shadow-2xl transition-shadow duration-300">
+                    {/* Circle with Icon - Positioned at pentagon corner */}
+                    <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-xl flex items-center justify-center group-hover:shadow-2xl transition-shadow duration-300">
                       <diff.icon className="w-7 h-7 md:w-9 md:h-9 text-white" />
                     </div>
 
-                    {/* Content */}
-                    <div className="text-center bg-white dark:bg-neutral-900 rounded-2xl p-3 md:p-4 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                      <h3 className="text-sm md:text-base font-bold text-neutral-900 dark:text-white mb-2">
+                    {/* Content - Below the icon */}
+                    <div className="mt-1 text-center relative bg-white dark:bg-neutral-900 rounded-2xl p-3 md:p-x md:py-3 shadow-lg group-hover:shadow-xl transition-shadow duration-300 w-full">
+                      <h3 className="text-sm md:text-base font-bold text-neutral-900 dark:text-white mb-1">
                         {diff.title}
                       </h3>
-                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mb-2 leading-relaxed">
+                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mb-1 leading-relaxed">
                         {diff.description}
                       </p>
-                      <div className="inline-block px-2 py-1 bg-purple-400/10 rounded-full">
-                        <span className="text-xs font-bold text-purple-400">
+                      <div className="inline-block absolute -top-5 -right-12 px-2 py-1 bg-purple-400 rounded-full">
+                        <span className="text-xs font-bold text-white">
                           {diff.metric}
                         </span>
                       </div>
