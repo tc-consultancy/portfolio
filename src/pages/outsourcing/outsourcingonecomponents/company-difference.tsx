@@ -40,14 +40,6 @@ const differentiators = [
 ]
 
 export default function CompanyDifference() {
-  const positions = {
-    top: 'top-0 left-1/2 -translate-x-1/2',
-    'top-right': 'top-[15%] right-[5%]',
-    'bottom-right': 'bottom-[15%] right-[5%]',
-    'bottom-left': 'bottom-[15%] left-[5%]',
-    left: 'top-1/2 left-[5%] -translate-y-1/2',
-  }
-
   return (
     <section className="relative w-full bg-gradient-to-b from-purple-50/5 to-white dark:from-purple-950/5 dark:to-neutral-950 py-20 md:py-32 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6">
@@ -63,24 +55,20 @@ export default function CompanyDifference() {
         </motion.h2>
 
         {/* Pentagon Layout Container */}
-        <div className="relative h-[800px] md:h-[900px] max-w-5xl mx-auto">
+        <div className="relative h-[700px] md:h-[800px] lg:h-[900px] max-w-6xl mx-auto">
           {/* Central Circle */}
           <motion.div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-2xl flex items-center justify-center z-10"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-2xl flex items-center justify-center z-10"
             initial={{ scale: 0, rotate: 0 }}
             whileInView={{ scale: 1, rotate: 360 }}
             viewport={{ once: true }}
             transition={{ duration: 1, type: 'spring' }}
-            animate={{ rotate: [0, 360] }}
-            style={{
-              animation: 'spin 60s linear infinite',
-            }}
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+              <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                 Why
               </div>
-              <div className="text-xl md:text-2xl font-bold text-white">
+              <div className="text-lg md:text-xl font-bold text-white">
                 Choose Us
               </div>
             </div>
@@ -89,18 +77,18 @@ export default function CompanyDifference() {
           {/* Differentiators */}
           {differentiators.map((diff, index) => {
             const angle = (index * 72 - 90) * (Math.PI / 180)
-            const radius = 350
+            const radius = 280 // Smaller radius to fit on screen
             const x = Math.cos(angle) * radius
             const y = Math.sin(angle) * radius
 
             return (
               <motion.div
                 key={index}
-                className="absolute"
+                className="absolute w-52 md:w-56 lg:w-60"
                 style={{
-                  left: '50%',
-                  top: '50%',
-                  transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
+                  left: `calc(50% + ${x}px)`,
+                  top: `calc(50% + ${y}px)`,
+                  transform: 'translate(-50%, -50%)',
                 }}
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -113,9 +101,8 @@ export default function CompanyDifference() {
                   style={{
                     width: `${radius}px`,
                     height: '2px',
-                    transform: `translate(-50%, -50%) rotate(${
-                      index * 72 - 90
-                    }deg)`,
+                    transform: `translate(-50%, -50%) rotate(${index * 72 - 90
+                      }deg)`,
                     transformOrigin: 'left center',
                   }}
                 >
@@ -137,7 +124,7 @@ export default function CompanyDifference() {
 
                 {/* Differentiator Card */}
                 <motion.div
-                  className="relative w-64 md:w-72 group cursor-pointer"
+                  className="relative group cursor-pointer"
                   whileHover={{ scale: 1.05 }}
                   animate={{
                     y: [0, -10, 0],
@@ -151,20 +138,20 @@ export default function CompanyDifference() {
                   }}
                 >
                   {/* Circle with Icon */}
-                  <div className="relative mx-auto w-28 h-28 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-xl flex items-center justify-center mb-4 group-hover:shadow-2xl transition-shadow duration-300">
-                    <diff.icon className="w-12 h-12 md:w-14 md:h-14 text-white" />
+                  <div className="relative mx-auto w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-xl flex items-center justify-center mb-3 group-hover:shadow-2xl transition-shadow duration-300">
+                    <diff.icon className="w-9 h-9 md:w-11 md:h-11 text-white" />
                   </div>
 
                   {/* Content */}
-                  <div className="text-center bg-white dark:bg-neutral-900 rounded-2xl p-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                    <h3 className="text-lg md:text-xl font-bold text-neutral-900 dark:text-white mb-2">
+                  <div className="text-center bg-white dark:bg-neutral-900 rounded-2xl p-4 md:p-5 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                    <h3 className="text-base md:text-lg font-bold text-neutral-900 dark:text-white mb-2">
                       {diff.title}
                     </h3>
-                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                    <p className="text-xs md:text-sm text-neutral-600 dark:text-neutral-400 mb-2 leading-relaxed">
                       {diff.description}
                     </p>
-                    <div className="inline-block px-4 py-2 bg-purple-400/10 rounded-full">
-                      <span className="text-sm font-bold text-purple-400">
+                    <div className="inline-block px-3 py-1.5 bg-purple-400/10 rounded-full">
+                      <span className="text-xs font-bold text-purple-400">
                         {diff.metric}
                       </span>
                     </div>
