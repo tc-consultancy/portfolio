@@ -63,7 +63,7 @@ export default function CaseStudies() {
   const x = useMotionValue(0)
 
   return (
-    <section className="relative w-full bg-white dark:bg-neutral-950 py-20 md:py-32 overflow-hidden">
+    <section className="relative w-full bg-white dark:bg-neutral-950 py-20  overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.h2

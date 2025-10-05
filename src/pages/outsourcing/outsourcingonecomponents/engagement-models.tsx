@@ -34,7 +34,7 @@ const models = [
 
 export default function EngagementModels() {
   return (
-    <section className="relative w-full bg-gradient-to-b from-white to-purple-50/30 dark:from-neutral-950 dark:to-purple-950/20 py-20 md:py-32 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b from-white to-purple-50/30 dark:from-neutral-950 dark:to-purple-950/20 py-20  overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.h2

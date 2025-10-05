@@ -46,7 +46,7 @@ export default function TalentMatcher() {
   }
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-white to-purple-50/10 dark:from-neutral-950 dark:to-purple-950/5 py-20 md:py-32 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b from-white to-purple-50/10 dark:from-neutral-950 dark:to-purple-950/5 py-20  overflow-hidden">
       {/* Blob Shapes */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-purple-400/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/5 rounded-full blur-3xl" />

@@ -23,7 +23,7 @@ export default function ROICalculator() {
   }, [salary])
 
   return (
-    <section className="relative w-full bg-neutral-900 dark:bg-neutral-950 py-20 md:py-32 overflow-hidden">
+    <section className="relative w-full bg-neutral-900 dark:bg-neutral-950 py-20  overflow-hidden">
       {/* Grid Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div

@@ -36,7 +36,7 @@ export default function FinalCTA() {
   return (
     <section
       id="contact-section"
-      className="relative w-full bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 py-20 md:py-32 overflow-hidden"
+      className="relative w-full bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 py-20  overflow-hidden"
     >
       {/* Curved Wave Divider at Top */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">

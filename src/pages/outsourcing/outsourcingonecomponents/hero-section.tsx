@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
-export default function HeroSection() {
+export default function HeroSection({onClick}:{onClick:()=>void}) {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact-section')
     if (contactSection) {
@@ -110,10 +110,10 @@ export default function HeroSection() {
                 Hire Top Talent Now
               </Button>
               <button
-                onClick={scrollToRoles}
+                onClick={onClick}
                 className="group flex items-center justify-center gap-2 text-lg font-semibold text-neutral-900 dark:text-white hover:text-purple-400 dark:hover:text-purple-400 transition-colors duration-300"
               >
-                See Our Vetted Profiles
+                See It In Action
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>

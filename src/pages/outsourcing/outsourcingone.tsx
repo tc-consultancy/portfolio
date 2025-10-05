@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import HeroSection from './outsourcingonecomponents/hero-section'
 import TrustBar from './outsourcingonecomponents/trust-bar'
 import ProblemPromise from './outsourcingonecomponents/problem-promise'
@@ -14,8 +14,13 @@ import EngagementModels from './outsourcingonecomponents/engagement-models'
 import FAQSection from './outsourcingonecomponents/faq-section'
 import FinalCTA from './outsourcingonecomponents/final-cta'
 import Support from './sections/support'
+import SecurityTrust from './outsourcingonecomponents/security-trust'
+import { heromp4 } from '@/assets'
+import VideoModal from '@/components/video-modal'
 
 export default function Outsourcingone() {
+    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
+
   useEffect(() => {
     // Enable smooth scrolling
     document.documentElement.style.scrollBehavior = 'smooth'
@@ -27,7 +32,12 @@ export default function Outsourcingone() {
 
   return (
     <div className="w-full overflow-x-hidden">
-      <HeroSection />
+      <VideoModal 
+                      isOpen={isVideoModalOpen} 
+                      onClose={() => setIsVideoModalOpen(false)} 
+                      videoSrc={heromp4} 
+                  />
+      <HeroSection onClick={() => setIsVideoModalOpen(true)}/>
       <TrustBar />
       <ProblemPromise />
       <HowItWorks />
@@ -40,7 +50,7 @@ export default function Outsourcingone() {
       <ROICalculator />
       <EngagementModels />
       <Support />
-     
+     <SecurityTrust/>
       <FAQSection />
       <FinalCTA />
     </div>
