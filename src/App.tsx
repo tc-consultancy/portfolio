@@ -26,6 +26,8 @@ import SaasImplimentations from './pages/services/software-development/saas-impl
 import Outsourcing from './pages/outsourcing'
 import ManagedServices from './pages/services/it-cloud-services/managed-services'
 import MicroSoftManagedServices from './pages/services/it-cloud-services/microsoft-managed-services'
+import ProfessionalConsulting from './pages/services/it-cloud-services/professional-consulting'
+import InfraOutsourcingServices from './pages/services/it-cloud-services/infra-outsourcing'
 
 function App() {
   return (
@@ -55,7 +57,11 @@ function App() {
         <Route path="/services/governance-risk" element={<GovernanceRisk />} />
         <Route path="/services/data-privacy" element={<DataPrivacyAndProtecttion />} />
         <Route path="/services/iot-security" element={<IotOtSolutions />} />
+
+        {/* {'Iot/Cloud Solutions'} */}
         <Route path="/services/security-implementation" element={<ImplimentationService />} />
+        <Route path="/services/professional-consulting" element={<ProfessionalConsulting />} />
+        <Route path="/services/infrastructure-outsourcing" element={<InfraOutsourcingServices />} />
 
         {/* {'software development'} */}
         <Route path="/services/mobile-web-application" element={<MobileAndWebApp />} />

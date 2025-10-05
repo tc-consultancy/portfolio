@@ -404,13 +404,13 @@ export default function Outsourcing() {
                     </div>
                 </div>
             </section>
-            <Platform />
-            <Solutions />
-            <Testimonials />
             <Comparision />
             <Feature />
+            <Platform />
+            <Solutions />
             <Support />
             <GetStarted />
+            <Testimonials />
             <CtaDemo />
         </>
     )
