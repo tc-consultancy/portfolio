@@ -41,11 +41,11 @@ const differentiators = [
 
 export default function CompanyDifference() {
   return (
-    <section className="relative w-full bg-gradient-to-b from-purple-50/5 to-white dark:from-purple-950/5 dark:to-neutral-950 py-20 md:py-32 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-6">
+    <section className="relative w-full min-h-screen bg-gradient-to-b from-purple-50/5 to-white dark:from-purple-950/5 dark:to-neutral-950 flex items-center justify-center py-20 overflow-hidden">
+      <div className="relative w-full max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.h2
-          className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white text-center mb-32"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -54,149 +54,137 @@ export default function CompanyDifference() {
           Why Companies Choose Us as Their Outsourcing Partner
         </motion.h2>
 
-        {/* Pentagon Layout Container */}
-        <div className="relative h-[700px] md:h-[800px] lg:h-[900px] max-w-6xl mx-auto">
-          {/* Central Circle */}
-          <motion.div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-2xl flex items-center justify-center z-10"
-            initial={{ scale: 0, rotate: 0 }}
-            whileInView={{ scale: 1, rotate: 360 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, type: 'spring' }}
-          >
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                Why
-              </div>
-              <div className="text-lg md:text-xl font-bold text-white">
-                Choose Us
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Differentiators */}
-          {differentiators.map((diff, index) => {
-            const angle = (index * 72 - 90) * (Math.PI / 180)
-            const radius = 280 // Smaller radius to fit on screen
-            const x = Math.cos(angle) * radius
-            const y = Math.sin(angle) * radius
-
-            return (
-              <motion.div
-                key={index}
-                className="absolute w-52 md:w-56 lg:w-60"
-                style={{
-                  left: `calc(50% + ${x}px)`,
-                  top: `calc(50% + ${y}px)`,
-                  transform: 'translate(-50%, -50%)',
-                }}
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+        {/* Square Container with Pentagon */}
+        <div className="relative w-full flex items-center justify-center">
+          <div className="relative h-[80vh] aspect-square max-w-4xl mx-auto">
+            {/* Pentagon Border Lines */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100">
+              <motion.polygon
+                points="50,10 90,40 75,85 25,85 10,40"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="0.3"
+                className="text-purple-400/30"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-              >
-                {/* Connecting Line */}
-                <svg
-                  className="absolute top-1/2 left-1/2 pointer-events-none"
-                  style={{
-                    width: `${radius}px`,
-                    height: '2px',
-                    transform: `translate(-50%, -50%) rotate(${index * 72 - 90
-                      }deg)`,
-                    transformOrigin: 'left center',
-                  }}
-                >
-                  <motion.line
-                    x1="0"
-                    y1="1"
-                    x2={radius}
-                    y2="1"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeDasharray="5,5"
-                    className="text-purple-400/30"
-                    initial={{ pathLength: 0 }}
-                    whileInView={{ pathLength: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                  />
-                </svg>
+                transition={{ duration: 2 }}
+              />
+            </svg>
 
-                {/* Differentiator Card */}
+            {/* Central Circle */}
+            <motion.div
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-2xl flex items-center justify-center z-10"
+              initial={{ scale: 0, rotate: 0 }}
+              whileInView={{ scale: 1, rotate: 360 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, type: 'spring' }}
+            >
+              <div className="text-center">
+                <div className="text-xl md:text-2xl font-bold text-white mb-1">
+                  Why
+                </div>
+                <div className="text-base md:text-lg font-bold text-white">
+                  Choose Us
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Differentiators - Positioned on Pentagon Points */}
+            {differentiators.map((diff, index) => {
+              // Pentagon points: top, top-right, bottom-right, bottom-left, top-left
+              const positions = [
+                { x: 50, y: 10 },  // top
+                { x: 90, y: 40 },  // top-right
+                { x: 75, y: 85 },  // bottom-right
+                { x: 25, y: 85 },  // bottom-left
+                { x: 10, y: 40 },  // top-left
+              ]
+
+              const pos = positions[index]
+
+              return (
                 <motion.div
-                  className="relative group cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  animate={{
-                    y: [0, -10, 0],
+                  key={index}
+                  className="absolute w-44 md:w-52"
+                  style={{
+                    left: `${pos.x}%`,
+                    top: `${pos.y}%`,
+                    transform: 'translate(-50%, -50%)',
                   }}
-                  transition={{
-                    y: {
-                      duration: 3,
-                      repeat: Infinity,
-                      delay: index * 0.5,
-                    },
-                  }}
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  {/* Circle with Icon */}
-                  <div className="relative mx-auto w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-xl flex items-center justify-center mb-3 group-hover:shadow-2xl transition-shadow duration-300">
-                    <diff.icon className="w-9 h-9 md:w-11 md:h-11 text-white" />
-                  </div>
+                  {/* Connecting Line to Center */}
+                  <svg
+                    className="absolute pointer-events-none"
+                    style={{
+                      left: '50%',
+                      top: '50%',
+                      width: '200px',
+                      height: '200px',
+                      transform: 'translate(-50%, -50%)',
+                    }}
+                  >
+                    <motion.line
+                      x1="100"
+                      y1="100"
+                      x2={100 + (50 - pos.x) * 2}
+                      y2={100 + (50 - pos.y) * 2}
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeDasharray="5,5"
+                      className="text-purple-400/30"
+                      initial={{ pathLength: 0 }}
+                      whileInView={{ pathLength: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1, delay: index * 0.1 }}
+                    />
+                  </svg>
 
-                  {/* Content */}
-                  <div className="text-center bg-white dark:bg-neutral-900 rounded-2xl p-4 md:p-5 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                    <h3 className="text-base md:text-lg font-bold text-neutral-900 dark:text-white mb-2">
-                      {diff.title}
-                    </h3>
-                    <p className="text-xs md:text-sm text-neutral-600 dark:text-neutral-400 mb-2 leading-relaxed">
-                      {diff.description}
-                    </p>
-                    <div className="inline-block px-3 py-1.5 bg-purple-400/10 rounded-full">
-                      <span className="text-xs font-bold text-purple-400">
-                        {diff.metric}
-                      </span>
+                  {/* Differentiator Card */}
+                  <motion.div
+                    className="relative group cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    animate={{
+                      y: [0, -10, 0],
+                    }}
+                    transition={{
+                      y: {
+                        duration: 3,
+                        repeat: Infinity,
+                        delay: index * 0.5,
+                      },
+                    }}
+                  >
+                    {/* Circle with Icon */}
+                    <div className="relative mx-auto w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-xl flex items-center justify-center mb-3 group-hover:shadow-2xl transition-shadow duration-300">
+                      <diff.icon className="w-7 h-7 md:w-9 md:h-9 text-white" />
                     </div>
-                  </div>
-                </motion.div>
-              </motion.div>
-            )
-          })}
 
-          {/* Floating Decorative Elements */}
-          <motion.div
-            className="absolute top-10 right-10 w-16 h-16 rounded-full bg-purple-400/10"
-            animate={{
-              y: [0, -20, 0],
-              scale: [1, 1.1, 1],
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-            }}
-          />
-          <motion.div
-            className="absolute bottom-10 left-10 w-12 h-12 rounded-full bg-purple-400/10"
-            animate={{
-              y: [0, 20, 0],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 5,
-              repeat: Infinity,
-            }}
-          />
+                    {/* Content */}
+                    <div className="text-center bg-white dark:bg-neutral-900 rounded-2xl p-3 md:p-4 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                      <h3 className="text-sm md:text-base font-bold text-neutral-900 dark:text-white mb-2">
+                        {diff.title}
+                      </h3>
+                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mb-2 leading-relaxed">
+                        {diff.description}
+                      </p>
+                      <div className="inline-block px-2 py-1 bg-purple-400/10 rounded-full">
+                        <span className="text-xs font-bold text-purple-400">
+                          {diff.metric}
+                        </span>
+                      </div>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              )
+            })}
+          </div>
         </div>
       </div>
-
-      <style>{`
-        @keyframes spin {
-          from {
-            transform: translate(-50%, -50%) rotate(0deg);
-          }
-          to {
-            transform: translate(-50%, -50%) rotate(360deg);
-          }
-        }
-      `}</style>
     </section>
   )
 }
