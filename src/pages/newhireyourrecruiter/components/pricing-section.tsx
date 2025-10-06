@@ -5,7 +5,7 @@ const tiers = [
   {
     name: 'Starter',
     applicationsPerWeek: 25,
-    price: '$299',
+    price: '$199',
     period: '/month',
     features: [
       'Up to 25 applications/week',
@@ -13,14 +13,14 @@ const tiers = [
       'Custom cover letters',
       '48-hour turnaround',
       'Email support',
-      'Application tracking',
+      'Weekly progress reports',
     ],
     popular: false,
   },
   {
     name: 'Professional',
     applicationsPerWeek: 50,
-    price: '$499',
+    price: '$299',
     period: '/month',
     features: [
       'Up to 50 applications/week',
@@ -28,30 +28,12 @@ const tiers = [
       'Custom cover letters',
       '<24-hour turnaround',
       'Priority support',
-      'Application tracking',
-      'Interview preparation',
-      'Unlimited revisions',
-    ],
-    popular: true,
-  },
-  {
-    name: 'Executive',
-    applicationsPerWeek: 100,
-    price: '$799',
-    period: '/month',
-    features: [
-      'Up to 100 applications/week',
-      'ATS-optimized resumes',
-      'Custom cover letters',
-      '<12-hour turnaround',
-      'Dedicated account manager',
-      'Application tracking',
+      'Daily progress updates',
       'Interview preparation',
       'Unlimited revisions',
       'LinkedIn optimization',
-      'Salary negotiation support',
     ],
-    popular: false,
+    popular: true,
   },
 ]
 
@@ -80,7 +62,7 @@ export default function PricingSection() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {tiers.map((tier, index) => (
             <motion.div
               key={tier.name}
@@ -97,11 +79,10 @@ export default function PricingSection() {
               )}
 
               <div
-                className={`relative h-full rounded-3xl p-8 md:p-12 ${
-                  tier.popular
-                    ? 'bg-gradient-to-br from-purple-500 to-purple-700 text-white border-2 border-purple-400 shadow-2xl scale-105'
-                    : 'bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white shadow-xl'
-                }`}
+                className={`relative h-full rounded-3xl p-8 md:p-12 ${tier.popular
+                  ? 'bg-gradient-to-br from-purple-500 to-purple-700 text-white border-2 border-purple-400 shadow-2xl scale-105'
+                  : 'bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white shadow-xl'
+                  }`}
               >
                 {/* Background decoration for featured card */}
                 {tier.popular && (
@@ -146,11 +127,10 @@ export default function PricingSection() {
 
                   {/* CTA Button */}
                   <button
-                    className={`w-full py-4 rounded-full font-semibold transition-all hover:scale-105 ${
-                      tier.popular
-                        ? 'bg-white text-purple-600 hover:bg-neutral-100'
-                        : 'bg-purple-400 text-white hover:bg-purple-500'
-                    }`}
+                    className={`w-full py-4 rounded-full font-semibold transition-all hover:scale-105 ${tier.popular
+                      ? 'bg-white text-purple-600 hover:bg-neutral-100'
+                      : 'bg-purple-400 text-white hover:bg-purple-500'
+                      }`}
                   >
                     Get Started
                   </button>

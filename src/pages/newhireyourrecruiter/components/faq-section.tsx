@@ -62,7 +62,7 @@ const faqs: FAQ[] = [
   {
     category: 'Process & Timeline',
     question: 'How do I track my applications?',
-    answer: 'You get access to a real-time dashboard showing all submitted applications, their status, and any responses received. You\'ll also receive weekly summary reports.',
+    answer: 'You receive detailed weekly (or daily for Professional plan) progress reports showing all submitted applications, their status, and any responses received. We keep you updated every step of the way.',
   },
 
   // Quality & Results

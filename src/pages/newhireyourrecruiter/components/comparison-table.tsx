@@ -7,7 +7,7 @@ const features = [
   { text: '<24 hour turnaround', ourService: true, others: false },
   { text: '50+ applications per week', ourService: true, others: false },
   { text: 'Industry expert writers', ourService: true, others: false },
-  { text: 'Application tracking dashboard', ourService: true, others: false },
+  { text: 'Weekly progress reports', ourService: true, others: false },
   { text: 'Unlimited revisions', ourService: true, others: false },
   { text: 'Priority support', ourService: true, others: false },
   { text: 'Interview preparation', ourService: true, others: false },
