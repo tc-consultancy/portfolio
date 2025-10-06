@@ -38,7 +38,7 @@ export default function ComparisonTable() {
         </motion.div>
 
         {/* Comparison Containers */}
-        <div className="flex flex-col lg:flex-row gap-8 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
           {/* Our Service */}
           <motion.div
             className="w-full lg:w-[48%]"
@@ -51,7 +51,7 @@ export default function ComparisonTable() {
               boxShadow: '0 0 60px rgba(168, 85, 247, 0.3)',
             }}
           >
-            <div className="bg-white dark:bg-neutral-950 rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-purple-400 h-full">
+            <div className="bg-white dark:bg-neutral-950 rounded-3xl px-6 md:px-10 py-6 shadow-2xl border-2 border-purple-400 h-full">
               <div className="text-center mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-2">
                   Our Service
@@ -61,11 +61,11 @@ export default function ComparisonTable() {
                 </p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-purple-400 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-5 h-5 text-white" />
+                      <Check className="w-4 h-4 text-white" />
                     </div>
                     <span className="text-neutral-700 dark:text-neutral-300">
                       {feature.text}
@@ -93,7 +93,7 @@ export default function ComparisonTable() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-neutral-50 dark:bg-neutral-900 rounded-3xl p-8 md:p-10 shadow-2xl h-full">
+            <div className="bg-neutral-50 dark:bg-neutral-900 rounded-3xl px-6 md:px-10 py-6 shadow-2xl h-full">
               <div className="text-center mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-2">
                   DIY / Traditional Services
@@ -103,11 +103,11 @@ export default function ComparisonTable() {
                 </p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-neutral-300 dark:bg-neutral-700 flex items-center justify-center flex-shrink-0">
-                      <X className="w-5 h-5 text-neutral-600 dark:text-neutral-400" />
+                      <X className="w-4 h-4 text-neutral-600 dark:text-neutral-400" />
                     </div>
                     <span className="text-neutral-500 dark:text-neutral-500 line-through">
                       {feature.text}

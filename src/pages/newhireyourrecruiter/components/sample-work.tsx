@@ -34,7 +34,7 @@ export default function SampleWork() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -53,7 +53,7 @@ export default function SampleWork() {
           {caseStudies.map((study, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-neutral-950 rounded-2xl p-8 hover:shadow-xl transition-shadow"
+              className="bg-white dark:bg-neutral-950 rounded-2xl p-6 hover:shadow-xl transition-shadow"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -67,7 +67,7 @@ export default function SampleWork() {
               </div>
 
               {/* Name and Role */}
-              <div className="text-center mb-6">
+              <div className="text-center mb-4">
                 <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-1">
                   {study.candidateName}
                 </h3>
@@ -116,7 +116,7 @@ export default function SampleWork() {
 
         {/* CTA */}
         <motion.div
-          className="text-center mt-16"
+          className="text-center mt-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

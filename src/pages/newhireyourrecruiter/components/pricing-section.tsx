@@ -47,7 +47,7 @@ export default function PricingSection() {
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -99,7 +99,7 @@ export default function PricingSection() {
                   </h3>
 
                   {/* Price */}
-                  <div className="mb-6">
+                  <div className="mb-4">
                     <span className="text-4xl md:text-5xl font-bold">{tier.price}</span>
                     <span className={`text-lg ${tier.popular ? 'text-white/80' : 'text-neutral-500 dark:text-neutral-400'}`}>
                       {tier.period}
@@ -107,14 +107,14 @@ export default function PricingSection() {
                   </div>
 
                   {/* Applications */}
-                  <div className={`mb-6 pb-6 border-b ${tier.popular ? 'border-white/20' : 'border-neutral-200 dark:border-neutral-800'}`}>
+                  <div className={`mb-4 pb-4 border-b ${tier.popular ? 'border-white/20' : 'border-neutral-200 dark:border-neutral-800'}`}>
                     <p className={`text-lg font-semibold ${tier.popular ? 'text-white' : ''}`}>
                       {tier.applicationsPerWeek} applications/week
                     </p>
                   </div>
 
                   {/* Features */}
-                  <ul className="space-y-3 mb-8">
+                  <ul className="space-y-2 mb-8">
                     {tier.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${tier.popular ? 'text-white' : 'text-purple-400'}`} />

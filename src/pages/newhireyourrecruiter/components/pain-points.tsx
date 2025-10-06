@@ -52,7 +52,7 @@ export default function PainPoints() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Pain Points */}
-          <div className="space-y-8 relative">
+          <div className="space-y-3 relative">
             {painPoints.map((point, index) => (
               <motion.div
                 key={index}
