@@ -87,7 +87,7 @@ export default function PricingSection() {
                                 <div className="flex items-center justify-between flex-wrap gap-4">
                                     <div>
                                         <div className="text-sm text-white/80 mb-1">Average Savings</div>
-                                        <div className="text-4xl font-bold">40%</div>
+                                        <div className="text-4xl font-bold">60%</div>
                                     </div>
                                     <div className="text-right">
                                         <div className="text-sm text-white/80 mb-1">Compared to local hiring</div>

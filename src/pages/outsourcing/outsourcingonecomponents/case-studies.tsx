@@ -22,7 +22,7 @@ const caseStudies = [
     results: [
       'Reduced annual operational costs from $216,000 to $86,400',
       'Automated inventory and accounting processes',
-      'Increased revenue visibility by 40%',
+      'Increased revenue visibility by 60%',
       'Improved online presence and customer engagement',
     ],
     beforeCost: 216000,

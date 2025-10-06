@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button'
 export default function ROICalculator() {
   const [salary, setSalary] = useState(100000)
   const [displaySalary, setDisplaySalary] = useState(100000)
-  
-  const savings = salary * 0.4
+
+  const savings = salary * 0.6
   const annualSavings = savings
   const savingsPercentage = (savings / salary) * 100
 
@@ -103,7 +103,7 @@ export default function ROICalculator() {
               {/* Center Content */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2">
-                  ${Math.round(displaySalary * 0.4).toLocaleString()}
+                  ${Math.round(displaySalary * 0.6).toLocaleString()}
                 </div>
                 <div className="text-xl text-purple-400 font-semibold mb-1">
                   SAVED
@@ -156,9 +156,8 @@ export default function ROICalculator() {
                            [&::-moz-range-thumb]:cursor-pointer
                            [&::-moz-range-thumb]:shadow-lg"
                   style={{
-                    background: `linear-gradient(to right, #a855f7 0%, #a855f7 ${
-                      ((salary - 50000) / 150000) * 100
-                    }%, #262626 ${((salary - 50000) / 150000) * 100}%, #262626 100%)`,
+                    background: `linear-gradient(to right, #a855f7 0%, #a855f7 ${((salary - 50000) / 150000) * 100
+                      }%, #262626 ${((salary - 50000) / 150000) * 100}%, #262626 100%)`,
                   }}
                 />
                 <div className="flex justify-between text-sm text-neutral-400 mt-2">
@@ -182,7 +181,7 @@ export default function ROICalculator() {
               <div className="flex justify-between items-center">
                 <span className="text-neutral-400">Our Cost (Annual)</span>
                 <span className="text-xl font-bold text-white">
-                  ${(salary * 0.6).toLocaleString()}
+                  ${(salary * 0.4).toLocaleString()}
                 </span>
               </div>
               <div className="h-px bg-neutral-700" />
@@ -200,7 +199,7 @@ export default function ROICalculator() {
                 <strong className="text-white">Based on:</strong>
               </p>
               <ul className="space-y-1 list-disc list-inside">
-                <li>40% average cost savings</li>
+                <li>60% average cost savings</li>
                 <li>Includes all overhead and benefits</li>
                 <li>No hidden fees or additional costs</li>
               </ul>

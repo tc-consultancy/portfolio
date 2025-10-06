@@ -27,7 +27,7 @@ const differentiators = [
     icon: DollarSign,
     title: 'Transparent Pricing',
     description: 'All-inclusive pricing with no hidden costs',
-    metric: '40% cost savings',
+    metric: '60% cost savings',
     position: 'bottom-left',
   },
   {
