@@ -24,7 +24,7 @@ const steps = [
     number: 4,
     icon: Rocket,
     title: 'Onboard & Integrate',
-    description: 'We handle all the paperwork. Your new hire starts seamlessly.',
+    description: 'We handle all paperwork, equipment setup, and access provisioning. Your new hire starts Day 1 with everything ready.',
   },
 ]
 

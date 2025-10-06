@@ -49,7 +49,7 @@ export default function Outsourcingone() {
       <CaseStudies />
       <ComparisonTable />
       <EngagementModels />
-      <PricingSection/>
+      <PricingSection />
       <ROICalculator />
       <SecurityTrust />
       <Support />

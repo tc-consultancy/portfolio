@@ -19,8 +19,8 @@ const securityFeatures = [
   },
   {
     icon: Shield,
-    title: 'Confidentiality Agreements',
-    description: 'Comprehensive NDAs and IP protection for all team members',
+    title: '100% IP Ownership',
+    description: 'You own all code and work product. Ironclad NDAs with every team member ensure complete confidentiality',
   },
   {
     icon: Database,

@@ -38,6 +38,31 @@ const faqs = [
     answer:
       'Yes! Every client gets a dedicated success manager who serves as your single point of contact. We provide ongoing integration support, regular check-ins, and are available 24/7 to address any concerns.',
   },
+  {
+    question: 'Who owns the intellectual property?',
+    answer:
+      'You own 100% of all code, designs, and work product created by your team. This is clearly stated in our contracts with ironclad IP assignment clauses. All team members sign comprehensive NDAs before starting work.',
+  },
+  {
+    question: "What if a developer quits or doesn't work out?",
+    answer:
+      "We offer a free replacement guarantee. If a team member leaves or performance issues arise, we'll find a qualified replacement within 2 weeks at no additional cost. Our 95% retention rate means this rarely happens.",
+  },
+  {
+    question: 'How do I communicate and manage my remote team?',
+    answer:
+      'Your team uses YOUR tools - Slack, Jira, GitHub, or whatever you prefer. They attend your meetings, follow your processes, and communicate directly with you. No middleman. We only handle HR, payroll, and administrative tasks in the background.',
+  },
+  {
+    question: 'Who is the employer of record?',
+    answer:
+      'We are the legal employer of record. You contract with us, and we employ the talent. This eliminates co-employment risks for you while ensuring full compliance with local labor laws. You get all the benefits of a dedicated team without the legal complexity.',
+  },
+  {
+    question: 'How large is your talent pool?',
+    answer:
+      'We have a network of 5,000+ pre-vetted developers across 15+ countries in Latin America, Eastern Europe, and Asia. Our talent pool includes specialists in all major tech stacks, with an average of 8+ years of experience and fluent English proficiency.',
+  },
 ]
 
 export default function FAQSection() {

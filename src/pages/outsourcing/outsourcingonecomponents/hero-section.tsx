@@ -122,10 +122,18 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
             <div className="flex flex-wrap items-center gap-8 pt-8 border-t border-neutral-200 dark:border-neutral-800">
               <div>
                 <div className="text-3xl font-bold text-neutral-900 dark:text-white">
-                  500+
+                  5,000+
                 </div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Companies Trust Us
+                  Vetted Developers
+                </div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-neutral-900 dark:text-white">
+                  15+
+                </div>
+                <div className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Countries
                 </div>
               </div>
               <div>
