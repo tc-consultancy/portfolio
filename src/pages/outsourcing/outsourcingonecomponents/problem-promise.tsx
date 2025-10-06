@@ -43,7 +43,7 @@ export default function ProblemPromise() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Tired of the Endless Hunt for Qualified Tech Talent?
+          Tired of the Endless Hunt for Qualified Professionals?
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -96,7 +96,7 @@ export default function ProblemPromise() {
           >
             <div className="space-y-6">
               <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 dark:text-white leading-tight">
-                We provide a seamless solution: pre-vetted, dedicated IT
+                We provide a seamless solution: pre-vetted, industry-specialized
                 professionals who integrate with your team,{' '}
                 <span className="relative inline-block">
                   <span className="relative z-10">at a fraction of the cost</span>

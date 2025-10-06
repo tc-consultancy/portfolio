@@ -6,7 +6,7 @@ const steps = [
     number: 1,
     icon: MessageSquare,
     title: 'Tell Us Your Needs',
-    description: 'Brief us on the role, skills, and culture fit in a quick call.',
+    description: 'Share your industry requirements, skills needed, and company culture in a quick call.',
   },
   {
     number: 2,

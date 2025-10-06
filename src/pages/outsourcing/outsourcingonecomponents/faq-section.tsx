@@ -44,7 +44,7 @@ const faqs = [
       'You own 100% of all code, designs, and work product created by your team. This is clearly stated in our contracts with ironclad IP assignment clauses. All team members sign comprehensive NDAs before starting work.',
   },
   {
-    question: "What if a developer quits or doesn't work out?",
+    question: "What if a team member quits or doesn't work out?",
     answer:
       "We offer a free replacement guarantee. If a team member leaves or performance issues arise, we'll find a qualified replacement within 2 weeks at no additional cost. Our 95% retention rate means this rarely happens.",
   },
@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'How large is your talent pool?',
     answer:
-      'We have a network of 5,000+ pre-vetted developers across 15+ countries in Latin America, Eastern Europe, and Asia. Our talent pool includes specialists in all major tech stacks, with an average of 8+ years of experience and fluent English proficiency.',
+      'We have a network of 5,000+ pre-vetted professionals across 15+ countries in Latin America, Eastern Europe, and Asia. Our talent pool spans all industries—from finance and healthcare to manufacturing and retail—with an average of 8+ years of experience and fluent English proficiency.',
   },
 ]
 

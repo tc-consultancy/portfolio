@@ -92,14 +92,12 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
-              Build Your Dream{' '}
-              <span className="text-purple-400">Tech Team</span>, Without the
-              Headache
+              Scale Your{' '}
+              <span className="text-purple-400">Business</span> with World-Class Talent
             </h1>
 
             <p className="text-xl md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
-              We handle the sourcing, vetting, compliance, and onboarding so you
-              can focus on what you do best—building great products.
+              From finance to healthcare, manufacturing to retail—we deliver specialized professionals across all industries. Focus on growth while we handle talent acquisition.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -125,7 +123,7 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
                   5,000+
                 </div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Vetted Developers
+                  Vetted Professionals
                 </div>
               </div>
               <div>

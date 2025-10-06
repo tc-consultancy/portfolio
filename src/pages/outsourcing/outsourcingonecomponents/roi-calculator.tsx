@@ -124,7 +124,7 @@ export default function ROICalculator() {
             {/* Salary Input */}
             <div>
               <label className="block text-lg font-semibold text-white mb-2">
-                Local Salary for This Role
+                Local Salary for This Position
               </label>
               <div className="relative">
                 <input

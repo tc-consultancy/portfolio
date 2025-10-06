@@ -18,6 +18,8 @@ import SecurityTrust from './outsourcingonecomponents/security-trust'
 import { heromp4 } from '@/assets'
 import VideoModal from '@/components/video-modal'
 import PricingSection from './outsourcingonecomponents/pricing-section'
+import Industries from '../home/sections/industries'
+import IndustriesGrid from './outsourcingonecomponents/industries-grid'
 
 export default function Outsourcingone() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -44,8 +46,9 @@ export default function Outsourcingone() {
       <CompanyDifference />
       <HowItWorks />
       <VettingProcess />
-      <RolesGrid />
-      <TalentMatcher />
+      {/* <RolesGrid /> */}
+      <IndustriesGrid />
+      {/* <TalentMatcher /> */}
       <CaseStudies />
       <ComparisonTable />
       <EngagementModels />
