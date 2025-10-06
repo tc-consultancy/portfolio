@@ -29,6 +29,7 @@ import MicroSoftManagedServices from './pages/services/it-cloud-services/microso
 import ProfessionalConsulting from './pages/services/it-cloud-services/professional-consulting'
 import InfraOutsourcingServices from './pages/services/it-cloud-services/infra-outsourcing'
 import Outsourcingone from './pages/outsourcing/outsourcingone'
+import NewHireYourRecruiter from './pages/newhireyourrecruiter'
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/outsourcing" element={<Outsourcingone />} />
         <Route path="/outsourcing" element={<Outsourcing />} />
-        <Route path="/services/hire-recruiter" element={<HireRecruiter />} />
+        <Route path="/services/hire-recruiter" element={<NewHireYourRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />
         <Route path="/industries" element={<IndustriesPage />} />
         {/* {'agents'}  */}
