@@ -182,7 +182,7 @@ export default function CaseStudies() {
   const activeCase = caseStudies[activeIndex]
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-white to-purple-50/30 dark:from-neutral-950 dark:to-purple-950/20 py-20 md:py-32 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b from-white to-purple-50/30 dark:from-neutral-950 dark:to-purple-950/20 py-20  overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.div
@@ -193,10 +193,10 @@ export default function CaseStudies() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
-            Real Results, Real Savings
+            Success Stories That Speak for Themselves
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400">
-            See how we've helped businesses across industries
+            Just a few examples of how we've transformed businesses across industries
           </p>
         </motion.div>
 
@@ -211,7 +211,7 @@ export default function CaseStudies() {
             className="bg-white dark:bg-neutral-900 rounded-3xl shadow-2xl overflow-hidden"
           >
             {/* Header */}
-            <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-6 md:p-8">
+            <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-6 ">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">
@@ -227,7 +227,7 @@ export default function CaseStudies() {
             </div>
 
             {/* Content - Compact Grid Layout */}
-            <div className="p-6 md:p-8">
+            <div className="p-6 ">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 {/* Left Column */}
                 <div className="space-y-6">
@@ -326,7 +326,7 @@ export default function CaseStudies() {
               </div>
 
               {/* Testimonial - Full Width */}
-              <div className="bg-neutral-50 dark:bg-neutral-800 rounded-2xl p-6">
+              <div className="bg-neutral-50 dark:bg-neutral-800 rounded-2xl pt-6 px-6 pb-2">
                 <div className="flex items-start gap-3">
                   <div className="text-3xl text-purple-400 leading-none">"</div>
                   <div className="flex-1">
@@ -372,11 +372,10 @@ export default function CaseStudies() {
                 setIsAutoPlaying(false)
                 setActiveIndex(index)
               }}
-              className={`transition-all duration-300 ${
-                index === activeIndex
-                  ? 'w-12 h-3 bg-purple-400 rounded-full'
-                  : 'w-3 h-3 bg-neutral-300 dark:bg-neutral-700 rounded-full hover:bg-purple-300'
-              }`}
+              className={`transition-all duration-300 ${index === activeIndex
+                ? 'w-12 h-3 bg-purple-400 rounded-full'
+                : 'w-3 h-3 bg-neutral-300 dark:bg-neutral-700 rounded-full hover:bg-purple-300'
+                }`}
             />
           ))}
         </div>
