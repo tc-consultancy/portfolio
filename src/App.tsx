@@ -30,6 +30,10 @@ import ProfessionalConsulting from './pages/services/it-cloud-services/professio
 import InfraOutsourcingServices from './pages/services/it-cloud-services/infra-outsourcing'
 import Outsourcingone from './pages/outsourcing/outsourcingone'
 import NewHireYourRecruiter from './pages/newhireyourrecruiter'
+import Devops from './pages/services/sys-software/devops'
+import QualityEngineer from './pages/services/sys-software/quality-engineer'
+import EmbeddedSDE from './pages/services/sys-software/embedded-software-development'
+import DataEngineer from './pages/services/sys-software/data-engineer'
 
 function App() {
   return (
@@ -52,6 +56,12 @@ function App() {
 
         <Route path='/services/managed-services' element={<ManagedServices />} />
         <Route path='/services/managed-services' element={<MicroSoftManagedServices />} />
+
+        {/* system n softwares  */}
+        <Route path='/services/devops' element={<Devops />} />
+        <Route path='/services/quality-engineering' element={<QualityEngineer />} />
+        <Route path='/services/embedded-services' element={<EmbeddedSDE />} />
+        <Route path='/services/data-engineering' element={<DataEngineer />} />
 
 
         {/* {'cyber security'} */}
