@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Play } from 'lucide-react'
 
-export default function CtaDemo({isVideoModalOpen, setIsVideoModalOpen}: any) {
+export default function CtaDemo({ setIsVideoModalOpen}: any) {
     return (
         <section id="pricing-section" className="w-full bg-neutral-50 dark:bg-neutral-900 py-16 md:py-24 px-6">
             <div className="max-w-7xl mx-auto">

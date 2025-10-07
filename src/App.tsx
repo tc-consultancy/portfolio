@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
-import HireRecruiter from './pages/services/hire-recruiter'
+
 import Staffing from './pages/services/staffing'
 import { IndustriesPage } from './pages/industries'
 import CareersPage from './pages/careers'

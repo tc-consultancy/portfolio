@@ -10,12 +10,6 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
     }
   }
 
-  const scrollToRoles = () => {
-    const rolesSection = document.getElementById('roles-section')
-    if (rolesSection) {
-      rolesSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
 
   return (
     <section className="relative min-h-screen  w-full pt-28 md:pt-54 pb-16 bg-white dark:bg-neutral-950 overflow-hidden">

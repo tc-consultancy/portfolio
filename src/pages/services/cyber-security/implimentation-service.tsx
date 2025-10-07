@@ -1,7 +1,6 @@
 import { robo1 } from '@/assets'
 import { Button } from '@/components/ui/button'
 import { FAQSection } from '@/components/sections/faq-section'
-import React from 'react'
 import { ShieldAlert, FileText, Briefcase, BookCheck, ClipboardList, CloudAlertIcon, CogIcon, FileSearch2Icon, Search } from "lucide-react";
 
 const implementationSteps = [
