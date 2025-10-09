@@ -4,132 +4,8 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
 import { ThemeSelector } from "../ui/ThemeSelector"
+import { industries, services } from "@/constants/navbar"
 
-const services = [
-  {
-    title: "IT & Cloud Services",
-    href: "/services/it-cloud",
-    subServices: [
-      { title: "Managed Services", href: "/services/managed-services" },
-      { title: "Professional Consulting", href: "/services/professional-consulting" },
-      { title: "Infrastructure Outsourcing", href: "/services/infrastructure-outsourcing" },
-      { title: "24/7 Technical Support", href: "/services/technical-support" },
-      { title: "Microsoft Managed Services", href: "/services/microsoft-managed" },
-      { title: "Microsoft Cloud Services", href: "/services/microsoft-cloud" }
-    ]
-  },
-  {
-    title: "System & Software",
-    href: "/services/system-software",
-    subServices: [
-      { title: "DevOps", href: "/services/devops" },
-      { title: "Quality Engineering", href: "/services/quality-engineering" },
-      { title: "Embedded Services", href: "/services/embedded-services" },
-      { title: "Data Engineering", href: "/services/data-engineering" }
-    ]
-  },
-  {
-    title: "Cybersecurity",
-    href: "/services/cybersecurity",
-    subServices: [
-      { title: "Managed Detection & Response", href: "/services/managed-detection" },
-      { title: "Threat and Vulnerability Management", href: "/services/threat-management" },
-      { title: "Governance Risk & Compliance", href: "/services/governance-risk" },
-      { title: "Data Privacy and Protection", href: "/services/data-privacy" },
-      { title: "IOT/OT Security", href: "/services/iot-security" },
-      { title: "Security Implementation Services", href: "/services/security-implementation" }
-    ]
-  },
-  {
-    title: "Document Management Systems",
-    href: "/services/document-management",
-    subServices: [
-      { title: "Document Management Software", href: "/services/document-software" },
-      { title: "Document Scanning Services", href: "/services/document-scanning" },
-      { title: "Automated Electronic Forms", href: "/services/electronic-forms" },
-      { title: "High-Speed Scanners", href: "/services/high-speed-scanners" },
-      { title: "Custom Document Management Software", href: "/services/custom-document-management" }
-    ]
-  },
-  {
-    title: "AI & ML Services",
-    href: "/services/ai-ml",
-    subServices: [
-      { title: "Data Analysis", href: "/services/data-analysis" },
-      { title: "Natural Language Processing", href: "/services/nlp" },
-      { title: "Computer Vision", href: "/services/computer-vision" },
-      { title: "Machine Learning Models", href: "/services/ml-models" },
-      { title: "Deployment & Integration", href: "/services/ai-deployment" }
-    ]
-  },
-  {
-    title: "Data Services",
-    href: "/services/data-services",
-    subServices: [
-      { title: "Data Engineering", href: "/services/data-engineering-services" },
-      { title: "Data Analytics", href: "/services/data-analytics" },
-      { title: "Data Visualization", href: "/services/data-visualization" }
-    ]
-  },
-  {
-    title: "BPO Services",
-    href: "/services/bpo-services",
-    subServices: [
-      { title: "Customer Support", href: "/services/customer-support" },
-      { title: "Back Office Operations", href: "/services/back-office" },
-      { title: "Data Entry Services", href: "/services/data-entry" },
-      { title: "Virtual Assistant Services", href: "/services/virtual-assistant" }
-    ]
-  },
-  {
-    title: "IT Staffing Solutions",
-    href: "/services/it-staffing",
-    subServices: [
-      { title: "Contract Staffing", href: "/services/contract-staffing" },
-      { title: "Permanent Placement", href: "/services/permanent-placement" },
-      { title: "Project-Based Staffing", href: "/services/project-staffing" },
-      { title: "Remote Team Augmentation", href: "/services/remote-augmentation" }
-    ]
-  },
-  {
-    title: "Accounting and Payrolls",
-    href: "/services/accounting-payroll",
-    subServices: [
-      { title: "Bookkeeping Services", href: "/services/bookkeeping" },
-      { title: "Payroll Processing", href: "/services/payroll-processing" },
-      { title: "Tax Preparation", href: "/services/tax-preparation" },
-      { title: "Financial Reporting", href: "/services/financial-reporting" }
-    ]
-  },
-  {
-    title: "Digital Marketing Services",
-    href: "/services/digital-marketing",
-    subServices: [
-      { title: "SEO Services", href: "/services/seo" },
-      { title: "Social Media Marketing", href: "/services/social-media" },
-      { title: "Content Marketing", href: "/services/content-marketing" },
-      { title: "PPC Advertising", href: "/services/ppc-advertising" }
-    ]
-  }
-]
-
-const industries = [
-  { title: "Banking & Financial", href: "/industries#banking-financial" },
-  { title: "Education", href: "/industries#education" },
-  { title: "Information Services", href: "/industries#information-services" },
-  { title: "Manufacturing", href: "/industries#manufacturing" },
-  { title: "Technology", href: "/industries#technology" },
-  { title: "Communications", href: "/industries#communications" },
-  { title: "Energy & Utilities", href: "/industries#energy-utilities" },
-  { title: "Insurance", href: "/industries#insurance" },
-  { title: "Media & Entertainment", href: "/industries#media-entertainment" },
-  { title: "Transportation & Logistics", href: "/industries#transportation-logistics" },
-  { title: "Consumer Goods", href: "/industries#consumer-goods" },
-  { title: "Healthcare", href: "/industries#healthcare" },
-  { title: "Life Sciences", href: "/industries#life-sciences" },
-  { title: "Retail", href: "/industries#retail" },
-  { title: "Travel & Hospitality", href: "/industries#travel-hospitality" }
-]
 
 export function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -207,15 +83,15 @@ export function MobileNavbar() {
         </div>
 
         <div className="flex flex-col h-full">
-          <div className="flex-1 overflow-y-auto" data-lenis-prevent>
+          <div className="flex-1 overflow-y-auto pb-16" data-lenis-prevent>
             <nav className="p-4 space-y-2">
               {/* AI Agents */}
               <Link
-                to="/services/agent"
+                to="/services/outsourcing"
                 onClick={closeMenu}
                 className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
               >
-                AI Agents
+                Outsourcing
               </Link>
 
               {/* Hire Recruiter */}

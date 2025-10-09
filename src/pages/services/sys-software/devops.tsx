@@ -7,7 +7,7 @@ export default function Devops() {
         <>
 
             {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
+            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 flex items-center justify-center">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
@@ -39,7 +39,7 @@ export default function Devops() {
             </section>
             
             {/* Partner Section */}
-            <section className="py-20 max-w-6xl mx-auto px-6">
+            <section className="py-20 max-w-6xl mx-auto px-4">
                 <div className="">
                     <div className="flex flex-col md:flex-row gap-12 items-center">
                         {/* Left Image */}
@@ -70,7 +70,7 @@ export default function Devops() {
 
             {/* What is DevOps Section */}
             <section className="py-20 bg-gray-50 dark:bg-gray-800">
-                <div className="max-w-6xl mx-auto px-6">
+                <div className="max-w-6xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                         {/* Left Content - What is DevOps */}
                         <div className="bg-white dark:bg-gray-900 p-8 md:p-12 rounded-lg shadow-sm">
@@ -86,7 +86,7 @@ export default function Devops() {
                         </div>
 
                         {/* Right Image */}
-                        <div className="flex justify-center z-10 mt-24 items-start">
+                        <div className="flex justify-center z-10 md:mt-24 items-start">
                             <img
                                 src={robo1}
                                 alt="DevOps Developer"
@@ -99,7 +99,7 @@ export default function Devops() {
 
             {/* Why DevOps Section */}
             <section className="relative py-20 -mt-32 bg-gradient-to-br from-purple-600 via-pink-500 to-pink-600 dark:from-purple-800 dark:via-pink-700 dark:to-pink-800 overflow-hidden">
-                <div className="max-w-6xl mx-auto px-6">
+                <div className="max-w-6xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2  ">
                         {/* Left Content */}
                         <div className="text-white">

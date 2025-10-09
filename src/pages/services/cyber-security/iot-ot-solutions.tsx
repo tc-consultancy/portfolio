@@ -42,7 +42,7 @@ export default function IotOtSolutions() {
   return (
     <>
         {/* Hero Section */}
-        <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
+        <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 md:px-6 flex items-center justify-center">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
@@ -54,7 +54,7 @@ export default function IotOtSolutions() {
                         </h1>
                         <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
                             Our IOT & OT solutions help organizations secure their IoT and OT devices, networks, and systems from cyber threats and attacks.</p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
+                        <Button className="mt-8 px-4 md:px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
                             Lets Talk →
                         </Button>
                     </div>
@@ -99,8 +99,8 @@ export default function IotOtSolutions() {
             </section>
 
             {/* Our Approach Section */}
-            <div className='py-12 px-6'>
-                <h3 className="text-3xl md:text-4xl max-w-6xl mx-auto px-6 font-bold text-neutral-900 dark:text-white mb-12 leading-tight">Our Approach</h3>
+            <div className='py-12 px-4 md:px-6'>
+                <h3 className="text-3xl md:text-4xl max-w-6xl mx-auto px-4 md:px-6 font-bold text-neutral-900 dark:text-white mb-12 leading-tight">Our Approach</h3>
                 <SectionContainer data={sectionData} />
             </div>
 

@@ -1,6 +1,5 @@
-import { robo1 } from "@/assets";
+import CommonHero from "@/components/common/common-hero";
 import { FAQSection } from "@/components/sections/faq-section";
-import { Button } from "@/components/ui/button";
 
 const services = [
     {
@@ -37,40 +36,15 @@ export default function ManagedServices() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-white dark:bg-gray-950 md:py-20 px-6 flex items-center">
-                <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            MANAGED SERVICES
-                        </p>
-                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Manage your IT  <br />with an industry expert
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
-                            For years, our customers have relied on Terralogic to manage their IT infrastructure. We proactively monitor and manage networks and data to ensure our customers delight.
-                        </p>
-
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Let's Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center md:justify-end">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+           <CommonHero
+           subtleHeading="MANAGED SERVICES"
+           subheading=" For years, our customers have relied on Terralogic to manage their IT infrastructure. We proactively monitor and manage networks and data to ensure our customers delight."
+           heading="Manage your IT  \n with an industry expert"
+           buttontitle="Let's Talk"
+           />
             
             {/* Managed Network Solutions Section */}
-            <section className="w-full bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 dark:from-purple-800 dark:via-purple-700 dark:to-pink-700 py-16 md:py-24 px-6">
+            <section className="w-full bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 dark:from-purple-800 dark:via-purple-700 dark:to-pink-700 py-16 md:py-24 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left - Illustration */}
@@ -160,7 +134,7 @@ export default function ManagedServices() {
             </section>
             
             {/* State of the Art IT Infrastructure Section */}
-            <section className="w-full bg-white dark:bg-gray-950 py-16 md:py-24 px-6">
+            <section className="w-full bg-white dark:bg-gray-950 py-16 md:py-24 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left - Image */}
@@ -190,7 +164,7 @@ export default function ManagedServices() {
 
 
             {/* IT Service Management Section */}
-            <section className="w-full bg-purple-50 dark:bg-gray-900 py-16 md:py-24 px-6">
+            <section className="w-full bg-purple-50 dark:bg-gray-900 py-16 md:py-24 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         {/* Left Column - Heading + First Card */}

@@ -7,7 +7,7 @@ export default function QualityEngineer() {
         <>
 
             {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
+            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 flex items-center justify-center">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
@@ -40,7 +40,7 @@ export default function QualityEngineer() {
 
 
             {/* Bringing a change Section */}
-            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
+            <section className="relative py-16 md:py-24 px-4 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Left Illustration */}
@@ -72,7 +72,7 @@ export default function QualityEngineer() {
             </section>
 
             {/* For Consistent Quality Section */}
-            <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-900">
+            <section className="py-16 md:py-24 px-4 bg-white dark:bg-gray-900">
                 <div className="max-w-6xl mx-auto">
                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide mb-4">
                                 AUTOMATED TESTING
@@ -158,7 +158,7 @@ export default function QualityEngineer() {
             </section>
 
             {/* Quality Assurance Section */}
-            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-br from-purple-600 via-purple-500 to-pink-600 dark:from-purple-800 dark:via-purple-700 dark:to-pink-800 overflow-hidden">
+            <section className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-purple-600 via-purple-500 to-pink-600 dark:from-purple-800 dark:via-purple-700 dark:to-pink-800 overflow-hidden">
                 {/* Decorative Pattern */}
                 <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
                     <div className="absolute top-10 right-10 w-64 h-64 border-2 border-white transform rotate-45"></div>
@@ -243,7 +243,7 @@ export default function QualityEngineer() {
             <FAQSection/>
 
  {/* Bringing a change Section */}
-            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
+            <section className="relative py-16 md:py-24 px-4 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                        

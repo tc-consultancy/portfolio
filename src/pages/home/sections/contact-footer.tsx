@@ -19,7 +19,7 @@ export default function ContactFooterSection() {
       <div className="flex flex-col md:flex-row">
 
         {/* Left - Company Info (Purple Background) */}
-        <div className="bg-purple-800 text-white p-8 space-y-6 max-w-sm">
+        <div className="bg-purple-800 text-white px-4 py-6 md:py-8 md:px-8 space-y-6 max-w-sm">
           <p className=" leading-relaxed text-white/90">
             At Tc Consultancy, we are driven entrepreneurs dedicated to simplifying your business through innovative solutions. Our overarching goal remains consistent: to innovate products and services that positively impact society and foster a better standard of living for all.
           </p>

@@ -64,7 +64,7 @@ export default function DataEngineer() {
         <>
 
             {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
+            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 md:px-6 flex items-center justify-center">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
@@ -77,7 +77,7 @@ export default function DataEngineer() {
                         <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
                             At TC IT Services, we mine data, treat and repeat the process until it yields results.
                         </p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
+                        <Button className="mt-8 px-4 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
                             Lets Talk →
                         </Button>
                     </div>
@@ -97,7 +97,7 @@ export default function DataEngineer() {
 
 
             {/* Bringing a change Section */}
-            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
+            <section className="relative py-16 md:py-24 px-4 md:px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Left Illustration */}
@@ -132,7 +132,7 @@ export default function DataEngineer() {
 
 
             {/* For Consistent Quality Section */}
-            <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-900">
+            <section className="py-16 md:py-24 px-4 md:px-6 bg-white dark:bg-gray-900">
                 <div className="max-w-6xl mx-auto">
                     <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide mb-4">
                         DO YOU KNOW

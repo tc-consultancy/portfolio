@@ -8,7 +8,7 @@ export default function EmbeddedSDE() {
         <>
 
             {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
+            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 flex items-center justify-center">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
@@ -21,7 +21,7 @@ export default function EmbeddedSDE() {
                         <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
                             We make new-age software meet hardware through smart embedded design and integration services.
                         </p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
+                        <Button className="mt-8 px-4 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
                             Lets Talk →
                         </Button>
                     </div>
@@ -40,7 +40,7 @@ export default function EmbeddedSDE() {
             </section>
 
             {/* Partner Section */}
-            <section className="py-20 max-w-6xl mx-auto px-6">
+            <section className="py-20 max-w-6xl mx-auto px-4">
                 <div className="">
                     <div className="flex flex-col md:flex-row gap-12 items-center">
                         {/* Left Image */}
@@ -144,7 +144,7 @@ export default function EmbeddedSDE() {
                 </div>
             </div>
               {/* Partner Section */}
-            <section className="py-20 max-w-6xl mx-auto px-6">
+            <section className="py-20 max-w-6xl mx-auto px-4">
                 <div className="">
                     <div className="flex flex-col md:flex-row gap-12 items-center">
                      

@@ -34,7 +34,7 @@ export default function GovernanceRisk() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-6 flex items-center justify-center">
+            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 md:px-6 flex items-center justify-center">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
@@ -46,7 +46,7 @@ export default function GovernanceRisk() {
                         </h1>
                         <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg leading-relaxed">
                             Our goal is to embed excellent business practices for organizations with best in class GRC.</p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
+                        <Button className="mt-8 px-4 md:px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
                             Lets Talk →
                         </Button>
                     </div>
@@ -65,7 +65,7 @@ export default function GovernanceRisk() {
             </section>
 
             <SectionContainer data={sectionData} />
-            <section className="w-full py-12 px-6 max-w-6xl mx-auto">
+            <section className="w-full py-12 px-4 md:px-6 max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold  text-gray-900 dark:text-gray-100 mb-10">
                     Our GRC Solution Capabilities include
                 </h2>

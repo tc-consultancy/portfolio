@@ -24,8 +24,8 @@ export default function DataPrivacyAndProtecttion() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-neutral-50 dark:bg-neutral-900 md:py-20 px-6 flex items-center justify-center">
-                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-neutral-50 dark:bg-neutral-900 md:py-20 px-4 flex items-center justify-center">
+                <div className="max-w-6xl w-full  grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
                         <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
@@ -37,7 +37,7 @@ export default function DataPrivacyAndProtecttion() {
                         <p className="text-neutral-600 dark:text-neutral-300 mt-6 text-lg leading-relaxed">
                             Protect your enterprise data across multiple environments, ensure compliance with privacy requirements, and reduce operational complexity.
                         </p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
+                        <Button className="mt-8 px-4 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
                             Lets Talk →
                         </Button>
                     </div>
@@ -55,7 +55,7 @@ export default function DataPrivacyAndProtecttion() {
                 </div>
             </section>
 
-            <section className="w-full py-12 px-6 max-w-6xl mx-auto">
+            <section className="w-full py-12   max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold  text-neutral-900 dark:text-neutral-100 mb-6">
                     Services We Deliver
                 </h2>

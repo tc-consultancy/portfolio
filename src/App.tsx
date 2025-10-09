@@ -34,6 +34,16 @@ import Devops from './pages/services/sys-software/devops'
 import QualityEngineer from './pages/services/sys-software/quality-engineer'
 import EmbeddedSDE from './pages/services/sys-software/embedded-software-development'
 import DataEngineer from './pages/services/sys-software/data-engineer'
+import TechnicalSupport from './pages/services/it-cloud-services/technical-support'
+import DocManagementSoftware from './pages/services/document-management/doc-management-software'
+import DocScanningServices from './pages/services/document-management/doc-scanning-services'
+import CustomDocManagementService from './pages/services/document-management/custom-doc-management-service'
+import HighSpeedScanner from './pages/services/document-management/high-speed-scanner'
+import AutomaticElectronicForms from './pages/services/document-management/automatic-electronic-forms'
+import FinancialAccountingManagement from './pages/services/finance/financial-accounting-management'
+import DataAndAnalytics from './pages/services/data-and-analytics/data-analytics'
+import DataEngineering from './pages/services/data-and-analytics/data-engineer'
+import DataVisualization from './pages/services/data-and-analytics/data-visualization'
 
 function App() {
   return (
@@ -41,8 +51,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/outsourcing" element={<Outsourcingone />} />
-        <Route path="/outsourcing" element={<Outsourcing />} />
+        <Route path="services/outsourcing" element={<Outsourcingone />} />
+        <Route path="services/outsourcing" element={<Outsourcing />} />
         <Route path="/services/hire-recruiter" element={<NewHireYourRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />
         <Route path="/industries" element={<IndustriesPage />} />
@@ -54,8 +64,6 @@ function App() {
         <Route path="/services/it-ops-agent" element={<OcrAgent />} />
         <Route path="/services/marketing-agent" element={<OcrAgent />} />
 
-        <Route path='/services/managed-services' element={<ManagedServices />} />
-        <Route path='/services/managed-services' element={<MicroSoftManagedServices />} />
 
         {/* system n softwares  */}
         <Route path='/services/devops' element={<Devops />} />
@@ -70,11 +78,16 @@ function App() {
         <Route path="/services/governance-risk" element={<GovernanceRisk />} />
         <Route path="/services/data-privacy" element={<DataPrivacyAndProtecttion />} />
         <Route path="/services/iot-security" element={<IotOtSolutions />} />
-
-        {/* {'Iot/Cloud Solutions'} */}
         <Route path="/services/security-implementation" element={<ImplimentationService />} />
-        <Route path="/services/professional-consulting" element={<ProfessionalConsulting />} />
+
+
+        {/*  - {'Iot/Cloud Solutions'} */}
         <Route path="/services/infrastructure-outsourcing" element={<InfraOutsourcingServices />} />
+        <Route path='/services/managed-services' element={<ManagedServices />} />
+        <Route path='/services/microsoft-managed' element={<MicroSoftManagedServices />} />
+        <Route path="/services/professional-consulting" element={<ProfessionalConsulting />} />
+        <Route path="/services/technical-support" element={<TechnicalSupport />} />
+
 
         {/* {'software development'} */}
         <Route path="/services/mobile-web-application" element={<MobileAndWebApp />} />
@@ -83,6 +96,24 @@ function App() {
         <Route path="/services/custom-application" element={<CustomAppDev />} />
         <Route path="/services/saas-implementation" element={<SaasImplimentations />} />
         <Route path="/services/cloud-applications" element={<CloudImplimentations />} />
+
+
+        {/* doc management */}
+        <Route path="/services/doc-management-software" element={<DocManagementSoftware />} />
+        <Route path="/services/doc-scanning" element={<DocScanningServices />} />
+        <Route path="/services/custom-doc-management" element={<CustomDocManagementService />} />
+        <Route path="/services/high-speed-scanner" element={<HighSpeedScanner />} />
+        <Route path="/services/automatic-electronic-forms" element={<AutomaticElectronicForms />} />
+
+
+        {/* finance accounting  */}
+        <Route path="/services/financial-accounting" element={<FinancialAccountingManagement />} />
+
+        {/* data and analytics  */}
+        <Route path="/services/data-analysis" element={<DataAndAnalytics />} />
+        <Route path="/services/data-engineering-services" element={<DataEngineering />} />
+        <Route path="/services/data-visualization" element={<DataVisualization />} />
+
 
         {/* {'others'} */}
         <Route path="/careers" element={<CareersPage />} />
