@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import HeroSection from './outsourcingonecomponents/hero-section'
 import TrustBar from './outsourcingonecomponents/trust-bar'
 import ProblemPromise from './outsourcingonecomponents/problem-promise'
+import SolutionRoadmap from './outsourcingonecomponents/solution-roadmap'
 import HowItWorks from './outsourcingonecomponents/how-it-works'
 import VettingProcess from './outsourcingonecomponents/vetting-process'
 
@@ -18,6 +19,9 @@ import { heromp4 } from '@/assets'
 import VideoModal from '@/components/video-modal'
 import PricingSection from './outsourcingonecomponents/pricing-section'
 import IndustriesGrid from './outsourcingonecomponents/industries-grid'
+import RolesGrid from './outsourcingonecomponents/roles-grid'
+import SuccessMetrics from './outsourcingonecomponents/success-metrics'
+import GeographicCoverage from './outsourcingonecomponents/geographic-coverage'
 
 export default function Outsourcingone() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -39,16 +43,19 @@ export default function Outsourcingone() {
         videoSrc={heromp4}
       />
       <HeroSection onClick={() => setIsVideoModalOpen(true)} />
-      <TrustBar />
+      {/* <TrustBar /> */}
       <ProblemPromise />
+      <SolutionRoadmap />
       <CompanyDifference />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <VettingProcess />
-      {/* <RolesGrid /> */}
       <IndustriesGrid />
+      <RolesGrid />
+      <SuccessMetrics />
+      <GeographicCoverage />
       {/* <TalentMatcher /> */}
       <CaseStudies />
-      <ComparisonTable />
+      {/* <ComparisonTable /> */}
       <EngagementModels />
       <PricingSection />
       <ROICalculator />
