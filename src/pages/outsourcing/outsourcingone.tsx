@@ -22,6 +22,9 @@ import IndustriesGrid from './outsourcingonecomponents/industries-grid'
 import RolesGrid from './outsourcingonecomponents/roles-grid'
 import SuccessMetrics from './outsourcingonecomponents/success-metrics'
 import GeographicCoverage from './outsourcingonecomponents/geographic-coverage'
+import WhyIndia from './outsourcingonecomponents/why-india'
+import OurGuarantee from './outsourcingonecomponents/our-guarantee'
+import ProcessTransparency from './outsourcingonecomponents/process-transparency'
 
 export default function Outsourcingone() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -53,8 +56,11 @@ export default function Outsourcingone() {
       <RolesGrid />
       <SuccessMetrics />
       <GeographicCoverage />
+      <WhyIndia />
+      <ProcessTransparency />
       {/* <TalentMatcher /> */}
       <CaseStudies />
+      <OurGuarantee />
       {/* <ComparisonTable /> */}
       <EngagementModels />
       <PricingSection />
