@@ -15,6 +15,7 @@ import UrgencySection from './components/urgency-section'
 import FAQSection from './components/faq-section'
 import FinalCTA from './components/final-cta'
 import PostConversion from './components/post-conversion'
+import Roadmap from './components/roadmap'
 
 export default function NewHireYourRecruiter() {
   useEffect(() => {
@@ -30,9 +31,9 @@ export default function NewHireYourRecruiter() {
     <div className="w-full overflow-x-hidden">
       <HeroSection />
       <PainPoints />
-      <SolutionOverview />
+      {/* <SolutionOverview /> */}
       <HowItWorks />
-      <ServiceFeatures />
+      {/* <ServiceFeatures /> */}
       <SuccessMetrics />
       <SampleWork />
       <ComparisonTable />
@@ -44,6 +45,7 @@ export default function NewHireYourRecruiter() {
       <FAQSection />
       <FinalCTA />
       <PostConversion />
+      <Roadmap />
     </div>
   )
 }

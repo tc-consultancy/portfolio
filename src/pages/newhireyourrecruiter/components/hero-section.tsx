@@ -85,12 +85,12 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
-              Stop Applying, Start Interviewing.{' '}
-              <span className="text-purple-400">We Get You 5x More Interviews.</span>
+              •	Land your Dream Job Faster -{' '}
+              <span className="text-purple-400">With a Recruiter Who Works for You.</span>
             </h1>
 
             <p className="text-xl md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
-              Our experts apply to 50+ jobs weekly with ATS-optimized resumes & cover letters in &lt;24 hours. You focus on networking and acing interviews.
+              Our experts apply to 20–25+ jobs daily, using ATS-optimized resumes and cover letters for roles posted within the last 24 hours. You focus on networking and acing your interviews
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -98,7 +98,7 @@ export default function HeroSection() {
                 onClick={scrollToContact}
                 className="bg-purple-400 hover:bg-purple-500 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                Get My First Applications Done
+                Schedule Demo button
               </Button>
               <button
                 className="group flex items-center justify-center gap-2 text-lg font-semibold text-neutral-900 dark:text-white hover:text-purple-400 dark:hover:text-purple-400 transition-colors duration-300"

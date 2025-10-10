@@ -102,14 +102,12 @@ const services = [
     title: "Accounts",
     subServices: [
       {
-        title: "Accounting and Payrolls",
-        href: "/services/accounting-payroll"
+        title: "Financial and Accounting Services",
+        href: "/services/financial-accounting"
       },
-      { title: "Bookkeeping Services", href: "/services/bookkeeping" },
-      { title: "Payroll Processing", href: "/services/payroll-processing" },
-      { title: "Tax Preparation", href: "/services/tax-preparation" },
-      { title: "Financial Reporting", href: "/services/financial-reporting" }
-    ]
+      { title: "Integrations & Implementations", href: "/services/integration-implementation" },
+      { title: "Shared Services", href: "/services/shared-services" },
+     ]
   },
   {
     title: "Digital Marketing",

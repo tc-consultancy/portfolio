@@ -13,7 +13,7 @@ export default function ServiceCard({ icon, title, description }: ServiceCardPro
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                 {title}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300  leading-relaxed">
                 {description}
             </p>
         </div>

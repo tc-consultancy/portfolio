@@ -123,16 +123,15 @@ export default function FinancialAccountingManagement() {
         <>
             {/* Hero Section */}
             <section className="relative min-h-screen w-full pt-28 md:pt-0 bg-white dark:bg-gray-950 md:py-20 px-6 flex items-center">
-                <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>
                         <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide mb-2">
                             FINANCE | STAFFING | OUTSOURCING
                         </p>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mt-4 leading-tight mb-6">
-                            Revamp your <br />
-                            Financial & Accounting <br />
-                            Management
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight mb-6">
+                            Revamp your  Financial <br />
+                            & Accounting Management
                         </h1>
                         <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg leading-relaxed mb-8">
                             Streamline your financial operations with our comprehensive accounting and management services. Let us handle the complexity while you focus on growing your business.
@@ -142,12 +141,14 @@ export default function FinancialAccountingManagement() {
                         </Button>
                     </div>
 
-                    {/* Right Image */}
-                    <div className="flex justify-center md:justify-end">
+   {/* Right Illustration */}
+                    <div className="flex justify-center">
                         <img
                             src={robo1}
-                            alt="Financial Management Illustration"
-                            className="w-full max-w-lg object-contain rounded-lg"
+                            alt="AI Bot Illustration"
+                            width={400}
+                            height={400}
+                            className="object-contain"
                         />
                     </div>
                 </div>
@@ -155,7 +156,7 @@ export default function FinancialAccountingManagement() {
 
             {/* Our Services Section */}
             <section className="py-16 md:py-24 px-6 bg-gray-50 dark:bg-gray-900">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                         Our services
                     </h2>
@@ -171,13 +172,13 @@ export default function FinancialAccountingManagement() {
                                     {service.title}
                                 </h3>
                                 {service.subtitle && (
-                                    <p className="text-purple-600 dark:text-purple-400 font-semibold text-sm mb-4">
+                                    <p className="text-purple-600 dark:text-purple-400 font-semibold text-base mb-4">
                                         {service.subtitle}
                                     </p>
                                 )}
                                 <ul className="space-y-2">
                                     {service.features.map((feature, idx) => (
-                                        <li key={idx} className="flex items-start gap-2 text-gray-600 dark:text-gray-300 text-sm">
+                                        <li key={idx} className="flex items-start gap-2 text-gray-600 dark:text-gray-300 text-base">
                                             <span className="text-purple-600 mt-1">•</span>
                                             <span>{feature}</span>
                                         </li>
@@ -191,7 +192,7 @@ export default function FinancialAccountingManagement() {
 
             {/* Benefits Section */}
             <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-950">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                         Benefits of our services
                     </h2>
@@ -208,7 +209,7 @@ export default function FinancialAccountingManagement() {
                                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                                     {benefit.title}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                                <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
                                     {benefit.description}
                                 </p>
                             </div>
@@ -219,7 +220,7 @@ export default function FinancialAccountingManagement() {
 
             {/* Clients Section */}
             <section className="py-16 md:py-24 px-6 bg-gray-50 dark:bg-gray-900">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                         Clients we love to work with
                     </h2>
@@ -243,7 +244,7 @@ export default function FinancialAccountingManagement() {
 
             {/* Outsource to Grow Section */}
             <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-950">
-                <div className="max-w-7xl mx-auto text-center">
+                <div className="max-w-6xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Outsource to Grow
                     </h2>
@@ -258,7 +259,7 @@ export default function FinancialAccountingManagement() {
 
             {/* Blog Section */}
             <section className="py-16 md:py-24 px-6 bg-gray-50 dark:bg-gray-900">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12">
                         New on our blog
                     </h2>
@@ -276,7 +277,7 @@ export default function FinancialAccountingManagement() {
                                 <h3 className="text-xl font-bold text-white mt-2 mb-3">
                                     Financial best practices for growing businesses
                                 </h3>
-                                <p className="text-gray-300 text-sm mb-4">
+                                <p className="text-gray-300 text-base mb-4">
                                     Discover essential financial management strategies to scale your business effectively.
                                 </p>
                             </div>
@@ -301,8 +302,8 @@ export default function FinancialAccountingManagement() {
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
                                         {post.title}
                                     </h4>
-                                    <p className="text-gray-500 dark:text-gray-400 text-sm">{post.date}</p>
-                                    <Button className="mt-4 px-4 py-2 text-sm rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white">
+                                    <p className="text-gray-500 dark:text-gray-400 text-base">{post.date}</p>
+                                    <Button className="mt-4 px-4 py-2 text-base rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white">
                                         Read more →
                                     </Button>
                                 </div>

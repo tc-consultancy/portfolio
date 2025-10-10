@@ -110,9 +110,9 @@ function App() {
         <Route path="/services/financial-accounting" element={<FinancialAccountingManagement />} />
 
         {/* data and analytics  */}
-        <Route path="/services/data-analysis" element={<DataAndAnalytics />} />
+        {/* <Route path="/services/data-analysis" element={<DataAndAnalytics />} />
         <Route path="/services/data-engineering-services" element={<DataEngineering />} />
-        <Route path="/services/data-visualization" element={<DataVisualization />} />
+        <Route path="/services/data-visualization" element={<DataVisualization />} /> */}
 
 
         {/* {'others'} */}

@@ -47,7 +47,7 @@ export default function PainPoints() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Tired of the Job Application Black Hole?
+          Tired of Applying Jobs and Never Hearing Back?
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -100,9 +100,9 @@ export default function PainPoints() {
           >
             <div className="space-y-6">
               <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 dark:text-white leading-tight">
-                What if you could skip the grind and{' '}
+                We Handle Applications,  You {' '}
                 <span className="relative inline-block">
-                  <span className="relative z-10">go straight to interviews?</span>
+                  <span className="relative z-10">Handle Interviews.</span>
                   {/* Decorative Curved Underline */}
                   <svg
                     className="absolute -bottom-2 left-0 w-full h-4 text-purple-400"
@@ -120,7 +120,7 @@ export default function PainPoints() {
               </p>
 
               <p className="text-lg text-neutral-600 dark:text-neutral-400">
-                We handle all the tedious application work while you focus on what matters: networking, preparing for interviews, and landing your dream job.
+                Get a personal recruiter who finds, applies, and follows up — while you focus on learning and landing interviews.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-6">
