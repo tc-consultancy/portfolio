@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
-export default function HeroSection({onClick}:{onClick:()=>void}) {
+export default function HeroSection({ onClick }: { onClick: () => void }) {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact-section')
     if (contactSection) {
@@ -86,12 +86,13 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
-              Scale Your{' '}
-              <span className="text-purple-400">Business</span> with World-Class Talent
+              Expand Beyond Borders  {' '}
+              <span className="text-purple-400"> <br className='hidden md:block' /> — Build </span> Your Global Workforce Effortlessly
             </h1>
 
             <p className="text-xl md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
-              From finance to healthcare, manufacturing to retail—we deliver specialized professionals across all industries. Focus on growth while we handle talent acquisition.
+              Connect with exceptional Indian talent across 15+ industries. Zero upfront fees. Weekly payments. Free replacements
+              guaranteed.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -99,13 +100,13 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
                 onClick={scrollToContact}
                 className="bg-purple-400 hover:bg-purple-500 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                Hire Top Talent Now
+                Schedule Free Consultation
               </Button>
               <button
                 onClick={onClick}
                 className="group flex items-center justify-center gap-2 text-lg font-semibold text-neutral-900 dark:text-white hover:text-purple-400 dark:hover:text-purple-400 transition-colors duration-300"
               >
-                See It In Action
+                Calculate Your Savings
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>
@@ -114,10 +115,10 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
             <div className="flex flex-wrap items-center gap-8 pt-8 border-t border-neutral-200 dark:border-neutral-800">
               <div>
                 <div className="text-3xl font-bold text-neutral-900 dark:text-white">
-                  5,000+
+                  No
                 </div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Vetted Professionals
+                  Processing Frees
                 </div>
               </div>
               <div>
@@ -138,10 +139,10 @@ export default function HeroSection({onClick}:{onClick:()=>void}) {
               </div>
               <div>
                 <div className="text-3xl font-bold text-neutral-900 dark:text-white">
-                  48hrs
+                  500+
                 </div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Average Match Time
+                  Successfukk Placements
                 </div>
               </div>
             </div>

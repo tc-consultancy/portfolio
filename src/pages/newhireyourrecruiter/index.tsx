@@ -11,11 +11,13 @@ import PricingSection from './components/pricing-section'
 import Guarantees from './components/guarantees'
 import SuccessStories from './components/success-stories'
 import TeamSection from './components/team-section'
-import UrgencySection from './components/urgency-section'
+import BlogSection from './components/blog-section'
 import FAQSection from './components/faq-section'
 import FinalCTA from './components/final-cta'
 import PostConversion from './components/post-conversion'
 import Roadmap from './components/roadmap'
+import UniqueFeatures from './components/unique-features'
+import DomainsSection from './components/domains-section'
 
 export default function NewHireYourRecruiter() {
   useEffect(() => {
@@ -32,20 +34,22 @@ export default function NewHireYourRecruiter() {
       <HeroSection />
       <PainPoints />
       {/* <SolutionOverview /> */}
-      <HowItWorks />
+      <Roadmap />
+      <UniqueFeatures />
+      <DomainsSection />
+      {/* <HowItWorks /> */}
       {/* <ServiceFeatures /> */}
       <SuccessMetrics />
       <SampleWork />
-      <ComparisonTable />
+      {/* <ComparisonTable /> */}
       <PricingSection />
-      <Guarantees />
+      {/* <Guarantees /> */}
       <SuccessStories />
-      <TeamSection />
-      <UrgencySection />
+      {/* <TeamSection /> */}
+      <BlogSection />
       <FAQSection />
       <FinalCTA />
-      <PostConversion />
-      <Roadmap />
+      {/* <PostConversion /> */}
     </div>
   )
 }

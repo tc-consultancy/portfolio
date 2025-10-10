@@ -85,7 +85,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
-              •	Land your Dream Job Faster -{' '}
+              Land your Dream Job Faster -{' '}
               <span className="text-purple-400">With a Recruiter Who Works for You.</span>
             </h1>
 
@@ -110,14 +110,7 @@ export default function HeroSection() {
 
             {/* Trust Indicators */}
             <div className="flex flex-wrap items-center gap-8 pt-8 border-t border-neutral-200 dark:border-neutral-800">
-              <div>
-                <div className="text-3xl font-bold text-neutral-900 dark:text-white">
-                  5x
-                </div>
-                <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  More Interviews
-                </div>
-              </div>
+           
               <div>
                 <div className="text-3xl font-bold text-neutral-900 dark:text-white">
                   87%
@@ -134,14 +127,7 @@ export default function HeroSection() {
                   Applications/Week
                 </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-neutral-900 dark:text-white">
-                  &lt;24hrs
-                </div>
-                <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Turnaround Time
-                </div>
-              </div>
+           
             </div>
           </motion.div>
 

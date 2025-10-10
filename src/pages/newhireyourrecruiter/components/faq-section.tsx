@@ -25,11 +25,7 @@ const faqs: FAQ[] = [
     question: 'How many applications will you submit per week?',
     answer: 'It depends on your plan: Starter (25/week), Professional (50/week), or Executive (100/week). We focus on quality over quantity, ensuring each application is tailored and optimized.',
   },
-  {
-    category: 'Service Details',
-    question: 'Do you guarantee interviews?',
-    answer: 'We guarantee 5x more interview calls within 60 days compared to your current rate, or we continue working for free until you achieve this result.',
-  },
+
 
   // Pricing & Plans
   {
@@ -37,11 +33,7 @@ const faqs: FAQ[] = [
     question: 'Can I cancel anytime?',
     answer: 'Yes, all plans are month-to-month with no long-term commitment. You can cancel anytime with no penalties or fees.',
   },
-  {
-    category: 'Pricing & Plans',
-    question: 'Is there a money-back guarantee?',
-    answer: 'Yes, we offer a 30-day money-back guarantee. If you\'re not satisfied with our service for any reason, we\'ll provide a full refund.',
-  },
+
   {
     category: 'Pricing & Plans',
     question: 'What payment methods do you accept?',
@@ -59,11 +51,7 @@ const faqs: FAQ[] = [
     question: 'What is the turnaround time for each application?',
     answer: 'Starter plan: 48 hours, Professional plan: <24 hours, Executive plan: <12 hours. We prioritize speed without compromising quality.',
   },
-  {
-    category: 'Process & Timeline',
-    question: 'How do I track my applications?',
-    answer: 'You receive detailed weekly (or daily for Professional plan) progress reports showing all submitted applications, their status, and any responses received. We keep you updated every step of the way.',
-  },
+
 
   // Quality & Results
   {
@@ -71,11 +59,7 @@ const faqs: FAQ[] = [
     question: 'How do you optimize resumes for ATS systems?',
     answer: 'We use industry-standard ATS optimization techniques including keyword matching, proper formatting, strategic placement of skills, and quantified achievements that align with job descriptions.',
   },
-  {
-    category: 'Quality & Results',
-    question: 'Can I review applications before they\'re submitted?',
-    answer: 'Yes, for the first 3 applications we send them for your approval. Once you\'re comfortable with our quality, we can submit directly to save time.',
-  },
+  
   {
     category: 'Quality & Results',
     question: 'What if I need revisions?',

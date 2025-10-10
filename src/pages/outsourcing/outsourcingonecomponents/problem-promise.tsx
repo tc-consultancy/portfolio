@@ -1,22 +1,31 @@
 import { motion } from 'framer-motion'
-import { FileX, Clock, DollarSign, AlertTriangle } from 'lucide-react'
+import { DollarSign, Clock, Users, FileText, TrendingUp } from 'lucide-react'
 
 const painPoints = [
   {
-    icon: FileX,
-    text: '100s of Unqualified Resumes',
+    icon: DollarSign,
+    title: 'Escalating Salary Costs',
+    text: 'Employee expenses in US, EU, and APAC markets consuming 40-70% of operational budgets',
   },
   {
     icon: Clock,
-    text: 'Wasting Weeks on Interviews',
+    title: 'Lengthy Hiring Cycles',
+    text: '60-90 day recruitment processes delaying critical projects',
   },
   {
-    icon: DollarSign,
-    text: 'Sky-High Local Salaries',
+    icon: Users,
+    title: 'Limited Talent Pools',
+    text: 'Skills shortages in specialized domains causing project bottlenecks',
   },
   {
-    icon: AlertTriangle,
-    text: 'The Hassle of Global Compliance',
+    icon: FileText,
+    title: 'Administrative Burden',
+    text: 'HR paperwork, compliance, and benefits management draining resources',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Scaling Challenges',
+    text: 'Inability to rapidly expand teams during growth phases',
   },
 ]
 
@@ -43,12 +52,12 @@ export default function ProblemPromise() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Tired of the Endless Hunt for Qualified Professionals?
+          The Hidden Cost of Traditional Hiring Is Crippling Your Growth
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Pain Points */}
-          <div className="space-y-8">
+          <div className="space-y-8 relative">
             {painPoints.map((point, index) => (
               <motion.div
                 key={index}
@@ -74,8 +83,11 @@ export default function ProblemPromise() {
                 </motion.div>
 
                 {/* Text */}
-                <div className="flex-1 pt-4">
-                  <p className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 font-medium">
+                <div className="flex-1 pt-2">
+                  <h3 className="text-lg md:text-xl text-neutral-900 dark:text-white font-bold mb-2">
+                    {point.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400">
                     {point.text}
                   </p>
                 </div>
@@ -83,7 +95,7 @@ export default function ProblemPromise() {
             ))}
 
             {/* Connecting Dotted Line */}
-            <div className="absolute left-[60px] top-[200px] h-[calc(100%-250px)] w-0.5 border-l-2 border-dashed border-neutral-300 dark:border-neutral-700 hidden lg:block" />
+            <div className="absolute left-[40px] top-[100px] h-[calc(100%-150px)] w-0.5 border-l-2 border-dashed border-neutral-300 dark:border-neutral-700 hidden lg:block" />
           </div>
 
           {/* Right: Promise Statement */}

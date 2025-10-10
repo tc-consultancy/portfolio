@@ -43,11 +43,11 @@ function Counter({ end, duration = 2, suffix = '' }: CounterProps) {
 }
 
 const metrics = [
-  {
-    value: 5,
-    suffix: 'x',
-    label: 'More interview calls',
-  },
+  // {
+  //   value: 5,
+  //   suffix: 'x',
+  //   label: 'More interview calls',
+  // },
   {
     value: 87,
     suffix: '%',
@@ -63,11 +63,11 @@ const metrics = [
     suffix: '%',
     label: 'Client satisfaction rate',
   },
-  {
-    value: 24,
-    suffix: 'hrs',
-    label: 'Average turnaround',
-  },
+  // {
+  //   value: 24,
+  //   suffix: 'hrs',
+  //   label: 'Average turnaround',
+  // },
 ]
 
 export default function SuccessMetrics() {
@@ -92,7 +92,7 @@ export default function SuccessMetrics() {
 
         {/* Metrics Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center"
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 text-center items-center justify-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

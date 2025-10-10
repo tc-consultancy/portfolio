@@ -60,8 +60,9 @@ export default function BlogSection() {
           {blogPosts.map((post, index) => (
             <motion.div
               key={index}
-              className={`group relative ${index === 1 ? 'lg:mt-12' : index === 2 ? 'lg:mt-6' : ''
-                }`}
+              className={`group relative ${
+                index === 1 ? 'lg:mt-12' : index === 2 ? 'lg:mt-6' : ''
+              }`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
