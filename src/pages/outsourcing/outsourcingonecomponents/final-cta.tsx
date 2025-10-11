@@ -109,7 +109,7 @@ export default function FinalCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Stop Searching. Start Building.
+            Still Have Questions?
           </motion.h2>
 
           {/* Sub-headline */}
@@ -120,7 +120,7 @@ export default function FinalCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Get your first candidate shortlist in 48 hours
+            Don't let uncertainty cost you another day of inflated labor costs. Schedule a free 30-minute consultation and see exactly how much you could save.
           </motion.p>
 
           {/* CTA Button */}
@@ -137,8 +137,32 @@ export default function FinalCTA() {
                 boxShadow: '0 0 40px rgba(168, 85, 247, 0.4)',
               }}
             >
-              Schedule My Free Consultation Now
+              Talk to an Expert
             </Button>
+          </motion.div>
+
+          {/* Contact Info */}
+          <motion.div
+            className="text-center mb-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+          >
+            <p className="text-neutral-600 dark:text-neutral-400 mb-2">Or reach us directly:</p>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
+              <a href="mailto:hello@yourcompany.com" className="text-purple-600 dark:text-purple-400 hover:underline font-medium">
+                📧 hello@yourcompany.com
+              </a>
+              <span className="hidden md:inline text-neutral-400">|</span>
+              <a href="tel:+1XXXXXXXXX" className="text-purple-600 dark:text-purple-400 hover:underline font-medium">
+                📞 +1-XXX-XXX-XXXX (US)
+              </a>
+              <span className="hidden md:inline text-neutral-400">|</span>
+              <a href="tel:+44XXXXXXXXXX" className="text-purple-600 dark:text-purple-400 hover:underline font-medium">
+                📞 +44-XXXX-XXXXXX (UK)
+              </a>
+            </div>
           </motion.div>
 
           {/* Trust Indicators */}

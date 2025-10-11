@@ -26,6 +26,8 @@ import WhyIndia from './outsourcingonecomponents/why-india'
 import OurGuarantee from './outsourcingonecomponents/our-guarantee'
 import ProcessTransparency from './outsourcingonecomponents/process-transparency'
 import Testimonials from './outsourcingonecomponents/testimonials'
+import FinalCTAGuarantee from './outsourcingonecomponents/final-cta-guarantee'
+import FinalTrust from './outsourcingonecomponents/final-trust'
 
 export default function Outsourcingone() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -67,8 +69,10 @@ export default function Outsourcingone() {
       <EngagementModels />
       <PricingSection />
       <ROICalculator />
-      {/* <SecurityTrust /> */}
-      <Support />
+      <FinalCTAGuarantee />
+      <FinalTrust />
+      <SecurityTrust />
+      {/* <Support /> */}
       <FAQSection />
       <FinalCTA />
     </div>
