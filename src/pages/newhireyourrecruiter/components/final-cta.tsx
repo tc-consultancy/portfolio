@@ -49,7 +49,7 @@ export default function FinalCTA() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Start My Applications Now - Get First 5 Jobs Free
+            Start My Applications Now
           </motion.button>
 
           <p className="text-sm text-white/70 mt-4">

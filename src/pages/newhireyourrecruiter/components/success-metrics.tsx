@@ -54,7 +54,7 @@ const metrics = [
     label: 'Reduction in application time',
   },
   {
-    value: 50,
+    value: 200,
     suffix: '+',
     label: 'Applications per week',
   },
