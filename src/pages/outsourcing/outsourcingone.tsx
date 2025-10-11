@@ -28,6 +28,7 @@ import ProcessTransparency from './outsourcingonecomponents/process-transparency
 import Testimonials from './outsourcingonecomponents/testimonials'
 import FinalCTAGuarantee from './outsourcingonecomponents/final-cta-guarantee'
 import FinalTrust from './outsourcingonecomponents/final-trust'
+import OneHireChallenge from './outsourcingonecomponents/one-hire-challenge'
 
 export default function Outsourcingone() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -69,6 +70,7 @@ export default function Outsourcingone() {
       <EngagementModels />
       <PricingSection />
       <ROICalculator />
+      <OneHireChallenge />
       <FinalCTAGuarantee />
       <FinalTrust />
       <SecurityTrust />
