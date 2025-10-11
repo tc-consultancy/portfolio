@@ -86,8 +86,8 @@ export default function HeroSection({ onClick }: { onClick: () => void }) {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
-              Expand Beyond Borders  {' '}
-              <span className="text-purple-400"> <br className='hidden md:block' /> — Build </span> Your Global Workforce Effortlessly
+              Hire Exceptional   {' '}
+              <span className="text-purple-400">  Offshore </span> Talent. We Handle the Rest.
             </h1>
 
             <p className="text-xl md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
@@ -142,7 +142,7 @@ export default function HeroSection({ onClick }: { onClick: () => void }) {
                   500+
                 </div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Successfukk Placements
+                  Successfu Placements
                 </div>
               </div>
             </div>

@@ -1,12 +1,25 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
+import { ChevronDown } from 'lucide-react'
+
+const countries = [
+  { code: 'india', name: 'India', savingsRate: 0.6 },
+  { code: 'philippines', name: 'Philippines', savingsRate: 0.55 },
+  { code: 'vietnam', name: 'Vietnam', savingsRate: 0.58 },
+  { code: 'mexico', name: 'Mexico', savingsRate: 0.45 },
+  { code: 'colombia', name: 'Colombia', savingsRate: 0.5 },
+  { code: 'poland', name: 'Poland', savingsRate: 0.4 },
+]
 
 export default function ROICalculator() {
   const [salary, setSalary] = useState(100000)
   const [displaySalary, setDisplaySalary] = useState(100000)
+  const [selectedCountry, setSelectedCountry] = useState('india')
+  const [dropdownOpen, setDropdownOpen] = useState(false)
 
-  const savings = salary * 0.6
+  const currentCountry = countries.find((c) => c.code === selectedCountry) || countries[0]
+  const savings = salary * currentCountry.savingsRate
   const annualSavings = savings
   const savingsPercentage = (savings / salary) * 100
 
@@ -103,7 +116,7 @@ export default function ROICalculator() {
               {/* Center Content */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2">
-                  ${Math.round(displaySalary * 0.6).toLocaleString()}
+                  ${Math.round(displaySalary * currentCountry.savingsRate).toLocaleString()}
                 </div>
                 <div className="text-xl text-purple-400 font-semibold mb-1">
                   SAVED
@@ -121,6 +134,50 @@ export default function ROICalculator() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
+            {/* Country Selector */}
+            <div>
+              <label className="block text-sm font-medium text-neutral-400 mb-2">
+                Select Country
+              </label>
+              <div className="relative">
+                <button
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg flex items-center justify-between hover:border-purple-400 transition-colors"
+                >
+                  <span className="text-white font-medium">{currentCountry.name}</span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-neutral-400 transition-transform ${
+                      dropdownOpen ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+
+                {dropdownOpen && (
+                  <div className="absolute z-10 w-full mt-2 bg-neutral-800 border border-neutral-700 rounded-lg shadow-lg overflow-hidden">
+                    {countries.map((country) => (
+                      <button
+                        key={country.code}
+                        onClick={() => {
+                          setSelectedCountry(country.code)
+                          setDropdownOpen(false)
+                        }}
+                        className={`w-full px-4 py-3 text-left hover:bg-purple-900/20 transition-colors ${
+                          selectedCountry === country.code
+                            ? 'bg-purple-900/30 text-purple-400'
+                            : 'text-white'
+                        }`}
+                      >
+                        <div className="font-medium">{country.name}</div>
+                        <div className="text-xs text-neutral-400">
+                          {(country.savingsRate * 100).toFixed(0)}% savings
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+
             {/* Salary Input */}
             <div>
               <label className="block text-lg font-semibold text-white mb-2">
@@ -181,7 +238,7 @@ export default function ROICalculator() {
               <div className="flex justify-between items-center">
                 <span className="text-neutral-400">Our Cost (Annual)</span>
                 <span className="text-xl font-bold text-white">
-                  ${(salary * 0.4).toLocaleString()}
+                  ${(salary * (1 - currentCountry.savingsRate)).toLocaleString()}
                 </span>
               </div>
               <div className="h-px bg-neutral-700" />
@@ -199,7 +256,7 @@ export default function ROICalculator() {
                 <strong className="text-white">Based on:</strong>
               </p>
               <ul className="space-y-1 list-disc list-inside">
-                <li>60% average cost savings</li>
+                <li>{(currentCountry.savingsRate * 100).toFixed(0)}% average cost savings in {currentCountry.name}</li>
                 <li>Includes all overhead and benefits</li>
                 <li>No hidden fees or additional costs</li>
               </ul>
