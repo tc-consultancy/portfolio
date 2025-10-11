@@ -4,64 +4,79 @@ import { Plus, Minus } from 'lucide-react'
 
 const faqs = [
   {
-    question: 'How long does it take to find a candidate?',
+    question: 'How quickly can we get started?',
     answer:
-      'We typically provide 3-5 pre-vetted candidate profiles within 48 hours of your initial consultation. You can start interviewing immediately and have someone onboarded within a week.',
+      'From our initial conversation to your first team member starting work typically takes 3-5 weeks. For urgent needs, we can accelerate to 2 weeks with our rapid-placement service.',
   },
   {
-    question: 'What are your costs?',
+    question: "What if the candidate doesn't work out?",
     answer:
-      "Zero upfront payment. No hidden charges. You only pay after 30 days of employment offer. Our transparent, all-inclusive pricing saves you an average of 60% compared to local hiring costs. Pay only when you're satisfied with your hire.",
+      "We offer free replacements within the first 90 days, no questions asked. However, our 98% success rate means replacements are rarely needed.",
   },
   {
-    question: 'How do you handle contracts and compliance?',
+    question: 'How do you ensure quality?',
     answer:
-      'We handle all legal, tax, and compliance matters. Our team ensures full compliance with local labor laws, manages contracts, and takes care of all paperwork so you can focus on your business.',
+      'We have a rigorous 5-stage vetting process: skills assessment, technical interviews, communication evaluation, background verification, and cultural fit analysis. Only 3% of applicants make it through.',
   },
   {
-    question: "What if the candidate isn't a good fit?",
+    question: 'What about time zone differences?',
     answer:
-      "We offer a risk-free 2-week trial period. If you're not satisfied for any reason, the first two weeks are on us. We'll work with you to find a better match at no additional cost.",
+      'Indian Standard Time (IST) overlaps with US evenings, EU afternoons, and APAC mornings. We ensure candidates can work hours that overlap with your team for real-time collaboration.',
   },
   {
-    question: 'Can I scale my team up or down?',
+    question: 'How do weekly payments work?',
     answer:
-      'Absolutely! Our flexible engagement models allow you to scale your team based on your needs. There are no long-term lock-ins, and you can adjust team size as your project requirements change.',
+      'Every Friday, you receive an invoice for hours worked that week. Payment is due within 7 days. Simple, transparent, and cash-flow friendly.',
   },
   {
-    question: 'What makes your vetting process different?',
+    question: 'What about data security and confidentiality?',
     answer:
-      'Our rigorous 5-stage process ensures only the top 5% of candidates make it through. We assess technical skills, soft skills, communication abilities, cultural fit, and real-world problem-solving through trial projects.',
+      'All team members sign comprehensive NDAs. We comply with GDPR, HIPAA, SOC 2, and other relevant standards. We can work within your existing security protocols.',
   },
   {
-    question: 'Do you provide ongoing support after hiring?',
+    question: 'Do you handle payroll and taxes?',
     answer:
-      'Yes! Every client gets a dedicated success manager who serves as your single point of contact. We provide ongoing integration support, regular check-ins, and are available 24/7 to address any concerns.',
+      "Yes, completely. We're the employer of record, handling all payroll, taxes, benefits, and compliance. You simply pay our invoice.",
   },
   {
-    question: 'Who owns the intellectual property?',
+    question: 'Can we scale up or down?',
     answer:
-      'You own 100% of all code, designs, and work product created by your team. This is clearly stated in our contracts with ironclad IP assignment clauses. All team members sign comprehensive NDAs before starting work.',
+      'Absolutely. Add team members anytime with 3-5 week lead time. Scale down with just 2 weeks notice. No penalties or long-term commitments.',
   },
   {
-    question: "What if a team member quits or doesn't work out?",
+    question: 'What industries do you specialize in?',
     answer:
-      "We offer a free replacement guarantee. If a team member leaves or performance issues arise, we'll find a qualified replacement within 2 weeks at no additional cost. Our 95% retention rate means this rarely happens.",
+      'We serve 15+ industries with particular strength in technology, finance, healthcare, retail, and manufacturing. Our recruiters have industry-specific expertise.',
   },
   {
-    question: 'How do I communicate and manage my remote team?',
+    question: 'What if we need specialized or niche skills?',
     answer:
-      'Your team uses YOUR tools - Slack, Jira, GitHub, or whatever you prefer. They attend your meetings, follow your processes, and communicate directly with you. No middleman. We only handle HR, payroll, and administrative tasks in the background.',
+      "Our network includes specialists across hundreds of skill areas. If we don't have someone immediately available, we can typically source niche talent within 4-6 weeks.",
   },
   {
-    question: 'Who is the employer of record?',
+    question: 'How do you handle different currencies?',
     answer:
-      'We are the legal employer of record. You contract with us, and we employ the talent. This eliminates co-employment risks for you while ensuring full compliance with local labor laws. You get all the benefits of a dedicated team without the legal complexity.',
+      'We invoice in your local currency (USD, EUR, GBP, CAD, AUD, CHF, SGD, HKD, JPY, CNY) at locked rates to eliminate exchange rate fluctuations.',
   },
   {
-    question: 'How large is your talent pool?',
+    question: 'What happens with benefits and equipment?',
     answer:
-      'We have a network of 5,000+ pre-vetted professionals across 15+ countries in Latin America, Eastern Europe, and Asia. Our talent pool spans all industries—from finance and healthcare to manufacturing and retail—with an average of 8+ years of experience and fluent English proficiency.',
+      'We handle all benefits (health insurance, retirement contributions, etc.) in India. You can choose to provide equipment or we can include it in our monthly cost.',
+  },
+  {
+    question: 'Can we hire the team member full-time later?',
+    answer:
+      "Yes, we offer a conversion option after 12 months of engagement. There's a one-time conversion fee equal to 2 months of billing.",
+  },
+  {
+    question: 'What if we have compliance concerns?',
+    answer:
+      "We're experienced with GDPR, HIPAA, SOX, PCI-DSS, and industry specific regulations. We'll work with your legal team to ensure full compliance.",
+  },
+  {
+    question: 'Do you support languages other than English?',
+    answer:
+      'Many of our candidates speak multiple languages including Spanish, French, German, Mandarin, Japanese, and Arabic. Specify language requirements upfront.',
   },
 ]
 

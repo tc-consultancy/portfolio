@@ -58,13 +58,13 @@ export default function Outsourcingone() {
       <VettingProcess />
       <IndustriesGrid />
       <RolesGrid />
+      <CaseStudies />
       <SuccessMetrics />
       <GeographicCoverage />
       <WhyIndia />
       <ProcessTransparency />
       {/* <TalentMatcher /> */}
       <Testimonials />
-      <CaseStudies />
       <OurGuarantee />
       {/* <ComparisonTable /> */}
       <EngagementModels />
