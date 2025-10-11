@@ -25,6 +25,7 @@ import GeographicCoverage from './outsourcingonecomponents/geographic-coverage'
 import WhyIndia from './outsourcingonecomponents/why-india'
 import OurGuarantee from './outsourcingonecomponents/our-guarantee'
 import ProcessTransparency from './outsourcingonecomponents/process-transparency'
+import Testimonials from './outsourcingonecomponents/testimonials'
 
 export default function Outsourcingone() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -59,13 +60,14 @@ export default function Outsourcingone() {
       <WhyIndia />
       <ProcessTransparency />
       {/* <TalentMatcher /> */}
+      <Testimonials />
       <CaseStudies />
       <OurGuarantee />
       {/* <ComparisonTable /> */}
       <EngagementModels />
       <PricingSection />
       <ROICalculator />
-      <SecurityTrust />
+      {/* <SecurityTrust /> */}
       <Support />
       <FAQSection />
       <FinalCTA />

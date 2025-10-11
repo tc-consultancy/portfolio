@@ -50,7 +50,7 @@ const tiers = [
   {
     name: '💼 Professional Plan',
     applicationsPerDay: 'Up to 40 Customized applications/day',
-    applicationsPerWeek: '(≈200 applications/week)',
+    applicationsPerWeek: '200 applications per week',
     price: '$299',
     period: '/month',
     features: [
