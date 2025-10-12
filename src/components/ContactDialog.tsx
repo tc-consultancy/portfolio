@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Check, ChevronsUpDown } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { cn, handleWhatsAppClick } from '@/lib/utils'
 import {
   Dialog,
   DialogContent,
@@ -226,17 +226,47 @@ export function ContactDialog({ children }: ContactDialogProps) {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-lg  bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 shadow-xl rounded-xl">
+      <DialogContent className="sm:max-w-lg max-h-[80vh] no-scrollbar overflow-y-auto bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 hover:shadow-lg">
         <DialogHeader>
-          <DialogTitle className="md:text-2xl font-bold text-gray-900 dark:text-white">
+          <DialogTitle className="md:text-xl font-bold text-gray-900 dark:text-white">
             Start Your Journey
           </DialogTitle>
-          <DialogDescription className="text-xs md:text-base text-gray-600 dark:text-gray-300">
+          <DialogDescription className="text-xs md:text-sm text-gray-600 dark:text-gray-300">
             Get in touch with our team to discuss your enterprise technology, staffing, and outsourcing needs.
           </DialogDescription>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5 max-w-lg ">
+        <div className="space-y-2">
+          <Button
+            type="button"
+            onClick={() => window.open('tel:+919908884033', '_self')}
+            className="w-full bg-orange-100 hover:bg-orange-200 text-orange-800 dark:text-orange-900 font-semibold py-6 rounded-lg transition-all duration-200  hover:shadow-lg"
+          >
+            Talk to us over call
+          </Button>
+
+          <div className="flex items-center gap-4">
+            <hr className="flex-1 border-neutral-300 dark:border-neutral-700" />
+            <span className="text-xs text-neutral-500 dark:text-neutral-400">OR</span>
+            <hr className="flex-1 border-neutral-300 dark:border-neutral-700" />
+          </div>
+
+          <Button
+            type="button"
+            onClick={handleWhatsAppClick}
+            className="w-full bg-green-100 hover:bg-green-200 text-green-800 dark:text-green-900 font-semibold py-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+          >
+            WhatsApp
+          </Button>
+
+          <div className="flex items-center gap-4">
+            <hr className="flex-1 border-neutral-300 dark:border-neutral-700" />
+            <span className="text-xs text-neutral-500 dark:text-neutral-400">OR</span>
+            <hr className="flex-1 border-neutral-300 dark:border-neutral-700" />
+          </div>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5 max-w-lg">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName" className={cn(errors.firstName ? 'text-red-600' : '')}>

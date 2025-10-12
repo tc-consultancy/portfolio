@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { Code, DollarSign, Headphones, TrendingUp, Palette, Briefcase, Wrench, Heart } from 'lucide-react'
 
@@ -120,9 +121,11 @@ export default function RolesGrid() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
             Need a role not listed here? We can source any position.
           </p>
+           <ContactDialog>
           <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
             Request Custom Role
           </button>
+           </ContactDialog>
         </motion.div>
       </div>
     </section>

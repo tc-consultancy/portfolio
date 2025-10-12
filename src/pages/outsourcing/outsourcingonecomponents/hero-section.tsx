@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 export default function HeroSection({ onClick }: { onClick: () => void }) {
   const handleWhatsAppClick = () => {
@@ -100,19 +101,22 @@ export default function HeroSection({ onClick }: { onClick: () => void }) {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button
-                onClick={handleWhatsAppClick}
-                className="bg-purple-400 hover:bg-purple-500 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              >
-                Schedule Free Consultation
-              </Button>
-              <button
-                onClick={scrollToROI}
-                className="group flex items-center justify-center gap-2 text-lg font-semibold text-neutral-900 dark:text-white hover:text-purple-400 dark:hover:text-purple-400 transition-colors duration-300"
-              >
-                Calculate Your Savings
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+
+              <ContactDialog>
+                <Button
+                  className="bg-purple-400 hover:bg-purple-500 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                >
+                  Schedule Free Consultation
+                </Button>
+                </ContactDialog>
+
+                <button
+                  onClick={scrollToROI}
+                  className="group flex items-center justify-center gap-2 text-lg font-semibold text-neutral-900 dark:text-white hover:text-purple-400 dark:hover:text-purple-400 transition-colors duration-300"
+                >
+                  Calculate Your Savings
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
             </div>
 
             {/* Trust Indicators */}

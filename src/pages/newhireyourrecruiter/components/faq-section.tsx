@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
@@ -183,9 +184,11 @@ export default function FAQSection() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-4">
             Still have questions?
           </p>
+           <ContactDialog>
           <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
             Schedule a Free Consultation
           </button>
+           </ContactDialog>
         </motion.div>
       </div>
     </section>

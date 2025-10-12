@@ -1,4 +1,5 @@
 import { staffing } from "@/assets";
+import { ContactDialog } from "@/components/ContactDialog";
 
 export default function AboutUs() {
   const benefits = [
@@ -99,12 +100,14 @@ export default function AboutUs() {
             </div>
 
             {/* CTA Button */}
+             <ContactDialog>  
             <button className="bg-purple-400 hover:bg-purple-300 dark:bg-purple-300 dark:hover:bg-purple-200 text-purple-900 dark:text-gray-900 font-semibold px-8 py-3 rounded-full transition-colors duration-200 flex items-center">
               Get Started Now
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
+             </ContactDialog>
           </div>
         </div>
       </div>

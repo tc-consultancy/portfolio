@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { ChevronDown } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 const countries = [
   { code: 'us', name: 'United States', savingsRate: 0.6, symbol: '$', flag: '🇺🇸' },
@@ -153,9 +154,8 @@ export default function ROICalculator() {
                     {currentCountry.name}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-neutral-400 transition-transform ${
-                      dropdownOpen ? 'rotate-180' : ''
-                    }`}
+                    className={`w-5 h-5 text-neutral-400 transition-transform ${dropdownOpen ? 'rotate-180' : ''
+                      }`}
                   />
                 </button>
 
@@ -168,11 +168,10 @@ export default function ROICalculator() {
                           setSelectedCountry(country.code)
                           setDropdownOpen(false)
                         }}
-                        className={`w-full px-4 py-3 text-left hover:bg-purple-900/20 transition-colors ${
-                          selectedCountry === country.code
-                            ? 'bg-purple-900/30 text-purple-400'
-                            : 'text-white'
-                        }`}
+                        className={`w-full px-4 py-3 text-left hover:bg-purple-900/20 transition-colors ${selectedCountry === country.code
+                          ? 'bg-purple-900/30 text-purple-400'
+                          : 'text-white'
+                          }`}
                       >
                         <div className="font-medium flex items-center gap-2">
                           <span className="text-xl">{country.flag}</span>
@@ -282,9 +281,11 @@ export default function ROICalculator() {
             </div>
 
             {/* CTA */}
-            <Button className="w-full bg-white text-purple-400 hover:bg-neutral-100 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Get Started & Save Now
-            </Button>
+            <ContactDialog>
+              <Button className="w-full bg-white text-purple-400 hover:bg-neutral-100 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                Get Started & Save Now
+              </Button>
+            </ContactDialog>
           </motion.div>
         </div>
       </div>

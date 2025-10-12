@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Check, DollarSign, Clock } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 const tiers = [
   {
@@ -173,14 +174,16 @@ export default function PricingSection() {
                   </div>
 
                   {/* CTA Button */}
-                  <button
-                    className={`w-full py-3 rounded-full font-semibold transition-all hover:scale-105 ${tier.popular
-                      ? 'bg-white text-purple-600 hover:bg-neutral-100'
-                      : 'bg-purple-400 text-white hover:bg-purple-500'
-                      }`}
-                  >
-                    Get Started
-                  </button>
+                  <ContactDialog>
+                    <button
+                      className={`w-full py-3 rounded-full font-semibold transition-all hover:scale-105 ${tier.popular
+                        ? 'bg-white text-purple-600 hover:bg-neutral-100'
+                        : 'bg-purple-400 text-white hover:bg-purple-500'
+                        }`}
+                    >
+                      Get Started
+                    </button>
+                  </ContactDialog>
                 </div>
               </div>
             </motion.div>

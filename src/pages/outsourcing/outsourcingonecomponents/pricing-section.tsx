@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { Check, X, DollarSign, Shield, Clock } from 'lucide-react'
 
@@ -169,9 +170,11 @@ export default function PricingSection() {
                     <p className="text-neutral-600 dark:text-neutral-400 mb-6">
                         Ready to start hiring with zero risk?
                     </p>
+                     <ContactDialog>
                     <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
                         Get Your Custom Quote
                     </button>
+                     </ContactDialog>
                 </motion.div>
             </div>
         </section>

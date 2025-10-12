@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { FileText, Users, FileCheck, Play } from 'lucide-react'
 
@@ -101,9 +102,11 @@ export default function SolutionRoadmap() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
             Start building your dream team today with zero risk
           </p>
+          <ContactDialog>
           <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
             Get Started Now
           </button>
+          </ContactDialog>
         </motion.div>
       </div>
     </section>

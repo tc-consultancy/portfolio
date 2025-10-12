@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { Users, Target, Layers, UserPlus } from 'lucide-react'
 
@@ -198,9 +199,11 @@ export default function EngagementModels() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
             Which model is right for you? Talk to an expert
           </p>
+           <ContactDialog>
           <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Schedule a Consultation
           </button>
+           </ContactDialog>
         </motion.div>
       </div>
     </section>

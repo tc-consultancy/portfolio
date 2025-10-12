@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Target, FileText, Zap, Users, Briefcase } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 const pillars = [
   {
@@ -86,9 +87,11 @@ export default function SolutionOverview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            Get Started Today
-          </button>
+          <ContactDialog>
+            <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              Get Started Today
+            </button>
+          </ContactDialog>
         </motion.div>
       </div>
     </section>

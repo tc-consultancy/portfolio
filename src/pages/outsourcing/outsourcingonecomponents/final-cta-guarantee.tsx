@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Check, Shield, Calendar, FileText, ArrowRight } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 export default function FinalCTAGuarantee() {
   const guarantees = [
@@ -98,10 +99,12 @@ export default function FinalCTAGuarantee() {
               <li>• No pressure, no obligations</li>
             </ul>
 
-            <button className="w-full py-3 bg-purple-400 text-white font-semibold rounded-lg hover:bg-purple-500 transition-all flex items-center justify-center gap-2">
-              Schedule Now
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            <ContactDialog>
+              <button className="w-full py-3 bg-purple-400 text-white font-semibold rounded-lg hover:bg-purple-500 transition-all flex items-center justify-center gap-2">
+                Schedule Now
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </ContactDialog>
           </motion.div>
 
           <motion.div
@@ -126,10 +129,12 @@ export default function FinalCTAGuarantee() {
               <li>• See exact potential savings</li>
             </ul>
 
-            <button className="w-full py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-semibold rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-all flex items-center justify-center gap-2">
-              Get Quote
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            <ContactDialog>
+              <button className="w-full py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-semibold rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-all flex items-center justify-center gap-2">
+                Get Quote
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </ContactDialog>
           </motion.div>
         </div>
 

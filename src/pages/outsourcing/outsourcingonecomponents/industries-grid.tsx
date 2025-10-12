@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import {
   Building2,
@@ -162,9 +163,11 @@ export default function IndustriesGrid() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
             Don't see your industry? We serve all sectors.
           </p>
+           <ContactDialog>
           <button className="px-8 py-4 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             Tell Us Your Industry
           </button>
+           </ContactDialog>
         </motion.div>
       </div>
     </section>
