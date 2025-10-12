@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 const faqs = [
   {
@@ -233,9 +234,11 @@ export default function FAQSection() {
                 <p className="text-neutral-600 dark:text-neutral-400 mb-4">
                   Our team is here to help. Get in touch and we'll answer any questions you have.
                 </p>
-                <button className="w-full px-6 py-3 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105">
-                  Contact Us
-                </button>
+                <ContactDialog>
+                  <button className="w-full px-6 py-3 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105">
+                    Contact Us
+                  </button>
+                </ContactDialog>
               </div>
             </motion.div>
           </div>

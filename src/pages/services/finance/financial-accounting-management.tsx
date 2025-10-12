@@ -141,7 +141,7 @@ export default function FinancialAccountingManagement() {
                         </Button>
                     </div>
 
-   {/* Right Illustration */}
+                    {/* Right Illustration */}
                     <div className="flex justify-center">
                         <img
                             src={robo1}

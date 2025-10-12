@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Shield, Lock, FileCheck, MessageSquareCode, Database, CheckCircle } from 'lucide-react'
+import { ContactDialog } from '@/components/ContactDialog'
 
 const securityFeatures = [
   {
@@ -174,9 +175,11 @@ export default function SecurityTrust() {
           <p className="text-neutral-600 dark:text-neutral-400 mb-6">
             Want to learn more about our security practices?
           </p>
-          <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            Download Security Whitepaper
-          </button>
+          <ContactDialog>
+            <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              Get Started
+            </button>
+          </ContactDialog>Dialog>
         </motion.div>
       </div>
     </section>

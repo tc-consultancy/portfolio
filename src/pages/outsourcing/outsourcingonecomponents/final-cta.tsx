@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
+import { ContactDialog } from '@/components/ContactDialog';
 
 function Counter({ end, duration = 2 }: { end: number; duration?: number }) {
   const [count, setCount] = useState(0)
@@ -131,6 +132,7 @@ export default function FinalCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
+            <ContactDialog>
             <Button
               className="px-12 py-6 text-lg font-semibold bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               style={{
@@ -139,6 +141,7 @@ export default function FinalCTA() {
             >
               Talk to an Expert
             </Button>
+            </ContactDialog>
           </motion.div>
 
           {/* Contact Info */}
