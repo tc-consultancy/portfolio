@@ -2,7 +2,6 @@ import { FAQSection } from '@/components/sections/faq-section';
 import { Button } from '@/components/ui/button'
 import { industries } from '@/constants/industries';
 import CommonHero from '@/components/common/common-hero';
-import { robo1 } from '@/assets';
 
 const features = [
     {
@@ -35,37 +34,12 @@ const features = [
 export default function OcrAgent() {
     return (
         <>
-            {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0  md:py-20 px-6 flex items-center justify-center">
-                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            AI OCR AGENT
-                        </p>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            AI OCR Automation <br /> Agent for Every Business<br /> Supports Any Language. Any Document
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg leading-relaxed">
-                            Turn documents into decisions. Our OCR Agent doesn’t just read text, it extracts meaning, detects patterns, and integrates seamlessly into your workflows. Say goodbye to manual data entry and hello to intelligent automation. Faster. Smarter. Error-free.
-                        </p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Book a Demo →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+            <CommonHero
+                subtleHeading="AI OCR AGENT"
+                heading="AI OCR Automation Agent\nfor Every Business\nSupports Any Language. Any Document"
+                subheading="Turn documents into decisions. Our OCR Agent doesn't just read text, it extracts meaning, detects patterns, and integrates seamlessly into your workflows. Say goodbye to manual data entry and hello to intelligent automation. Faster. Smarter. Error-free."
+                buttontitle="Book a Demo"
+            />
 
             {/* Features Section */}
             <section className="py-20 px-4 ">
@@ -202,7 +176,7 @@ export default function OcrAgent() {
 
                             {/* Our OCR Agent Column */}
                             <div className="space-y-6">
-                                <div className="h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center">
+                                <div className="h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center">
                                     <h3 className="text-white font-bold text-lg">Our OCR Agent</h3>
                                 </div>
 

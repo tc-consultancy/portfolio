@@ -1,15 +1,9 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
 
 export default function HeroSection() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact-section')
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
+  
 
   return (
     <section className="relative min-h-screen w-full pt-28 md:pt-54 pb-16 bg-white dark:bg-neutral-950 overflow-hidden">
