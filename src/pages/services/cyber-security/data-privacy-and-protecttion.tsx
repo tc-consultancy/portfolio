@@ -1,7 +1,6 @@
-import { robo1 } from '@/assets'
-import { Button } from '@/components/ui/button'
 import { ShieldAlert, FileText, Briefcase, BookCheck, ClipboardList, BarChart3 } from "lucide-react";
 import { FAQSection } from '@/components/sections/faq-section';
+import CommonHero from '@/components/common/common-hero';
 
 export default function DataPrivacyAndProtecttion() {
     const data = [
@@ -23,37 +22,12 @@ export default function DataPrivacyAndProtecttion() {
     ];
     return (
         <>
-            {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-neutral-50 dark:bg-neutral-900 md:py-20 px-4 flex items-center justify-center">
-                <div className="max-w-6xl w-full  grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            Data Privacy
-                        </p>
-                        <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mt-4 leading-tight">
-                            Data Privacy and <br />  Protection <br />
-                        </h1>
-                        <p className="text-neutral-600 dark:text-neutral-300 mt-6 text-lg leading-relaxed">
-                            Protect your enterprise data across multiple environments, ensure compliance with privacy requirements, and reduce operational complexity.
-                        </p>
-                        <Button className="mt-8 px-4 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Lets Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+            <CommonHero
+                badge="Data Privacy"
+                title="Safeguard Your Data with Comprehensive Privacy Solutions"
+                description="Protect enterprise data across environments, ensure regulatory compliance, and simplify operations with our privacy protection services."
+                accentColor="purple-400"
+            />
 
             <section className="w-full py-12   max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold  text-neutral-900 dark:text-neutral-100 mb-6">

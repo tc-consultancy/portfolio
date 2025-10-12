@@ -1,7 +1,7 @@
 import { robo1 } from '@/assets'
 import { FAQSection } from '@/components/sections/faq-section'
-import { Button } from '@/components/ui/button'
 import { Package, Users, UserCheck, Cloud } from 'lucide-react'
+import CommonHero from '@/components/common/common-hero'
 
 const features = [
     {
@@ -33,37 +33,12 @@ const features = [
 export default function SaasImplimentations() {
     return (
         <>
-            {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-white dark:bg-gray-950 md:py-20 px-6 flex items-center">
-                <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            SAAS DEVELOPMENT
-                        </p>
-                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            SAAS Application <br />Development Services
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
-                            Make your product more robust, configurable, and scalable with our SaaS development and implementation capabilities.</p>
-
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Let's Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center md:justify-end">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+            <CommonHero
+                badge="SaaS Development"
+                title="Build Robust, Scalable SaaS Applications"
+                description="Make your product more configurable and scalable with our comprehensive SaaS development and implementation capabilities."
+                accentColor="purple-400"
+            />
 
             {/* Bringing a change Section */}
             <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">

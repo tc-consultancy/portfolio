@@ -1,7 +1,7 @@
 import { robo1 } from '@/assets'
 import SectionContainer from '@/components/common/section-container'
 import { FAQSection } from '@/components/sections/faq-section'
-import { Button } from '@/components/ui/button'
+import CommonHero from '@/components/common/common-hero'
 
 export default function IotOtSolutions() {
     const sectionData =  [
@@ -41,36 +41,12 @@ export default function IotOtSolutions() {
         ]
   return (
     <>
-        {/* Hero Section */}
-        <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 md:px-6 flex items-center justify-center">
-                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            AI CX AGENT
-                        </p>
-                        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            IOT & OT Solutions  <br />
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
-                            Our IOT & OT solutions help organizations secure their IoT and OT devices, networks, and systems from cyber threats and attacks.</p>
-                        <Button className="mt-8 px-4 md:px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Lets Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+        <CommonHero
+            badge="IoT & OT Security"
+            title="Secure Your Connected Devices with Advanced IoT & OT Solutions"
+            description="Protect IoT and OT devices, networks, and systems from cyber threats with comprehensive security solutions designed for connected environments."
+            accentColor="purple-400"
+        />
 
             {/* Partner Section */}
             <section className="py-20 max-w-6xl mx-auto">
