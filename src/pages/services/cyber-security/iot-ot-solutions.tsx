@@ -42,10 +42,10 @@ export default function IotOtSolutions() {
   return (
     <>
         <CommonHero
-            badge="IoT & OT Security"
-            title="Secure Your Connected Devices with Advanced IoT & OT Solutions"
-            description="Protect IoT and OT devices, networks, and systems from cyber threats with comprehensive security solutions designed for connected environments."
-            accentColor="purple-400"
+            subtleHeading="IoT & OT Security"
+            heading="Secure Your Connected Devices\nwith Advanced IoT & OT Solutions"
+            subheading="Protect IoT and OT devices, networks, and systems from cyber threats with comprehensive security solutions designed for connected environments."
+            buttontitle="Let's Talk"
         />
 
             {/* Partner Section */}

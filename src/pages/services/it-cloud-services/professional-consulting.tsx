@@ -4,10 +4,10 @@ export default function ProfessionalConsulting() {
     return (
         <>
             <CommonHero
-                badge="Professional Consulting"
-                title="Gain Smarter Competitive Advantage to Reach Your Goals"
-                description="Leverage cutting-edge technology to make informed decisions and drive continuous growth for your business."
-                accentColor="purple-400"
+                subtleHeading="Professional Consulting"
+                heading="Gain Smarter Competitive Advantage\nto Reach Your Goals"
+                subheading="Leverage cutting-edge technology to make informed decisions and drive continuous growth for your business."
+                buttontitle="Let's Talk"
             />
             {/* Managed Network Solutions Section */}
             <section className="w-full bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 dark:from-purple-800 dark:via-purple-700 dark:to-pink-700 py-16 md:py-24 px-4">

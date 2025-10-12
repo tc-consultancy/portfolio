@@ -34,14 +34,14 @@ export default function CustomAppDev() {
     return (
         <>
             <CommonHero
-                badge="Custom Application Development"
-                title="Optimize Costs and Align IT with Business Outcomes"
-                description="Transform your business with custom software solutions designed to meet your unique requirements and drive measurable results."
-                accentColor="purple-400"
+                subtleHeading="Custom Application Development"
+                heading="Optimize Costs and Align IT\nwith Business Outcomes"
+                subheading="Transform your business with custom software solutions designed to meet your unique requirements and drive measurable results."
+                buttontitle="Let's Talk"
             />
 
             {/* Bringing a change Section */}
-            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
+            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-700 dark:from-purple-700 dark:via-purple-800 dark:to-purple-900 overflow-hidden">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Left Illustration */}
@@ -101,7 +101,7 @@ export default function CustomAppDev() {
             {/* How do we do it Section */}
             <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
+                    <p className="text-purple-600 dark:text-purple-400 font-semibold text-sm uppercase tracking-wide">
                         DESIGN TO TRANSFORM LIVES
                     </p>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4">

@@ -5,10 +5,10 @@ export default function InfraOutsourcingServices() {
 return (
    <>
      <CommonHero
-        badge="Infrastructure Outsourcing"
-        title="Trusted IT Infrastructure Outsourcing for Rapid Response"
-        description="Streamline your operations with automated IT infrastructure services designed to reduce support needs and enhance efficiency."
-        accentColor="purple-400"
+        subtleHeading="Infrastructure Outsourcing"
+        heading="Trusted IT Infrastructure Outsourcing\nfor Rapid Response"
+        subheading="Streamline your operations with automated IT infrastructure services designed to reduce support needs and enhance efficiency."
+        buttontitle="Let's Talk"
      />
    </>
   )

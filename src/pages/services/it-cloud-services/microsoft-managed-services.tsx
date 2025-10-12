@@ -4,10 +4,10 @@ export default function MicroSoftManagedServices() {
   return (
    <>
      <CommonHero
-        badge="Microsoft Managed Services"
-        title="Proactively Manage Your IT Infrastructure with Expert Supervision"
-        description="Leverage professional Microsoft managed services to optimize your business infrastructure and drive operational excellence."
-        accentColor="purple-400"
+        subtleHeading="Microsoft Managed Services"
+        heading="Proactively Manage Your IT Infrastructure\nwith Expert Supervision"
+        subheading="Leverage professional Microsoft managed services to optimize your business infrastructure and drive operational excellence."
+        buttontitle="Let's Talk"
      />
    </>
   )

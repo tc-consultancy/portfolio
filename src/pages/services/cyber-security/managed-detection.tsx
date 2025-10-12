@@ -5,10 +5,10 @@ export default function ManagedDetection() {
     return (
         <>
             <CommonHero
-                badge="MDR Services"
-                title="Achieve Resilient Cyber Defense with Managed Detection & Response"
-                description="Combine incident response automation with expert skills to deliver comprehensive threat management and strengthen your security posture."
-                accentColor="purple-400"
+                subtleHeading="MDR Services"
+                heading="Achieve Resilient Cyber Defense\nwith Managed Detection & Response"
+                subheading="Combine incident response automation with expert skills to deliver comprehensive threat management and strengthen your security posture."
+                buttontitle="Let's Talk"
             />
 
             {/* Why Terralogic as MDR Provider Section */}
@@ -207,7 +207,7 @@ export default function ManagedDetection() {
                                         <span className="text-xl">⚠️</span>
                                     </div>
                                     <div className="absolute bottom-4 left-4 w-16 h-8 bg-purple-300 dark:bg-purple-600 rounded-lg"></div>
-                                    <div className="absolute top-1/2 left-6 w-8 h-8 bg-pink-300 dark:bg-pink-600 rounded-full"></div>
+                                    <div className="absolute top-1/2 left-6 w-8 h-8 bg-purple-300 dark:bg-purple-600 rounded-full"></div>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@ export default function ManagedDetection() {
                                         <div className="text-6xl opacity-50">💾</div>
                                     </div>
                                     <div className="absolute top-4 left-4 w-16 h-12 bg-purple-300 dark:bg-purple-600 rounded-lg"></div>
-                                    <div className="absolute top-4 right-4 w-12 h-12 bg-pink-300 dark:bg-pink-600 rounded-lg"></div>
+                                    <div className="absolute top-4 right-4 w-12 h-12 bg-purple-300 dark:bg-purple-600 rounded-lg"></div>
                                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-8 bg-purple-400 dark:bg-purple-500 rounded-lg"></div>
                                     <div className="absolute top-1/2 right-6 w-6 h-6 bg-blue-300 dark:bg-blue-600 rounded-full"></div>
                                 </div>

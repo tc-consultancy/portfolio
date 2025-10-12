@@ -55,10 +55,10 @@ export default function ImplimentationService() {
   return (
     <>
     <CommonHero
-        badge="Security Implementation"
-        title="Secure Your Systems with Expert Implementation Services"
-        description="Protect your organization from cyber threats with comprehensive security implementation services designed to safeguard systems and networks."
-        accentColor="purple-400"
+        subtleHeading="Security Implementation"
+        heading="Secure Your Systems with\nExpert Implementation Services"
+        subheading="Protect your organization from cyber threats with comprehensive security implementation services designed to safeguard systems and networks."
+        buttontitle="Let's Talk"
     />
 
             {/* Implementation Process Section */}
@@ -85,7 +85,7 @@ export default function ImplimentationService() {
                         {implementationSteps.slice(0, 4).map((step, index) => (
                             <div key={index} className="text-center flex flex-col items-center justify-center w-full">
                                 {/* Step Number */}
-                                <div className="text-6xl md:text-7xl font-bold text-pink-600 dark:text-pink-400 mb-4 text-center">
+                                <div className="text-6xl md:text-7xl font-bold text-purple-600 dark:text-purple-400 mb-4 text-center">
                                     {step.number}
                                 </div>
                                 
@@ -107,7 +107,7 @@ export default function ImplimentationService() {
                         {implementationSteps.slice(4, 7).map((step, index) => (
                             <div key={index + 4} className="text-center flex flex-col items-center justify-center w-full">
                                 {/* Step Number */}
-                                <div className="text-6xl md:text-7xl font-bold text-pink-600 dark:text-pink-400 mb-4 text-center">
+                                <div className="text-6xl md:text-7xl font-bold text-purple-600 dark:text-purple-400 mb-4 text-center">
                                     {step.number}
                                 </div>
                                 
@@ -127,7 +127,7 @@ export default function ImplimentationService() {
             </section>
 
             <div>
-                <section className="pt-16 pb-24 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-pink-600 dark:from-purple-800 dark:via-purple-900 dark:to-pink-800">
+                <section className="pt-16 pb-24 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 dark:from-purple-800 dark:via-purple-900 dark:to-purple-950">
                     <div className="max-w-6xl mx-auto space-y-6 items-center">
                         <div className='max-w-3xl'>
                             <h3 className="text-3xl md:text-4xl font-bold text-white  leading-tight">We have Partnership with Industry Giants to give you the Top-notch Cyber-security Solutions</h3>

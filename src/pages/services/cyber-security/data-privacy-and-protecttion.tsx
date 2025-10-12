@@ -23,10 +23,10 @@ export default function DataPrivacyAndProtecttion() {
     return (
         <>
             <CommonHero
-                badge="Data Privacy"
-                title="Safeguard Your Data with Comprehensive Privacy Solutions"
-                description="Protect enterprise data across environments, ensure regulatory compliance, and simplify operations with our privacy protection services."
-                accentColor="purple-400"
+                subtleHeading="Data Privacy"
+                heading="Safeguard Your Data with\nComprehensive Privacy Solutions"
+                subheading="Protect enterprise data across environments, ensure regulatory compliance, and simplify operations with our privacy protection services."
+                buttontitle="Let's Talk"
             />
 
             <section className="w-full py-12   max-w-6xl mx-auto">
@@ -53,7 +53,7 @@ export default function DataPrivacyAndProtecttion() {
                 </div>
             </section>
             <div>
-                <section className="py-24 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-pink-600 dark:from-purple-800 dark:via-purple-900 dark:to-pink-800">
+                <section className="py-24 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 dark:from-purple-800 dark:via-purple-900 dark:to-purple-950">
                     <div className="max-w-6xl mx-auto space-y-6 items-center">
                         <div className='max-w-3xl'>
                             <h3 className="text-3xl md:text-4xl font-bold text-white  leading-tight">Regulations and Compliance</h3>

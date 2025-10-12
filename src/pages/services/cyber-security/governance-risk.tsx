@@ -35,10 +35,10 @@ export default function GovernanceRisk() {
     return (
         <>
             <CommonHero
-                badge="GRC Solutions"
-                title="Strengthen Your Organization with Best-in-Class GRC"
-                description="Embed excellent business practices with comprehensive governance, risk management, and compliance solutions tailored to your needs."
-                accentColor="purple-400"
+                subtleHeading="GRC Solutions"
+                heading="Strengthen Your Organization\nwith Best-in-Class GRC"
+                subheading="Embed excellent business practices with comprehensive governance, risk management, and compliance solutions tailored to your needs."
+                buttontitle="Let's Talk"
             />
 
             <SectionContainer data={sectionData} />
@@ -65,7 +65,7 @@ export default function GovernanceRisk() {
                 </div>
             </section>
   {/* CTA Section */}
-            <section className="py-20 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-pink-600 dark:from-purple-800 dark:via-purple-900 dark:to-pink-800">
+            <section className="py-20 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 dark:from-purple-800 dark:via-purple-900 dark:to-purple-950">
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>

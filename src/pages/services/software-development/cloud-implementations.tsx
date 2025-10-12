@@ -34,14 +34,14 @@ export default function CloudImplimentations() {
     return (
         <>
             <CommonHero
-                badge="Mobile & Web App Development"
-                title="Deliver Exceptional User Experiences Across All Platforms"
-                description="Empower your business with application development services that create engaging, high-performance apps for mobile and web."
-                accentColor="purple-400"
+                subtleHeading="Mobile & Web App Development"
+                heading="Deliver Exceptional User Experiences\nAcross All Platforms"
+                subheading="Empower your business with application development services that create engaging, high-performance apps for mobile and web."
+                buttontitle="Let's Talk"
             />
 
             {/* Bringing a change Section */}
-            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
+            <section className="relative py-16 md:py-24 px-6 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-700 dark:from-purple-700 dark:via-purple-800 dark:to-purple-900 overflow-hidden">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Left Illustration */}
@@ -102,7 +102,7 @@ export default function CloudImplimentations() {
             {/* How do we do it Section */}
             <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-6">
                 <div className="max-w-7xl mx-auto">
-                    <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
+                    <p className="text-purple-600 dark:text-purple-400 font-semibold text-sm uppercase tracking-wide">
                         DESIGN TO TRANSFORM LIVES
                     </p>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-4">
