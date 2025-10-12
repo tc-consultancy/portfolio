@@ -23,7 +23,6 @@ import EnterpriceAppDev from './pages/services/software-development/enterprice-a
 import CustomAppDev from './pages/services/software-development/custom-application'
 import CloudImplimentations from './pages/services/software-development/cloud-implementations'
 import SaasImplimentations from './pages/services/software-development/saas-implementations'
-import Outsourcing from './pages/outsourcing'
 import ManagedServices from './pages/services/it-cloud-services/managed-services'
 import MicroSoftManagedServices from './pages/services/it-cloud-services/microsoft-managed-services'
 import ProfessionalConsulting from './pages/services/it-cloud-services/professional-consulting'
@@ -45,6 +44,7 @@ import DataAndAnalytics from './pages/services/data-and-analytics/data-analytics
 import DataEngineering from './pages/services/data-and-analytics/data-engineer'
 import DataVisualization from './pages/services/data-and-analytics/data-visualization'
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -52,7 +52,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="services/outsourcing" element={<Outsourcingone />} />
-        <Route path="services/outsourcing" element={<Outsourcing />} />
+        <Route path="services/outsourcing" element={<Outsourcingone />} />
         <Route path="/services/hire-recruiter" element={<NewHireYourRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />
         <Route path="/industries" element={<IndustriesPage />} />
@@ -110,9 +110,9 @@ function App() {
         <Route path="/services/financial-accounting" element={<FinancialAccountingManagement />} />
 
         {/* data and analytics  */}
-        {/* <Route path="/services/data-analysis" element={<DataAndAnalytics />} />
+        <Route path="/services/data-analysis" element={<DataAndAnalytics />} />
         <Route path="/services/data-engineering-services" element={<DataEngineering />} />
-        <Route path="/services/data-visualization" element={<DataVisualization />} /> */}
+        <Route path="/services/data-visualization" element={<DataVisualization />} />
 
 
         {/* {'others'} */}

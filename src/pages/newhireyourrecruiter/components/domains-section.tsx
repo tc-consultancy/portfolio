@@ -88,10 +88,10 @@ export default function DomainsSection() {
                 {domain.name}
               </h3>
 
-              {/* Clients Count */}
+              {/* Clients Count
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
                 {domain.clients}
-              </p>
+              </p> */}
             </motion.div>
           ))}
         </div>

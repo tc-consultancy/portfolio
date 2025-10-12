@@ -152,15 +152,15 @@ export default function FinalCTA() {
             <p className="text-neutral-600 dark:text-neutral-400 mb-2">Or reach us directly:</p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
               <a href="mailto:hello@yourcompany.com" className="text-purple-600 dark:text-purple-400 hover:underline font-medium">
-                📧 hello@yourcompany.com
+                📧 info@tcconsultancy.com
               </a>
               <span className="hidden md:inline text-neutral-400">|</span>
               <a href="tel:+1XXXXXXXXX" className="text-purple-600 dark:text-purple-400 hover:underline font-medium">
-                📞 +1-XXX-XXX-XXXX (US)
+                📞 +919908884033 (US)
               </a>
               <span className="hidden md:inline text-neutral-400">|</span>
               <a href="tel:+44XXXXXXXXXX" className="text-purple-600 dark:text-purple-400 hover:underline font-medium">
-                📞 +44-XXXX-XXXXXX (UK)
+                📞 +919908884033 (UK)
               </a>
             </div>
           </motion.div>

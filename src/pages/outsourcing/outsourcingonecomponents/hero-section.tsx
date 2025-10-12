@@ -3,10 +3,14 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
 export default function HeroSection({ onClick }: { onClick: () => void }) {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact-section')
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/919908884033', '_blank')
+  }
+
+  const scrollToROI = () => {
+    const roiSection = document.getElementById('roi-calculator')
+    if (roiSection) {
+      roiSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }
 
@@ -97,13 +101,13 @@ export default function HeroSection({ onClick }: { onClick: () => void }) {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
-                onClick={scrollToContact}
+                onClick={handleWhatsAppClick}
                 className="bg-purple-400 hover:bg-purple-500 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 Schedule Free Consultation
               </Button>
               <button
-                onClick={onClick}
+                onClick={scrollToROI}
                 className="group flex items-center justify-center gap-2 text-lg font-semibold text-neutral-900 dark:text-white hover:text-purple-400 dark:hover:text-purple-400 transition-colors duration-300"
               >
                 Calculate Your Savings

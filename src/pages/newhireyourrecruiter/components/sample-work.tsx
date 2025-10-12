@@ -22,7 +22,7 @@ const caseStudies = [
     candidateName: 'Emily Thompson',
     role: 'Marketing Director',
     problem: 'Spending 25+ hours weekly on applications with poor results',
-    solution: 'Professional application service handling 50+ applications monthly',
+    solution: 'Professional application service handling 200+ applications monthly',
     result: '15 interviews in 4 weeks, dream role at tech startup',
     photoPlaceholder: 'from-pink-100 to-pink-200',
   },
