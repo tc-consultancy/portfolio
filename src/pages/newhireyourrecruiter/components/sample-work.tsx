@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { CheckCircle } from 'lucide-react'
 
@@ -122,9 +123,11 @@ export default function SampleWork() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            Get Your Success Story
-          </button>
+          <ContactDialog>
+            <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              Get Your Success Story
+            </button>
+          </ContactDialog>
         </motion.div>
       </div>
     </section>

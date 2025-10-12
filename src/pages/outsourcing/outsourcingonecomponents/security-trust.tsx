@@ -179,7 +179,7 @@ export default function SecurityTrust() {
             <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
               Get Started
             </button>
-          </ContactDialog>Dialog>
+          </ContactDialog>
         </motion.div>
       </div>
     </section>

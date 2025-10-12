@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { Calendar, Download, FileSearch } from 'lucide-react'
 
@@ -43,15 +44,15 @@ export default function FinalCTA() {
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
             Join thousands of successful job seekers who landed their dream roles with our help
           </p>
-
-          <motion.button
-            className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all inline-flex items-center gap-2"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Start My Applications Now
-          </motion.button>
-
+          <ContactDialog>
+            <motion.button
+              className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all inline-flex items-center gap-2"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Start My Applications Now
+            </motion.button>
+          </ContactDialog>
           <p className="text-sm text-white/70 mt-4">
             ✓ No credit card required • ✓ Cancel anytime • ✓ 30-day money-back guarantee
           </p>

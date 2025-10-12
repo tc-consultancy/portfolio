@@ -226,7 +226,11 @@ export function ContactDialog({ children }: ContactDialogProps) {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-lg max-h-[80vh] no-scrollbar overflow-y-auto bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 hover:shadow-lg">
+      <DialogContent 
+        className="sm:max-w-lg max-h-[80vh] no-scrollbar overflow-y-auto bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 hover:shadow-lg"
+        data-lenis-prevent
+        data-lenis-prevent-wheel
+      >
         <DialogHeader>
           <DialogTitle className="md:text-xl font-bold text-gray-900 dark:text-white">
             Start Your Journey
@@ -240,7 +244,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           <Button
             type="button"
             onClick={() => window.open('tel:+919908884033', '_self')}
-            className="w-full bg-orange-100 hover:bg-orange-200 text-orange-800 dark:text-orange-900 font-semibold py-6 rounded-lg transition-all duration-200  hover:shadow-lg"
+            className="w-full bg-orange-100 hover:bg-orange-200 text-black dark:text-black font-semibold py-6 rounded-lg transition-all duration-200  hover:shadow-lg"
           >
             Talk to us over call
           </Button>
@@ -254,7 +258,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           <Button
             type="button"
             onClick={handleWhatsAppClick}
-            className="w-full bg-green-100 hover:bg-green-200 text-green-800 dark:text-green-900 font-semibold py-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="w-full bg-green-200 hover:bg-green-200 text-black dark:text-black font-semibold py-6 rounded-lg transition-all duration-200 hover:shadow-lg"
           >
             WhatsApp
           </Button>
