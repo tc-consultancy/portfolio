@@ -1,7 +1,8 @@
-import { robo1 } from '@/assets'
 import { FAQSection } from '@/components/sections/faq-section';
 import { Button } from '@/components/ui/button'
 import { industries } from '@/constants/industries';
+import CommonHero from '@/components/common/common-hero';
+import { robo1 } from '@/assets';
 
 const features = [
     {
@@ -106,7 +107,7 @@ export default function OcrAgent() {
                 </div>
             </section>
             {/* CTA Section */}
-            <section className="py-20 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-pink-600 dark:from-purple-800 dark:via-purple-900 dark:to-pink-800">
+            <section className="py-20 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 dark:from-purple-800 dark:via-purple-900 dark:to-purple-950">
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div>

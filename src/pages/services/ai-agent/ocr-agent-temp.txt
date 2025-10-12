@@ -1,0 +1,15 @@
+The ocr-agent.tsx file needs manual fixing - it has a robo1 reference without import after auto-formatting.
+
+The hero section should be replaced with:
+<CommonHero
+    subtleHeading="AI OCR AGENT"
+    heading="AI OCR Automation Agent\nfor Every Business\nSupports Any Language. Any Document"
+    subheading="Turn documents into decisions. Our OCR Agent doesn't just read text, it extracts meaning, detects patterns, and integrates seamlessly into your workflows. Say goodbye to manual data entry and hello to intelligent automation. Faster. Smarter. Error-free."
+    buttontitle="Book a Demo"
+/>
+
+And the gradient section needs to change from:
+bg-gradient-to-br from-purple-600 via-purple-700 to-pink-600 dark:from-purple-800 dark:via-purple-900 dark:to-pink-800
+
+To:
+bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 dark:from-purple-800 dark:via-purple-900 dark:to-purple-950
