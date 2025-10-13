@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import HeroSection from './outsourcingonecomponents/hero-section'
-import TrustBar from './outsourcingonecomponents/trust-bar'
 import ProblemPromise from './outsourcingonecomponents/problem-promise'
 import SolutionRoadmap from './outsourcingonecomponents/solution-roadmap'
 import VettingProcess from './outsourcingonecomponents/vetting-process'
@@ -45,7 +44,7 @@ export default function Outsourcingone() {
         onClose={() => setIsVideoModalOpen(false)}
         videoSrc={heromp4}
       />
-      <HeroSection onClick={() => setIsVideoModalOpen(true)} />
+      <HeroSection />
       {/* <TrustBar /> */}
       <ProblemPromise />
       <SolutionRoadmap />

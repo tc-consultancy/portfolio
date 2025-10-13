@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
 
-export default function HeroSection({ onClick }: { onClick: () => void }) {
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/919908884033', '_blank')
-  }
+export default function HeroSection() {
+  // const handleWhatsAppClick = () => {
+  //   window.open('https://wa.me/919908884033', '_blank')
+  // }
 
   const scrollToROI = () => {
     const roiSection = document.getElementById('roi-calculator')
