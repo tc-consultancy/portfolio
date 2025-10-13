@@ -2,6 +2,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
 import ScrollToTop from './components/ScrollToTop'
+import NotFound from './pages/not-found'
 import Staffing from './pages/services/staffing'
 import { IndustriesPage } from './pages/industries'
 import CareersPage from './pages/careers'
@@ -119,6 +120,9 @@ function App() {
         {/* {'others'} */}
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/about" element={<About />} />
+
+        {/* 404 catch-all */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <ContactFooterSection />
     </BrowserRouter>
