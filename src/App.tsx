@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
-
+import ScrollToTop from './components/ScrollToTop'
 import Staffing from './pages/services/staffing'
 import { IndustriesPage } from './pages/industries'
 import CareersPage from './pages/careers'
@@ -48,6 +48,7 @@ import DataVisualization from './pages/services/data-and-analytics/data-visualiz
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
