@@ -12,7 +12,8 @@ export default function StaffingOptions() {
       description: "We provide expert, end-to-end staffing services, connecting your business with screened, qualified talent to fill your most critical roles quickly and efficiently.",
       cta: "Hire Now",
       category: "🏢 Enterprise Solutions",
-      gradient: "from-purple-500 to-indigo-600"
+      gradient: "from-purple-500 to-indigo-600",
+      href:'/services/outsourcing'
     },
     {
       icon: GraduationCap,
@@ -21,7 +22,9 @@ export default function StaffingOptions() {
       description: "Skip the entry-level grind. Get connected to exclusive, high-potential tech roles and specialized projects. We fast-track your resume past HR and directly to the hiring managers.",
       cta: "Find My First Tech Job",
       category: "🎓 Recent Graduates",
-      gradient: "from-purple-600 to-pink-600"
+      gradient: "from-purple-600 to-pink-600",
+      href:'/services/hire-recruiter'
+
     },
     {
       icon: Briefcase,
@@ -30,7 +33,8 @@ export default function StaffingOptions() {
       description: "Let our recruitment experts represent you, apply to tailored opportunities, and secure interviews that align with your experience and ambitions.",
       cta: "Find My Next Job",
       category: "💼 Working Professionals",
-      gradient: "from-indigo-600 to-purple-700"
+      gradient: "from-indigo-600 to-purple-700",
+      href:'/services/hire-recruiter'
     }
   ];
 
@@ -85,12 +89,10 @@ export default function StaffingOptions() {
                 </p>
 
                 {/* CTA Button */}
-                <ContactDialog>
-                  <Link to='#' className="w-full flex items-center gap-4 bg-gradient-to-r bg-clip-text text-transparent from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 dark:from-purple-500 font-semibold  rounded-lg transition-all duration-300 group">
+                  <Link to={option.href} className="w-full flex items-center gap-4 bg-gradient-to-r bg-clip-text text-transparent from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 dark:from-purple-500 font-semibold  rounded-lg transition-all duration-300 group">
                  {option.cta}
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300 text-white" />
                   </Link>
-                </ContactDialog>
               </div>
             );
           })}

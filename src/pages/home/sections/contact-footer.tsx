@@ -38,7 +38,7 @@ export default function ContactFooterSection() {
 
             <div className="flex items-center gap-2">
               <IconPhone className="w-8 h-8 flex-shrink-0 text-white/80" />
-              <span className="text-sm text-white/80">+91 998870289</span>
+              <span className="text-sm text-white/80">+91 9908884033</span>
             </div>
 
             <div className="flex items-center gap-2">
