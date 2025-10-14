@@ -112,7 +112,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <div className="text-3xl font-bold text-neutral-900 dark:text-white">
-                  50+
+                  200+
                 </div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400">
                   Applications/Week

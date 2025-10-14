@@ -244,7 +244,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           <Button
             type="button"
             onClick={() => window.open('tel:+919908884033', '_self')}
-            className="w-full bg-orange-100 hover:bg-orange-200 text-black dark:text-black font-semibold py-6 rounded-lg transition-all duration-200  hover:shadow-lg"
+            className="w-full bg-violet-400/80 hover:bg-violet-500 text-white dark:text-white font-semibold py-6 rounded-lg transition-all duration-200  hover:shadow-lg"
           >
             Talk to us over call
           </Button>
@@ -258,7 +258,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           <Button
             type="button"
             onClick={handleWhatsAppClick}
-            className="w-full bg-green-200 hover:bg-green-200 text-black dark:text-black font-semibold py-6 rounded-lg transition-all duration-200 hover:shadow-lg"
+            className="w-full bg-green-400/80 hover:bg-green-500 text-white dark:text-white font-semibold py-6 rounded-lg transition-all duration-200 hover:shadow-lg"
           >
             WhatsApp
           </Button>

@@ -100,7 +100,7 @@ export default function FinalCTA() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">✓</span>
-              <span className="font-semibold">5,000+ Happy Clients</span>
+              <span className="font-semibold">50+ Happy Clients</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">🏆</span>
