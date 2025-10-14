@@ -1,42 +1,39 @@
 import { robo1 } from "@/assets";
 import { FAQSection } from "@/components/sections/faq-section";
-import { Button } from "@/components/ui/button";
+import CommonHero from "@/components/common/common-hero";
 
 export default function Devops() {
+    const devopsFaqs = [
+        {
+            question: "What is DevOps and how does it benefit my organization?",
+            answer: "DevOps combines software development and IT operations to shorten the development lifecycle and deliver high-quality software continuously. It improves time to market by up to 90%, enables faster deployment, enhances collaboration between teams, and ensures consistent quality through automated testing and monitoring."
+        },
+        {
+            question: "How does DevOps improve software quality and delivery speed?",
+            answer: "DevOps uses continuous integration and deployment (CI/CD) pipelines to automate testing and deployment processes. This enables continuous delivery of quality software, reduces human error, provides real-time monitoring, and allows teams to identify and fix issues quickly, resulting in faster, more reliable releases."
+        },
+        {
+            question: "What DevOps tools and practices do you implement?",
+            answer: "We implement integrated DevOps tools for continuous release, deployment, testing, and monitoring. Our practices include automated CI/CD pipelines, infrastructure as code, containerization, real-time monitoring systems, and automated testing frameworks that improve visibility and productivity throughout the development process."
+        },
+        {
+            question: "Can DevOps help with system security and resilience?",
+            answer: "Absolutely. DevOps practices, when done properly, significantly enhance security and system resiliency. Continuous delivery underpins security by enabling rapid patching and updates, while automated monitoring and testing catch vulnerabilities early. This creates more resilient systems that can quickly adapt to threats."
+        },
+        {
+            question: "How quickly can you deploy code with your DevOps services?",
+            answer: "We can deploy code in hours between lines of business, development, and IT frameworks. Our streamlined DevOps processes enable rapid deployment while maintaining quality and security standards, helping you deliver powerful software at the pace of business demands."
+        }
+    ];
+
     return (
         <>
-
-            {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 flex items-center justify-center">
-                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            DEV OPS
-                        </p>
-                        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Make your deploy <br /> workloads easy
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
-                            We deploy code in hours between lines of business, development, and IT frameworks. Helping you deliver powerful software at the pace of business.
-                        </p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Lets Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+            <CommonHero
+                subtleHeading="DEVOPS"
+                heading="Simplify Your\nDeployment Workloads"
+                subheading="Deploy code rapidly across business, development, and IT frameworks. We help you deliver powerful software at business speed."
+                buttontitle="Let's Talk"
+            />
             
             {/* Partner Section */}
             <section className="py-20 max-w-6xl mx-auto px-4">
@@ -191,7 +188,7 @@ export default function Devops() {
                     </div>
                 </div>
             </section>
-            <FAQSection/>
+            <FAQSection faqs={devopsFaqs} />
 
         </>
     )

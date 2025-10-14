@@ -229,7 +229,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent 
+      <DialogContent
         className="sm:max-w-lg max-h-[80vh] no-scrollbar overflow-y-auto bg-neutral-100/80 dark:bg-black/30 backdrop-blur-md border-neutral-300 dark:border-white/10 hover:shadow-lg"
         data-lenis-prevent
         data-lenis-prevent-wheel

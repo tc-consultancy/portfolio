@@ -1,43 +1,39 @@
 import { robo1 } from "@/assets";
 import { FAQSection } from "@/components/sections/faq-section";
-import { Button } from "@/components/ui/button";
+import CommonHero from "@/components/common/common-hero";
 
 export default function EmbeddedSDE() {
+    const embeddedFaqs = [
+        {
+            question: "What is embedded software development?",
+            answer: "Embedded software development involves creating specialized software that runs on hardware devices and embedded systems. It bridges modern software with hardware through smart design and integration, enabling devices to perform specific functions efficiently. This is essential for IoT devices, automotive systems, medical equipment, and industrial automation."
+        },
+        {
+            question: "What platforms and architectures do you support?",
+            answer: "We support embedded systems running on Linux-based platforms, including Yocto-based Linux distributions. Our expertise is independent of hardware architecture, allowing us to work with various processors and embedded systems. We handle SW/FW development, platform development, and middleware integration for diverse applications."
+        },
+        {
+            question: "Do you provide embedded software for automotive applications?",
+            answer: "Yes, we specialize in automotive embedded systems including dashboard entertainment systems, middleware development, and 3rd party application integration. Our solutions are designed for high performance and reliability, meeting the stringent requirements of automotive applications."
+        },
+        {
+            question: "How do you ensure quality in embedded software development?",
+            answer: "We follow a comprehensive approach that includes thorough integration and testing at every stage. Our team tests embedded systems rigorously to ensure optimal performance, reliability, and compatibility. We work closely with your operations to reduce costs while improving product delivery turnaround time."
+        },
+        {
+            question: "Can you help throughout the entire product lifecycle?",
+            answer: "Absolutely. We provide DevOps support throughout the entire product lifecycle, from initial architecture definition to deployment and maintenance. Our goal is to keep up with rapid technology changes and align with your organizational goals, providing top-notch embedded engineering services tailored to your needs."
+        }
+    ];
 
     return (
         <>
-
-            {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 flex items-center justify-center">
-                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            EMBEDDED SERVICES
-                        </p>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Embedded Software  <br /> Development Services
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
-                            We make new-age software meet hardware through smart embedded design and integration services.
-                        </p>
-                        <Button className="mt-8 px-4 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Lets Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+            <CommonHero
+                subtleHeading="EMBEDDED SERVICES"
+                heading="Embedded Software\nDevelopment Services"
+                subheading="Bridging modern software with hardware through intelligent embedded design and seamless integration services."
+                buttontitle="Let's Talk"
+            />
 
             {/* Partner Section */}
             <section className="py-20 max-w-6xl mx-auto px-4">
@@ -174,7 +170,7 @@ export default function EmbeddedSDE() {
                 </div>
             </section>
 
-            <FAQSection/>
+            <FAQSection faqs={embeddedFaqs} />
 
 
 

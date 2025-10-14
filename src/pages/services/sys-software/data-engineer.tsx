@@ -1,10 +1,33 @@
 import { robo1 } from "@/assets";
 import { FAQSection } from "@/components/sections/faq-section";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import CommonHero from "@/components/common/common-hero";
 
 export default function DataEngineer() {
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+    const dataEngineerFaqs = [
+        {
+            question: "What is data engineering and why is it important for my business?",
+            answer: "Data engineering involves designing, building, and maintaining systems that collect, store, and analyze data. It's crucial for businesses as it transforms raw data into actionable insights, enabling data-driven decision making, predictive analytics, and improved operational efficiency."
+        },
+        {
+            question: "How do you ensure data quality and accuracy in your analysis?",
+            answer: "We implement supervised learning and continuous data monitoring to identify vulnerable operations in real-time. Our team uses advanced machine learning algorithms including Linear Regression, Regression trees, R-programming, and dispersion analysis to validate data quality and provide accurate business insights."
+        },
+        {
+            question: "What types of data analysis services do you offer?",
+            answer: "We offer comprehensive data analysis services including sentiment analysis to understand customer responses, predictive analysis using historical data to forecast future trends, IoT data processing for connected devices, and machine vision solutions for automated quality control and image processing."
+        },
+        {
+            question: "Can you help with IoT and machine vision projects?",
+            answer: "Yes, we specialize in IoT data flow optimization for connected devices and operational analytics. Our machine vision solutions enable automated quality control, intelligent image processing, and real-time monitoring for IoT ecosystems, helping optimize supply chain and asset management."
+        },
+        {
+            question: "How long does it take to implement a data science roadmap?",
+            answer: "Implementation timelines vary based on project complexity and organizational needs. We work closely with you to build customized data science roadmaps that address your unique challenges, whether it's initiating new businesses, advising strategic changes, or accessing new markets. Contact us for a detailed timeline assessment."
+        }
+    ];
 
     const features = [
         {
@@ -62,38 +85,12 @@ export default function DataEngineer() {
 
     return (
         <>
-
-            {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 md:px-6 flex items-center justify-center">
-                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            DATA Engineer
-                        </p>
-                        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            Driving Business  <br />  Growth with Data Science
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
-                            At TC IT Services, we mine data, treat and repeat the process until it yields results.
-                        </p>
-                        <Button className="mt-8 px-4 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Lets Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+            <CommonHero
+                subtleHeading="DATA ENGINEER"
+                heading="Accelerate Business\nGrowth with Data Science"
+                subheading="We transform raw data into actionable insights, mining and refining information until it delivers measurable results for your business."
+                buttontitle="Let's Talk"
+            />
 
 
             {/* Bringing a change Section */}
@@ -246,7 +243,7 @@ export default function DataEngineer() {
                 </div>
             </div>
 
-            <FAQSection/>
+            <FAQSection faqs={dataEngineerFaqs} />
 
 
         </>

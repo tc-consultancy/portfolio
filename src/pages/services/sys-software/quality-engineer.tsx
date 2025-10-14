@@ -1,42 +1,39 @@
 import { robo1 } from "@/assets";
 import { FAQSection } from "@/components/sections/faq-section";
-import { Button } from "@/components/ui/button";
+import CommonHero from "@/components/common/common-hero";
 
 export default function QualityEngineer() {
+    const qualityEngineerFaqs = [
+        {
+            question: "What types of QA testing services do you provide?",
+            answer: "We provide comprehensive QA testing including functional testing, integration testing, system testing, sanity testing, and UAT (User Acceptance Testing). We also offer automated testing, performance testing, unit tests, and end-to-end QA services to ensure your software meets the highest quality standards."
+        },
+        {
+            question: "How does automated testing improve software quality?",
+            answer: "Automated testing provides consistent, repeatable test execution that catches bugs early and reduces human error. We design advanced automated QA tests that redefine testing procedures, establishing a no-compromise approach toward quality assurance. This results in faster test cycles, better coverage, and more reliable software releases."
+        },
+        {
+            question: "What is your approach to performance testing?",
+            answer: "We scrutinize your digital product's performance at various stages, scanning for hidden bugs and defects. Our performance testing ensures that your application's quality, speed, efficiency, and effectiveness remain intact under different load conditions, helping you deliver optimal user experiences."
+        },
+        {
+            question: "Can you help with quality assurance for cloud and IoT applications?",
+            answer: "Yes, we prioritize software quality assurance for digital products, cloud-based solutions, e-commerce applications, hyper-converged applications, and IoT setups. Our team has expertise in testing complex, distributed systems and ensuring they meet your quality standards across all platforms."
+        },
+        {
+            question: "How do you ensure quick time-to-market without compromising quality?",
+            answer: "We never take shortcuts. Our skilled QA engineers use the latest tools and technologies to maintain rigorous quality assurance processes while optimizing test cycles. We define end-to-end QA strategies, from test requirements to execution, ensuring faster time to market with consistently high quality across all components."
+        }
+    ];
+
     return (
         <>
-
-            {/* Hero Section */}
-            <section className="relative h-full md:h-screen w-full pt-28 md:mt-0 bg-gray-50 dark:bg-gray-900 md:py-20 px-4 flex items-center justify-center">
-                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
-                    <div>
-                        <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide">
-                            Quality Engineer
-                        </p>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 leading-tight">
-                            The right QA Software  <br /> Testing Process with greater accountability
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
-                            Terralogic helps you with more traceability with functional, integration, system, sanity and UAT testing.
-                        </p>
-                        <Button className="mt-8 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white shadow-lg">
-                            Lets Talk →
-                        </Button>
-                    </div>
-
-                    {/* Right Illustration */}
-                    <div className="flex justify-center">
-                        <img
-                            src={robo1}
-                            alt="AI Bot Illustration"
-                            width={400}
-                            height={400}
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
-            </section>
+            <CommonHero
+                subtleHeading="QUALITY ENGINEER"
+                heading="Comprehensive QA Testing\nWith Full Accountability"
+                subheading="Enhanced traceability through functional, integration, system, sanity and UAT testing for superior software quality."
+                buttontitle="Let's Talk"
+            />
 
 
             {/* Bringing a change Section */}
@@ -240,7 +237,7 @@ export default function QualityEngineer() {
                     </div>
                 </div>
             </section>
-            <FAQSection/>
+            <FAQSection faqs={qualityEngineerFaqs} />
 
  {/* Bringing a change Section */}
             <section className="relative py-16 md:py-24 px-4 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 dark:from-purple-700 dark:via-pink-600 dark:to-pink-700 overflow-hidden">
