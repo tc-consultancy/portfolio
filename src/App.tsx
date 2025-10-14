@@ -44,6 +44,10 @@ import FinancialAccountingManagement from './pages/services/finance/financial-ac
 import DataAndAnalytics from './pages/services/data-and-analytics/data-analytics'
 import DataEngineering from './pages/services/data-and-analytics/data-engineer'
 import DataVisualization from './pages/services/data-and-analytics/data-visualization'
+import SecAgent from './pages/services/ai-agent/sec-agent'
+import OpsAgent from './pages/services/ai-agent/ops-agent'
+import MarketingAgent from './pages/services/ai-agent/marketing-agent'
+import AIML from './pages/services/ai-ml-services/ai-ml'
 
 
 function App() {
@@ -62,10 +66,12 @@ function App() {
         <Route path="/services/agents" element={<AiAgents />} />
         <Route path="/services/cx-agent" element={<AiCustomerSupportAgent />} />
         <Route path="/services/ocr-agent" element={<OcrAgent />} />
-        <Route path="/services/sec-ops-agent" element={<OcrAgent />} />
-        <Route path="/services/it-ops-agent" element={<OcrAgent />} />
-        <Route path="/services/marketing-agent" element={<OcrAgent />} />
+        <Route path="/services/sec-ops-agent" element={<SecAgent />} />
+        <Route path="/services/it-ops-agent" element={<OpsAgent />} />
+        <Route path="/services/marketing-agent" element={<MarketingAgent />} />
 
+        {/* ai-ml  */}
+        <Route path="/services/ai-ml" element={<AIML />} />
 
         {/* system n softwares  */}
         <Route path='/services/devops' element={<Devops />} />

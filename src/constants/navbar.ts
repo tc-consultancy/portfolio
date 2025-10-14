@@ -55,10 +55,10 @@ const services = [
   {
     title: "AI & ML Services",
     subServices: [
-      { title: "Natural Language Processing", href: "/services/nlp" },
-      { title: "Computer Vision", href: "/services/computer-vision" },
-      { title: "Machine Learning Models", href: "/services/ml-models" },
-      { title: "Deployment & Integration", href: "/services/ai-deployment" }
+      { title: "Natural Language Processing", href: "/services/ai-ml" },
+      { title: "Computer Vision", href: "/services/ai-ml" },
+      { title: "Machine Learning Models", href: "/services/ai-ml" },
+      { title: "Deployment & Integration", href: "/services/ai-ml" }
     ]
   },
   {
@@ -67,7 +67,7 @@ const services = [
       { title: "Agents", href: "/services/agents" },
       { title: "CX Agents", href: "/services/cx-agent" },
       { title: "IT Ops Agents ", href: "/services/it-ops-agent" },
-      { title: "Sec Ops Agents", href: "/services/sec-ops-agent" },
+      // { title: "Sec Ops Agents", href: "/services/sec-ops-agent" },
       { title: "OCR Agents", href: "/services/ocr-agent" },
       { title: "Marketing Agents", href: "/services/marketing-agent" }
     ]
