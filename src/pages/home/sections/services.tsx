@@ -1,43 +1,53 @@
 import { useMemo, useRef } from 'react'
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 
 type Service = {
   title: string
   description: string
   icon: string
+  link: string
 }
 
 const SERVICES: Service[] = [
   {
-    title: 'Software',
+    title: 'Out Sourcing Services',
     description:
-      'Software development involves creating, testing, and maintaining applications through coding, collaboration, and problem-solving. It drives innovation, enhances user experiences, and helps businesses adapt quickly by leveraging modern, scalable, and secure technologies.',
-    icon: '💻',
+      'Extend your capabilities with managed delivery for apps, data, and cloud. We handle execution—roadmaps, sprints, Quality Analysis, and SRE—so you focus on strategy while we ship secure, scalable solutions aligned to your standards, budgets, and timelines.',
+    icon: '🌐',
+    link: '/services/outsourcing',
   },
+ 
   {
     title: 'Hire Recruiter',
     description:
       'Build high‑performing teams faster with embedded recruiters who understand your domain, culture, and timelines. From sourcing to closing, we streamline hiring with data‑driven pipelines, robust screening, and transparent reporting tailored to your growth stage.',
     icon: '🧑‍💼',
+    link: '/services/hire-recruiter',
   },
   {
     title: 'AI Integration',
     description:
       'Embed intelligent capabilities into your products and workflows—chatbots, copilots, and RAG systems—backed by secure data pipelines, governance, and monitoring so teams move faster while maintaining trust, compliance, and measurable business outcomes.',
     icon: '🤖',
+    link: '/services/agents',
+  },
+   {
+    title: 'Software',
+    description:
+      'Software development involves creating, testing, and maintaining applications through coding, collaboration, and problem-solving. It drives innovation, enhances user experiences, and helps businesses adapt quickly by leveraging modern, scalable, and secure technologies.',
+    icon: '💻',
+    link: 'services/mobile-web-application',
   },
   {
     title: 'IT Staffing Solutions',
     description:
       'Scale engineering capacity on demand with vetted talent across frontend, backend, cloud, QA, and DevOps. Flexible engagement models, clear SLAs, and collaborative delivery ensure velocity, accountability, and seamless integration with your teams.',
     icon: '🧑‍💻',
+    link: '/services/it-staffing',
   },
-  {
-    title: 'Out Sourcing Services',
-    description:
-      'Extend your capabilities with managed delivery for apps, data, and cloud. We handle execution—roadmaps, sprints, QA, and SRE—so you focus on strategy while we ship secure, scalable solutions aligned to your standards, budgets, and timelines.',
-    icon: '🌐',
-  },
+
 ]
 
 export default function Services() {
@@ -99,7 +109,14 @@ export default function Services() {
                   <div className="text-3xl">{card.icon}</div>
                   <h3 className="text-xl font-semibold text-zinc-900">{card.title}</h3>
                 </div>
-                <p className="text-sm leading-relaxed text-zinc-600">{card.description}</p>
+                <p className="text-sm leading-relaxed text-zinc-600 mb-4">{card.description}</p>
+                <Link
+                  to={card.link}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 hover:text-purple-700 transition-colors group"
+                >
+                  Learn More
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </motion.li>
             ))}
           </ul>
@@ -153,9 +170,16 @@ export default function Services() {
                         <div className="mb-5 flex justify-center">
                           <div className="text-6xl">{card.icon}</div>
                         </div>
-                        <div className="mt-auto">
-                          <h3 className="mb-4 text-4xl font-medium leading-tight">{card.title}</h3>
-                          <p className="text-sm text-white/70">{card.description}</p>
+                        <div className="mt-auto flex flex-col h-full">
+                          <h3 className="mb-4 text-3xl font-medium leading-tight">{card.title}</h3>
+                          <p className="text-sm text-white/70 mb-6 flex-grow">{card.description}</p>
+                          <Link
+                            to={card.link}
+                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-zinc-900 rounded-lg font-semibold hover:bg-zinc-100 transition-colors group w-full"
+                          >
+                            Explore {card.title}
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                          </Link>
                         </div>
                       </motion.div>
                     </motion.li>

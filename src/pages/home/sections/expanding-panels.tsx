@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { Link } from 'react-router-dom'
+import { ContactDialog } from '@/components/ContactDialog'
 
 type Panel = {
   id: number
@@ -23,12 +23,13 @@ const panels: Panel[] = [
           We specialize in delivering custom software and app development solutions tailored to your business needs. From intuitive mobile and web apps to scalable enterprise software, we combine cutting‑edge technology with UI/UX design to create innovative, user‑focused experiences.
         </p>
         <div className="mt-8 flex gap-4">
-          <Link to="/contact">
+          <ContactDialog>
             <Button className="bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white">Book a Demo</Button>
-          </Link>
-          <Link to="/contact">
+          </ContactDialog>
+                   <ContactDialog>
+
             <Button variant="secondary">Contact Us</Button>
-          </Link>
+            </ContactDialog>
         </div>
       </div>
     ),
@@ -47,9 +48,11 @@ const panels: Panel[] = [
         <p className="mt-6 max-w-md text-white/90">
           Your Dreams, Our Technology. Let's build an empire out of your company.
         </p>
-        <Link to="/contact" className="mt-8">
-          <Button className="bg-white text-black hover:bg-white/90">Talk To Us</Button>
-        </Link>
+                  <ContactDialog>
+
+          <Button className="bg-white max-w-fit mt-4 text-black hover:bg-white/90">Talk To Us</Button>
+                 </ContactDialog>
+
       </div>
     ),
   },
@@ -65,9 +68,11 @@ const panels: Panel[] = [
           <br /> Together...
         </h2>
         <div className="mt-10 px-24  text-end">
-          <Link to="/contact" className='ml-auto'>
-            <Button className="bg-violet-600 text-white hover:bg-violet-600/90">Contact Us</Button>
-          </Link>
+          <ContactDialog>
+
+            <Button className="bg-violet-600 ml-auto text-white hover:bg-violet-600/90">Contact Us</Button>
+          </ContactDialog>
+          
         </div>
       </div>
     ),
