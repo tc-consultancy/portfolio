@@ -223,7 +223,7 @@ export default function FinalCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            No credit card required • Free consultation • 2-week risk-free trial
+            No credit card required • Free consultation
           </motion.p>
         </motion.div>
       </div>

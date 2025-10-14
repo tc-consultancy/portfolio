@@ -54,7 +54,7 @@ export default function FinalCTA() {
             </motion.button>
           </ContactDialog>
           <p className="text-sm text-white/70 mt-4">
-            ✓ No credit card required • ✓ Cancel anytime • ✓ 30-day money-back guarantee
+            ✓ No credit card required • ✓ Cancel anytime 
           </p>
         </motion.div>
 

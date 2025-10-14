@@ -19,7 +19,7 @@ const faqs: FAQ[] = [
   {
     category: 'Service Details',
     question: 'What industries do you specialize in?',
-    answer: 'We have expert writers across all major industries including Tech, Finance, Healthcare, Marketing, Engineering, Consulting, and more. Each writer has 8+ years of experience in their specific field.',
+    answer: 'We have expert writers across all major industries including Tech, Finance, Healthcare, Marketing, Engineering, Consulting, and more. ',
   },
   {
     category: 'Service Details',

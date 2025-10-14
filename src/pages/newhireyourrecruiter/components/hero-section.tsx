@@ -86,7 +86,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-xl md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
-              Our experts apply to 20–25+ jobs daily, using ATS-optimized resumes and cover letters for roles posted within the last 24 hours. You focus on networking and acing your interviews
+              Our experts apply to 40-45+ jobs daily, using ATS-optimized resumes and cover letters for roles posted within the last 24 hours. You focus on networking and acing your interviews
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

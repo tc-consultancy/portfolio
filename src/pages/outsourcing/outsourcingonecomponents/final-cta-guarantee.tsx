@@ -139,15 +139,7 @@ export default function FinalCTAGuarantee() {
         </div>
 
         {/* Trust Badges */}
-        <motion.div
-          className="text-center text-sm text-neutral-600 dark:text-neutral-400"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          ✓ Trusted by 200+ Companies  •  ✓ A+ BBB Rating  •  ✓ ISO Certified
-        </motion.div>
+       
       </div>
     </section>
   )

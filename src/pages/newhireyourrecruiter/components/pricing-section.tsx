@@ -15,7 +15,7 @@ const tiers = [
       '48-hour turnaround',
       'LinkedIn profile optimization',
       'Weekly progress reports',
-      'Assigned common recruiter',
+      'Common recruiter',
       'LinkedIn profile marketing tips',
       'Networking tips and cold email formatting',
       'Weekly meeting with Job Seekers',
@@ -28,7 +28,7 @@ const tiers = [
   {
     name: 'Pro Plan',
     applicationsPerDay: '20–25 applications per day',
-    applicationsPerWeek: '200+ applications per week',
+    applicationsPerWeek: '',
     price: '$199',
     period: '/month',
     features: [
@@ -38,7 +38,7 @@ const tiers = [
       '24-hour turnaround',
       'Weekly progress reports',
       'LinkedIn profile optimization',
-      'Assigned common recruiter',
+      'Common recruiter',
       'LinkedIn profile marketing tips',
       'Networking tips and cold email formatting',
       'Weekly meeting with Job Seekers',
@@ -51,7 +51,7 @@ const tiers = [
   {
     name: '💼 Professional Plan',
     applicationsPerDay: 'Up to 40 Customized applications/day',
-    applicationsPerWeek: '200+ applications per week',
+    applicationsPerWeek: '',
     price: '$299',
     period: '/month',
     features: [

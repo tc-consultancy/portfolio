@@ -130,11 +130,7 @@ export default function SecurityTrust() {
                 ))}
               </div>
 
-              <div className="mt-6 pt-6 border-t border-white/20">
-                <p className="text-sm text-white/90">
-                  Trusted by Fortune 500 companies worldwide
-                </p>
-              </div>
+              
             </div>
           </motion.div>
         </div>
