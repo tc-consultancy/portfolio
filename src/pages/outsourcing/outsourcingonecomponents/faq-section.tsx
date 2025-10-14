@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Plus, Minus } from 'lucide-react'
+import { Plus, Minus, Briefcase, ComputerIcon, TrendingUp } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
+import { IconMoneybag } from '@tabler/icons-react'
 
 const faqs = [
   {
@@ -190,7 +191,7 @@ export default function FAQSection() {
                     ease: 'easeInOut',
                   }}
                 >
-                  <span className="text-3xl font-bold text-purple-400">?</span>
+                  <span className="text-3xl font-bold text-purple-400"><TrendingUp/></span>
                 </motion.div>
 
                 <motion.div
@@ -206,7 +207,7 @@ export default function FAQSection() {
                     delay: 1,
                   }}
                 >
-                  <span className="text-4xl font-bold text-purple-400">?</span>
+                  <span className="text-4xl font-bold text-purple-400"><ComputerIcon/></span>
                 </motion.div>
 
                 <motion.div
@@ -222,7 +223,7 @@ export default function FAQSection() {
                     delay: 2,
                   }}
                 >
-                  <span className="text-2xl font-bold text-purple-400">?</span>
+                  <span className="text-2xl font-bold text-purple-400"><IconMoneybag/></span>
                 </motion.div>
               </div>
 

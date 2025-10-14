@@ -133,17 +133,20 @@ export function ContactDialog({ children }: ContactDialogProps) {
 
   const services = useMemo(
     () => [
-      'Software Development',
       'Hire Recruiters',
-      'IT Consulting & Services.',
-      'Tech Support',
-      'AI Integration',
+      'Outsourcing Services',
+      'IT & Cloud Services.',
+      'Software & Systems',
+      'Staffing Solutions',
       'Cybersecurity',
-      'BPO/Contact Center Services',
-      'IT Staffing Solutions',
-      'Accounting and Payrolls',
-      'Digital Marketing Services',
-      'Out Sourcing Services',
+      'Software Development',
+      'Tech Support',
+      'AI & ML Services',
+      'AI Agents',
+      'Data & Analytics Services',
+      // 'BPO/Contact Center Services',
+      'Accounts',
+      // 'Digital Marketing Services',
     ],
     []
   )
