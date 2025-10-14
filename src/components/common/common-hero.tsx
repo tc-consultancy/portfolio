@@ -1,6 +1,7 @@
 import { Button } from '../ui/button'
 import { robo1 } from '@/assets'
 import { motion } from 'framer-motion'
+import { ContactDialog } from '../ContactDialog'
 type commonHeroType = {
     subtleHeading: string,
     heading: string,
@@ -77,9 +78,11 @@ export default function CommonHero({ subtleHeading, subheading, heading, buttont
                     </h1>
                     <p className="text-gray-600 dark:text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
                         {subheading}</p>
-                    <Button className="mt-8 px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 text-white shadow-lg">
-                        {buttontitle} →
-                    </Button>
+                    <ContactDialog>
+                        <Button className="mt-8 px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 text-white shadow-lg">
+                            {buttontitle} →
+                        </Button>
+                    </ContactDialog>
                 </div>
 
                 {/* Right Illustration */}

@@ -206,7 +206,7 @@ export default function Testimonials() {
         >
           <div className="text-center p-6 bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800">
             <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-              500+
+              50+
             </div>
             <div className="text-sm text-neutral-600 dark:text-neutral-400">
               Happy Clients

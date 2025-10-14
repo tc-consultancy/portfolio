@@ -26,6 +26,10 @@ const agents = { robo1 }
 
 import heromp4 from './outsourcing/hero.mp4'
 
+
+import hero_outsourcing from './outsourcing/hero-outsourcing-transparent.png'
+
+
 export {
     home, staffing, agents, robo1,
     banking,
@@ -34,6 +38,7 @@ export {
     infotech,
     manufacturing,
     technology,
-    heromp4
+    heromp4,
+    hero_outsourcing
 
 }

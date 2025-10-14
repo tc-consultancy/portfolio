@@ -19,7 +19,7 @@ const phases = [
     title: 'Candidate Sourcing',
     color: 'from-purple-400 to-purple-600',
     steps: [
-      'Tap into our network of 50,000+ pre-vetted professionals',
+      'Tap into our network of 10,000+ pre-vetted professionals',
       'Technical skills assessments and aptitude tests',
       'Initial interviews and background verification',
       'English communication evaluation',

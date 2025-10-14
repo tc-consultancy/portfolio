@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion'
-import { FileSearch, Code, MessageCircle, Heart, CheckCircle } from 'lucide-react'
+import { FileSearch, Shield, Users, Code, MessageCircle, Heart } from 'lucide-react'
 import { useRef, useState, useEffect } from 'react'
 
 const stages = [
@@ -10,10 +10,16 @@ const stages = [
     percentage: 100,
   },
   {
+    icon: Users,
+    title: '3 Reference Checks',
+    description: 'Validation with previous employers',
+    percentage: 85,
+  },
+  {
     icon: Code,
-    title: 'Technical Assessment',
+    title: 'Technical Assessment & Interviews',
     description: 'Role-specific skills testing',
-    percentage: 80,
+    percentage: 65,
   },
   {
     icon: MessageCircle,
@@ -25,12 +31,12 @@ const stages = [
     icon: Heart,
     title: 'Cultural Fit Analysis',
     description: 'Alignment with client values',
-    percentage: 15,
+    percentage: 20,
   },
   {
-    icon: CheckCircle,
-    title: 'Trial Project',
-    description: 'Real-world task performance',
+    icon: Shield,
+    title: 'Background Check',
+    description: 'Verification of credentials',
     percentage: 5,
   },
 ]
@@ -74,7 +80,7 @@ export default function VettingProcess() {
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Headline */}
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -84,14 +90,14 @@ export default function VettingProcess() {
             Only the Top 5% Make It Through Our Vetting
           </h2>
           <p className="text-xl text-neutral-400">
-            Our rigorous 5-stage process ensures exceptional quality
+            Our rigorous 6-stage process ensures exceptional quality
           </p>
         </motion.div>
 
         {/* Stages Container */}
         <div className="relative">
           {/* Stages */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 mb-10">
             {stages.map((stage, index) => (
               <motion.div
                 key={index}
@@ -103,21 +109,21 @@ export default function VettingProcess() {
               >
                 {/* Stage Circle */}
                 <motion.div
-                  className="relative z-10 w-28 h-28 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-2xl flex items-center justify-center mx-auto mb-6 group cursor-pointer"
+                  className="relative z-10 w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-2xl flex items-center justify-center mx-auto mb-4 group cursor-pointer"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{
                     duration: 0.5,
-                    delay: index * 0.15,
+                    delay: index * 0.1,
                     type: 'spring',
                   }}
                 >
-                  <stage.icon className="w-12 h-12 md:w-14 md:h-14 text-white" />
-                  
+                  <stage.icon className="w-10 h-10 md:w-12 md:h-12 text-white" />
+
                   {/* Hover Tooltip */}
-                  <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-48 p-3 bg-white dark:bg-neutral-800 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-48 p-3 bg-white dark:bg-neutral-800 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-20">
                     <p className="text-sm text-neutral-900 dark:text-white font-semibold mb-1">
                       {stage.title}
                     </p>
@@ -128,12 +134,12 @@ export default function VettingProcess() {
                 </motion.div>
 
                 {/* Title */}
-                <h3 className="text-lg md:text-xl font-bold text-white text-center mb-2">
+                <h3 className="text-sm md:text-base lg:text-lg font-bold text-white text-center mb-2">
                   {stage.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-neutral-400 text-center">
+                <p className="text-xs md:text-sm text-neutral-400 text-center">
                   {stage.description}
                 </p>
               </motion.div>
@@ -141,7 +147,7 @@ export default function VettingProcess() {
           </div>
 
           {/* Progress Bar Container */}
-          <div className="relative h-20 mb-8" ref={progressRef}>
+          <div className="relative h-16 mb-8" ref={progressRef}>
             {/* Background Bar */}
             <div className="absolute top-1/2 -translate-y-1/2 left-0 w-full h-5 bg-neutral-800 dark:bg-neutral-900 rounded-full overflow-hidden">
               {/* Animated Progress Bar */}
@@ -157,7 +163,7 @@ export default function VettingProcess() {
             </div>
 
             {/* Percentage Labels */}
-            <div className="absolute top-full mt-4 w-full flex justify-between px-4">
+            <div className="absolute top-full mt-3 w-full grid grid-cols-6 gap-2">
               {stages.map((stage, index) => (
                 <motion.div
                   key={index}
@@ -177,7 +183,7 @@ export default function VettingProcess() {
 
           {/* Engagement Metrics */}
           <motion.div
-            className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -185,13 +191,13 @@ export default function VettingProcess() {
           >
             <div>
               <div className="text-4xl md:text-5xl font-bold text-white mb-2">
-                <Counter end={10000} />+
+                <Counter end={5000} />+
               </div>
               <div className="text-neutral-400">Candidates Screened</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-white mb-2">
-                <Counter end={500} />+
+                <Counter end={50} />+
               </div>
               <div className="text-neutral-400">Successful Placements</div>
             </div>

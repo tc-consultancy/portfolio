@@ -4,7 +4,7 @@ import { TrendingUp, DollarSign, Clock, Users, Award, Globe, MapPin, Wallet } fr
 const metrics = [
   {
     icon: Users,
-    value: '500+',
+    value: '50+',
     label: 'Successful Placements Globally',
     color: 'from-blue-400 to-blue-600',
   },
@@ -46,7 +46,7 @@ const metrics = [
   },
   {
     icon: Wallet,
-    value: '$47M+',
+    value: '$10M+',
     label: 'Total Client Savings to Date',
     color: 'from-emerald-400 to-emerald-600',
   },

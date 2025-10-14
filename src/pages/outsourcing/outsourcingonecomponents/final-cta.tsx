@@ -198,7 +198,7 @@ export default function FinalCTA() {
 
             <div className="text-center">
               <div className="text-2xl font-bold text-neutral-900 dark:text-white">
-                <Counter end={500} />+
+                <Counter end={50} />+
               </div>
               <div className="text-sm text-neutral-600 dark:text-neutral-400">
                 Happy Clients

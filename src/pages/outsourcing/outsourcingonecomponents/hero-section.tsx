@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
+import { hero_outsourcing } from '@/assets'
 
 export default function HeroSection() {
   // const handleWhatsAppClick = () => {
@@ -147,10 +148,10 @@ export default function HeroSection() {
               </div>
               <div>
                 <div className="text-3xl font-bold text-neutral-900 dark:text-white">
-                  500+
+                  50+
                 </div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Successfu Placements
+                  Successfull Placements
                 </div>
               </div>
             </div>
@@ -164,9 +165,9 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900/20 dark:to-purple-800/20 shadow-2xl overflow-hidden">
+              <div className="aspect-square rounded-3xl  ">
                 {/* Placeholder for hero image */}
-                <div className="w-full h-full flex items-center justify-center">
+                {/* <div className="w-full h-full flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-purple-400/20 flex items-center justify-center">
                       <svg
@@ -187,7 +188,12 @@ export default function HeroSection() {
                       Hero Image Placeholder
                     </p>
                   </div>
-                </div>
+                </div> */}
+                <img
+                  src={hero_outsourcing}
+                  alt="Hero Image"
+                  className="w-full h-full object-contain"
+                  />
               </div>
 
               {/* Decorative Element */}
