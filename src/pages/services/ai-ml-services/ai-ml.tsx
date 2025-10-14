@@ -24,7 +24,7 @@ export default function AIML() {
                             What do we do?
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-5xl">
-                            Terralogic provides a comprehensive and intelligent approach to incorporating Gen AI and ML Services into business operations by providing best in business solutions for our clients. From AI adoption to a hyper-personalised solutions, we got you covered. Our Gen AI and ML services are built to simplify the complexities in your business and help you scale to the next level.
+                            TC Services provides a comprehensive and intelligent approach to incorporating Gen AI and ML Services into business operations by providing best in business solutions for our clients. From AI adoption to a hyper-personalised solutions, we got you covered. Our Gen AI and ML services are built to simplify the complexities in your business and help you scale to the next level.
                         </p>
                     </div>
 
@@ -171,7 +171,7 @@ export default function AIML() {
                             How Generative AI works ?
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl mx-auto">
-                            At Terralogic, we empower businesses with cutting-edge Artificial Intelligence solutions tailored to drive growth and efficiency. From machine learning and advanced analytics to responsible Gen AI, our adaptable services are designed to meet the unique challenges of any industry, helping you achieve innovation and success.
+                            At TC Services, we empower businesses with cutting-edge Artificial Intelligence solutions tailored to drive growth and efficiency. From machine learning and advanced analytics to responsible Gen AI, our adaptable services are designed to meet the unique challenges of any industry, helping you achieve innovation and success.
                         </p>
                     </div>
 

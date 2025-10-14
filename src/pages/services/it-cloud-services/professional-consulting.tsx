@@ -1,6 +1,28 @@
 import CommonHero from "@/components/common/common-hero";
+import StrategySection from "@/components/common/strategy-section";
 
 export default function ProfessionalConsulting() {
+    const strategyPoints = [
+        {
+            icon: <span className="text-3xl text-white">🎯</span>,
+            title: "Tailored strategies",
+            description: "Everything is unique to your business to propel your business ahead as per market trends.",
+            color: "bg-pink-500 dark:bg-pink-600"
+        },
+        {
+            icon: <span className="text-3xl text-white">📊</span>,
+            title: "Transparent results",
+            description: "A continuous process of measuring, reporting and improving along the way.",
+            color: "bg-orange-500 dark:bg-orange-600"
+        },
+        {
+            icon: <span className="text-3xl text-white">🔄</span>,
+            title: "Old to new",
+            description: "Traditional enterprise system installation to trending approaches, anything you need to drive in the growth direction.",
+            color: "bg-teal-500 dark:bg-teal-600"
+        }
+    ];
+
     return (
         <>
             <CommonHero
@@ -9,12 +31,12 @@ export default function ProfessionalConsulting() {
                 subheading="Leverage cutting-edge technology to make informed decisions and drive continuous growth for your business."
                 buttontitle="Let's Talk"
             />
-            {/* Managed Network Solutions Section */}
+               {/* Managed Network Solutions Section */}
             <section className="w-full bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 dark:from-purple-800 dark:via-purple-700 dark:to-pink-700 py-16 md:py-24 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left - Illustration */}
-                        <div className="flex justify-center lg:justify-start">
+                        <div className="flex justify-center items-end lg:justify-start">
                             <div className="relative">
                                 <svg
                                     className="w-full max-w-md h-auto"
@@ -101,6 +123,101 @@ export default function ProfessionalConsulting() {
                     </div>
                 </div>
             </section>
+               <StrategySection
+                topHeading="GET YOUR NEEDS ALIGNED WITH"
+                heading="The perfect tactic and strategy Comes with"
+                description="Tell us your pain points and goals and we will align a strategy to reach your objective. We guide you as an IT partner and consult to meet your business needs."
+                imageUrl="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
+                imageAlt="Team collaboration with puzzle pieces"
+                points={strategyPoints}
+            />
+
+            {/* Why You Need Professional IT Consulting Section */}
+            <section className="w-full bg-purple-50 dark:bg-gray-900 py-16 md:py-24 px-4">
+                <div className="max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        {/* Left Content */}
+                        <div>
+                            <p className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-wide mb-4">
+                                HERE IS WHY YOU NEED
+                            </p>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-8">
+                                An professional IT consulting
+                            </h2>
+
+                            {/* Service Cards */}
+                            <div className="space-y-6">
+                                {/* Experience with skill */}
+                                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md">
+                                    <div className="flex items-start gap-4">
+                                        <div className="w-14 h-14 bg-purple-600 dark:bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <span className="text-2xl text-white">👥</span>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                                                Experience with skill
+                                            </h3>
+                                            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                                A winning team of IT specialists with experience in your industry, and can align systems with your business goals efficiently.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* On time delivery */}
+                                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md">
+                                    <div className="flex items-start gap-4">
+                                        <div className="w-14 h-14 bg-orange-500 dark:bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <span className="text-2xl text-white">🎯</span>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                                                On time delivery
+                                            </h3>
+                                            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                                Partner with a professional IT consulting firm that can complete projects on time, and correctly. Rely on our experts from conception to int...
+                                                <button className="text-pink-600 dark:text-pink-400 font-semibold ml-1">
+                                                    Read more
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Whenever you need */}
+                                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md">
+                                    <div className="flex items-start gap-4">
+                                        <div className="w-14 h-14 bg-yellow-500 dark:bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <span className="text-2xl text-white">☕</span>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                                                Whenever you need
+                                            </h3>
+                                            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                                We provide a combination of flexible, effective, and highly trained specialists to give you a competitive advantage whenever you need it.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Image */}
+                        <div className="rounded-2xl overflow-hidden mt-auto shadow-xl">
+                            <img
+                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop"
+                                alt="Professional IT Consulting Team"
+                                className="w-full h-full object-cover "
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+         
+
+         
+
         </>
     )
 }

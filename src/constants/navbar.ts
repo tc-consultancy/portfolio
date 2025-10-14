@@ -6,8 +6,8 @@ const services = [
       { title: "Managed Services", href: "/services/managed-services" },
       { title: "Professional Consulting", href: "/services/professional-consulting" },
       { title: "Infrastructure Outsourcing", href: "/services/infrastructure-outsourcing" },
-      { title: "24/7 Technical Support", href: "/services/technical-support" },
-      { title: "Microsoft Managed Services", href: "/services/microsoft-managed" },
+      // { title: "24/7 Technical Support", href: "/services/technical-support" },
+      // { title: "Microsoft Managed Services", href: "/services/microsoft-managed" },
     ]
   },
   {

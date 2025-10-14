@@ -97,7 +97,7 @@ export default function ImplimentationService() {
                             We help you Implement Cybersecurity
                         </h2>
                         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-4xl">
-                            Terralogic sets up a security implementation process that works towards building a comprehensive repository of accelerators, reusable assets, and frameworks for accelerating your security and compliance as per industry standards.
+                            TC Services sets up a security implementation process that works towards building a comprehensive repository of accelerators, reusable assets, and frameworks for accelerating your security and compliance as per industry standards.
                         </p>
                     </div>
 

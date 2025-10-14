@@ -53,7 +53,7 @@ export default function DataVisualization() {
                 </svg>
             ),
             title: "Power BI Services",
-            description: "Unify diverse data sources into immersive and interactive insights. Terralogic offers visually compelling data visualizations, transforming raw data into coherent narratives, and empowering decision making. Experience the power of data visualization with us."
+            description: "Unify diverse data sources into immersive and interactive insights. TC Services offers visually compelling data visualizations, transforming raw data into coherent narratives, and empowering decision making. Experience the power of data visualization with us."
         },
         {
             icon: (

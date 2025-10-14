@@ -88,7 +88,7 @@ export default function MarketingAgent() {
                             Marketing that moves faster than the market.
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl  leading-relaxed">
-                            The Terralogic Marketing Agent automates content, optimizes campaigns, and spots trends—so you move from idea to execution in minutes. Your team stays creative; your agent handles the rest. Always learning, always delivering results.
+                            The TC Services Marketing Agent automates content, optimizes campaigns, and spots trends—so you move from idea to execution in minutes. Your team stays creative; your agent handles the rest. Always learning, always delivering results.
                         </p>
                     </div>
 
@@ -155,7 +155,7 @@ export default function MarketingAgent() {
                             Marketing That Never Slows Down.
                         </h2>
                         <p className='text-base md:text-lg text-white mb-6'>
-                            Let the Terralogic Marketing Agent handle execution while your team leads with strategy. From insights to impact—it’s always on, always improving.</p>
+                            Let the TC Services Marketing Agent handle execution while your team leads with strategy. From insights to impact—it’s always on, always improving.</p>
                         <ContactDialog>
                             <Button className="bg-white text-purple-600 hover:bg-gray-100 dark:bg-gray-100 dark:text-purple-700 dark:hover:bg-white px-8 py-3 rounded-lg font-semibold shadow-lg">
                                 See it in Action →

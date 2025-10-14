@@ -98,11 +98,7 @@ export default function Industries() {
               <div className="mt-6">
                 <p className="text-sm text-gray-600 dark:text-white/70">{item.description}</p>
               </div>
-              <div className="mt-6">
-                <button className="inline-flex items-center rounded-full border border-gray-300 dark:border-white/20 px-3 py-1 text-xs font-medium text-gray-700 dark:text-white/80 transition hover:border-gray-400 dark:hover:border-white/40 hover:text-gray-900 dark:hover:text-white">
-                  Explore
-                </button>
-              </div>
+           
             </li>
           ))}
         </motion.ul>

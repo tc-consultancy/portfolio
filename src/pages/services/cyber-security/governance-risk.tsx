@@ -94,7 +94,7 @@ export default function GovernanceRisk() {
                     <div>
                         <h1 className="text-3xl md:text-4xl font-bold text-white  leading-tight">We are a Game changer in GRC</h1>
                         <h2 className="text-base md:text-xl  text-white/70 mb-6 leading-tight">
-                           We have a vast experience of working with clients across various sectors & countries with an in-house expert team of technology professionals and engineers. Terralogic strengthens the team of professionals with various certifications such as CIAs, CISAs, CISSPs, CISM, and ISO LA/LI.
+                           We have a vast experience of working with clients across various sectors & countries with an in-house expert team of technology professionals and engineers. TC Services strengthens the team of professionals with various certifications such as CIAs, CISAs, CISSPs, CISM, and ISO LA/LI.
                         </h2>
                         <Button className="bg-white text-purple-600 hover:bg-gray-100 dark:bg-gray-100 dark:text-purple-700 dark:hover:bg-white px-8 py-3 rounded-lg font-semibold shadow-lg">
                             See it in Action →

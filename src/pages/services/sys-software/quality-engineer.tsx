@@ -62,7 +62,7 @@ export default function QualityEngineer() {
                             <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
                                 We cover the spectrum of expertise needed for the quality standard you are looking for.</p>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                                At Terralogic, we meet your business challenges and opportunities with new approaches to testing and QA. By assuring quality needs for quicker test cycles and expanding the use of automation in testing efforts.</p>
+                                At TC Services, we meet your business challenges and opportunities with new approaches to testing and QA. By assuring quality needs for quicker test cycles and expanding the use of automation in testing efforts.</p>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ export default function QualityEngineer() {
                     {/* Header */}
                     <div className="mb-12">
                         <p className="text-white/90 font-semibold text-sm uppercase tracking-wide mb-3">
-                            WHY TERRALOGIC
+                            WHY TC Services
                         </p>
                         <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                             Quality Assurance?

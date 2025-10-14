@@ -38,7 +38,7 @@ export default function ManagedServices() {
             {/* Hero Section */}
            <CommonHero
            subtleHeading="MANAGED SERVICES"
-           subheading=" For years, our customers have relied on Terralogic to manage their IT infrastructure. We proactively monitor and manage networks and data to ensure our customers delight."
+           subheading=" For years, our customers have relied on TC Services to manage their IT infrastructure. We proactively monitor and manage networks and data to ensure our customers delight."
            heading="Manage your IT  \n with an industry expert"
            buttontitle="Let's Talk"
            />
@@ -126,7 +126,7 @@ export default function ManagedServices() {
                                 By engineering managed network solutions
                             </h2>
                             <p className="text-base md:text-lg leading-relaxed opacity-90">
-                                That is secure, reliable, and scalable, continuously monitoring the health of your IT infrastructure. For years now, businesses have turned to Terralogic to manage their IT infrastructure. Terralogic continuously monitors the health of its infrastructure and supports end-users' needs. Our experts recommend the right IT-managed support services tools to solve security issues. Rely on us to monitor and manage your network components like routers, switches, servers, and storage systems.
+                                That is secure, reliable, and scalable, continuously monitoring the health of your IT infrastructure. For years now, businesses have turned to TC Services to manage their IT infrastructure. TC Services continuously monitors the health of its infrastructure and supports end-users' needs. Our experts recommend the right IT-managed support services tools to solve security issues. Rely on us to monitor and manage your network components like routers, switches, servers, and storage systems.
                             </p>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ export default function ManagedServices() {
                                 A state of the art IT infrastructure
                             </h2>
                             <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg leading-relaxed">
-                                Right from desktop virtualization, application virtualization, remote access, email migrations, server virtualization, cloud migrations, data center, and more for your company. From start-ups to the largest of commerce, Terralogic supports all company sizes and verticals with experience in healthcare, finance, education, non-profit, utilities, and construction, allowing organizations to secure data, cut costs, improve business outcomes, and maximize the benefits of managed IT services.
+                                Right from desktop virtualization, application virtualization, remote access, email migrations, server virtualization, cloud migrations, data center, and more for your company. From start-ups to the largest of commerce, TC Services supports all company sizes and verticals with experience in healthcare, finance, education, non-profit, utilities, and construction, allowing organizations to secure data, cut costs, improve business outcomes, and maximize the benefits of managed IT services.
                             </p>
                         </div>
                     </div>
@@ -174,7 +174,7 @@ export default function ManagedServices() {
                                     BE AWAY FROM IT CHALLENGES WITH
                                 </p>
                                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
-                                    Terralogic's IT service management
+                                    TC Services's IT service management
                                 </h2>
                             </div>
                             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">

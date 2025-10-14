@@ -73,7 +73,7 @@ export default function DataEngineer() {
     const analysisItems = [
         {
             title: "Sentiment Analysis",
-            description: "At Terralogic, we use Text Data Analytics to understand the most varied responses to a product experience so that the organization can take measures to redress the situation.",
+            description: "At TC Services, we use Text Data Analytics to understand the most varied responses to a product experience so that the organization can take measures to redress the situation.",
             image: robo1
         },
         {
@@ -117,7 +117,7 @@ export default function DataEngineer() {
                                 Resilient data science roadmaps
                             </h2>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-                                At Terralogic, we build data science road maps to aid different organizations in solving their unique problems.
+                                At TC Services, we build data science road maps to aid different organizations in solving their unique problems.
                             </p>
                             <p className="text-white/90 text-base md:text-lg leading-relaxed">
                                 We are industry competent with the process of harnessing data-driven insights for initiating new businesses, advising strategic changes, or accessing new markets.

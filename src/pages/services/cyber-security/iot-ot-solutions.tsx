@@ -90,7 +90,7 @@ export default function IotOtSolutions() {
                                 Your partner for IoT/OT security
                             </h2>
                             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-                                With Terralogic's expertise in a wide range of cutting-edge products and solutions, you gain an outstanding partner to guide you through the increasingly complex security solutions landscape. Terralogic's IoT/OT security services encompass NIST SP 800-30, ISO/SAE 21434, and WP.29 frameworks.
+                                With TC Services's expertise in a wide range of cutting-edge products and solutions, you gain an outstanding partner to guide you through the increasingly complex security solutions landscape. TC Services's IoT/OT security services encompass NIST SP 800-30, ISO/SAE 21434, and WP.29 frameworks.
                             </p>
                         </div>
                     </div>

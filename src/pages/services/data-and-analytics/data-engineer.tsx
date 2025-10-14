@@ -136,7 +136,7 @@ export default function DataEngineering() {
         },
         {
             "title": "Data quality & governance",
-            "description": "At Terralogic, we prioritize accurate and compliant data. Our data engineering services focus on data quality and governance, implementing robust checks, validation processes, and cleansing techniques for data integrity.",
+            "description": "At TC Services, we prioritize accurate and compliant data. Our data engineering services focus on data quality and governance, implementing robust checks, validation processes, and cleansing techniques for data integrity.",
             "imgDirection": "right"
         },
         {

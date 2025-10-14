@@ -34,7 +34,7 @@ export default function ManagedDetection() {
                 buttontitle="Let's Talk"
             />
 
-            {/* Why Terralogic as MDR Provider Section */}
+            {/* Why TC Services as MDR Provider Section */}
             <section className="py-20 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 dark:from-purple-800 dark:via-purple-900 dark:to-purple-950 relative overflow-hidden">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-10">
@@ -49,7 +49,7 @@ export default function ManagedDetection() {
                     {/* Left Content */}
                     <div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                            Why Terralogic as an MDR provider?
+                            Why TC Services as an MDR provider?
                         </h2>
                         <p className="text-white/90 text-lg leading-relaxed">
                             For any detected potential threat that is correlated and prioritized, We have a team of qualified
