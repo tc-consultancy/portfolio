@@ -13,7 +13,7 @@ export default function AIML() {
                 buttontitle="Start Your AI Transformation Now"
             />
 
-         
+
 
             {/* What do we do Section */}
             <section className="py-20 px-4 bg-white dark:bg-gray-950">
@@ -111,7 +111,7 @@ export default function AIML() {
                 </div>
             </section>
 
-               {/* Let's Discuss Section */}
+            {/* Let's Discuss Section */}
             <section className="py-20 px-4 bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 dark:from-purple-800 dark:via-purple-700 dark:to-pink-700">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -155,6 +155,110 @@ export default function AIML() {
                                 <div className="bg-white/20 dark:bg-white/10 backdrop-blur-sm rounded-3xl p-8 text-center">
                                     <div className="text-5xl md:text-6xl font-bold text-white mb-2">1B</div>
                                     <div className="text-white/80 text-sm">Apps to be created by 2028</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* How Generative AI works Section */}
+            <section className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+                <div className="max-w-6xl mx-auto">
+                    {/* Header */}
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                            How Generative AI works ?
+                        </h2>
+                        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl mx-auto">
+                            At Terralogic, we empower businesses with cutting-edge Artificial Intelligence solutions tailored to drive growth and efficiency. From machine learning and advanced analytics to responsible Gen AI, our adaptable services are designed to meet the unique challenges of any industry, helping you achieve innovation and success.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        {/* Left Side - Title and Image */}
+                        <div className="text-center lg:text-left">
+                            <h3 className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-8">
+                                How is AI used in Industry and Business?
+                            </h3>
+                            <div className="flex justify-center lg:justify-start">
+                                <div className="w-64 h-64 bg-gradient-to-br from-purple-600 to-purple-800 dark:from-purple-700 dark:to-purple-900 rounded-3xl flex items-center justify-center shadow-2xl">
+                                    <span className="text-8xl">🔮</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Side - Use Cases */}
+                        <div className="space-y-6">
+                            {/* Marketing and Sales */}
+                            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <span className="text-2xl">📈</span>
+                                </div>
+                                <div>
+                                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                                        Generative AI in <span className="font-bold text-gray-900 dark:text-white">marketing and sales</span> is amplifying personalization, automating tasks, and analyzing user data to generate more leads and sales and enrich the UX.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Manufacturing Industry */}
+                            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <span className="text-2xl">🏭</span>
+                                </div>
+                                <div>
+                                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                                        Generative AI is automating production processes and delivery of products and services in the <span className="font-bold text-gray-900 dark:text-white">manufacturing industry</span>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Healthcare Industry */}
+                            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <span className="text-2xl">💜</span>
+                                </div>
+                                <div>
+                                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                                        The <span className="font-bold text-gray-900 dark:text-white">healthcare industry</span> is being transformed by AI's ability to analyze data, recognize patterns, provide valuable insights, and accelerate drug research.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Entertainment Sector */}
+                            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <span className="text-2xl">🎬</span>
+                                </div>
+                                <div>
+                                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                                        It can generate music, art, and virtual worlds supporting the <span className="font-bold text-gray-900 dark:text-white">entertainment sector</span>, but it is not just for fun.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Financial Sector */}
+                            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <span className="text-2xl">💰</span>
+                                </div>
+                                <div>
+                                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                                        In the <span className="font-bold text-gray-900 dark:text-white">financial sector</span>, AI and ML can analyze vast data to detect patterns and anomalies in transactions and allow institutions to identify and respond in real-time.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Agriculture */}
+                            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <span className="text-2xl">🌱</span>
+                                </div>
+                                <div>
+                                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                                        AI is reforming farming via machine learning by precision <span className="font-bold text-gray-900 dark:text-white">agriculture</span>, data-driven insights to boost crop yields, and environmentally friendly practices to reduce waste.
+                                    </p>
                                 </div>
                             </div>
                         </div>
