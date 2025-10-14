@@ -1,5 +1,4 @@
 import { industries } from '@/constants/industries'
-import React from 'react'
 
 export default function ServicePageInductries() {
     return (

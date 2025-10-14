@@ -1,6 +1,5 @@
 import { FAQSection } from '@/components/sections/faq-section';
 import { Button } from '@/components/ui/button'
-import { industries } from '@/constants/industries';
 import CommonHero from '@/components/common/common-hero';
 import ServicePageInductries from '@/components/common/service-page-inductries';
 

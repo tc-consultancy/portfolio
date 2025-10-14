@@ -22,7 +22,7 @@ import OurGuarantee from './outsourcingonecomponents/our-guarantee'
 import ProcessTransparency from './outsourcingonecomponents/process-transparency'
 import Testimonials from './outsourcingonecomponents/testimonials'
 import FinalCTAGuarantee from './outsourcingonecomponents/final-cta-guarantee'
-import FinalTrust from './outsourcingonecomponents/final-trust'
+
 import OneHireChallenge from './outsourcingonecomponents/one-hire-challenge'
 
 export default function Outsourcingone() {

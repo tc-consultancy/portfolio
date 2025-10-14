@@ -29,20 +29,7 @@ const features = [
     }
 ];
 
-const definingFeatures = [
-    {
-        title: "Content Automation",
-        description: "From social posts to email campaigns, the Marketing Agent creates on-brand content at scale, adapting tone and style for each platform while maintaining consistency."
-    },
-    {
-        title: "Campaign Optimization",
-        description: "Real-time A/B testing and performance analysis ensure your campaigns are always improving. The agent learns what works and automatically adjusts strategies."
-    },
-    {
-        title: "Trend Intelligence",
-        description: "Stay ahead of the curve with AI-powered trend spotting and competitive analysis. Get actionable insights that inform your marketing strategy and drive results."
-    }
-];
+
 
 const marketingFaqs = [
     {

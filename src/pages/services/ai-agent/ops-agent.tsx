@@ -1,6 +1,6 @@
 import { FAQSection } from '@/components/sections/faq-section';
 import { Button } from '@/components/ui/button'
-import { industries } from '@/constants/industries';
+
 import CommonHero from '@/components/common/common-hero';
 import { ContactDialog } from '@/components/ContactDialog';
 import { robo1 } from '@/assets';

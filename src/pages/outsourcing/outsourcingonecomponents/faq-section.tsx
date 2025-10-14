@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Plus, Minus, Briefcase, ComputerIcon, TrendingUp } from 'lucide-react'
+import { Plus, Minus, ComputerIcon, TrendingUp } from 'lucide-react'
 import { ContactDialog } from '@/components/ContactDialog'
 import { IconMoneybag } from '@tabler/icons-react'
 
