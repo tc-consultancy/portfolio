@@ -32,6 +32,29 @@ const data = [
 ];
 
 export default function GovernanceRisk() {
+    const grcFaqs = [
+        {
+            question: "What is GRC and why is it important for organizations?",
+            answer: "GRC (Governance, Risk, and Compliance) is a framework that aligns processes and actions with business goals while controlling security governance and specifying accountability. It's crucial for organizations to identify and address risks, ensure regulatory compliance, and maintain corporate governance standards that protect the business and stakeholders."
+        },
+        {
+            question: "What GRC solution capabilities do you provide?",
+            answer: "Our comprehensive GRC solutions include Enterprise Risk Management, Third-party Risk Assessment, Corporate Governance, Regulatory Compliance, Audit Management, Document Management, and Reporting & Analytics. These capabilities work together to strengthen your organization's governance framework and risk management processes."
+        },
+        {
+            question: "How do you approach risk management?",
+            answer: "We identify and address all organizational risks through comprehensive risk assessment, risk analysis and prioritization, root cause analysis of issues and mitigation strategies, and trend analysis. Our approach ensures that risks are proactively managed and aligned with your business objectives."
+        },
+        {
+            question: "What certifications does your team hold?",
+            answer: "Our expert team includes professionals with various prestigious certifications such as CIA (Certified Internal Auditor), CISA (Certified Information Systems Auditor), CISSP (Certified Information Systems Security Professional), CISM (Certified Information Security Manager), and ISO LA/LI (Lead Auditor/Lead Implementer). This expertise ensures best-in-class GRC implementation."
+        },
+        {
+            question: "How do you align governance with business goals?",
+            answer: "We align processes and actions with your organization's business goals by establishing clear security governance frameworks and specifying accountability at all levels. Our governance approach ensures that security and compliance initiatives directly support and enable your strategic business objectives."
+        }
+    ];
+
     return (
         <>
             <CommonHero
@@ -103,7 +126,7 @@ export default function GovernanceRisk() {
                     </div>
                 </div>
             </section>
-            <FAQSection/>
+            <FAQSection faqs={grcFaqs} />
         </>
     )
 }

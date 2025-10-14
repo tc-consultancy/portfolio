@@ -43,11 +43,7 @@ const services = [
   {
     title: "Software Development",
     subServices: [
-      {
-        title: "Application Development",
-        href: "/services/application-development",
-      },
-      { title: "Mobile & Web Application", href: "/services/mobile-web-application" },
+      { title: "Mobile, Web & desktop Application", href: "/services/mobile-web-application" },
       { title: "E-Commerce", href: "/services/e-commerce" },
       { title: "Enterprise Application", href: "/services/enterprise-application" },
       { title: "Custom Application", href: "/services/custom-application" },
@@ -79,7 +75,7 @@ const services = [
   {
     title: "Data And Analytics Services",
     subServices: [
- 
+
       { title: "Data Analysis", href: "/services/data-analysis" },
       { title: "Data Engineering", href: "/services/data-engineering-services" },
       { title: "Data Visualization", href: "/services/data-visualization" }
@@ -107,7 +103,7 @@ const services = [
       },
       { title: "Integrations & Implementations", href: "/services/integration-implementation" },
       { title: "Shared Services", href: "/services/financial-accounting" },
-     ]
+    ]
   },
   // {
   //   title: "Digital Marketing",

@@ -2,6 +2,29 @@ import { FAQSection } from "@/components/sections/faq-section";
 import CommonHero from '@/components/common/common-hero';
 
 export default function ManagedDetection() {
+    const mdrFaqs = [
+        {
+            question: "What is Managed Detection and Response (MDR)?",
+            answer: "MDR is a comprehensive cybersecurity service that combines incident response automation with expert skills to deliver threat management. Our 24x7 vigilance team hunts, monitors, analyzes, and responds to threats with continuous monitoring and centralized visibility, helping organizations strengthen their security posture and become more resilient against cyber attacks."
+        },
+        {
+            question: "What MDR services do you offer?",
+            answer: "We offer four core MDR services: SOC Services (24x7 monitoring and threat detection), Incident Response (automated processes and technologies for rapid response), Threat Hunting (advanced asset identification and threat detection), and Threat Intelligence (combining analytics, intelligence, and human expertise to investigate and respond to incidents)."
+        },
+        {
+            question: "How does your MDR process work?",
+            answer: "Our MDR process follows five key steps: Strategize (planning defense strategies), Hunt (proactively searching for threats), Analyze (examining security data and anomalies), Neutralize (containing and eliminating threats), and Disrupt (breaking the attack chain). This systematic approach ensures comprehensive threat management."
+        },
+        {
+            question: "What makes your MDR security approach effective?",
+            answer: "Our MDR security includes Threat Anticipation (automated collection and analysis of global threat data), Data Analysis (examining your entire IT stack for suspicious activities), Continuous Data Collection (determining business-impacting threats), and Incident Remediation (utilizing advanced SOAR tools to identify threats and minimize response time)."
+        },
+        {
+            question: "How does MDR help with cybersecurity skill shortages?",
+            answer: "Our 24x7 MDR services solve cybersecurity skill shortages by providing access to qualified security personnel who investigate potential threats, hunt for advanced attacks, and respond to incidents. This allows organizations to strengthen their security environment quickly without needing to build large in-house security teams."
+        }
+    ];
+
     return (
         <>
             <CommonHero
@@ -300,7 +323,7 @@ export default function ManagedDetection() {
                 </div>
             </section>
 
-            <FAQSection/>
+            <FAQSection faqs={mdrFaqs} />
 
         </>
     )

@@ -51,6 +51,29 @@ const andata = [
 
 ];
 export default function ImplimentationService() {
+  const implementationFaqs = [
+    {
+        question: "What is your cybersecurity implementation process?",
+        answer: "Our 7-step implementation process includes: Explore (finding security solutions), Define (building security architecture), Plan (preparing execution plans), Deploy (implementing within timelines), Configure (customizing for your environment), Optimize (maximizing efficiency), and Test (conducting User Acceptance Testing). This comprehensive approach ensures successful security implementation."
+    },
+    {
+        question: "What security solutions do you implement?",
+        answer: "We implement a wide range of security solutions including Secure Architecture, Firewall Vulnerability management, PIM/PAM (Privileged Identity/Access Management), ITSM, AV/FIM/HIDS (Antivirus/File Integrity Monitoring/Host Intrusion Detection), OT/IoT Security, EDR (Endpoint Detection and Response), SIEM & SOAR, and IDS/IPS systems."
+    },
+    {
+        question: "How do you ensure implementation meets industry standards?",
+        answer: "We build a comprehensive repository of accelerators, reusable assets, and frameworks that align with industry standards. Our implementation process is designed to accelerate your security and compliance initiatives while ensuring adherence to recognized best practices and regulatory requirements."
+    },
+    {
+        question: "What partnerships do you have for security implementation?",
+        answer: "We partner with industry giants to deliver top-notch cybersecurity solutions. These partnerships enable us to provide cutting-edge security technologies and implementation expertise, ensuring you receive best-in-class protection for your organization."
+    },
+    {
+        question: "How long does a typical security implementation take?",
+        answer: "Implementation timelines vary based on the complexity and scope of your security requirements. We prepare detailed execution plans during the planning phase to deploy solutions within anticipated timelines. Our structured 7-step process ensures efficient implementation while maintaining quality and thoroughness throughout the project."
+    }
+  ];
+
   return (
     <>
     <CommonHero
@@ -148,7 +171,7 @@ export default function ImplimentationService() {
 
 
             {/* FAQ Section */}
-            <FAQSection />
+            <FAQSection faqs={implementationFaqs} />
     </>
   )
 }

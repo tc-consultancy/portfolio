@@ -3,6 +3,29 @@ import { FAQSection } from '@/components/sections/faq-section';
 import CommonHero from '@/components/common/common-hero';
 
 export default function DataPrivacyAndProtecttion() {
+    const dataPrivacyFaqs = [
+        {
+            question: "What data privacy regulations do you help organizations comply with?",
+            answer: "We assist organizations in complying with major global data privacy regulations including GDPR (General Data Protection Regulation), HIPAA (Health Insurance Portability and Accountability Act), CCPA (California Consumer Privacy Act), and PDPA (Personal Data Protection Act) for both Singapore and India. Our solutions ensure your organization meets all regulatory requirements."
+        },
+        {
+            question: "How does your partnership with Securiti.ai enhance data privacy protection?",
+            answer: "Through our collaboration with Securiti.ai, we enable organizations to safely utilize data and cloud services by regulating complex security, compliance, and privacy risks. This partnership provides comprehensive enterprise risk management, third-party risk assessment, and regulatory compliance solutions that protect data across all environments."
+        },
+        {
+            question: "What services are included in your data privacy solutions?",
+            answer: "Our comprehensive data privacy services include Enterprise Risk Management, Third-party Risk Assessment, Corporate Governance, Regulatory Compliance, Audit Management, Document Management, and Reporting & Analytics. These services work together to safeguard enterprise data and simplify privacy operations."
+        },
+        {
+            question: "How do data protection laws empower individuals?",
+            answer: "Data protection laws worldwide aim to give individuals control over their personal data, empowering them to know how and by whom their data is being used. These regulations ensure transparency in data processing and give people control over how their personal information is collected, stored, and utilized by organizations."
+        },
+        {
+            question: "Can you help with both cloud and on-premises data privacy?",
+            answer: "Yes, our data privacy solutions protect enterprise data across all environments - cloud, on-premises, and hybrid infrastructures. We ensure comprehensive privacy protection regardless of where your data resides, helping you maintain compliance and security across your entire data ecosystem."
+        }
+    ];
+
     const data = [
         { title: "Enterprise Risk Management", icon: ShieldAlert },
         { title: "Third-party Risk Assessment", icon: FileText },
@@ -74,7 +97,7 @@ export default function DataPrivacyAndProtecttion() {
             </div>
 
 
-            <FAQSection />
+            <FAQSection faqs={dataPrivacyFaqs} />
         </>
     )
 }

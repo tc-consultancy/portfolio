@@ -4,6 +4,29 @@ import { FAQSection } from '@/components/sections/faq-section'
 import CommonHero from '@/components/common/common-hero'
 
 export default function IotOtSolutions() {
+    const iotOtFaqs = [
+        {
+            question: "What are IoT and OT security, and why are they important?",
+            answer: "IoT (Internet of Things) and OT (Operational Technology) security protects connected devices, networks, and systems from cyber threats. As organizations increasingly rely on connected devices for operations, securing these systems is critical to prevent unauthorized access, data breaches, and operational disruptions that could impact business continuity."
+        },
+        {
+            question: "What frameworks do your IoT/OT security services follow?",
+            answer: "Our IoT/OT security services encompass industry-recognized frameworks including NIST SP 800-30 (Risk Management), ISO/SAE 21434 (Automotive Cybersecurity), and WP.29 (UN Regulation on Cybersecurity). These frameworks ensure comprehensive security coverage aligned with international standards."
+        },
+        {
+            question: "What does your Secure Design approach include?",
+            answer: "Our Secure Design approach includes IoT/OT Threat Modeling and Risk assessment, Secure Application design and source code review, Vulnerability Assessment and Penetration Testing, security assessments for cloud, on-premises, and hybrid environments, and comprehensive IoT/OT assets management to ensure security from the ground up."
+        },
+        {
+            question: "How do you handle IoT/OT security implementation?",
+            answer: "Our Secure Implementation includes IoT/OT Application Security Assessment, Security Baselining for system components, IoT infrastructure identity and access management, Communication Channel Security, and Incident Management Procedure Definition. This ensures security is embedded throughout the implementation phase."
+        },
+        {
+            question: "What ongoing security operations do you provide for IoT/OT systems?",
+            answer: "Our Secure Operations include IoT current state security reviews, integration of ICS alerts with SIEM systems, IoT data lifecycle protection, integration with organizational incident management processes, and stakeholder security awareness programs. We provide continuous monitoring and protection to maintain security posture over time."
+        }
+    ];
+
     const sectionData =  [
           {
             "title": "Secure Design",
@@ -81,7 +104,7 @@ export default function IotOtSolutions() {
             </div>
 
             {/* FAQ Section */}
-            <FAQSection />
+            <FAQSection faqs={iotOtFaqs} />
     </>
   )
 }
