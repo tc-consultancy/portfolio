@@ -4,8 +4,8 @@ import { Shield, TrendingUp, Heart } from 'lucide-react'
 const guarantees = [
   {
     icon: Shield,
-    title: '30-Day Money-Back Guarantee',
-    description: 'Not satisfied with our service? Get a full refund within the first 30 days, no questions asked.',
+    title: '1-Week Money-Back Guarantee',
+    description: 'Not satisfied with our service? Get a full refund within the first week, no questions asked.',
   },
   {
     icon: TrendingUp,

@@ -31,6 +31,29 @@ const features = [
     }
 ];
 
+const customerSupportFaqs = [
+    {
+        question: "How does the AI Customer Support Agent understand customer emotions?",
+        answer: "Our AI agent uses advanced sentiment analysis and natural language processing to detect tone, urgency, and emotional context in customer messages. It analyzes word choice, punctuation, and conversation patterns to understand whether a customer is frustrated, confused, or satisfied, allowing it to adjust its responses accordingly and provide empathetic support."
+    },
+    {
+        question: "Can the AI agent handle voice calls as well as chat?",
+        answer: "Yes! Our AI Customer Support Agent is designed for multi-channel support, including both text-based chat and voice interactions. It uses speech recognition and natural language understanding to process voice calls in real-time, providing the same level of intelligent support across all communication channels."
+    },
+    {
+        question: "What happens when the AI agent can't resolve an issue?",
+        answer: "The AI agent is designed with intelligent escalation capabilities. When it detects that an issue is beyond its scope or requires human expertise, it seamlessly transfers the conversation to a human agent along with the full context and conversation history. This ensures customers never feel stuck and always get the help they need."
+    },
+    {
+        question: "How does the AI agent learn and improve over time?",
+        answer: "Our AI agent uses machine learning to continuously improve from every customer interaction. It analyzes successful resolutions, learns from human agent interventions, and adapts its responses based on customer feedback. This means the agent becomes more accurate and effective the longer it operates, constantly refining its understanding of your customers' needs."
+    },
+    {
+        question: "Is the AI Customer Support Agent available 24/7?",
+        answer: "Absolutely! One of the key benefits of our AI agent is its round-the-clock availability. It operates 24/7 without breaks, holidays, or downtime, ensuring your customers always receive immediate support regardless of time zones or peak hours. This dramatically reduces wait times and improves overall customer satisfaction."
+    }
+];
+
 
 
 export default function AiCustomerSupportAgent() {
@@ -256,7 +279,7 @@ export default function AiCustomerSupportAgent() {
                         </div>
                     </div>
 
-                    <FAQSection/>
+                    <FAQSection faqs={customerSupportFaqs} />
                 </div>
             </section>
         </>

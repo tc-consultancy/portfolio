@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { RefreshCw, DollarSign, Calendar, CheckCircle, Shield, Headphones } from 'lucide-react'
 
@@ -96,9 +97,13 @@ export default function OurGuarantee() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
             Ready to experience risk-free outsourcing?
           </p>
+                    <ContactDialog>
+          
           <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
             Start Your Risk-Free Trial
           </button>
+                    </ContactDialog>
+          
         </motion.div>
       </div>
     </section>

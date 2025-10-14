@@ -6,7 +6,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+const defaultFaqs = [
     {
         question: "What are AI agents and how do they revolutionize business operations?",
         answer: "AI agents are intelligent software systems that can autonomously perform tasks, make decisions, and interact with users or other systems. They revolutionize business operations by automating complex processes, providing 24/7 availability, reducing human error, and scaling operations efficiently. Unlike traditional automation, AI agents can learn, adapt, and handle unexpected scenarios, making them invaluable for modern businesses."
@@ -29,7 +29,16 @@ const faqs = [
     }
 ];
 
-export function FAQSection() {
+interface FAQ {
+    question: string;
+    answer: string;
+}
+
+interface FAQSectionProps {
+    faqs?: FAQ[];
+}
+
+export function FAQSection({ faqs = defaultFaqs }: FAQSectionProps) {
     return (
         <section className="py-20 px-4 ">
             <div className="max-w-4xl mx-auto">

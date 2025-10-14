@@ -1,3 +1,4 @@
+import { img_outsourcing } from '@/assets'
 import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { Users, Target, Layers, UserPlus } from 'lucide-react'
@@ -59,7 +60,9 @@ export default function EngagementModels() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="h-60 bg-neutral-300 rounded-3xl mb-4 flex items-center justify-center"  >img</div>
+              <div className="h-60 rounded-3xl mb-4 flex items-center justify-center"  >
+                <img src={img_outsourcing} alt="image" className=' h-full w-full object-cover' />
+              </div>
               <motion.div
                 className="flex-1 bg-gradient-to-br from-purple-500 to-purple-700 rounded-3xl p-8 relative overflow-hidden group cursor-pointer"
                 whileHover={{ scale: 1.02 }}

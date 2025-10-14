@@ -67,7 +67,7 @@ export default function Outsourcingone() {
       <ROICalculator />
       <OneHireChallenge />
       <FinalCTAGuarantee />
-      <FinalTrust />
+      {/* <FinalTrust /> */}
       <SecurityTrust />
       {/* <Support /> */}
       <FAQSection />

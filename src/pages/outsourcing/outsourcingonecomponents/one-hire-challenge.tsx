@@ -21,8 +21,8 @@ export default function OneHireChallenge() {
                 <div className="text-5xl font-bold text-white mb-2">1</div>
                 <p className="text-white/90 font-semibold">Hire Challenge</p>
                 <div className="mt-6 pt-6 border-t border-white/20">
-                  <div className="text-3xl font-bold text-white mb-1">35</div>
-                  <p className="text-white/80 text-sm">Days to Hire</p>
+                  <div className="text-3xl font-bold text-white mb-1">100%</div>
+                  <p className="text-white/80 text-sm">Quality Match</p>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function OneHireChallenge() {
             <p className="text-xl text-purple-600 dark:text-purple-400 font-semibold mb-4">
               Skeptical? Good. You should be.
             </p>
-            
+
             <p className="text-neutral-700 dark:text-neutral-300 mb-6">
               We're not asking you to outsource your entire department. Give us ONE shot with your hardest-to-fill role.
             </p>
@@ -50,7 +50,7 @@ export default function OneHireChallenge() {
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div className="flex items-center gap-3 bg-purple-50 dark:bg-white/5 rounded-lg p-3">
                 <Zap className="w-5 h-5 text-purple-600 dark:text-purple-400 flex-shrink-0" />
-                <span className="text-neutral-900 dark:text-white text-sm">35 days to exceptional hire</span>
+                <span className="text-neutral-900 dark:text-white text-sm">Lightning-fast hiring process</span>
               </div>
               <div className="flex items-center gap-3 bg-purple-50 dark:bg-white/5 rounded-lg p-3">
                 <Shield className="w-5 h-5 text-purple-600 dark:text-purple-400 flex-shrink-0" />

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ContactDialog } from '@/components/ContactDialog'
+import { hire_hero } from '@/assets'
 
 export default function HeroSection() {
   
@@ -130,31 +131,10 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900/20 dark:to-purple-800/20 shadow-2xl overflow-hidden">
-                {/* Placeholder for hero image */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-purple-400/20 flex items-center justify-center">
-                      <svg
-                        className="w-16 h-16 text-purple-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-                      Professional Resume Visual
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <img
+                src={hire_hero}
+              className='h-full w-full object-cover'
+              />
 
               {/* Decorative Element */}
               <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-purple-400/10 blur-2xl" />

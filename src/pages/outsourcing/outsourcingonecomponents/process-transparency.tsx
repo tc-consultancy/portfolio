@@ -153,7 +153,7 @@ export default function ProcessTransparency() {
           </div>
         </div>
 
-        {/* Bottom Note */}
+        {/* Bottom Note
         <motion.div
           className="text-center mt-16 p-6 bg-purple-50 dark:bg-purple-950/20 rounded-2xl border border-purple-200 dark:border-purple-800"
           initial={{ opacity: 0, y: 20 }}
@@ -164,7 +164,7 @@ export default function ProcessTransparency() {
           <p className="text-neutral-700 dark:text-neutral-300 font-medium">
             💡 <span className="font-bold">Average Time to Hire:</span> 35 days from initial consultation to team member start date
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

@@ -47,7 +47,7 @@ export default function PricingSection() {
                                 Zero Upfront Payment
                             </h3>
                             <p className="text-xl text-white/90 mb-8">
-                                Pay only after 30 days of employment offer. No hidden charges, no surprises.
+                                Pay only after 1 week of employment offer. No hidden charges, no surprises.
                             </p>
 
                             {/* Key Points */}
@@ -67,7 +67,7 @@ export default function PricingSection() {
                                         <Clock className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <div className="font-bold mb-1">Pay After 30 Days</div>
+                                        <div className="font-bold mb-1">Pay After 1 Week</div>
                                         <div className="text-sm text-white/80">Evaluate performance before paying</div>
                                     </div>
                                 </div>
@@ -146,7 +146,7 @@ export default function PricingSection() {
                                     'Zero upfront payment',
                                     'Transparent all-inclusive pricing',
                                     'Flexible, no lock-ins',
-                                    'Pay after 30-day evaluation',
+                                    'Pay after 1-week evaluation',
                                     'No hidden fees ever',
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-neutral-900 dark:text-white font-medium">
@@ -170,11 +170,11 @@ export default function PricingSection() {
                     <p className="text-neutral-600 dark:text-neutral-400 mb-6">
                         Ready to start hiring with zero risk?
                     </p>
-                     <ContactDialog>
-                    <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                        Get Your Custom Quote
-                    </button>
-                     </ContactDialog>
+                    <ContactDialog>
+                        <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                            Get Your Custom Quote
+                        </button>
+                    </ContactDialog>
                 </motion.div>
             </div>
         </section>

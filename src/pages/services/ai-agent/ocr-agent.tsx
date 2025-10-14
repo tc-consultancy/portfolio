@@ -31,6 +31,29 @@ const features = [
     }
 ];
 
+const ocrFaqs = [
+    {
+        question: "What types of documents can the OCR Agent process?",
+        answer: "Our OCR Agent can process a wide variety of documents including invoices, receipts, bills, identity documents (PAN, Aadhar, driver's licenses), medical forms, HR documents, onboarding paperwork, compliance forms, handwritten notes, sketches, and printed text in any language. It's designed to handle both structured and unstructured documents with high accuracy."
+    },
+    {
+        question: "How accurate is the OCR Agent with handwritten text?",
+        answer: "Our OCR Agent uses advanced AI models specifically trained for handwriting recognition, achieving high accuracy even with varied handwriting styles. It continuously learns and improves from processed documents. For critical applications, the system includes validation mechanisms and can flag uncertain extractions for human review, ensuring reliability."
+    },
+    {
+        question: "Can the OCR Agent handle documents in multiple languages?",
+        answer: "Yes! Our OCR Agent supports multi-lingual document processing, including complex scripts and character sets from languages worldwide. It can automatically detect the language and apply the appropriate recognition models, making it ideal for global businesses that deal with documents in various languages."
+    },
+    {
+        question: "How does the OCR Agent differ from traditional OCR tools?",
+        answer: "Unlike traditional OCR tools that simply extract text, our OCR Agent understands context and meaning. It uses AI to validate extracted data in real-time, can trigger automated workflows based on document content, integrates seamlessly with your existing systems, and learns from usage to improve accuracy. It's not just text extraction—it's intelligent document automation."
+    },
+    {
+        question: "How secure is the document processing with the OCR Agent?",
+        answer: "Security is our top priority. The OCR Agent uses enterprise-grade encryption for data in transit and at rest, complies with industry standards like GDPR and HIPAA, and can be deployed on-premises or in private cloud environments. All processed documents can be automatically deleted after extraction, and we provide detailed audit logs for compliance purposes."
+    }
+];
+
 export default function OcrAgent() {
     return (
         <>
@@ -281,7 +304,7 @@ export default function OcrAgent() {
                                     </div>
                                 </div>
             
-                                <FAQSection/>
+                                <FAQSection faqs={ocrFaqs} />
                             </div>
                         </section>
 

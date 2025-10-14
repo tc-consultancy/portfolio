@@ -28,7 +28,10 @@ import heromp4 from './outsourcing/hero.mp4'
 
 
 import hero_outsourcing from './outsourcing/hero-outsourcing-transparent.png'
+import img_outsourcing from './outsourcing/image.png'
 
+
+import hire_hero from './hire-recruiter/hire-hero.jpg'
 
 export {
     home, staffing, agents, robo1,
@@ -39,6 +42,8 @@ export {
     manufacturing,
     technology,
     heromp4,
-    hero_outsourcing
+    hero_outsourcing,
+    img_outsourcing,
+    hire_hero
 
 }
