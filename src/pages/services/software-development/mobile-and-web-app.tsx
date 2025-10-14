@@ -31,6 +31,29 @@ const features = [
 ]
 
 export default function MobileAndWebApp() {
+    const mobileWebFaqs = [
+        {
+            question: "What platforms do you develop mobile and web applications for?",
+            answer: "We build Android, iOS, and web applications for every industry. Our end-to-end capability from design to development gives us an edge in creating cutting-edge digital products that are future-ready and simplify business complexities across all major platforms."
+        },
+        {
+            question: "How do you ensure applications meet evolving user needs?",
+            answer: "The new breed of applications must be smart, intelligent, and a step ahead of user requirements. We follow a well-scripted strategy to deliver meaningful value to users and use a robust framework to translate thoughts into usable products that solve problems, charm users, and drive business success."
+        },
+        {
+            question: "What is your approach to rapid application delivery?",
+            answer: "We've embedded DesOps and DevOps delivery models in our engineering culture with high automation in the development process. This reduces stage gate barriers and implementation time, enabling faster time to market while maintaining quality and reliability."
+        },
+        {
+            question: "How does microservices architecture benefit mobile and web apps?",
+            answer: "Our microservices architecture services enable faster innovation to lead changing market dynamics. We provide tools developers need to build higher quality software products with independent, scalable services that enhance flexibility, maintainability, and performance."
+        },
+        {
+            question: "What role does design play in your development process?",
+            answer: "We're a design-driven company that has impacted billions of lives through design. We engage the best design talents globally to create futuristic products with exceptional UX/UI. Great design ensures applications are intuitive, engaging, and deliver meaningful value to users."
+        }
+    ];
+
     return (
         <>
             <CommonHero
@@ -133,7 +156,7 @@ export default function MobileAndWebApp() {
                     </div>
                 </div>
             </section>
-            <FAQSection />
+            <FAQSection faqs={mobileWebFaqs} />
         </>
     )
 }

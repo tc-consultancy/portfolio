@@ -31,6 +31,29 @@ const features = [
 ]
 
 export default function SaasImplimentations() {
+    const saasFaqs = [
+        {
+            question: "What are the benefits of SaaS solutions for enterprises?",
+            answer: "SaaS solutions offer a pay-as-you-go model with anytime, anywhere access from any device. They require no infrastructure investment, allow IT resources to focus on core business functions, and include maintenance and updates. Benefits include secure, scalable, reliable IT, cost-effective services, and rapid time-to-value with increased user adoption."
+        },
+        {
+            question: "What SaaS implementation services do you provide?",
+            answer: "We implement SaaS solutions as part of your cloud strategy using pre-built accelerators. Our services include Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Human Resources Transformation, and other SaaS domains including e-commerce, content management, and billing solutions."
+        },
+        {
+            question: "Which SaaS vendors do you work with?",
+            answer: "We provide access to software from leading vendors including Google, Microsoft, NetSuite, Oracle, Salesforce, SAP, and Workday. Our expertise spans implementation and integration of these platforms into your business operations with seamless connectivity."
+        },
+        {
+            question: "How do you implement ERP solutions?",
+            answer: "We deliver comprehensive operating model, business process, and technology design and implementation services for cloud-based ERP solutions. Our expertise spans SAP, Oracle Cloud, NetSuite, and Workday financial and supply chain systems, ensuring seamless integration with your business operations."
+        },
+        {
+            question: "Can you help with CRM and HR transformation?",
+            answer: "Yes, we transform customer engagement with CRM solutions that enhance interactions and streamline sales processes. For HR, we support adoption of leading cloud HR technologies including Workday, SAP, and Oracle Cloud, enabling efficient workforce management and enhanced employee experiences."
+        }
+    ];
+
     return (
         <>
             <CommonHero
@@ -137,7 +160,7 @@ export default function SaasImplimentations() {
                     </div>
                 </div>
             </section>
-            <FAQSection />
+            <FAQSection faqs={saasFaqs} />
         </>
     )
 }

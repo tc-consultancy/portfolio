@@ -31,6 +31,29 @@ const features = [
 ]
 
 export default function CloudImplimentations() {
+    const cloudFaqs = [
+        {
+            question: "What mobile and web app development services do you provide?",
+            answer: "We build Android, iOS, and web applications for every industry with end-to-end capabilities from design to development. Our services create cutting-edge digital products that are future-ready and simplify business complexities, delivering engaging, high-performance apps across all platforms."
+        },
+        {
+            question: "How does your agile approach accelerate time to market?",
+            answer: "We've embedded DesOps and DevOps delivery models in our engineering culture with a high degree of automation in the development process. This reduces stage gate barriers and implementation time, enabling faster time to market while maintaining quality standards."
+        },
+        {
+            question: "What is microservices architecture and how does it benefit my business?",
+            answer: "Microservices architecture enables faster innovation to lead changing market dynamics. We provide the tools developers need to build higher quality software products with independent, scalable services that can be developed, deployed, and maintained separately, increasing flexibility and resilience."
+        },
+        {
+            question: "How do you integrate cloud services into applications?",
+            answer: "We boost your cloud-first approach through our extensive capability in application development and cloud integration. Our expertise spans major cloud platforms like AWS and Azure, ensuring seamless integration that enhances scalability, reliability, and performance."
+        },
+        {
+            question: "Why is UX/UI design important for application success?",
+            answer: "We're a design-driven company that has impacted billions of lives through design. We engage the best pool of design talents globally to create futuristic products. Great UX/UI design ensures applications solve problems, charm users, and drive business success by delivering meaningful value through intuitive interfaces."
+        }
+    ];
+
     return (
         <>
             <CommonHero
@@ -133,7 +156,7 @@ export default function CloudImplimentations() {
                     </div>
                 </div>
             </section>
-            <FAQSection />
+            <FAQSection faqs={cloudFaqs} />
         </>
     )
 }

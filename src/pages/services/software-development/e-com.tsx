@@ -4,6 +4,29 @@ import { Palette, ShoppingCart, Plug, Store } from 'lucide-react'
 import CommonHero from '@/components/common/common-hero'
 
 export default function ECOM() {
+    const ecomFaqs = [
+        {
+            question: "What e-commerce development services do you provide?",
+            answer: "We offer a full suite of e-commerce development services including strategy, research, design, integrations, migrations, and development of next-gen online stores. We also provide ongoing 24x7 support and maintenance to keep your site open for business and generating revenue at all times."
+        },
+        {
+            question: "How does your design-first approach benefit e-commerce platforms?",
+            answer: "In a market flooded with e-commerce platforms, digital experience is a key differentiator. Our unmatched design capability helps build eye-pleasing online shopping platforms that engage users, nudge them for action, and convert them into sales. Beautiful products make customers speak for you."
+        },
+        {
+            question: "What features are included in your e-commerce solutions?",
+            answer: "Our e-commerce solutions include high security and data privacy, increased speed and efficiency, payment gateway integration, powerful inventory management systems, shopping lists, reporting, shipping & logistics management, order management, and payment management for both B2B and B2C marketplaces."
+        },
+        {
+            question: "Can you integrate third-party APIs into e-commerce platforms?",
+            answer: "Yes, our developers can integrate third-party APIs like PayPal, FedEx, QuickBooks, and Google Analytics API with utter proficiency. These integrations provide ease of performing various operations on your e-commerce website, enhancing functionality and user experience."
+        },
+        {
+            question: "Why is now the right time to modernize e-commerce platforms?",
+            answer: "Online shopping is a trend that won't slow down, with a CAGR of almost 70%. This domain offers great opportunities for disruption in digital experience. Now is the time to move beyond traditional e-commerce platforms and adopt the next wave of modernization to attract maximum customers and ensure conversion to sales."
+        }
+    ];
+
     const features = [
         {
             icon: Palette,
@@ -132,7 +155,7 @@ export default function ECOM() {
                     </div>
                 </div>
             </section>
-            <FAQSection />
+            <FAQSection faqs={ecomFaqs} />
         </>
     )
 }

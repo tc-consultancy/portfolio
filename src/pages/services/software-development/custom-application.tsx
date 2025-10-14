@@ -4,6 +4,29 @@ import { Layers, Cpu, Briefcase, ShieldCheck } from 'lucide-react'
 import CommonHero from '@/components/common/common-hero'
 
 export default function CustomAppDev() {
+    const customAppFaqs = [
+        {
+            question: "What custom application development services do you offer?",
+            answer: "We deliver comprehensive application development services across multiple engagement models, supporting every phase of your IT systems lifecycle - from conceptualization through development, deployment, administration, maintenance, to continuous enhancement. Our end-to-end solutions are tailored to optimize costs and align IT with your business outcomes."
+        },
+        {
+            question: "What technologies and platforms do you work with?",
+            answer: "Our expertise spans a diverse technology landscape, from cutting-edge cloud platforms like AWS and Azure to traditional legacy systems including IBM and HP mainframes. This versatility ensures we can work seamlessly with your existing infrastructure while driving innovation and modernization."
+        },
+        {
+            question: "Which industries do you have experience in?",
+            answer: "We deliver domain expertise and proven experience across all major industry verticals including Healthcare, Financial Services, Public Services, Consumer Services, Life Sciences, and Manufacturing. Our deep industry knowledge enables us to understand your unique challenges and deliver solutions that drive real business value."
+        },
+        {
+            question: "How do you ensure quality in custom application development?",
+            answer: "Our mature and robust quality assurance system is ISO9000 certified and assessed at CMMI Level 5. We support a variety of application lifecycle models and work to enhance and extend the quality practices of our customers, ensuring excellence in every deliverable."
+        },
+        {
+            question: "Why should enterprises move away from pre-configured solutions?",
+            answer: "To thrive in highly competitive markets and outperform competition, enterprises must move beyond traditional pre-configured solutions. Custom applications are designed to fit your specific business needs, reduce costs on non-performing assets, and provide the agility needed to adapt to changing market demands."
+        }
+    ];
+
     const features = [
         {
             icon: Layers,
@@ -132,7 +155,7 @@ export default function CustomAppDev() {
                     </div>
                 </div>
             </section>
-            <FAQSection />
+            <FAQSection faqs={customAppFaqs} />
         </>
     )
 }

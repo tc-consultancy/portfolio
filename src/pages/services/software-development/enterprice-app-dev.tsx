@@ -4,6 +4,29 @@ import { Settings, Smartphone, RefreshCw, Database } from "lucide-react"
 import CommonHero from '@/components/common/common-hero'
 
 export default function EnterpriceAppDev() {
+    const enterpriseFaqs = [
+        {
+            question: "What enterprise application development services do you offer?",
+            answer: "We offer custom enterprise software development, enterprise mobile solutions, legacy application modernization, and software integration & data management. With 15 years of expertise, we deliver solutions that consolidate business silos through seamless information interchange, enabling visibility and informed decision-making."
+        },
+        {
+            question: "How do enterprise mobile solutions improve business operations?",
+            answer: "Our enterprise mobile solutions transform operations by delivering efficiency and agility across all devices - smartphones, laptops, and tablets. These solutions are built to be compatible, accessible, and scalable, empowering your workforce wherever they are and enabling mobile-first business processes."
+        },
+        {
+            question: "Why should I modernize legacy applications?",
+            answer: "Outdated software systems drain resources with high maintenance costs and limited value delivery. Modernizing legacy applications brings renewed efficiency, agility, and innovation to your enterprise infrastructure, reducing costs while improving performance and enabling integration with modern technologies."
+        },
+        {
+            question: "How do you handle software integration and data management?",
+            answer: "We optimize your total cost of ownership by seamlessly integrating new solutions into your existing application landscape. Our expertise in enterprise application integration and data management ensures smooth connectivity and efficient data flow across your systems, eliminating silos and improving operational efficiency."
+        },
+        {
+            question: "What SaaS solutions can you implement for enterprises?",
+            answer: "We implement SaaS solutions as part of your cloud strategy using pre-built accelerators. You gain access to software from leading vendors including Google, Microsoft, NetSuite, Oracle, Salesforce, SAP, and Workday, with seamless integration into your business processes."
+        }
+    ];
+
     const features = [
         {
             icon: Settings,
@@ -130,7 +153,7 @@ export default function EnterpriceAppDev() {
                     </div>
                 </div>
             </section>
-            <FAQSection />
+            <FAQSection faqs={enterpriseFaqs} />
         </>
     )
 }
