@@ -1,6 +1,7 @@
 import { robo1 } from "@/assets";
 import ServiceCard from "./components/ServiceCard";
 import CommonHero from "@/components/common/common-hero";
+import { FAQSection } from "@/components/sections/faq-section";
 
 export default function DataAndAnalytics() {
     const services = [
@@ -97,6 +98,29 @@ export default function DataAndAnalytics() {
         }
     ];
 
+    const dataAnalyticsFaqs = [
+        {
+            question: "What is data analytics and why is it important for my business?",
+            answer: "Data analytics is the process of exploring, analyzing, and interpreting vast amounts of data to uncover meaningful insights and drive informed decision-making. By applying advanced statistical techniques, data mining algorithms, and visualization tools, businesses gain deeper understanding of operations, customer behavior, and market trends, enabling data-driven decisions that lead to competitive advantage."
+        },
+        {
+            question: "What data analytics services do you offer?",
+            answer: "We offer comprehensive services including Data Strategy & Consulting, Data Mining & Machine Learning, Data Insights & Predictive Modelling, Diagnostic & Descriptive Analytics, and Predictive & Prescriptive Analysis. Our expert consultants work closely with you to develop strategies that unlock the full potential of your data assets."
+        },
+        {
+            question: "How does predictive analytics help my business?",
+            answer: "Our predictive and prescriptive analysis uses advanced analytics technology to help you predict future outcomes and prescribe optimal actions. This enables proactive decision-making, sustainable business growth, and the ability to gain valuable insights into customer behavior, market trends, and future outcomes before they happen."
+        },
+        {
+            question: "What value does data analytics bring to my organization?",
+            answer: "Data analytics empowers your business through data-driven decision making, enhanced operational efficiency, risk mitigation, improved forecasting and planning, and competitive advantage. By transforming complex data into actionable insights, you can make informed strategic decisions that drive growth and success."
+        },
+        {
+            question: "How do you help with data mining and machine learning?",
+            answer: "We leverage the power of advanced data mining techniques and machine learning algorithms to extract hidden patterns and uncover valuable insights from your data. This helps you understand root causes of business challenges, gain comprehensive views of operations, and identify opportunities that might otherwise remain hidden in your data."
+        }
+    ];
+
     return (
         <>
             <CommonHero
@@ -183,6 +207,8 @@ export default function DataAndAnalytics() {
                     </div>
                 </div>
             </section>
+
+            <FAQSection faqs={dataAnalyticsFaqs} />
         </>
     );
 }

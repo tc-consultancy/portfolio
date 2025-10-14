@@ -2,8 +2,32 @@ import { robo1 } from "@/assets";
 import ServiceCard from "./components/ServiceCard";
 import SectionContainer from "@/components/common/section-container";
 import CommonHero from "@/components/common/common-hero";
+import { FAQSection } from "@/components/sections/faq-section";
 
 export default function DataEngineering() {
+    const dataEngineeringFaqs = [
+        {
+            question: "What is data engineering and how does it differ from data analytics?",
+            answer: "Data engineering bridges unprocessed data and insights by converting complex data sources into structured formats that enable quick analysis and business intelligence. While data analytics focuses on analyzing data to extract insights, data engineering focuses on building the infrastructure, pipelines, and systems that make data accessible and usable for analysis."
+        },
+        {
+            question: "What data engineering services do you provide?",
+            answer: "We offer comprehensive services including Data Integration (connecting diverse sources), Data Warehousing (secure storage and retrieval), Data Modeling (capturing business processes), Data Transformation & Cleansing (ensuring quality), Data Architecture Design (scalable solutions), and Cloud Data Engineering (leveraging cloud platforms for agile processing)."
+        },
+        {
+            question: "How do you ensure data quality and governance?",
+            answer: "We prioritize accurate and compliant data through robust data quality and governance practices. Our services implement comprehensive data quality checks, validation processes, and cleansing techniques to ensure data integrity. We focus on maintaining accuracy, consistency, and compliance throughout your data lifecycle."
+        },
+        {
+            question: "Can your data engineering solutions scale with my business growth?",
+            answer: "Yes, we architect robust and scalable data solutions that handle increasing data demands, ensuring uninterrupted data processing and analysis. By leveraging cutting-edge technologies and best practices, we optimize your data pipelines, storage systems, and processing frameworks for maximum efficiency and speed as your business grows."
+        },
+        {
+            question: "What industries do you have experience working with?",
+            answer: "We have extensive experience across multiple industries including Financial Services, Healthcare, Insurance, Legal, Education, and Accounting. Our customized data engineering solutions are tailored to handle the specific data challenges and regulatory requirements of each industry, delivering specialized solutions that improve performance and generate useful insights."
+        }
+    ];
+
     const services = [
         {
             icon: (
@@ -283,6 +307,8 @@ export default function DataEngineering() {
                     </div>
                 </div>
             </section>
+
+            <FAQSection faqs={dataEngineeringFaqs} />
         </>
     );
 }

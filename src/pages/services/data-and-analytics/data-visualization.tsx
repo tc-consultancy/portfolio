@@ -1,8 +1,32 @@
 import { robo1 } from "@/assets";
 import ServiceCard from "./components/ServiceCard";
 import CommonHero from "@/components/common/common-hero";
+import { FAQSection } from "@/components/sections/faq-section";
 
 export default function DataVisualization() {
+    const dataVisualizationFaqs = [
+        {
+            question: "What is data visualization and why is it important?",
+            answer: "Data visualization offers a dynamic and visually compelling way to analyze and present data, enabling you to uncover meaningful patterns, identify trends, and communicate insights with clarity. It transforms raw data into actionable visual narratives that drive better decision-making and propel your business forward by making complex data easily consumable and immediately actionable."
+        },
+        {
+            question: "What data visualization services do you offer?",
+            answer: "We offer Dashboard Optimization (transforming data into easily consumable information), Tableau to Power BI Migration (making analytics accessible to everyone), Power BI Services (unifying diverse data sources into immersive insights), and Report Development (creating clear, impactful reports). Our services deliver visually stunning and interactive visualizations tailored to your business needs."
+        },
+        {
+            question: "What types of visualizations can you create?",
+            answer: "We offer five main types of visualizations: Temporal (time-based trends), Hierarchical (organizational structures), Network (relationship mapping), Geospatial (location-based data), and Multidimensional (complex data relationships). Each type is designed to showcase specific aspects of your data in the most effective visual format."
+        },
+        {
+            question: "How do you ensure visualizations are tailored to my business needs?",
+            answer: "We understand that every business has unique data visualization needs. Our team combines analytical prowess with design finesse to create customized solutions that align with your specific goals. We offer infographics and data storytelling that effectively communicate your data insights, ensuring you get the most meaningful and impactful visualizations for your data."
+        },
+        {
+            question: "Can your visualization solutions scale with growing data volumes?",
+            answer: "Yes, our visualization solutions are scalable and adaptable to accommodate your evolving needs. Whether you have a small dataset or a massive data repository, we ensure that your visualizations can handle growing data volumes while maintaining performance and usability. Our flexible solutions grow with your business."
+        }
+    ];
+
     const services = [
         {
             icon: (
@@ -215,6 +239,8 @@ export default function DataVisualization() {
                     </div>
                 </div>
             </section>
+
+            <FAQSection faqs={dataVisualizationFaqs} />
         </>
     );
 }
