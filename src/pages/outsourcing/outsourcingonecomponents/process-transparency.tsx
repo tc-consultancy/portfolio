@@ -86,7 +86,7 @@ export default function ProcessTransparency() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-[31px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-blue-400 via-purple-400 via-pink-400 via-orange-400 to-green-400 hidden md:block" />
+          <div className="absolute left-[31px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-blue-400   via-orange-400 to-green-400 hidden md:block" />
 
           {/* Phases */}
           <div className="space-y-12">

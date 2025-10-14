@@ -183,17 +183,17 @@ export function MobileNavbar() {
                 Careers
               </Link>
 
-              {/* About Us */}
+              {/* About Us
               <Link
                 to="/about"
                 onClick={closeMenu}
                 className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
               >
                 About Us
-              </Link>
+              </Link> */}
 
               {/* Get Started Button */}
-              <div className="pt-4 pb-6">
+              {/* <div className="pt-4 pb-6">
                 <Link
                   to="/contact"
                   onClick={closeMenu}
@@ -201,7 +201,7 @@ export function MobileNavbar() {
                 >
                   Get Started
                 </Link>
-              </div>
+              </div> */}
             </nav>
           </div>
         </div>

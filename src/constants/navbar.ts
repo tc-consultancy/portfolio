@@ -23,10 +23,10 @@ const services = [
     title: "Staffing Solutions",
     subServices: [
       { title: 'It Staffing Solutions', href: "/services/it-staffing" },
-      { title: "Contract Staffing", href: "/services/contract-staffing" },
-      { title: "Permanent Placement", href: "/services/permanent-placement" },
-      { title: "Project-Based Staffing", href: "/services/project-staffing" },
-      { title: "Remote Team Augmentation", href: "/services/remote-augmentation" }
+      { title: "Contract Staffing", href: "/services/outsourcing" },
+      { title: "Permanent Placement", href: "/services/hire-recruiter" },
+      { title: "Project-Based Staffing", href: "/services/outsourcing" },
+      { title: "Remote Team Augmentation", href: "/services/outsourcing" }
     ]
   },
   {
@@ -85,19 +85,19 @@ const services = [
       { title: "Data Visualization", href: "/services/data-visualization" }
     ]
   },
-  {
-    title: "BPO",
-    subServices: [
-      {
-        title: "BPO Services",
-        href: "/services/bpo-services",
-      },
-      { title: "Customer Support", href: "/services/customer-support" },
-      { title: "Back Office Operations", href: "/services/back-office" },
-      { title: "Data Entry Services", href: "/services/data-entry" },
-      { title: "Virtual Assistant Services", href: "/services/virtual-assistant" }
-    ]
-  },
+  // {
+  //   title: "BPO",
+  //   subServices: [
+  //     {
+  //       title: "BPO Services",
+  //       href: "/services/bpo-services",
+  //     },
+  //     { title: "Customer Support", href: "/services/customer-support" },
+  //     { title: "Back Office Operations", href: "/services/back-office" },
+  //     { title: "Data Entry Services", href: "/services/data-entry" },
+  //     { title: "Virtual Assistant Services", href: "/services/virtual-assistant" }
+  //   ]
+  // },
   {
     title: "Accounts",
     subServices: [
@@ -106,22 +106,22 @@ const services = [
         href: "/services/financial-accounting"
       },
       { title: "Integrations & Implementations", href: "/services/integration-implementation" },
-      { title: "Shared Services", href: "/services/shared-services" },
+      { title: "Shared Services", href: "/services/financial-accounting" },
      ]
   },
-  {
-    title: "Digital Marketing",
-    subServices: [
-      {
-        title: "Digital Marketing Services",
-        href: "/services/digital-marketing",
-      },
-      { title: "SEO Services", href: "/services/seo" },
-      { title: "Social Media Marketing", href: "/services/social-media" },
-      { title: "Content Marketing", href: "/services/content-marketing" },
-      { title: "PPC Advertising", href: "/services/ppc-advertising" }
-    ]
-  }
+  // {
+  //   title: "Digital Marketing",
+  //   subServices: [
+  //     {
+  //       title: "Digital Marketing Services",
+  //       href: "/services/digital-marketing",
+  //     },
+  //     { title: "SEO Services", href: "/services/seo" },
+  //     { title: "Social Media Marketing", href: "/services/social-media" },
+  //     { title: "Content Marketing", href: "/services/content-marketing" },
+  //     { title: "PPC Advertising", href: "/services/ppc-advertising" }
+  //   ]
+  // }
 ]
 const industries = [
   {
