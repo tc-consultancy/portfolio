@@ -215,61 +215,32 @@ const caseStudies = [
 
 export default function CaseStudies() {
   const [activeIndex, setActiveIndex] = useState(0)
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-
-  useEffect(() => {
-    if (!isAutoPlaying) return
-
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % caseStudies.length)
-    }, 8000)
-
-    return () => clearInterval(interval)
-  }, [isAutoPlaying])
 
   const goToNext = () => {
-    setIsAutoPlaying(false)
     setActiveIndex((prev) => (prev + 1) % caseStudies.length)
   }
 
   const goToPrev = () => {
-    setIsAutoPlaying(false)
     setActiveIndex((prev) => (prev - 1 + caseStudies.length) % caseStudies.length)
   }
 
   const activeCase = caseStudies[activeIndex]
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-white to-purple-50/30 dark:from-neutral-950 dark:to-purple-950/20 py-20  overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-6">
-        {/* Headline */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+    <section className="w-full bg-gradient-to-b from-white to-purple-50/30 dark:from-neutral-950 dark:to-purple-950/20 py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
             Success Stories That Speak for Themselves
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400">
             Just a few examples of how we've transformed businesses across industries
           </p>
-        </motion.div>
+        </div>
 
-        {/* Main Case Study Card */}
         <div className="relative max-w-6xl mx-auto">
-          <motion.div
-            key={activeIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.8, ease: 'easeInOut' }}
-            className="bg-white dark:bg-neutral-900 rounded-3xl shadow-2xl overflow-hidden"
-          >
-            {/* Header */}
-            <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-6 ">
+          <div className="bg-white dark:bg-neutral-900 rounded-3xl shadow-2xl overflow-hidden">
+            <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">
@@ -284,15 +255,11 @@ export default function CaseStudies() {
               </div>
             </div>
 
-            {/* Content - Compact Grid Layout */}
-            <div className="p-6 ">
+            <div className="p-6">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                {/* Left Column */}
                 <div className="space-y-6">
-                  {/* Challenge */}
                   <div>
-                    <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2 flex items-center gap-2">
-                      <span className="text-red-500">⚠️</span>
+                    <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">
                       Challenge
                     </h4>
                     <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
@@ -300,63 +267,21 @@ export default function CaseStudies() {
                     </p>
                   </div>
 
-                  {/* Solution */}
                   <div>
-                    <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2 flex items-center gap-2">
-                      <span className="text-blue-500">💡</span>
+                    <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">
                       Solution
                     </h4>
                     <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
                       {activeCase.solution}
                     </p>
                   </div>
-
-                  {/* Roles */}
-                  <div>
-                    <h4 className="text-sm font-bold text-neutral-900 dark:text-white mb-2">
-                      Team Composition
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {activeCase.roles.slice(0, 4).map((role, idx) => (
-                        <span
-                          key={idx}
-                          className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium"
-                        >
-                          {role}
-                        </span>
-                      ))}
-                      {activeCase.roles.length > 4 && (
-                        <span className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded-full text-xs font-medium">
-                          +{activeCase.roles.length - 4} more
-                        </span>
-                      )}
-                    </div>
-                  </div>
                 </div>
 
-                {/* Right Column */}
                 <div className="space-y-6">
-                  {/* Cost Savings */}
                   <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/20 rounded-2xl p-6">
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                      <div className="text-center">
-                        <div className="text-xs text-neutral-600 dark:text-neutral-400 mb-1">Before</div>
-                        <div className="text-xl font-bold text-neutral-900 dark:text-white">
-                          ${(activeCase.beforeCost / 1000).toFixed(0)}k
-                        </div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-xs text-neutral-600 dark:text-neutral-400 mb-1">After</div>
-                        <div className="text-xl font-bold text-green-600 dark:text-green-400">
-                          ${(activeCase.afterCost / 1000).toFixed(0)}k
-                        </div>
-                      </div>
-                    </div>
-                    <div className="pt-4 border-t border-purple-200 dark:border-purple-800 text-center">
-                      <div className="text-xs font-semibold text-neutral-600 dark:text-neutral-400 mb-1">
-                        Annual Savings
-                      </div>
-                      <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">
+                    <div className="text-center mb-4">
+                      <div className="text-xs text-neutral-600 dark:text-neutral-400 mb-1">Annual Savings</div>
+                      <div className="text-4xl font-bold text-purple-600 dark:text-purple-400">
                         ${(activeCase.savings / 1000).toFixed(0)}k
                       </div>
                       <div className="text-sm font-semibold text-purple-600 dark:text-purple-400 mt-1">
@@ -365,14 +290,12 @@ export default function CaseStudies() {
                     </div>
                   </div>
 
-                  {/* Results */}
                   <div>
-                    <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
+                    <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-3">
                       Results
                     </h4>
                     <div className="space-y-2">
-                      {activeCase.results.slice(0, 3).map((result, idx) => (
+                      {activeCase.results.map((result, idx) => (
                         <div key={idx} className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
                           <span className="text-sm text-neutral-700 dark:text-neutral-300">{result}</span>
@@ -383,30 +306,23 @@ export default function CaseStudies() {
                 </div>
               </div>
 
-              {/* Testimonial - Full Width */}
-              <div className="bg-neutral-50 dark:bg-neutral-800 rounded-2xl pt-6 px-6 pb-2">
-                <div className="flex items-start gap-3">
-                  <div className="text-3xl text-purple-400 leading-none">"</div>
-                  <div className="flex-1">
-                    <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 italic mb-3">
-                      {activeCase.testimonial}
-                    </p>
-                    <div className="flex items-center gap-2">
-                      <div className="font-bold text-sm text-neutral-900 dark:text-white">
-                        {activeCase.testimonialAuthor}
-                      </div>
-                      <span className="text-neutral-400">•</span>
-                      <div className="text-xs text-neutral-600 dark:text-neutral-400">
-                        {activeCase.testimonialCompany}
-                      </div>
-                    </div>
+              <div className="bg-neutral-50 dark:bg-neutral-800 rounded-2xl p-6">
+                <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 italic mb-3">
+                  "{activeCase.testimonial}"
+                </p>
+                <div className="flex items-center gap-2">
+                  <div className="font-bold text-sm text-neutral-900 dark:text-white">
+                    {activeCase.testimonialAuthor}
+                  </div>
+                  <span className="text-neutral-400">•</span>
+                  <div className="text-xs text-neutral-600 dark:text-neutral-400">
+                    {activeCase.testimonialCompany}
                   </div>
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Navigation Arrows */}
           <button
             onClick={goToPrev}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 w-12 h-12 rounded-full bg-white dark:bg-neutral-800 shadow-xl flex items-center justify-center hover:bg-purple-50 dark:hover:bg-purple-900/30 transition-colors"
@@ -421,19 +337,16 @@ export default function CaseStudies() {
           </button>
         </div>
 
-        {/* Dots Navigation */}
         <div className="flex items-center justify-center gap-3 mt-12">
           {caseStudies.map((_, index) => (
             <button
               key={index}
-              onClick={() => {
-                setIsAutoPlaying(false)
-                setActiveIndex(index)
-              }}
-              className={`transition-all duration-300 ${index === activeIndex
-                ? 'w-12 h-3 bg-purple-400 rounded-full'
-                : 'w-3 h-3 bg-neutral-300 dark:bg-neutral-700 rounded-full hover:bg-purple-300'
-                }`}
+              onClick={() => setActiveIndex(index)}
+              className={`transition-all duration-300 ${
+                index === activeIndex
+                  ? 'w-12 h-3 bg-purple-400 rounded-full'
+                  : 'w-3 h-3 bg-neutral-300 dark:bg-neutral-700 rounded-full hover:bg-purple-300'
+              }`}
             />
           ))}
         </div>

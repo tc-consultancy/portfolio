@@ -74,13 +74,13 @@ export default function ROICalculator() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Circular Visualization */}
           <motion.div
-            className="flex justify-center"
+            className="flex justify-center p-20"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="relative w-80 h-80">
+            <div className="relative w-80 h-80 over">
               {/* Background Circle */}
               <svg className="w-full h-full -rotate-90">
                 <circle
@@ -90,7 +90,7 @@ export default function ROICalculator() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="20"
-                  className="text-neutral-800 dark:text-neutral-900"
+                  className="text-neutral-800 dark:text-neutral-900 "
                 />
                 {/* Progress Circle */}
                 <motion.circle
@@ -107,7 +107,7 @@ export default function ROICalculator() {
                   style={{
                     strokeDasharray: 880,
                     strokeDashoffset: 880 * (1 - savingsPercentage / 100),
-                    filter: 'drop-shadow(0 0 20px rgba(168, 85, 247, 0.5))',
+                    filter: 'drop-shadow(0 0 10px rgba(168, 85, 247, 0.5))',
                   }}
                 />
                 <defs>

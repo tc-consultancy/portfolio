@@ -6,7 +6,7 @@ const testimonials = [
   {
     quote: 'Transformed Our Business Operations',
     text: "TC Consulting Services integrated seamlessly into our operations. We're now operating more efficiently than ever, and the cost savings have allowed us to invest in expansion.",
-    name: 'Operations Director',
+    name: 'Ritesh Kumar Patel',
     title: 'Kavya Foods Inc.',
     location: 'USA',
     highlight: '$129K annual savings',
@@ -15,7 +15,7 @@ const testimonials = [
   {
     quote: 'Outstanding Service & Results',
     text: "Outstanding service from TC Consulting Services. Our guest satisfaction scores have never been higher, and we saved over $250k annually. The team feels like an extension of our own.",
-    name: 'General Manager',
+    name: 'Perry Mehta',
     title: 'Ptosh Hotel',
     location: 'USA',
     highlight: '$259K annual savings',
@@ -24,8 +24,8 @@ const testimonials = [
   {
     quote: 'Technical Excellence & HR Support',
     text: "TC Consulting Services delivered exactly what we needed. The technical team is top-notch, and the HR support has been invaluable for our growth.",
-    name: 'CEO',
-    title: 'Saira Enterprises',
+    name: 'Nadeem Dilbar',
+    title: 'Sierra Enterprises',
     location: 'USA',
     highlight: '$200K annual savings',
     size: 'medium',
@@ -42,7 +42,7 @@ const testimonials = [
   {
     quote: 'Family Business Transformation',
     text: "TC Consulting Services transformed our business. We're now competitive with larger chains while maintaining our family-owned charm. The savings have been incredible.",
-    name: 'Owner',
+    name: 'Anjita Patel',
     title: 'Heart Wildwood Motel, New Jersey',
     location: 'USA',
     highlight: '$108K annual savings',

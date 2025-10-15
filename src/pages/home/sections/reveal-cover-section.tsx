@@ -87,9 +87,8 @@ function SectionPanel({
   const content = (
     <motion.div
       style={{ y: contentY }}
-      className={`flex flex-col justify-center p-8 mb-8 text-white md:p-12 lg:p-14 xl:p-16 ${
-        isContentLeft ? 'items-start text-left' : 'items-end text-right'
-      }`}
+      className={`flex flex-col justify-center p-8 mb-8 text-white md:p-12 lg:p-14 xl:p-16 ${isContentLeft ? 'items-start text-left' : 'items-end text-right'
+        }`}
     >
       <div className="max-w-lg">
         <h1 className="font-['Cormorant_Garamond'] text-4xl font-medium leading-none md:text-4xl lg:text-6xl xl:text-7xl">
@@ -101,7 +100,7 @@ function SectionPanel({
         </p>
       </div>
       <ContactDialog>
-      <Button  className='mt-6 md:mt-2 lg:mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500'>Book a Demo</Button>
+        <Button className='mt-6 md:mt-2 lg:mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500'>Book a Demo</Button>
       </ContactDialog>
     </motion.div>
   )

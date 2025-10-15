@@ -1,6 +1,6 @@
 import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
-import { Calendar, Download, FileSearch } from 'lucide-react'
+import { Calendar,  FileSearch } from 'lucide-react'
 
 const secondaryOptions = [
   {
