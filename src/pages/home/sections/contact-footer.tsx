@@ -10,9 +10,9 @@ export default function ContactFooterSection() {
       <div className="text-center py-4 border-b border-gray-200">
         <nav className=" font-semibold flex justify-center gap-8 text-sm text-gray-700">
           <Link to="/" className="hover:text-purple-600">Home</Link>
-          <Link to="/careers" className="hover:text-purple-600">Careers</Link>
-          <Link to="/about" className="hover:text-purple-600">About</Link>
-          <Link to="/contacts" className="hover:text-purple-600">Contacts</Link>
+          <Link to="/services/agents" className="hover:text-purple-600">Agents</Link>
+          <Link to="/services/outsourcing" className="hover:text-purple-600">Outsourcing</Link>
+          <Link to="/services/hire-recruiter" className="hover:text-purple-600">Hire Recruiter</Link>
         </nav>
       </div>
 
@@ -98,12 +98,10 @@ export default function ContactFooterSection() {
           <div>
             <h3 className="font-semibold mb-3 text-black">More About Us</h3>
             <ul className="space-y-1 text-base text-gray-700">
-              <li><Link to="/about" className="hover:text-purple-600">About Us</Link></li>
               <li><Link to="/careers" className="hover:text-purple-600">Careers</Link></li>
               <li><Link to="/services/hire-recruiter" className="hover:text-purple-600">Hire Recruiters</Link></li>
               <li><Link to="/ai-agents" className="hover:text-purple-600">AI Agents</Link></li>
               <li><Link to="/industries" className="hover:text-purple-600">Industries</Link></li>
-              <li><Link to="/contacts" className="hover:text-purple-600">Contact Us</Link></li>
             </ul>
           </div>
         </div>

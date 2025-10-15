@@ -8,11 +8,11 @@ const secondaryOptions = [
     title: 'Schedule Free Consultation',
     description: '15-minute call to discuss your goals',
   },
-  {
-    icon: Download,
-    title: 'Download Sample Resume',
-    description: 'See our ATS-optimized format',
-  },
+  // {
+  //   icon: Download,
+  //   title: 'Download Sample Resume',
+  //   description: 'See our ATS-optimized format',
+  // },
   {
     icon: FileSearch,
     title: 'View Success Stories',
@@ -59,7 +59,7 @@ export default function FinalCTA() {
         </motion.div>
 
         {/* Secondary Options */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-6">
           {secondaryOptions.map((option, index) => (
             <motion.div
               key={index}

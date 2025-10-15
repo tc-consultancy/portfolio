@@ -24,9 +24,10 @@ export function Navbar() {
     <> 
       <MobileNavbar />
       <div className="hidden md:flex dark:bg-white/2 backdrop-blur-sm fixed top-0 right-0 left-0 items-center justify-between px-16 py-4 z-[9999]">
-        <h3 className="text-purple-400 font-semibold text-3xl">
+        <Link to="/"
+         className="text-purple-400 font-semibold text-3xl">
           <img src={logo} alt="tc" className="h-12" />
-        </h3>
+        </Link>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
