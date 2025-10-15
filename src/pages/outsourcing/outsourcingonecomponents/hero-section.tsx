@@ -93,7 +93,7 @@ export default function HeroSection() {
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
               Hire Exceptional   {' '}
-              <span className="text-purple-400">  Offshore </span> Talent. We Handle the Rest.
+              <span className="text-purple-400">  Offshore </span> Talent. We Handle the Rest
             </h1>
 
             <p className="text-xl md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">

@@ -25,7 +25,7 @@ export default function LastButNotLeast() {
             <a href="https://www.instagram.com/tc_it_consulting/" className="hover:text-pink-500 transition">
               <Instagram size={28} />
             </a>
-            <a href="mailto:someone@example.com" className="hover:text-green-400 transition">
+            <a href="mailto:info@tcitservices.com" className="hover:text-green-400 transition">
               <Mail size={28} />
             </a>
           </div>

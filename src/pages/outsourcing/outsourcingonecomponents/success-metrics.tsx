@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { TrendingUp, DollarSign, Clock, Users, Award, Globe, MapPin, Wallet } from 'lucide-react'
+import { TrendingUp, DollarSign, Users, Award, Globe, MapPin, Wallet } from 'lucide-react'
 
 const metrics = [
   {

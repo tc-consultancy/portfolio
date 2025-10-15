@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { ChevronLeft, ChevronRight, Users, CheckCircle } from 'lucide-react'
 
 const caseStudies = [
