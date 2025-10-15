@@ -33,7 +33,9 @@ import img_outsourcing from './outsourcing/image.png'
 
 import hire_hero from './hire-recruiter/hire-hero.jpg'
 
+import logo from './image.png'
 export {
+    logo,
     home, staffing, agents, robo1,
     banking,
     com,
