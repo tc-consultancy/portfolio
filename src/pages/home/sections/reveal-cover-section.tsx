@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import React from 'react'
+
 import { home } from '@/assets'
 import { ContactDialog } from '@/components/ContactDialog'
 
