@@ -33,7 +33,7 @@ const testimonials = [
   {
     quote: 'Quality That Exceeded Expectations',
     text: "The quality of talent from TC Consulting Services exceeded our expectations. We completed our project ahead of schedule and under budget. Highly recommend.",
-    name: 'CTO',
+    name: 'Datta Chaitanya',
     title: 'Rivonix LLC',
     location: 'USA',
     highlight: '$144K annual savings',
@@ -56,6 +56,15 @@ const testimonials = [
     location: 'USA',
     highlight: '$111K annual savings',
     size: 'medium',
+  },
+  {
+    quote: 'Modern Revenue & Marketing',
+    text: "TC Consulting Services completely changed how we do business. The revenue management and digital marketing expertise brought our motel into the modern era. Our bookings are up and costs are down.",
+    name: 'Heena Patel',
+    title: 'Sea Ray Motel',
+    location: 'USA',
+    highlight: '$95K annual savings',
+    size: 'small',
   },
 ]
 

@@ -183,6 +183,34 @@ const caseStudies = [
     testimonialAuthor: 'Sanjay Patel',
     testimonialCompany: 'Royal Court Motel',
   },
+  {
+    company: 'Sea Ray Motel',
+    industry: 'Hospitality',
+    teamSize: 5,
+    roles: [
+      'Revenue Manager',
+      'Digital Marketing Services',
+      'Accounting Services',
+    ],
+    challenge:
+      'A beachfront motel struggling with inconsistent occupancy rates and limited online presence. Pricing strategies were outdated and marketing efforts were minimal.',
+    solution:
+      'Deployed a 5-person team specializing in revenue optimization and digital marketing. Implemented dynamic pricing and comprehensive online marketing campaigns.',
+    results: [
+      'Reduced annual costs from $165,000 to $70,000',
+      'Increased online bookings by 48%',
+      'Improved revenue per available room by 35%',
+      'Enhanced social media engagement by 120%',
+    ],
+    beforeCost: 165000,
+    afterCost: 70000,
+    savings: 95000,
+    savingsPercent: 58,
+    testimonial:
+      'TC Consulting Services completely changed how we do business. The revenue management and digital marketing expertise brought our motel into the modern era. Our bookings are up and costs are down.',
+    testimonialAuthor: 'Owner',
+    testimonialCompany: 'Sea Ray Motel',
+  },
 ]
 
 export default function CaseStudies() {
