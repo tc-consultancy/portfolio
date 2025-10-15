@@ -72,45 +72,37 @@ const sectionsData = [
   },
 ]
 
-function SectionPanel({
-  item,
-  scrollYProgress,
-}: {
-  item: (typeof sectionsData)[0]
-  scrollYProgress: any
-}) {
+function SectionPanel({ item }: { item: (typeof sectionsData)[0] }) {
   const isContentLeft = item.layout === 'content-left'
 
-  const contentY = useTransform(scrollYProgress, [0, 1], ['10%', '-10%'])
-  const imageY = useTransform(scrollYProgress, [0, 1], ['-5%', '10%'])
-
   const content = (
-    <motion.div
-      style={{ y: contentY }}
-      className={`flex flex-col justify-center p-8 mb-8 text-white md:p-12 lg:p-14 xl:p-16 ${isContentLeft ? 'items-start text-left' : 'items-end text-right'
-        }`}
+    <div
+      className={`flex flex-col justify-center p-8 mb-8 text-white md:p-12 lg:p-14 xl:p-16 ${
+        isContentLeft ? 'items-start text-left' : 'items-end text-right'
+      }`}
     >
       <div className="max-w-lg">
         <h1 className="font-['Cormorant_Garamond'] text-4xl font-medium leading-none md:text-4xl lg:text-6xl xl:text-7xl">
           {item.title}
         </h1>
 
-        <p className="font-['Cormorant_Garamond'] leading-tight mt-4 md:mt-2 lg:mt-4 text-sm md:text-sm  lg:text-lg font-medium">
+        <p className="font-['Cormorant_Garamond'] leading-tight mt-4 md:mt-2 lg:mt-4 text-sm md:text-sm lg:text-lg font-medium">
           {item.description}
         </p>
       </div>
       <ContactDialog>
-        <Button className='mt-6 md:mt-2 lg:mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500'>Book a Demo</Button>
+        <Button className="mt-6 md:mt-2 lg:mt-6 bg-gradient-to-br from-purple-400 via-pruple-500 to-violet-500">
+          Book a Demo
+        </Button>
       </ContactDialog>
-    </motion.div>
+    </div>
   )
 
   const image = (
-    <motion.div
+    <div
       className="h-40 md:h-full bg-cover bg-center"
       style={{
         backgroundImage: `url(${item.image})`,
-        y: imageY,
       }}
     />
   )
@@ -133,22 +125,13 @@ function SectionPanel({
 }
 
 export default function RevealCoverSection() {
-  const containerRef = React.useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({ target: containerRef })
-
   return (
-    <div ref={containerRef} className="relative bg-black">
-      {sectionsData.map((item, index) => {
-        const start = index / sectionsData.length
-        const end = (index + 1) / sectionsData.length
-        const sectionScrollYProgress = useTransform(scrollYProgress, [start, end], [0, 1])
-
-        return (
-          <div key={item.id} className="sticky top-0 h-[85vh] md:h-[72vh] lg:h-[80vh] xl:h-screen">
-            <SectionPanel item={item} scrollYProgress={sectionScrollYProgress} />
-          </div>
-        )
-      })}
+    <div className="relative bg-black">
+      {sectionsData.map((item) => (
+        <div key={item.id}>
+          <SectionPanel item={item} />
+        </div>
+      ))}
     </div>
   )
 }

@@ -29,11 +29,10 @@ export default function ContactFooterSection() {
             <div className="flex items-start gap-2">
               <IconMapPin className="w-8 h-8 mt-1 flex-shrink-0 text-white/80" />
               <div className="text-sm text-white/80">
-                <p>E - 407, Basement, Greater Kailash</p>
-                <p>- 2, Block E,</p>
-                <p>Greater Kailash IV, Greater Kailash,</p>
-                <p>New Delhi,</p>
-                <p>Delhi 110048, India</p>
+                <p>House no: 12-264/303, Madhava Residency</p>
+                <p>Road No: 1, P&T Colony, Near Greenfield School</p>
+                <p>Medipally, Uppal Depot</p>
+                <p>Hyderabad, Telangana, 500070, India</p>
               </div>
             </div>
 
