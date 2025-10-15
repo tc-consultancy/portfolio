@@ -40,7 +40,7 @@ export default function NewHireYourRecruiter() {
       {/* <Guarantees /> */}
       <SuccessStories />
       {/* <TeamSection /> */}
-      <BlogSection />
+      {/* <BlogSection /> */}
       <FAQSection />
       <FinalCTA />
       {/* <PostConversion /> */}

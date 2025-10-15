@@ -1,3 +1,4 @@
+import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { Target, Zap, Shield } from 'lucide-react'
 
@@ -64,10 +65,12 @@ export default function OneHireChallenge() {
             <p className="text-neutral-600 dark:text-neutral-400 text-sm italic mb-6">
               Because quality speaks louder than promises.
             </p>
-
+<ContactDialog>
             <button className="px-8 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition-all">
               Take the Challenge
             </button>
+            </ContactDialog>
+
           </motion.div>
         </div>
       </div>

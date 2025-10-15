@@ -13,6 +13,8 @@ import { Link } from "react-router-dom"
 import { ThemeSelector } from "../ui/ThemeSelector"
 import { MobileNavbar } from "./mobile-navbar"
 import { industries, services } from "@/constants/navbar"
+import { Button } from "../ui/button"
+import { ContactDialog } from "../ContactDialog"
 
 
 
@@ -103,7 +105,10 @@ export function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="flex gap-2">
-          <Link to={'/contact'} className="bg-gradient-to-b from-purple-400 hover:from-transparent hover:to-transparent transition-all duration-300 to-purple-500 px-8 text-white py-2 rounded-lg hover:outline outline-neutral-400 ">Get Started</Link>
+<ContactDialog>
+          <Button className="bg-gradient-to-b py-5 from-purple-400   transition-all duration-300 to-purple-500 px-8 text-white  rounded-lg hover:outline outline-neutral-400 ">Get Started</Button>
+</ContactDialog>
+          
           <ThemeSelector />
         </div>
       </div>

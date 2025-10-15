@@ -2,9 +2,10 @@ import { ContactDialog } from '@/components/ContactDialog'
 import { motion } from 'framer-motion'
 import { CheckCircle } from 'lucide-react'
 
+
 const caseStudies = [
   {
-    candidateName: 'Sarah Chen',
+    candidateName: 'Prudhvi jinka',
     role: 'Senior Product Manager',
     problem: 'Applied to 40+ jobs over 3 months with only 2 interviews',
     solution: 'ATS-optimized resume with quantified achievements and custom cover letters',
@@ -12,7 +13,7 @@ const caseStudies = [
     photoPlaceholder: 'from-purple-100 to-purple-200',
   },
   {
-    candidateName: 'Michael Rodriguez',
+    candidateName: 'Rohan Varma bandari',
     role: 'Software Engineer',
     problem: 'Generic resume getting auto-rejected by ATS systems',
     solution: 'Keyword-optimized technical resume highlighting relevant tech stack',
@@ -20,7 +21,7 @@ const caseStudies = [
     photoPlaceholder: 'from-blue-100 to-blue-200',
   },
   {
-    candidateName: 'Emily Thompson',
+    candidateName: 'Saikumar Reddy barda',
     role: 'Marketing Director',
     problem: 'Spending 25+ hours weekly on applications with poor results',
     solution: 'Professional application service handling 200+ applications monthly',

@@ -12,7 +12,7 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
-    title: 'Out Sourcing Services',
+    title: 'Outsourcing Services',
     description:
       'Extend your capabilities with managed delivery for apps, data, and cloud. We handle execution—roadmaps, sprints, Quality Analysis, and SRE—so you focus on strategy while we ship secure, scalable solutions aligned to your standards, budgets, and timelines.',
     icon: '🌐',

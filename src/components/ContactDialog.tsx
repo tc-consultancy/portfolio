@@ -93,6 +93,16 @@ interface ContactDialogProps {
 export function ContactDialog({ children }: ContactDialogProps) {
   const [isOpen, setIsOpen] = useState(false)
   const lenis = useLenis()
+  
+  // Get default service based on URL
+  const getDefaultService = () => {
+    const path = window.location.pathname.toLowerCase()
+    if (path.includes('outsourcing')) return 'Outsourcing Services'
+    if (path.includes('hire-recruiter')) return 'Hire Recruiters'
+    if (path.includes('it-staffing')) return 'Staffing Solutions'
+    return ''
+  }
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -100,7 +110,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
     phone: '',
     countryCode: '+1',
     country: 'United States',
-    service: '',
+    service: getDefaultService(),
     comment: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -111,6 +121,11 @@ export function ContactDialog({ children }: ContactDialogProps) {
   useEffect(() => {
     if (isOpen) {
       lenis?.stop()
+      // Update service when dialog opens based on current URL
+      const defaultService = getDefaultService()
+      if (defaultService && !formData.service) {
+        setFormData(prev => ({ ...prev, service: defaultService }))
+      }
     } else {
       lenis?.start()
     }

@@ -57,7 +57,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="services/outsourcing" element={<Outsourcingone />} />
+        {/* <Route path="services/outsourcing" element={<Outsourcingone />} /> */}
         <Route path="services/outsourcing" element={<Outsourcingone />} />
         <Route path="/services/hire-recruiter" element={<NewHireYourRecruiter />} />
         <Route path="/services/it-staffing" element={<Staffing />} />

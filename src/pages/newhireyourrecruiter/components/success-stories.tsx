@@ -1,21 +1,23 @@
 import { motion } from 'framer-motion'
 import { Quote } from 'lucide-react'
 
+
+
 const stories = [
   {
-    candidateName: 'David Park',
+    candidateName: 'Bala Krishna Reddy Chinna',
     role: 'Data Scientist',
-    company: 'Google',
+    company: '',
     before: 'Spent 6 months applying to 100+ jobs with only 3 interviews',
-    after: 'Landed role at Google within 8 weeks',
+    after: 'Landed role at top tech company within 8 weeks',
     metrics: '15 interviews • 4 offers • $180K salary',
     quote: 'I was ready to give up on my job search. This service completely turned things around. The quality of applications was night and day compared to what I was doing.',
     photoPlaceholder: 'from-blue-100 to-blue-200',
   },
   {
-    candidateName: 'Jessica Martinez',
+    candidateName: 'Pooja Vundyala',
     role: 'UX Designer',
-    company: 'Adobe',
+    company: '',
     before: 'Generic portfolio and resume getting ignored',
     after: 'Multiple offers from top tech companies',
     metrics: '22 interviews • 6 offers • 65% salary increase',
@@ -23,9 +25,9 @@ const stories = [
     photoPlaceholder: 'from-pink-100 to-pink-200',
   },
   {
-    candidateName: 'Robert Chen',
+    candidateName: 'Lakshmi prasanna peddi',
     role: 'Engineering Manager',
-    company: 'Microsoft',
+    company: '',
     before: 'Too busy with current job to apply effectively',
     after: 'Transitioned to dream role without stress',
     metrics: '18 interviews • 5 offers • $220K total comp',
@@ -78,7 +80,8 @@ export default function SuccessStories() {
                   {story.candidateName}
                 </h3>
                 <p className="text-purple-400 font-semibold text-sm">
-                  {story.role} at {story.company}
+                  {story.role} 
+                  {/* at {story.company} */}
                 </p>
               </div>
 
