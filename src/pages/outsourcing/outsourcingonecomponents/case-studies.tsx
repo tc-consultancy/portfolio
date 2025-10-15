@@ -30,7 +30,7 @@ const caseStudies = [
     savings: 129600,
     savingsPercent: 60,
     testimonial:
-      "The team integrated seamlessly into our operations. We're now operating more efficiently than ever, and the cost savings have allowed us to invest in expansion.",
+      "TC Consulting Services integrated seamlessly into our operations. We're now operating more efficiently than ever, and the cost savings have allowed us to invest in expansion.",
     testimonialAuthor: 'Operations Director',
     testimonialCompany: 'Kavya Foods Inc.',
   },
@@ -61,7 +61,7 @@ const caseStudies = [
     savings: 259200,
     savingsPercent: 60,
     testimonial:
-      'Outstanding service. Our guest satisfaction scores have never been higher, and we saved over $250k annually. The team feels like an extension of our own.',
+      'Outstanding service from TC Consulting Services. Our guest satisfaction scores have never been higher, and we saved over $250k annually. The team feels like an extension of our own.',
     testimonialAuthor: 'General Manager',
     testimonialCompany: 'Ptosh Hotel',
   },
@@ -149,9 +149,39 @@ const caseStudies = [
     savings: 108000,
     savingsPercent: 60,
     testimonial:
-      "They transformed our business. We're now competitive with larger chains while maintaining our family-owned charm. The savings have been incredible.",
+      "TC Consulting Services transformed our business. We're now competitive with larger chains while maintaining our family-owned charm. The savings have been incredible.",
     testimonialAuthor: 'Owner',
     testimonialCompany: 'Heart Wildwood Motel',
+  },
+  {
+    company: 'Royal Court Motel',
+    industry: 'Hospitality',
+    teamSize: 6,
+    roles: [
+      'Guest Service Representative',
+      'Revenue Manager',
+      'Web Developer',
+      'Digital Marketing Services',
+      'Accounting Services',
+    ],
+    challenge:
+      'An independent motel facing fierce competition from chain hotels and struggling with online visibility. Guest communication and booking management were inefficient.',
+    solution:
+      'Implemented a 6-person team focused on guest experience, digital transformation, and financial optimization. Built custom booking system and enhanced online presence.',
+    results: [
+      'Reduced annual costs from $195,000 to $84,000',
+      'Increased direct bookings by 52%',
+      'Improved response time to guest inquiries by 75%',
+      'Boosted revenue per available room by 31%',
+    ],
+    beforeCost: 195000,
+    afterCost: 84000,
+    savings: 111000,
+    savingsPercent: 57,
+    testimonial:
+      'TC Consulting Services brought professionalism and expertise we never had before. Our guests notice the difference, and our bottom line shows it. Best decision we made.',
+    testimonialAuthor: 'Sanjay Patel',
+    testimonialCompany: 'Royal Court Motel',
   },
 ]
 
