@@ -14,12 +14,7 @@ const metrics = [
     label: 'Average Cost Reduction',
     color: 'from-green-400 to-green-600',
   },
-  {
-    icon: Clock,
-    value: '35',
-    label: 'Days Average Time to Hire',
-    color: 'from-purple-400 to-purple-600',
-  },
+
   {
     icon: Award,
     value: '94%',

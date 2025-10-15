@@ -21,11 +21,7 @@ const faqs: FAQ[] = [
     question: 'What industries do you specialize in?',
     answer: 'We have expert writers across all major industries including Tech, Finance, Healthcare, Marketing, Engineering, Consulting, and more. ',
   },
-  {
-    category: 'Service Details',
-    question: 'How many applications will you submit per week?',
-    answer: 'It depends on your plan: Starter (25/week), Professional (50/week), or Executive (100/week). We focus on quality over quantity, ensuring each application is tailored and optimized.',
-  },
+
 
 
   // Pricing & Plans
@@ -50,7 +46,7 @@ const faqs: FAQ[] = [
   {
     category: 'Process & Timeline',
     question: 'What is the turnaround time for each application?',
-    answer: 'Starter plan: 48 hours, Professional plan: <24 hours, Executive plan: <12 hours. We prioritize speed without compromising quality.',
+    answer: 'Basic plan: 48 hours, Pro plan: 24 hours, Professional plan: <24 hours. We prioritize speed without compromising quality.',
   },
 
 
@@ -60,7 +56,7 @@ const faqs: FAQ[] = [
     question: 'How do you optimize resumes for ATS systems?',
     answer: 'We use industry-standard ATS optimization techniques including keyword matching, proper formatting, strategic placement of skills, and quantified achievements that align with job descriptions.',
   },
-  
+
   {
     category: 'Quality & Results',
     question: 'What if I need revisions?',
@@ -69,14 +65,14 @@ const faqs: FAQ[] = [
   {
     category: 'Quality & Results',
     question: 'Do you provide interview preparation?',
-    answer: 'Professional and Executive plans include interview preparation support, including common questions, company research, and strategy sessions.',
+    answer: 'Pro and Professional plans include interview preparation support, including common questions, company research, and strategy sessions.',
   },
 
   // Technical Questions
   {
     category: 'Technical Questions',
     question: 'Will you use my email to apply?',
-    answer: 'No, we use a professional application management system. You\'ll receive all responses directly to your email, and we forward any communications immediately.',
+    answer: 'Yes, we use your own email to apply for jobs. You\'ll receive all responses directly to your email inbox.',
   },
   {
     category: 'Technical Questions',
@@ -86,7 +82,7 @@ const faqs: FAQ[] = [
   {
     category: 'Technical Questions',
     question: 'What if I get an interview?',
-    answer: 'Congratulations! We\'ll provide you with all application materials used, company research, and interview preparation support (on Professional/Executive plans).',
+    answer: 'Congratulations! We\'ll provide you with all application materials used, company research, and interview preparation support (on Pro and Professional plans).',
   },
 ]
 
@@ -145,9 +141,8 @@ export default function FAQSection() {
                           {faq.question}
                         </span>
                         <ChevronDown
-                          className={`w-5 h-5 text-neutral-500 flex-shrink-0 transition-transform ${
-                            isOpen ? 'rotate-180' : ''
-                          }`}
+                          className={`w-5 h-5 text-neutral-500 flex-shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''
+                            }`}
                         />
                       </button>
 
@@ -184,11 +179,11 @@ export default function FAQSection() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-4">
             Still have questions?
           </p>
-           <ContactDialog>
-          <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            Schedule a Free Consultation
-          </button>
-           </ContactDialog>
+          <ContactDialog>
+            <button className="px-8 py-4 bg-purple-400 hover:bg-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              Schedule a Free Consultation
+            </button>
+          </ContactDialog>
         </motion.div>
       </div>
     </section>
