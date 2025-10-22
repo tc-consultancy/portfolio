@@ -64,7 +64,7 @@ export default function Industries() {
             Built for your domain. Tuned for real‑world outcomes.
           </p>
           <p className="mt-4 max-w-2xl text-gray-600 dark:text-white/70">
-            We provide expert consultancy and tailored solutions for each industry's unique operating model. Our mission is to help you innovate faster, enhance security, and scale with confidence.
+            We provide expert IT services and tailored solutions for each industry's unique operating model. Our mission is to help you innovate faster, enhance security, and scale with confidence.
           </p>
         </div>
 

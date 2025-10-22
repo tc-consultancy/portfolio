@@ -114,7 +114,7 @@ export default function ECOM() {
                                 What do we do?
                             </h2>
                             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-                                TC Consultancy offers a full-suite of E-commerce development services, including strategy, research, design, integrations, migrations and development of next-gen online stores. We also provide ongoing 24x7 support and maintenance, to help keep your site open for business and able to generate revenue at all times.
+                                TC IT Services offers a full-suite of E-commerce development services, including strategy, research, design, integrations, migrations and development of next-gen online stores. We also provide ongoing 24x7 support and maintenance, to help keep your site open for business and able to generate revenue at all times.
                             </p>
                         </div>
                     </div>

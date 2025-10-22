@@ -22,7 +22,7 @@ export default function ContactFooterSection() {
         {/* Left - Company Info (Purple Background) */}
         <div className="bg-purple-800 text-white px-4 py-6 md:py-8 md:px-8 space-y-6 max-w-sm">
           <p className=" leading-relaxed text-white/90">
-            At Tc Consultancy, we are driven entrepreneurs dedicated to simplifying your business through innovative solutions. Our overarching goal remains consistent: to innovate products and services that positively impact society and foster a better standard of living for all.
+            At Tc IT Services, we are driven entrepreneurs dedicated to simplifying your business through innovative solutions. Our overarching goal remains consistent: to innovate products and services that positively impact society and foster a better standard of living for all.
           </p>
 
           <div className="space-y-3">
@@ -57,7 +57,7 @@ export default function ContactFooterSection() {
           </h1>
           <ContactDialog>
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-6 rounded text-sm">
-              Get Started With Tc Consultancy
+              Get Started With Tc IT Services
             </Button>
           </ContactDialog>
 
@@ -115,7 +115,7 @@ export default function ContactFooterSection() {
           <Link to="/faqs">FAQs</Link>
         </div>
         <p className="text-xs text-center text-gray-500">
-          Copyright © 2025 Tc consultancy. <br className='md:hidden' /> All Rights Reserved By tcconsultancy.com
+          Copyright © 2025 Tc IT Services. <br className='md:hidden' /> All Rights Reserved By tcitservices.com
         </p>
       </div> */}
     </section>

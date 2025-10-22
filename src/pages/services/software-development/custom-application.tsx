@@ -114,7 +114,7 @@ export default function CustomAppDev() {
                                 What do we do?
                             </h2>
                             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-                                TC Consultancy offers a comprehensive range of custom application development services that enable enterprises to amplify the power of their IT infrastructure to support new capabilities and enhance the customer and partner experience.
+                                TC IT Services offers a comprehensive range of custom application development services that enable enterprises to amplify the power of their IT infrastructure to support new capabilities and enhance the customer and partner experience.
                             </p>
                         </div>
                     </div>
